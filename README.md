@@ -36,12 +36,12 @@ print(area4.divider4)
 ```  
 Using functions:  
 ```  
-div1()
-div2()
-div3()
-div4()
+area4.div1()
+area4.div2()
+area4.div3()
+area4.div4()
 ```  
 And if you want to you can check to make sure the library is working:  
 ```  
-area4info()
+area4.area4info()
 ```  
