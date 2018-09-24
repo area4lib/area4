@@ -28,7 +28,7 @@ def div4():
 
 def area4info():
     print("Name:", name)
-    print("Author:", author, "\n Author Email:", author_email)
+    print("Author:", author, "\nAuthor Email:", author_email)
     print("Description:", description)
     print("License:", license)
 
