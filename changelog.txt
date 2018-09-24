@@ -1,0 +1,9 @@
+- Changelog -  
+
+Version 1.0.1:
+* Readme fixes & badges
+* Added changelog 
+* Updated version in setup.py
+
+Version 1.0.0:
+* First release
