@@ -1,5 +1,7 @@
 # area4
-Dividers in Python, the easy way!  Four different types.  (As seen on PyPI)
+Dividers in Python, the easy way!  Four different types.  (As seen on PyPI)  
+*Version: 1.0.1*  
+[![Known Vulnerabilities](https://snyk.io/test/github/RDIL/area4/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/RDIL/area4?targetFile=requirements.txt) ![](https://img.shields.io/badge/license-MIT-orange.svg)[![](https://img.shields.io/badge/pypi-1.0.1-purple.svg)](https://pypi.org/project/area4)  
 
 ## Installing  
 *You may install in one of the following ways:*  
