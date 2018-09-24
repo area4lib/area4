@@ -1,7 +1,7 @@
 # area4
-Dividers in Python, the easy way!  Four different types.  (As seen on PyPI)  
+Dividers in Python, the easy way!  Four different types.  [(As seen on PyPI!)](https://pypi.org/project/area4)  
 *Version: 1.0.2*  
-[![Known Vulnerabilities](https://snyk.io/test/github/RDIL/area4/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/RDIL/area4?targetFile=requirements.txt) ![](https://img.shields.io/badge/license-MIT-orange.svg) [![](https://img.shields.io/badge/pypi-1.0.1-purple.svg)](https://pypi.org/project/area4)  
+[![Known Vulnerabilities](https://snyk.io/test/github/RDIL/area4/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/RDIL/area4?targetFile=requirements.txt) ![](https://img.shields.io/badge/license-MIT-orange.svg) [![](https://img.shields.io/badge/pypi-1.0.2-purple.svg)](https://pypi.org/project/area4)  
 
 ## Example  
 If you don't understand what we mean by dividers, fear not.  We mean dividers that divide text in the Python console, or anything you use the library for.  An example can be found [here](https://repl.it/@jumbocakeyumyum/area4tests).  
