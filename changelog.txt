@@ -4,6 +4,7 @@ Version 1.0.2:
 * Updated project description & version number 
 * Added example section to readme 
 * Added divider looks section to readme  
+* Updated the info command because of an annoying text issue 
 
 Version 1.0.1:
 * Readme fixes & badges
