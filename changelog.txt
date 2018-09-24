@@ -1,5 +1,9 @@
 - Changelog -  
 
+Version 1.0.2:
+* Updated project description & version number 
+* Added example section to readme 
+
 Version 1.0.1:
 * Readme fixes & badges
 * Added changelog 
