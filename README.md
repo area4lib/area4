@@ -6,6 +6,14 @@ Dividers in Python, the easy way!  Four different types.  (As seen on PyPI)
 ## Example  
 If you don't understand what we mean by dividers, fear not.  We mean dividers that divide text in the Python console, or anything you use the library for.  An example can be found [here](https://repl.it/@jumbocakeyumyum/area4tests).  
 
+## Divider looks  
+*The number before it is the number used in calling it, so for example if you want divider 1, it would be area4.divider1 or area4.div1().*  
+1- Dashed  
+2- Solid  
+3- Dotted  
+4- Black Squares  
+And more coming soon!  
+
 ## Installing  
 *You may install in one of the following ways:*  
 * Through pip  
