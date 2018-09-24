@@ -4,7 +4,7 @@
 name = "area4" 
 author = "https://github.com/RDIL"
 author_email = "contactspaceboom@gmail.com"
-description = "Dividers in Python, the easy way! Four different types."
+description = "Dividers in Python, the easy way! Multiple different divider looks."
 license = "MIT License"
 
 # Divider variables:
