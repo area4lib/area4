@@ -12,6 +12,7 @@ divider1 = str("------------------------")
 divider2 = str("________________________")
 divider3 = str("........................")
 divider4 = str("⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛")
+custom_div = str("")
 
 # Functions:  
 def div1():
@@ -25,6 +26,9 @@ def div3():
 
 def div4():
     print(divider4)
+
+def customdiv():
+    print(custom_div)
 
 def area4info():
     print("Name:", name)
