@@ -1,5 +1,10 @@
 - Changelog -  
 
+Version 1.0.3:  
+* Added Travis CI (and .travis.yml file)
+* Added custom dividers!!!  
+* Updated the .gitignore to ignore the /build/ directory  
+
 Version 1.0.2:
 * Updated project description & version number 
 * Added example section to readme 
