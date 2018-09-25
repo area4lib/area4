@@ -1,8 +1,7 @@
 language: python
-# Set OS to Mac and Linux
+# Set OS to Linux  
 os:
   - linux
-  - osx
 # Tell Travis to use these Python versions:  
 python:
   - "3.4"
