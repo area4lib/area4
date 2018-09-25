@@ -1,4 +1,8 @@
 language: python
+ignore:
+  - README.md
+  - changelog.txt
+  - CODE_OF_CONDUCT.md
 python:
   - "3.4"
   - "3.5"
