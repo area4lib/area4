@@ -1,16 +1,12 @@
 language: python
-# Set OS to Linux  
 os:
   - linux
-# Tell Travis to use these Python versions:  
 python:
   - "3.4"
   - "3.5"
   - "3.6"
-# Command to install dependencies
 install:
   - pip install -r requirements.txt
   - "python3 -m pip install --upgrade setuptools wheel"
-# Command to run tests
 script:
   - "python3 setup.py sdist bdist_wheel"
