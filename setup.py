@@ -26,4 +26,3 @@ setuptools.setup(
         'Topic :: Software Development :: Libraries',
     ],
 )
-
