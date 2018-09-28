@@ -35,4 +35,3 @@ def area4info():
     print("Author:", author, "\nAuthor Email:", author_email)
     print("Description:", description)
     print("License:", license)
-
