@@ -12,6 +12,8 @@ If you don't understand what we mean by dividers, fear not.  We mean dividers th
 2- Solid  
 3- Dotted  
 4- Black Squares  
+5- Up arrow emojis  
+6- Down arrow emojis  
 And more coming soon!  
 
 ## Installing  
