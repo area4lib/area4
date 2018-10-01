@@ -24,5 +24,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Libraries',
+        'Topic :: Utilities',
+        'Natural Language :: English',
     ],
 )
