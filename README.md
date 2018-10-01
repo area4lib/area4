@@ -66,7 +66,7 @@ area4.area4info()
 ```  
 
 ### Custom Dividers  
-In version 1.0.3, custom dividers were added.  They can't be saved, but will stayed applied until the Python script ends.  
+In version 1.0.3, custom dividers were added.  They can't be saved, but will stay applied until the Python script ends.  
 They can be called/used/updated this way:  
 ```   
 # Setting:  
