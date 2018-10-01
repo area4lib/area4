@@ -29,6 +29,12 @@ def div3():
 def div4():
     print(divider4)
 
+def div5():
+    print(divider5)
+
+def div6():
+    print(divider6)
+
 def customdiv():
     print(custom_div)
 
