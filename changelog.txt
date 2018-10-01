@@ -1,5 +1,9 @@
 - Changelog -  
 
+Version 1.0.4:
+* Added up arrow emoji dividers
+* Added down arrow emoji dividers
+
 Version 1.0.3:  
 * Added Travis CI (and .travis.yml file)
 * Added custom dividers!!!  
