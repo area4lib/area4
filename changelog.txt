@@ -4,6 +4,7 @@ Version 1.0.4:
 * Added up arrow emoji dividers
 * Added down arrow emoji dividers
 * Added codefactor badge to the readme file
+* Added new classifiers to setup.py file
 
 Version 1.0.3:  
 * Added Travis CI (and .travis.yml file)
