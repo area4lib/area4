@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="area4",
-    version="1.0.4",
+    version="1.0.5",
     author="RDIL",
     author_email="contactspaceboom@gmail.com",
     description="Dividers in Python, the easy way! Multiple different divider looks.",
@@ -23,6 +23,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         'Intended Audience :: Developers',
+        'Intended Audience :: End Users/Desktop',
         'Topic :: Software Development :: Libraries',
         'Topic :: Utilities',
         'Natural Language :: English',
