@@ -1,10 +1,10 @@
 # area4
 Dividers in Python, the easy way!  Four different types.  [(As seen on PyPI!)](https://pypi.org/project/area4)  
-*Version: 1.0.3*  
+*Version: 1.0.4*  
 <span style="text-align: center;">[![Known Vulnerabilities](https://snyk.io/test/github/RDIL/area4/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/RDIL/area4?targetFile=requirements.txt) ![Travis Build](https://travis-ci.com/RDIL/area4.svg?branch=master) ![](https://img.shields.io/badge/license-MIT-orange.svg) [![](https://img.shields.io/badge/pypi-1.0.3-purple.svg)](https://pypi.org/project/area4) [![CodeFactor](https://www.codefactor.io/repository/github/rdil/area4/badge)](https://www.codefactor.io/repository/github/rdil/area4)</span>  
 
 ## Example  
-If you don't understand what we mean by dividers, fear not.  We mean dividers that divide text in the Python console, or anything you use the library for.  An example can be found [here](https://repl.it/@jumbocakeyumyum/area4tests).  
+If you don't understand wh/at we mean by dividers, fear not.  We mean dividers that divide text in the Python console, or anything you use the library for.  An example can be found [here](https://repl.it/@jumbocakeyumyum/area4tests).  
 
 ## Divider looks  
 *The number before it is the number used in calling it, so for example if you want divider 1, it would be area4.divider1 or area4.div1().*  
@@ -48,17 +48,21 @@ print(area4.divider1)
 print(area4.divider2)  
 print(area4.divider3)  
 print(area4.divider4)  
+print(area4.divider5)  
+print(area4.divider6)  
 ```  
 Using functions:  
 ```  
-area4.div1()
-area4.div2()
-area4.div3()
-area4.div4()
+area4.div1()  
+area4.div2()  
+area4.div3()  
+area4.div4()  
+area4.div5()  
+area4.div6()
 ```  
 And if you want to you can check to make sure the library is working:  
 ```  
-area4.area4info()
+area4.area4info()  
 ```  
 
 ### Custom Dividers  
