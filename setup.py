@@ -12,6 +12,11 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/RDIL/area4",
+    project_urls={
+        "Bug Tracker": "https://github.com/RDIL/area4/issues",
+        "Documentation": "https://github.com/RDIL/area4/blob/master/README.md#area4",
+        "Source Code": "https://github.com/RDIL/area4/blob/master/area4/__init__.py",
+    }
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
