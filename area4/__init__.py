@@ -5,7 +5,6 @@ name = "area4"
 author = "https://github.com/RDIL"
 author_email = "contactspaceboom@gmail.com"
 description = "Dividers in Python, the easy way! Multiple different divider looks."
-license = "MIT License"
 
 # Divider variables:
 divider1 = str("------------------------")
@@ -46,4 +45,3 @@ def area4info():
     print("Name:", name)
     print("Author:", author, "\nAuthor Email:", author_email)
     print("Description:", description)
-    print("License:", license)
