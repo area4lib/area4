@@ -149,4 +149,4 @@ They can be called/used/updated this way:
 
 .. _here: https://repl.it/@jumbocakeyumyum/area4tests
 .. _`View on GitHub`: https://github.com/RDIL/area4
-.. [#RDIL] <YOUR@EMAIL.HERE>
+.. [#RDIL] <contactspaceboom@gmail.com>
