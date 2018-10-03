@@ -1,5 +1,11 @@
 - Changelog -  
 
+Version 1.0.6:
+* Disabled GitHub pages (not needed)
+* Added docs!
+* Added hashtag (#) dividers
+* Updated badges in readme
+
 Version 1.0.5: 
 * Added equal sign dividers 
 * Added GitHub pages config (site up at https://rdil.github.io/area4!) 
