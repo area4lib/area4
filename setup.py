@@ -11,7 +11,7 @@ setuptools.setup(
     description="Dividers in Python, the easy way! Multiple different divider looks.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://rdil.github.io/area4",
+    url="https://github.com/RDIL/area4",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -30,7 +30,7 @@ setuptools.setup(
     ],
     project_urls={
         "Bug Tracker": "https://github.com/RDIL/area4/issues",
-        "Documentation": "https://github.com/RDIL/area4/blob/master/README.md#area4",
+        "Documentation": "https://area4.readthedocs.io/en/latest",
         "Source Code": "https://github.com/RDIL/area4",
     }
 )
