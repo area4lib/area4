@@ -54,6 +54,7 @@ Divider looks
 5. Up arrow emojis  
 6. Down arrow emojis  
 7. Equal signs
+8. Hashtags
 
 And more coming soon!  
 
@@ -110,6 +111,7 @@ Just using plain print commands:
     print(area4.divider5)  
     print(area4.divider6)  
     print(area4.divider7) 
+    print(area4.divider8) 
 
 Using functions:  
 
@@ -121,6 +123,8 @@ Using functions:
     area4.div4()  
     area4.div5()  
     area4.div6()  
+    area4.div7()  
+    area4.div8()  
 
 And if you want to you can check to make sure the library is working:  
 
