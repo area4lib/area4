@@ -53,8 +53,10 @@ Divider looks
 4. Black Squares  
 5. Up arrow emojis  
 6. Down arrow emojis  
-7. Equal signs
-8. Hashtags
+7. Equal signs 
+8. Hashtags 
+9. Asterisks (stars) 
+10. Commas 
 
 And more coming soon!  
 
@@ -112,6 +114,8 @@ Just using plain print commands:
     print(area4.divider6)  
     print(area4.divider7) 
     print(area4.divider8) 
+    print(area4.divider9) 
+    print(area4.divider10) 
 
 Using functions:  
 
@@ -125,6 +129,8 @@ Using functions:
     area4.div6()  
     area4.div7()  
     area4.div8()  
+    area4.div9()  
+    area4.div10()  
 
 And if you want to you can check to make sure the library is working:  
 
