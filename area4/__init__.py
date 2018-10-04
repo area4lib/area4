@@ -15,6 +15,7 @@ divider5 = str("⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆�
 divider6 = str("⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️")
 divider7 = str("========================")
 divider8 = str("########################")
+divider9 = str("************************")
 custom_div = str("")
 
 # Functions:  
@@ -41,6 +42,9 @@ def div7():
 
 def div8():
     print(divider8)
+
+def div9():
+    print(divider9)
 
 def customdiv():
     print(custom_div)
