@@ -5,6 +5,7 @@ Version 1.1.0 (Contains Breaking Changes):
 * Added broken bar dividers
 * Added slash dividers
 * Functions now return the variable rather then print it
+* Added some extra stuff in the extras directory
 
 Version 1.0.7:
 * Added star / asterisk (*) dividers
