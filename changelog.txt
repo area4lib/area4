@@ -1,5 +1,8 @@
 - Changelog -  
 
+Version 1.0.8:
+* Added tilde (~) dividers
+
 Version 1.0.7:
 * Added star / asterisk (*) dividers
 * Added comma (,) dividers
