@@ -19,7 +19,8 @@ divider9 = str("************************")
 divider10 = str(",,,,,,,,,,,,,,,,,,,,,,,,")
 divider11 = str("////////////////////////")
 divider12 = str("||||||||||||||||||||||||")
-divider15 = str("☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕")
+divider13 = str("~~~~~~~~~~~~~~~~~~~~~~~~")
+divider14 = str("☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕")
 custom_div = str("")
 
 # Functions:
@@ -58,9 +59,12 @@ def div11():
 
 def div12():
     return divider12
-
-def div15():
-    return divider15
+  
+def div13():
+    return divider13
+  
+def div14():
+    return divider14
 
 def customdiv():
     return custom_div
