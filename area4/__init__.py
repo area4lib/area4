@@ -61,6 +61,10 @@ def div12():
 def customdiv():
     return custom_div
 
+def make_div(div, length=24):
+    repeats = length//len(div)
+    return (div*repeats)[0:length]
+
 def area4info():
     info = f"Name: {name}"
     info += f"\nAuthor: {author}"
