@@ -106,37 +106,37 @@ Just using plain print commands:
 
 .. code-block:: python
 
-    print(area4.divider1)  
-    print(area4.divider2)  
-    print(area4.divider3)  
-    print(area4.divider4)  
-    print(area4.divider5)  
-    print(area4.divider6)  
-    print(area4.divider7) 
-    print(area4.divider8) 
-    print(area4.divider9) 
-    print(area4.divider10) 
+    print(area4.divider1)
+    print(area4.divider2)
+    print(area4.divider3)
+    print(area4.divider4)
+    print(area4.divider5)
+    print(area4.divider6)
+    print(area4.divider7)
+    print(area4.divider8)
+    print(area4.divider9)
+    print(area4.divider10)
 
 Using functions:  
 
 .. code-block:: python
 
-    area4.div1()  
-    area4.div2()  
-    area4.div3()  
-    area4.div4()  
-    area4.div5()  
-    area4.div6()  
-    area4.div7()  
-    area4.div8()  
-    area4.div9()  
-    area4.div10()  
+    print(area4.div1())
+    print(area4.div2())
+    print(area4.div3())
+    print(area4.div4())
+    print(area4.div5())
+    print(area4.div6())
+    print(area4.div7())
+    print(area4.div8())
+    print(area4.div9())
+    print(area4.div10())
 
 And if you want to you can check to make sure the library is working:  
 
 .. code-block:: python  
 
-    area4.area4info()
+    print(area4.area4info())
  
 
 Custom Dividers  
@@ -149,12 +149,12 @@ They can be called/used/updated this way:
 .. code-block:: python  
 
     # Setting:  
-    area4.custom_div = str("dividertexthere")   
+    area4.custom_div = str("dividertexthere")
 
     # Using:  
-    area4.customdiv()  
+    print(area4.customdiv())
     # or...  
-    print(area4.custom_div)  
+    print(area4.custom_div)
 
 
 .. _here: https://repl.it/@jumbocakeyumyum/area4tests
