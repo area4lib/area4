@@ -1,6 +1,6 @@
 - Changelog -  
 
-Version 1.0.8:
+Version 1.1.0:
 * Added tilde (~) dividers
 
 Version 1.0.7:
