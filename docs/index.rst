@@ -57,6 +57,8 @@ Divider looks
 8. Hashtags 
 9. Asterisks (stars) 
 10. Commas 
+11. Slashes
+12. Broken bars (|)
 
 And more coming soon!  
 
@@ -116,6 +118,8 @@ Just using plain print commands:
     print(area4.divider8)
     print(area4.divider9)
     print(area4.divider10)
+    print(area4.divider11)
+    print(area4.divider12)
 
 Using functions:  
 
@@ -131,6 +135,8 @@ Using functions:
     print(area4.div8())
     print(area4.div9())
     print(area4.div10())
+    print(area4.div11())
+    print(area4.div12())
 
 And if you want to you can check to make sure the library is working:  
 
