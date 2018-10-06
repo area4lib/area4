@@ -14,6 +14,7 @@ setuptools.setup(
     url="https://github.com/RDIL/area4",
     packages=setuptools.find_packages(),
     classifiers=[
+        "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
@@ -25,7 +26,9 @@ setuptools.setup(
         'Intended Audience :: Developers',
         'Intended Audience :: End Users/Desktop',
         'Topic :: Software Development :: Libraries',
+        'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Utilities',
+        'Development Status :: 5 - Production/Stable',
         'Natural Language :: English',
     ],
     project_urls={

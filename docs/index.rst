@@ -29,6 +29,10 @@ Welcome to Area4's documentation!
     :target: https://www.codefactor.io/repository/github/rdil/area4
     :alt: Code Factor status
 
+.. image:: https://www.repostatus.org/badges/latest/active.svg
+    :target: https://repostatus.org/
+    :alt: Repo status
+
 By RDIL [#RDIL]_
 
 `View on GitHub`_
