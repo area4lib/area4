@@ -21,4 +21,13 @@ There are a few things to keep in mind when contributing:
 
 2. **Follow the [code of conduct](https://github.com/RDIL/area4/blob/master/CODE_OF_CONDUCT.md)**: Area4 has a code of conduct that details the kind of behavior you should be demonstrating when using and contributing to this project. Before you contribute, please take a few minutes to read the code of conduct and always follow it when contributing.  
 
+## Coding
+
+This project code is intended to be...
+
+* Clean. Keep it well formatted and follow your favourite language conventions, so one can understand it.
+Documented. Keep it well documented, so one can learn from it.  
+* Reusable. Keep it cohese and modular, with as little responsibility per programming unit (function, method, class, module, project) as possible, so one can reuse it.  
+* Testable. Keep it easy to debug and test, so one can be confident that it works properly.  Please keep the [Travis CI build](https://travis-ci.com/RDIL/area4) at passing if possible.  Travis doesn't directly test the code for errors, rather checks to see if it is safe and ready to deploy to PyPI if needed!  
+
 If you have any questions please contact [RDIL](https://github.com/RDIL), but before you do please please review our [documentation](https://area4.readthedocs.io/en/latest/). 
