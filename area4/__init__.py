@@ -67,39 +67,6 @@ def div13():
 def div14():
     return divider14
 
-
-
-def customdiv():
-    return custom_div
-
-def area4info():
-    info = f"Name: {name}"
-    info += f"\nAuthor: {author}"
-    info += f"\nAuthor Email: {author_email}"
-    info += f"\nDescription: {description}"
-    return info
-
-def div8():
-    return divider8
-
-def div9():
-    return divider9
-
-def div10():
-    return divider10
-
-def div11():
-    return divider11
-
-def div12():
-    return divider12
-  
-def div13():
-    return divider13
-  
-def div14():
-    return divider14
-
 def customdiv():
     return custom_div
 
