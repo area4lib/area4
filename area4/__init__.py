@@ -67,6 +67,9 @@ def div13():
 def div14():
     return divider14
 
+def div15():
+    return divider15
+
 def customdiv():
     return custom_div
 
