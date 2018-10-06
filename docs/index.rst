@@ -178,6 +178,19 @@ They can be called/used/updated this way:
     print(area4.custom_div)
 
 
+You can also generate a custom divider
+
+.. code-block:: python
+
+    # Specify a repeating unit and a maximum length
+    area4.make_div('<>', length=24) # returns a string
+
+    # Setting to custom div:
+    area4.custom_div = area4.make_div('<>', length=24)
+
+    # or directly printing
+    print(area4.make_div('<>', length=24))
+
 .. _here: https://repl.it/@jumbocakeyumyum/area4tests
 .. _`View on GitHub`: https://github.com/RDIL/area4
 .. [#RDIL] <contactspaceboom@gmail.com>
