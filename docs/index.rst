@@ -67,6 +67,7 @@ Divider looks
 14. Backslashes (not to be confused with #11) 
 15. Coffee cups
 16. Plus signs
+17. Cthulhus
 
 And more coming soon!  
 
@@ -132,6 +133,7 @@ Just using plain print commands:
     print(area4.divider14)
     print(area4.divider15)
     print(area4.divider16)
+    print(area4.divider17)
 
 Using functions:  
 
@@ -153,6 +155,7 @@ Using functions:
     print(area4.div14())
     print(area4.div15())
     print(area4.div16())
+    print(area4.div17())
 
 .. warning:: In version 1.1.0, the functions changed in the way they operated.  Before 1.1.0, the functions printed the variables, but after the release, they now just return the variable.  
 
