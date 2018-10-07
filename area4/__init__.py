@@ -19,6 +19,10 @@ divider9 = str("************************")
 divider10 = str(",,,,,,,,,,,,,,,,,,,,,,,,")
 divider11 = str("////////////////////////")
 divider12 = str("||||||||||||||||||||||||")
+divider13 = str("~~~~~~~~~~~~~~~~~~~~~~~~")
+divider14 = str("\\\\\\\\\\\\\\\\\\\\\\\\")
+divider15 = str("☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕")
+divider16 = str("++++++++++++++++++++++++")
 divider17 = str("r(`,,,`)r r(`,,,`)r r(`,,,`)r ")
 custom_div = str("")
 
@@ -59,11 +63,27 @@ def div11():
 def div12():
     return divider12
 	
-def div12():
+def div13():
+    return divider13
+
+def div14():
+    return divider14
+
+def div15():
+    return divider15
+
+def div16():
+    return divider16
+
+def div17():
     return divider17
-	
+  
 def customdiv():
     return custom_div
+
+def make_div(div, length=24):
+    repeats = length//len(div)
+    return (div*repeats)[0:length]
 
 def area4info():
     info = f"Name: {name}"
