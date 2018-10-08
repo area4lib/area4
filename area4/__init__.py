@@ -25,6 +25,8 @@ divider15 = str("☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕")
 divider16 = str("++++++++++++++++++++++++")
 divider17 = str("r(`,,,`)r r(`,,,`)r r(`,,,`)r ")
 divider18 = str("( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)")
+divider19 = str("&&&&&&&&&&&&&&&&&&&&&&&&&")
+divider20 = str("^^^^^^^^^^^^^^^^^^^^^^^^^")
 custom_div = str("")
 
 # Functions:
@@ -81,6 +83,12 @@ def div17():
 
 def div18():
     return divider18
+
+def div19():
+    return divider19
+
+def div20():
+    return divider20
   
 def customdiv():
     return custom_div
