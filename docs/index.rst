@@ -69,6 +69,8 @@ Divider looks
 16. Plus signs
 17. Cthulhus
 18. Lenny faces
+19. And (&) signs
+20. Up arrow dividers (^)
 
 And more coming soon!  
 
@@ -136,6 +138,8 @@ Just using plain print commands:
     print(area4.divider16)
     print(area4.divider17)
     print(area4.divider18)
+    print(area4.divider19)
+    print(area4.divider20)
 
 Using functions:  
 
@@ -159,6 +163,8 @@ Using functions:
     print(area4.div16())
     print(area4.div17())
     print(area4.div18())
+    print(area4.div19())
+    print(area4.div20())
 
 .. warning:: In version 1.1.0, the functions changed in the way they operated.  Before 1.1.0, the functions printed the variables, but after the release, they now just return the variable.  
 
