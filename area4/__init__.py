@@ -140,7 +140,7 @@ def _reduce_to_unit(divider: str) -> str:
         unit = divider[:unit_size]
         remainder = length % unit_size
 
-        # ignores mismatches in final units
+        # ignores mismatches in final characters
         if unit * (length // unit_size) == divider[:unit_size * (length // unit_size)]:
             return unit
     return divider  # return original if smaller unit not found
