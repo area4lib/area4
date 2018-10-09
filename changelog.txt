@@ -1,5 +1,14 @@
 - Changelog -  
 
+Version 1.1.1:
+* Added contributing guidelines
+* Added lenny dividers
+* Added cthulhu dividers
+* Created area4-story.md in extras
+* Added backslash dividers
+* Added make_div framework (see docs, thanks @ninexball!)
+* Configured Discord webhook (not important)
+
 Version 1.1.0 (Contains Breaking Changes):
 * Added tilde (~) dividers
 * Added broken bar dividers
