@@ -97,9 +97,54 @@ def div21():
 def customdiv():
     return custom_div
 
-def make_div(div, length=24):
-    repeats = length//len(div)
-    return (div*repeats)[0:length]
+
+def make_div(unit: str, length: int = 24, start: str = '', end: str = '', literal_unit=False) -> str:
+    """
+    Generates and returns a custom divider
+
+    :param unit: str containing a repeating unit
+    :param length: The maximum length that will not be exceeded (default: 24)
+    :param start: optional starting string
+    :param end: optional ending string
+    :param literal_unit: if True will not try to break unit down into smaller repeating subunits
+    :return: a custom created divider
+    :rtype: str
+
+    :Example:
+
+    custom_div = make_div(unit='=-', length=40, start='<', end='=>')
+
+    note:: The generated string will be terminated at the specified length regardless
+     of whether all the input strings have been fully replicated.  A unit > 1 length may
+     not be able to be replicated to extend to the full length.  In this situation, the
+     string will be shorter than the specified length.
+
+     Example: unit of 10 characters and a specified length of 25 will contain 2 units for
+      a total length of 20 characters.
+
+    """
+
+    # reduce the size if possible to extend closer to full length
+    if not literal_unit:
+        unit = _reduce_to_unit(unit)
+    repeats = (length - len(start + end)) // len(unit)
+
+    return (start + unit * repeats + end)[0:length]
+
+
+# reduces a repeating divider to the smallest repeating unit possible
+# example: 'XxXxXxX' -> 'Xx'
+def _reduce_to_unit(divider: str) -> str:
+    for unit_size in range(1, len(divider) // 2 + 1):
+        length = len(divider)
+        unit = divider[:unit_size]
+        remainder = length % unit_size
+
+        # ignores mismatches in final units
+        if unit * (length // unit_size) == divider[:unit_size * (length // unit_size)]:
+            return unit
+    return divider  # return original if smaller unit not found
+
 
 def area4info():
     info = f"Name: {name}"
