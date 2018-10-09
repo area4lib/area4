@@ -8,6 +8,9 @@ Version 1.1.1:
 * Added backslash dividers
 * Added make_div framework (see docs, thanks @ninexball!)
 * Configured Discord webhook (not important)
+* Added coffee cup dividers
+* Added and-sign dividers
+* Added up arrow dividers
 
 Version 1.1.0 (Contains Breaking Changes):
 * Added tilde (~) dividers
