@@ -1,5 +1,10 @@
 - Changelog -  
 
+Version 1.1.2:
+* Added shrug emoji dividers
+* The make_div function recieved an upgrade
+* Fixed a few typos in the docs
+
 Version 1.1.1:
 * Added contributing guidelines
 * Added lenny dividers
