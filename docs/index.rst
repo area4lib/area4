@@ -214,10 +214,10 @@ You can also generate a custom divider with the make_div function
     # or directly printing
     print(area4.make_div('<>', 24))
     
-    # specify an literal unit (the function will not atempt to find smaller repeating units
+    # specify an literal unit (the function will not atempt to find smaller repeating units)
     area4.make_div('<><>~', length=10, literal_unit=True) # returns '<><>~<><>~' instead of '<><><><><>'
     
-warning:: The make_div function will try to replicate whole repeating units to the specified length.  The output will always be less than or equal to the specified length.  Test the output to ensure the divider looks as you would like it.
+.. warning:: The make_div function will try to replicate whole repeating units to the specified length.  The output will always be less than or equal to the specified length.  Test the output to ensure the divider looks as you would like it.
 
 .. _here: https://repl.it/@jumbocakeyumyum/area4tests
 .. _`View on GitHub`: https://github.com/RDIL/area4
