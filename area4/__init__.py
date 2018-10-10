@@ -97,7 +97,6 @@ def div21():
 def customdiv():
     return custom_div
 
-
 def make_div(unit: str, length: int = 24, start: str = '', end: str = '', literal_unit=False) -> str:
     """
     Generates and returns a custom divider
@@ -121,9 +120,8 @@ def make_div(unit: str, length: int = 24, start: str = '', end: str = '', litera
 
      Example: unit of 10 characters and a specified length of 25 will contain 2 units for
       a total length of 20 characters.
-
     """
-
+    
     # reduce the size if possible to extend closer to full length
     if not literal_unit:
         unit = _reduce_to_unit(unit)
