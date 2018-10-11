@@ -1,4 +1,3 @@
-import time
 import random
 
 def roll_dice():
