@@ -41,7 +41,6 @@ divider31 = str("1010101010101010101010")
 divider32 = str("<><><><><><><><><><><>")
 divider33 = str("^,^,^,^,^,^,^,^,^,^,^,^")
 divider34 = str("&*&*&*&*&*&*&*&*&*&*&*&")
-
 custom_div = str("")
 
 # Functions:
