@@ -142,6 +142,19 @@ Just using plain print commands:
     print(area4.divider19)
     print(area4.divider20)
     print(area4.divider21)
+    print(area4.divider23)
+    print(area4.divider24)
+    print(area4.divider25)
+    print(area4.divider26)
+    print(area4.divider27)
+    print(area4.divider28)
+    print(area4.divider29)
+    print(area4.divider30)
+    print(area4.divider31)
+    print(area4.divider32)
+    print(area4.divider33)
+    print(area4.divider34)
+
 
 Using functions:  
 
@@ -168,6 +181,19 @@ Using functions:
     print(area4.div19())
     print(area4.div20())
     print(area4.div21())
+    print(area4.div22())
+    print(area4.div23())
+    print(area4.div24())
+    print(area4.div25())
+    print(area4.div26())
+    print(area4.div27())
+    print(area4.div28())
+    print(area4.div29())
+    print(area4.div30())
+    print(area4.div31())
+    print(area4.div32())
+    print(area4.div33())
+    print(area4.div34())
 
 .. warning:: In version 1.1.0, the functions changed in the way they operated.  Before 1.1.0, the functions printed the variables, but after the release, they now just return the variable.  
 
