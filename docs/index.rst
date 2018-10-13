@@ -72,10 +72,10 @@ Divider looks
 19. And (&) signs
 20. Up arrow dividers (^)
 21. Shrug emojis
-22-31. Numbers 1-10
-32. <>s
-33. Smiley faces I think
-34. &*s
+22-31. Numbers 1-10  
+32. <>s  
+33. Smiley faces I think  
+34. &*s  
 
 And more coming soon!  
 
