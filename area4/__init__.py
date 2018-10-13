@@ -158,7 +158,10 @@ def div33():
 
 def div34():
     return divider34
-  
+
+def div35():
+    return divider35
+
 def customdiv():
     return custom_div
 
