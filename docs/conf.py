@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Area4'
-copyright = '(c) 2018, RDIL.'
+copyright = '2018, RDIL!'
 author = 'RDIL'
 
 # The short X.Y version
