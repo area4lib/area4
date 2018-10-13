@@ -139,6 +139,24 @@ def div27():
 
 def div28():
     return divider28
+
+def div29():
+    return divider29
+
+def div30():
+    return divider30
+
+def div31():
+    return divider31
+
+def div32():
+    return divider32
+
+def div33():
+    return divider33
+
+def div34():
+    return divider34
   
 def customdiv():
     return custom_div
