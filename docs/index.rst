@@ -72,6 +72,10 @@ Divider looks
 19. And (&) signs
 20. Up arrow dividers (^)
 21. Shrug emojis
+22-31. Numbers 1-10
+32. <>s
+33. Smiley faces I think
+34. &*s
 
 And more coming soon!  
 
@@ -142,6 +146,7 @@ Just using plain print commands:
     print(area4.divider19)
     print(area4.divider20)
     print(area4.divider21)
+    print(area4.divider22)
     print(area4.divider23)
     print(area4.divider24)
     print(area4.divider25)
