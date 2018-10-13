@@ -29,6 +29,7 @@ This project code is intended to be...
 Documented. Keep it well documented, so one can learn from it.  
 * Reusable. Keep it cohese and modular, with as little responsibility per programming unit (function, method, class, module, project) as possible, so one can reuse it.  
 * Testable. Keep it easy to debug and test, so one can be confident that it works properly.  Please keep the [Travis CI build](https://travis-ci.com/RDIL/area4) at passing if possible.  Travis doesn't directly test the code for errors, rather checks to see if it is safe and ready to deploy to PyPI if needed!  
+* *Python 3 compatible.*  Area4 aims to mainly support Python 3 versions, but it is an added bonus if the code is Python 2.7 compatible.  
 
 If your pull request is merged your name will be added to the author list (.github/CODEAUTHORS).  
 
