@@ -3,6 +3,7 @@
 Version 1.1.4:
 - Code cleanup
 - Random number dividers
+- Added codacy badge to readme
 
 Version 1.1.3:
 - Added a lot of dividers (https://github.com/RDIL/area4/pull/27/files) 
