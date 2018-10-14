@@ -1,5 +1,8 @@
 # ~ Area4 Package by RDIL ~ 
+
+# Imports: 
 import random
+
 # Package info variables:
 name = "area4"
 author = "https://github.com/RDIL"
@@ -41,7 +44,7 @@ divider31 = str("1010101010101010101010")
 divider32 = str("<><><><><><><><><><><>")
 divider33 = str("^,^,^,^,^,^,^,^,^,^,^,^")
 divider34 = str("&*&*&*&*&*&*&*&*&*&*&*&")
-divider35 = str(random.getrandbits(128))
+divider35 = str(random.randint(0, 99999999999999999999999))
 custom_div = str("")
 
 # Functions:
