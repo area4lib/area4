@@ -112,18 +112,6 @@ def div21():
     return divider21
 
 def div22():
-    return divider21
-
-def div23():
-    return divider21
-
-def div24():
-    return divider21
-
-def div21():
-    return divider21
-
-def div22():
     return divider22
 
 def div23():
