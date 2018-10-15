@@ -265,6 +265,7 @@ You can also generate a custom divider with the make_div function
 Divider Format
 ==============
 The format for making new dividers is:
+
 .. code-block:: python
     # Variable:
     dividerNumber = str("dividertexthere")
