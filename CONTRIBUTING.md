@@ -34,6 +34,8 @@ Documented. Keep it well documented, so one can learn from it.
 # Divider style  
 The divider style can be found in the documentation.  
 
+-------------------  
+
 If your pull request is merged your name will be added to the author list (.github/CODEAUTHORS).  
 
 If you have any questions please contact [RDIL](https://github.com/RDIL), but before you do please please review our [documentation](https://area4.readthedocs.io/en/latest/). 
