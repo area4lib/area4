@@ -1,0 +1,8 @@
+# Config for Probot apps
+# Todo bot:
+todo:
+  keyword: "@todo"
+  autoAssign: true
+  blobLines: 7
+  caseSensitive: false
+  
