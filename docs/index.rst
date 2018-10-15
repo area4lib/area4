@@ -271,7 +271,9 @@ The format for making new dividers is:
 
     # Function:
     def divNumber():
-        return dividerNumber
+    {indent}return dividerNumber
+
+(delete and than press tab where it says {indent}!)
 
 .. _here: https://repl.it/@jumbocakeyumyum/area4tests
 .. _`View on GitHub`: https://github.com/RDIL/area4
