@@ -262,6 +262,17 @@ You can also generate a custom divider with the make_div function
     
 .. warning:: The make_div function will try to replicate whole repeating units to the specified length.  The output will always be less than or equal to the specified length.  Test the output to ensure the divider looks as you would like it.
 
+Divider Format
+==============
+The format for making new dividers is:
+.. code-block:: python
+    # Variable:
+    dividerNumber = str("dividertexthere")
+
+    # Function:
+    def divNumber():
+        return dividerNumber
+
 .. _here: https://repl.it/@jumbocakeyumyum/area4tests
 .. _`View on GitHub`: https://github.com/RDIL/area4
 .. [#RDIL] <contactspaceboom@gmail.com>
