@@ -3,7 +3,7 @@
 Version 1.1.4:
 - Code cleanup
 - Random number dividers
-- Added codacy badge to readme
+- Updated contributing guidelines
 - Added Cirrus CI along with Travis
 
 Version 1.1.3:
