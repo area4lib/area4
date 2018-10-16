@@ -1,0 +1,20 @@
+# Config for Probot apps
+
+# Todo bot:
+todo:
+  keyword: "@todo"
+  autoAssign: true
+  blobLines: 7
+  caseSensitive: false
+
+# new-issue-welcome bot:
+newIssueWelcomeComment: >
+  Thanks for opening your first issue here! Someone will look over this issue shortly, hang tight for now!
+
+# new-pr-welcome bot:
+newPRWelcomeComment: >
+  Thanks for opening this pull request! Please check out our contributing guidelines.
+
+# first-pr-merge bot:
+firstPRMergeComment: >
+  Congrats on getting your first pull request merged! You are now a contributor 😎! 
