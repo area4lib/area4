@@ -45,6 +45,7 @@ divider32 = str("<><><><><><><><><><><>")
 divider33 = str("^,^,^,^,^,^,^,^,^,^,^,^")
 divider34 = str("&*&*&*&*&*&*&*&*&*&*&*&")
 divider35 = str(random.randint(0, 99999999999999999999999))
+divider36 = str("```````````````````````")
 custom_div = str("")
 
 # Functions:
@@ -152,6 +153,9 @@ def div34():
 
 def div35():
     return divider35
+
+def div36():
+    return divider36
 
 def customdiv():
     return custom_div
