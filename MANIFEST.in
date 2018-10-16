@@ -1,0 +1,4 @@
+include *.md
+include changelog.txt
+include LICENSE
+
