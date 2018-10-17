@@ -102,267 +102,795 @@ custom_div = str("")
 
 # Functions:
 def div1():
-    return divider1
+	"""
+	Returns the devider ------------------------
+
+	:return: divider1
+	"""
+
+	return divider1
 
 def div2():
-    return divider2
+	"""
+	Returns the devider ________________________
+
+	:return: divider2
+	"""
+
+	return divider2
 
 def div3():
-    return divider3
+	"""
+	Returns the devider ........................
+
+	:return: divider3
+	"""
+
+	return divider3
 
 def div4():
-    return divider4
+	"""
+	Returns the devider ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+
+	:return: divider4
+	"""
+
+	return divider4
 
 def div5():
-    return divider5
+	"""
+	Returns the devider ⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️
+
+	:return: divider5
+	"""
+
+	return divider5
 
 def div6():
-    return divider6
+	"""
+	Returns the devider ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
+
+	:return: divider6
+	"""
+
+	return divider6
 
 def div7():
-    return divider7
+	"""
+	Returns the devider ========================
+
+	:return: divider7
+	"""
+
+	return divider7
 
 def div8():
-    return divider8
+	"""
+	Returns the devider ########################
+
+	:return: divider8
+	"""
+
+	return divider8
 
 def div9():
-    return divider9
+	"""
+	Returns the devider ************************
+
+	:return: divider9
+	"""
+
+	return divider9
 
 def div10():
-    return divider10
+	"""
+	Returns the devider ,,,,,,,,,,,,,,,,,,,,,,,,
+
+	:return: divider10
+	"""
+
+	return divider10
 
 def div11():
-    return divider11
+	"""
+	Returns the devider ////////////////////////
+
+	:return: divider11
+	"""
+
+	return divider11
 
 def div12():
-    return divider12
+	"""
+	Returns the devider ||||||||||||||||||||||||
+
+	:return: divider12
+	"""
+
+	return divider12
 
 def div13():
-    return divider13
+	"""
+	Returns the devider ~~~~~~~~~~~~~~~~~~~~~~~~
+
+	:return: divider13
+	"""
+
+	return divider13
 
 def div14():
-    return divider14
+	"""
+	Returns the devider \\\\\\\\\\\\\\\\\\\\\\\\
+
+	:return: divider14
+	"""
+
+	return divider14
 
 def div15():
-    return divider15
+	"""
+	Returns the devider ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕ ☕
+
+	:return: divider15
+	"""
+
+	return divider15
 
 def div16():
-    return divider16
+	"""
+	Returns the devider ++++++++++++++++++++++++
+
+	:return: divider16
+	"""
+
+	return divider16
 
 def div17():
-    return divider17
+	"""
+	Returns the devider r(`,,,`)r r(`,,,`)r r(`,,,`)r
+
+	:return: divider17
+	"""
+
+	return divider17
 
 def div18():
-    return divider18
+	"""
+	Returns the devider ( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)
+
+	:return: divider18
+	"""
+
+	return divider18
 
 def div19():
-    return divider19
+	"""
+	Returns the devider &&&&&&&&&&&&&&&&&&&&&&&&&
+
+	:return: divider19
+	"""
+
+	return divider19
 
 def div20():
-    return divider20
+	"""
+	Returns the devider ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+	:return: divider20
+	"""
+
+	return divider20
 
 def div21():
-    return divider21
+	"""
+	Returns the devider ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯
+
+	:return: divider21
+	"""
+
+	return divider21
 
 def div22():
-    return divider22
+	"""
+	Returns the devider 11111111111111111111111
+
+	:return: divider22
+	"""
+
+	return divider22
 
 def div23():
-    return divider23
+	"""
+	Returns the devider 22222222222222222222222
+
+	:return: divider23
+	"""
+
+	return divider23
 
 def div24():
-    return divider24
+	"""
+	Returns the devider 33333333333333333333333
+
+	:return: divider24
+	"""
+
+	return divider24
 
 def div25():
-    return divider25
+	"""
+	Returns the devider 44444444444444444444444
+
+	:return: divider25
+	"""
+
+	return divider25
 
 def div26():
-    return divider26
+	"""
+	Returns the devider 55555555555555555555555
+
+	:return: divider26
+	"""
+
+	return divider26
 
 def div27():
-    return divider27
+	"""
+	Returns the devider 66666666666666666666666
+
+	:return: divider27
+	"""
+
+	return divider27
 
 def div28():
-    return divider28
+	"""
+	Returns the devider 77777777777777777777777
+
+	:return: divider28
+	"""
+
+	return divider28
 
 def div29():
-    return divider29
+	"""
+	Returns the devider 88888888888888888888888
+
+	:return: divider29
+	"""
+
+	return divider29
 
 def div30():
-    return divider30
+	"""
+	Returns the devider 99999999999999999999999
+
+	:return: divider30
+	"""
+
+	return divider30
 
 def div31():
-    return divider31
+	"""
+	Returns the devider 1010101010101010101010
+
+	:return: divider31
+	"""
+
+	return divider31
 
 def div32():
-    return divider32
+	"""
+	Returns the devider <><><><><><><><><><><>
+
+	:return: divider32
+	"""
+
+	return divider32
 
 def div33():
-    return divider33
+	"""
+	Returns the devider ^,^,^,^,^,^,^,^,^,^,^,^
+
+	:return: divider33
+	"""
+
+	return divider33
 
 def div34():
-    return divider34
+	"""
+	Returns the devider &*&*&*&*&*&*&*&*&*&*&*&
+
+	:return: divider34
+	"""
+
+	return divider34
 
 def div35():
-    return divider35
+	"""
+	Returns the devider random.randint(0, 99999999999999999999999)
+
+	:return: divider35
+	"""
+
+	return divider35
 
 def div36():
-    return divider36
+	"""
+	Returns the devider ```````````````````````
+
+	:return: divider36
+	"""
+
+	return divider36
 
 def div37():
+	"""
+	Returns the devider aaaaaaaaaaaa
+
+	:return: divider37
+	"""
+
 	return divider37
 
 def div38():
+	"""
+	Returns the devider AAAAAAAAAAAA
+
+	:return: divider38
+	"""
+
 	return divider38
 
 def div39():
+	"""
+	Returns the devider bbbbbbbbbbbb
+
+	:return: divider39
+	"""
+
 	return divider39
 
 def div40():
+	"""
+	Returns the devider BBBBBBBBBBBB
+
+	:return: divider40
+	"""
+
 	return divider40
 
 def div41():
+	"""
+	Returns the devider cccccccccccc
+
+	:return: divider41
+	"""
+
 	return divider41
 
 def div42():
+	"""
+	Returns the devider CCCCCCCCCCCC
+
+	:return: divider42
+	"""
+
 	return divider42
 
 def div43():
+	"""
+	Returns the devider dddddddddddd
+
+	:return: divider43
+	"""
+
 	return divider43
 
 def div44():
+	"""
+	Returns the devider DDDDDDDDDDDD
+
+	:return: divider44
+	"""
+
 	return divider44
 
 def div45():
+	"""
+	Returns the devider eeeeeeeeeeee
+
+	:return: divider45
+	"""
+
 	return divider45
 
 def div46():
+	"""
+	Returns the devider EEEEEEEEEEEE
+
+	:return: divider46
+	"""
+
 	return divider46
 
 def div47():
+	"""
+	Returns the devider ffffffffffff
+
+	:return: divider47
+	"""
+
 	return divider47
 
 def div48():
+	"""
+	Returns the devider FFFFFFFFFFFF
+
+	:return: divider48
+	"""
+
 	return divider48
 
 def div49():
+	"""
+	Returns the devider gggggggggggg
+
+	:return: divider49
+	"""
+
 	return divider49
 
 def div50():
+	"""
+	Returns the devider GGGGGGGGGGGG
+
+	:return: divider50
+	"""
+
 	return divider50
 
 def div51():
+	"""
+	Returns the devider hhhhhhhhhhhh
+
+	:return: divider51
+	"""
+
 	return divider51
 
 def div52():
+	"""
+	Returns the devider HHHHHHHHHHHH
+
+	:return: divider52
+	"""
+
 	return divider52
 
 def div53():
+	"""
+	Returns the devider iiiiiiiiiiii
+
+	:return: divider53
+	"""
+
 	return divider53
 
 def div54():
+	"""
+	Returns the devider IIIIIIIIIIII
+
+	:return: divider54
+	"""
+
 	return divider54
 
 def div55():
+	"""
+	Returns the devider jjjjjjjjjjjj
+
+	:return: divider55
+	"""
+
 	return divider55
 
 def div56():
+	"""
+	Returns the devider JJJJJJJJJJJJ
+
+	:return: divider56
+	"""
+
 	return divider56
 
 def div57():
+	"""
+	Returns the devider kkkkkkkkkkkk
+
+	:return: divider57
+	"""
+
 	return divider57
 
 def div58():
+	"""
+	Returns the devider KKKKKKKKKKKK
+
+	:return: divider58
+	"""
+
 	return divider58
 
 def div59():
+	"""
+	Returns the devider llllllllllll
+
+	:return: divider59
+	"""
+
 	return divider59
 
 def div60():
+	"""
+	Returns the devider LLLLLLLLLLLL
+
+	:return: divider60
+	"""
+
 	return divider60
 
 def div61():
+	"""
+	Returns the devider mmmmmmmmmmmm
+
+	:return: divider61
+	"""
+
 	return divider61
 
 def div62():
+	"""
+	Returns the devider MMMMMMMMMMMM
+
+	:return: divider62
+	"""
+
 	return divider62
 
 def div63():
+	"""
+	Returns the devider nnnnnnnnnnnn
+
+	:return: divider63
+	"""
+
 	return divider63
 
 def div64():
+	"""
+	Returns the devider NNNNNNNNNNNN
+
+	:return: divider64
+	"""
+
 	return divider64
 
 def div65():
+	"""
+	Returns the devider oooooooooooo
+
+	:return: divider65
+	"""
+
 	return divider65
 
 def div66():
+	"""
+	Returns the devider OOOOOOOOOOOO
+
+	:return: divider66
+	"""
+
 	return divider66
 
 def div67():
+	"""
+	Returns the devider pppppppppppp
+
+	:return: divider67
+	"""
+
 	return divider67
 
 def div68():
+	"""
+	Returns the devider PPPPPPPPPPPP
+
+	:return: divider68
+	"""
+
 	return divider68
 
 def div69():
+	"""
+	Returns the devider qqqqqqqqqqqq
+
+	:return: divider69
+	"""
+
 	return divider69
 
 def div70():
+	"""
+	Returns the devider QQQQQQQQQQQQ
+
+	:return: divider70
+	"""
+
 	return divider70
 
 def div71():
+	"""
+	Returns the devider rrrrrrrrrrrr
+
+	:return: divider71
+	"""
+
 	return divider71
 
 def div72():
+	"""
+	Returns the devider RRRRRRRRRRRR
+
+	:return: divider72
+	"""
+
 	return divider72
 
 def div73():
+	"""
+	Returns the devider ssssssssssss
+
+	:return: divider73
+	"""
+
 	return divider73
 
 def div74():
+	"""
+	Returns the devider SSSSSSSSSSSS
+
+	:return: divider74
+	"""
+
 	return divider74
 
 def div75():
+	"""
+	Returns the devider tttttttttttt
+
+	:return: divider75
+	"""
+
 	return divider75
 
 def div76():
+	"""
+	Returns the devider TTTTTTTTTTTT
+
+	:return: divider76
+	"""
+
 	return divider76
 
 def div77():
+	"""
+	Returns the devider uuuuuuuuuuuu
+
+	:return: divider77
+	"""
+
 	return divider77
 
 def div78():
+	"""
+	Returns the devider UUUUUUUUUUUU
+
+	:return: divider78
+	"""
+
 	return divider78
 
 def div79():
+	"""
+	Returns the devider vvvvvvvvvvvv
+
+	:return: divider79
+	"""
+
 	return divider79
 
 def div80():
+	"""
+	Returns the devider VVVVVVVVVVVV
+
+	:return: divider80
+	"""
+
 	return divider80
 
 def div81():
+	"""
+	Returns the devider wwwwwwwwwwww
+
+	:return: divider81
+	"""
+
 	return divider81
 
 def div82():
+	"""
+	Returns the devider WWWWWWWWWWWW
+
+	:return: divider82
+	"""
+
 	return divider82
 
 def div83():
+	"""
+	Returns the devider xxxxxxxxxxxx
+
+	:return: divider83
+	"""
+
 	return divider83
 
 def div84():
+	"""
+	Returns the devider XXXXXXXXXXXX
+
+	:return: divider84
+	"""
+
 	return divider84
 
 def div85():
+	"""
+	Returns the devider yyyyyyyyyyyy
+
+	:return: divider85
+	"""
+
 	return divider85
 
 def div86():
+	"""
+	Returns the devider YYYYYYYYYYYY
+
+	:return: divider86
+	"""
+
 	return divider86
 
 def div87():
+	"""
+	Returns the devider zzzzzzzzzzzz
+
+	:return: divider87
+	"""
+
 	return divider87
 
 def div88():
+	"""
+	Returns the devider ZZZZZZZZZZZZ
+
+	:return: divider88
+	"""
+
 	return divider88
 
 def customdiv():
