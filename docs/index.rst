@@ -86,6 +86,7 @@ Divider looks
 33. Smiley faces I think  
 34. &*s  
 35. Random numbers
+36. `s
 
 And more coming soon!  
 
@@ -170,6 +171,7 @@ Just using plain print commands:
     print(area4.divider33)
     print(area4.divider34)
     print(area4.divider35)
+    print(area4.divider36)
 
 
 Using functions:  
@@ -211,6 +213,7 @@ Using functions:
     print(area4.div33())
     print(area4.div34())
     print(area4.div35())
+    print(area4.div36())
 
 .. warning:: In version 1.1.0, the functions changed in the way they operated.  Before 1.1.0, the functions printed the variables, but after the release, they now just return the variable.  
 
