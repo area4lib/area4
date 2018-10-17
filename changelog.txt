@@ -3,7 +3,7 @@
 Verion 1.1.5:
 - Added MANIFEST.in
 - Added config for new apps
-- New divider
+- New divider (`s)
 
 Version 1.1.4:
 - Code cleanup
