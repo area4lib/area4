@@ -1,6 +1,6 @@
-# ~ Area4 Package by RDIL ~ 
+# ~ Area4 Package by RDIL ~
 
-# Imports: 
+# Imports:
 import random
 
 # Package info variables:
@@ -46,6 +46,58 @@ divider33 = str("^,^,^,^,^,^,^,^,^,^,^,^")
 divider34 = str("&*&*&*&*&*&*&*&*&*&*&*&")
 divider35 = str(random.randint(0, 99999999999999999999999))
 divider36 = str("```````````````````````")
+divider37 = str("aaaaaaaaaaaa")
+divider38 = str("AAAAAAAAAAAA")
+divider39 = str("bbbbbbbbbbbb")
+divider40 = str("BBBBBBBBBBBB")
+divider41 = str("cccccccccccc")
+divider42 = str("CCCCCCCCCCCC")
+divider43 = str("dddddddddddd")
+divider44 = str("DDDDDDDDDDDD")
+divider45 = str("eeeeeeeeeeee")
+divider46 = str("EEEEEEEEEEEE")
+divider47 = str("ffffffffffff")
+divider48 = str("FFFFFFFFFFFF")
+divider49 = str("gggggggggggg")
+divider50 = str("GGGGGGGGGGGG")
+divider51 = str("hhhhhhhhhhhh")
+divider52 = str("HHHHHHHHHHHH")
+divider53 = str("iiiiiiiiiiii")
+divider54 = str("IIIIIIIIIIII")
+divider55 = str("jjjjjjjjjjjj")
+divider56 = str("JJJJJJJJJJJJ")
+divider57 = str("kkkkkkkkkkkk")
+divider58 = str("KKKKKKKKKKKK")
+divider59 = str("llllllllllll")
+divider60 = str("LLLLLLLLLLLL")
+divider61 = str("mmmmmmmmmmmm")
+divider62 = str("MMMMMMMMMMMM")
+divider63 = str("nnnnnnnnnnnn")
+divider64 = str("NNNNNNNNNNNN")
+divider65 = str("oooooooooooo")
+divider66 = str("OOOOOOOOOOOO")
+divider67 = str("pppppppppppp")
+divider68 = str("PPPPPPPPPPPP")
+divider69 = str("qqqqqqqqqqqq")
+divider70 = str("QQQQQQQQQQQQ")
+divider71 = str("rrrrrrrrrrrr")
+divider72 = str("RRRRRRRRRRRR")
+divider73 = str("ssssssssssss")
+divider74 = str("SSSSSSSSSSSS")
+divider75 = str("tttttttttttt")
+divider76 = str("TTTTTTTTTTTT")
+divider77 = str("uuuuuuuuuuuu")
+divider78 = str("UUUUUUUUUUUU")
+divider79 = str("vvvvvvvvvvvv")
+divider80 = str("VVVVVVVVVVVV")
+divider81 = str("wwwwwwwwwwww")
+divider82 = str("WWWWWWWWWWWW")
+divider83 = str("xxxxxxxxxxxx")
+divider84 = str("XXXXXXXXXXXX")
+divider85 = str("yyyyyyyyyyyy")
+divider86 = str("YYYYYYYYYYYY")
+divider87 = str("zzzzzzzzzzzz")
+divider88 = str("ZZZZZZZZZZZZ")
 custom_div = str("")
 
 # Functions:
@@ -157,6 +209,162 @@ def div35():
 def div36():
     return divider36
 
+def div37():
+	return divider37
+
+def div38():
+	return divider38
+
+def div39():
+	return divider39
+
+def div40():
+	return divider40
+
+def div41():
+	return divider41
+
+def div42():
+	return divider42
+
+def div43():
+	return divider43
+
+def div44():
+	return divider44
+
+def div45():
+	return divider45
+
+def div46():
+	return divider46
+
+def div47():
+	return divider47
+
+def div48():
+	return divider48
+
+def div49():
+	return divider49
+
+def div50():
+	return divider50
+
+def div51():
+	return divider51
+
+def div52():
+	return divider52
+
+def div53():
+	return divider53
+
+def div54():
+	return divider54
+
+def div55():
+	return divider55
+
+def div56():
+	return divider56
+
+def div57():
+	return divider57
+
+def div58():
+	return divider58
+
+def div59():
+	return divider59
+
+def div60():
+	return divider60
+
+def div61():
+	return divider61
+
+def div62():
+	return divider62
+
+def div63():
+	return divider63
+
+def div64():
+	return divider64
+
+def div65():
+	return divider65
+
+def div66():
+	return divider66
+
+def div67():
+	return divider67
+
+def div68():
+	return divider68
+
+def div69():
+	return divider69
+
+def div70():
+	return divider70
+
+def div71():
+	return divider71
+
+def div72():
+	return divider72
+
+def div73():
+	return divider73
+
+def div74():
+	return divider74
+
+def div75():
+	return divider75
+
+def div76():
+	return divider76
+
+def div77():
+	return divider77
+
+def div78():
+	return divider78
+
+def div79():
+	return divider79
+
+def div80():
+	return divider80
+
+def div81():
+	return divider81
+
+def div82():
+	return divider82
+
+def div83():
+	return divider83
+
+def div84():
+	return divider84
+
+def div85():
+	return divider85
+
+def div86():
+	return divider86
+
+def div87():
+	return divider87
+
+def div88():
+	return divider88
+
 def customdiv():
     return custom_div
 
@@ -184,7 +392,7 @@ def make_div(unit: str, length: int = 24, start: str = '', end: str = '', litera
      Example: unit of 10 characters and a specified length of 25 will contain 2 units for
       a total length of 20 characters.
     """
-    
+
     # reduce the size if possible to extend closer to full length
     if not literal_unit:
         unit = _reduce_to_unit(unit)
