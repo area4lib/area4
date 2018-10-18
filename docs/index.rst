@@ -109,6 +109,37 @@ Divider looks
 56. uppercase j
 57. lowercase k
 58. uppercase k
+59. lowercase l
+60. uppercase l
+61. lowercase m
+62. uppercase m
+63. lowercase n
+64. uppercase n
+65. lowercase o
+66. uppercase o
+67. lowercase p
+68. uppercase p
+69. lowercase q
+70. uppercase q
+71. lowercase r
+72. uppercase r
+73. lowercase s
+74. uppercase s
+75. lowercase t
+76. uppercase t
+77. lowercase u
+78. uppercase u
+79. lowercase v
+80. uppercase v
+81. lowercase w
+82. uppercase w
+83. lowercase x
+84. uppercase x
+85. lowercase y
+86. uppercase y
+87. lowercase z
+88. uppercase z
+
 
 And more coming soon!  
 
@@ -216,6 +247,36 @@ Just using plain print commands:
     print(area4.divider56)
     print(area4.divider57)
     print(area4.divider58)
+    print(area4.divider59)
+    print(area4.divider60)
+    print(area4.divider61)
+    print(area4.divider62)
+    print(area4.divider63)
+    print(area4.divider64)
+    print(area4.divider65)
+    print(area4.divider66)
+    print(area4.divider67)
+    print(area4.divider68)
+    print(area4.divider69)
+    print(area4.divider70)
+    print(area4.divider71)
+    print(area4.divider72)
+    print(area4.divider73)
+    print(area4.divider74)
+    print(area4.divider75)
+    print(area4.divider76)
+    print(area4.divider77)
+    print(area4.divider78)
+    print(area4.divider79)
+    print(area4.divider80)
+    print(area4.divider81)
+    print(area4.divider82)
+    print(area4.divider83)
+    print(area4.divider84)
+    print(area4.divider85)
+    print(area4.divider86)
+    print(area4.divider87)
+    print(area4.divider88)
     
 
 Using functions:  
