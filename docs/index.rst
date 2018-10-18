@@ -87,6 +87,28 @@ Divider looks
 34. &*s  
 35. Random numbers
 36. `s
+37. lowercase a
+38. uppercase a
+39. lowercase b
+40. uppercase b
+41. lowercase c
+42. uppercase c
+43. lowercase d
+44. uppercase d
+45. lowercase e
+46. uppercase e
+47. lowercase f
+48. uppercase f
+49. lowercase g
+50. uppercase g
+51. lowercase h
+52. uppercase h
+53. lowercase i
+54. uppercase i
+55. lowercase j
+56. uppercase j
+57. lowercase k
+58. uppercase k
 
 And more coming soon!  
 
@@ -172,7 +194,29 @@ Just using plain print commands:
     print(area4.divider34)
     print(area4.divider35)
     print(area4.divider36)
-
+    print(area4.divider37)
+    print(area4.divider38)
+    print(area4.divider39)
+    print(area4.divider40)
+    print(area4.divider41)
+    print(area4.divider42)
+    print(area4.divider43)
+    print(area4.divider44)
+    print(area4.divider45)
+    print(area4.divider46)
+    print(area4.divider47)
+    print(area4.divider48)
+    print(area4.divider49)
+    print(area4.divider50)
+    print(area4.divider51)
+    print(area4.divider52)
+    print(area4.divider53)
+    print(area4.divider54)
+    print(area4.divider55)
+    print(area4.divider56)
+    print(area4.divider57)
+    print(area4.divider58)
+    
 
 Using functions:  
 
