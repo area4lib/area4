@@ -1,6 +1,9 @@
 - Changelog -  
 
-Verion 1.1.5:
+Version 1.1.6:
+- Added alphabet dividers
+
+Version 1.1.5:
 - Added MANIFEST.in
 - Added config for new apps
 - New divider (`s)
