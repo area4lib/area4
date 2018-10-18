@@ -23,11 +23,11 @@ Welcome to Area4's documentation!
 
 .. image:: https://badge.fury.io/py/area4.svg
     :target: https://pypi.org/project/area4
-    :alt: PyPi Version
+    :alt: PyPI Package Version
 
 .. image:: https://www.codefactor.io/repository/github/rdil/area4/badge
     :target: https://www.codefactor.io/repository/github/rdil/area4
-    :alt: Code Factor status
+    :alt: CodeFactor status
 
 .. image:: https://www.repostatus.org/badges/latest/active.svg
     :target: https://repostatus.org/
@@ -319,6 +319,58 @@ Using functions:
     print(area4.div34())
     print(area4.div35())
     print(area4.div36())
+    print(area4.div37())
+    print(area4.div38())
+    print(area4.div39())
+    print(area4.div40())
+    print(area4.div41())
+    print(area4.div42())
+    print(area4.div43())
+    print(area4.div44())
+    print(area4.div45())
+    print(area4.div46())
+    print(area4.div47())
+    print(area4.div48())
+    print(area4.div49())
+    print(area4.div50())
+    print(area4.div51())
+    print(area4.div52())
+    print(area4.div53())
+    print(area4.div54())
+    print(area4.div55())
+    print(area4.div56())
+    print(area4.div57())
+    print(area4.div58())
+    print(area4.div59())
+    print(area4.div60())
+    print(area4.div61())
+    print(area4.div62())
+    print(area4.div63())
+    print(area4.div64())
+    print(area4.div65())
+    print(area4.div66())
+    print(area4.div67())
+    print(area4.div68())
+    print(area4.div69())
+    print(area4.div70())
+    print(area4.div71())
+    print(area4.div72())
+    print(area4.div73())
+    print(area4.div74())
+    print(area4.div75())
+    print(area4.div76())
+    print(area4.div77())
+    print(area4.div78())
+    print(area4.div79())
+    print(area4.div80())
+    print(area4.div81())
+    print(area4.div82())
+    print(area4.div83())
+    print(area4.div84())
+    print(area4.div85())
+    print(area4.div86())
+    print(area4.div87())
+    print(area4.div88())
 
 .. warning:: In version 1.1.0, the functions changed in the way they operated.  Before 1.1.0, the functions printed the variables, but after the release, they now just return the variable.  
 
