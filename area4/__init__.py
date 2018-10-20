@@ -776,7 +776,7 @@ def div75():
 
 def div76():
 	"""
-	Returns the devider TTTTTTTTTTTT
+	Returns the divider TTTTTTTTTTTT
 
 	:return: divider76
 	"""
@@ -785,7 +785,7 @@ def div76():
 
 def div77():
 	"""
-	Returns the devider uuuuuuuuuuuu
+	Returns the divider uuuuuuuuuuuu
 
 	:return: divider77
 	"""
@@ -794,7 +794,7 @@ def div77():
 
 def div78():
 	"""
-	Returns the devider UUUUUUUUUUUU
+	Returns the divider UUUUUUUUUUUU
 
 	:return: divider78
 	"""
@@ -803,7 +803,7 @@ def div78():
 
 def div79():
 	"""
-	Returns the devider vvvvvvvvvvvv
+	Returns the divider vvvvvvvvvvvv
 
 	:return: divider79
 	"""
@@ -812,7 +812,7 @@ def div79():
 
 def div80():
 	"""
-	Returns the devider VVVVVVVVVVVV
+	Returns the divider VVVVVVVVVVVV
 
 	:return: divider80
 	"""
@@ -821,7 +821,7 @@ def div80():
 
 def div81():
 	"""
-	Returns the devider wwwwwwwwwwww
+	Returns the divider wwwwwwwwwwww
 
 	:return: divider81
 	"""
@@ -830,7 +830,7 @@ def div81():
 
 def div82():
 	"""
-	Returns the devider WWWWWWWWWWWW
+	Returns the divider WWWWWWWWWWWW
 
 	:return: divider82
 	"""
@@ -839,7 +839,7 @@ def div82():
 
 def div83():
 	"""
-	Returns the devider xxxxxxxxxxxx
+	Returns the divider xxxxxxxxxxxx
 
 	:return: divider83
 	"""
@@ -848,7 +848,7 @@ def div83():
 
 def div84():
 	"""
-	Returns the devider XXXXXXXXXXXX
+	Returns the divider XXXXXXXXXXXX
 
 	:return: divider84
 	"""
@@ -857,7 +857,7 @@ def div84():
 
 def div85():
 	"""
-	Returns the devider yyyyyyyyyyyy
+	Returns the divider yyyyyyyyyyyy
 
 	:return: divider85
 	"""
@@ -866,7 +866,7 @@ def div85():
 
 def div86():
 	"""
-	Returns the devider YYYYYYYYYYYY
+	Returns the divider YYYYYYYYYYYY
 
 	:return: divider86
 	"""
@@ -875,7 +875,7 @@ def div86():
 
 def div87():
 	"""
-	Returns the devider zzzzzzzzzzzz
+	Returns the divider zzzzzzzzzzzz
 
 	:return: divider87
 	"""
@@ -884,7 +884,7 @@ def div87():
 
 def div88():
 	"""
-	Returns the devider ZZZZZZZZZZZZ
+	Returns the divider ZZZZZZZZZZZZ
 
 	:return: divider88
 	"""
