@@ -7,7 +7,7 @@ python:
   - "3.6"
 install:
   - pip install -r requirements.txt
-  - "python3 -m pip install --upgrade setuptools wheel"
+  - "python3 -m pip install --upgrade setuptools wheel twine"
 script:
   - "python3 setup.py sdist bdist_wheel"
 after_success:
