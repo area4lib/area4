@@ -2,6 +2,13 @@
 
 # Imports:
 import random
+import json
+import os
+
+SYMBOL_JSON = os.path.join(__path__[0], "symbols.json")
+
+with open(SYMBOL_JSON, encoding='utf-8') as f:
+    symbols = json.loads(f.read())
 
 # Package info variables:
 name = "area4"
@@ -939,6 +946,25 @@ def _reduce_to_unit(divider: str) -> str:
         if unit * (length // unit_size) == divider[:unit_size * (length // unit_size)]:
             return unit
     return divider  # return original if smaller unit not found
+
+
+def divider(num: int, reps: int = None) -> str:
+    """
+    Returns a divider according to its number.
+    :param num: The number of the divider.
+    :param reps: Can be left empty for the default number. Repetitions of the individual elements.
+    :return: A divider string
+    :rtype: str
+    """
+    global symbols
+    if num > len(symbols):
+        raise ValueError(f"The symbol number must be between 0 and {len(symbols)}.")
+    else:
+        symbol_dict = symbols[num]
+        if not reps:
+            reps = symbol_dict["default_reps"]
+
+        return symbol_dict["symbol"] * reps
 
 
 def area4info():
