@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="area4",
-    version="1.1.6",
+    version="1.1.7",
     author="RDIL",
     author_email="contactspaceboom@gmail.com",
     description="Dividers in Python, the easy way! Many different divider looks.",
@@ -35,5 +35,6 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/RDIL/area4/issues",
         "Documentation": "https://area4.readthedocs.io/en/latest",
         "Source Code": "https://github.com/RDIL/area4",
-    }
+    },
+    include_package_data=True
 )
