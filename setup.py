@@ -35,5 +35,6 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/RDIL/area4/issues",
         "Documentation": "https://area4.readthedocs.io/en/latest",
         "Source Code": "https://github.com/RDIL/area4",
-    }
+    },
+    include_package_data=True
 )
