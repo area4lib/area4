@@ -139,6 +139,10 @@ Divider looks
 86. uppercase y
 87. lowercase z
 88. uppercase z
+89. Beach umbrella emojis
+90. Airplane emojis
+91. Orange leave emojis
+92. Key emojis
 
 
 And more coming soon!  
@@ -277,7 +281,10 @@ Just using plain print commands:
     print(area4.divider86)
     print(area4.divider87)
     print(area4.divider88)
-    
+    print(area4.divider89)
+    print(area4.divider90)
+    print(area4.divider91)
+    print(area4.divider92)
 
 Using functions:  
 
@@ -371,6 +378,11 @@ Using functions:
     print(area4.div86())
     print(area4.div87())
     print(area4.div88())
+    print(area4.div89())
+    print(area4.div90())
+    print(area4.div91())
+    print(area4.div92())
+    
 
 .. warning:: In version 1.1.0, the functions changed in the way they operated.  Before 1.1.0, the functions printed the variables, but after the release, they now just return the variable.  
 
