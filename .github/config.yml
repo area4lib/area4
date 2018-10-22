@@ -13,7 +13,7 @@ newIssueWelcomeComment: >
 
 # new-pr-welcome bot:
 newPRWelcomeComment: >
-  Thanks for opening this pull request! Please check out our contributing guidelines.
+  Thanks for opening this pull request! A project maintainer will review your contribution shortly. 
 
 # first-pr-merge bot:
 firstPRMergeComment: >
