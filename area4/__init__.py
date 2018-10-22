@@ -98,6 +98,10 @@ divider85 = str("yyyyyyyyyyyy")
 divider86 = str("YYYYYYYYYYYY")
 divider87 = str("zzzzzzzzzzzz")
 divider88 = str("ZZZZZZZZZZZZ")
+divider89 = str("🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️")
+divider90 = str("✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️")
+divider91 = str("🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂")
+divider92 = str("🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️")
 custom_div = str("")
 
 # Functions:
@@ -890,6 +894,42 @@ def div88():
 	"""
 
 	return divider88
+
+def div89():
+	"""
+	Returns the divider 🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️
+
+	:return: divider89
+	"""
+
+	return divider89
+
+def div90():
+	"""
+	Returns the divider ✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️
+
+	:return: divider90
+	"""
+
+	return divider90
+
+def div91():
+	"""
+	Returns the divider 🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂
+
+	:return: divider91
+	"""
+
+	return divider91
+
+def div92():
+	"""
+	Returns the divider 🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️
+
+	:return: divider92
+	"""
+
+	return divider92
 
 def customdiv():
     return custom_div
