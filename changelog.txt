@@ -1,5 +1,8 @@
 - Changelog -  
 
+Version 1.1.8:
+- Added lots more emojis
+
 Version 1.1.7:
 - Added some emoji dividers
 - Fixed bug with manifest.in and setup.py (PR #42)
