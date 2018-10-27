@@ -7,5 +7,5 @@ test_task:
     fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
     populate_script: python3 -m pip install --upgrade setuptools wheel twine
   test_script: python3 setup.py sdist bdist_wheel
-install_task:
-  install_script: pip install --upgrade area4
+try_pip_install_task:
+  try_pip_install_script: pip install --upgrade area4
