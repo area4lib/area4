@@ -2,6 +2,8 @@
 
 Version 1.1.8:
 - Added lots more emojis
+- Added issue templates
+- Added check to see if the libraries latest version installs without error
 
 Version 1.1.7:
 - Added some emoji dividers
