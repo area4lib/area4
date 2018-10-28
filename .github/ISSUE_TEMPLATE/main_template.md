@@ -1,7 +1,7 @@
-----
-name: Main Template
-about: General template for bug reports, etc.
-----
+---  
+name: Main Template  
+about: General template for bug reports, etc.  
+---  
 
 # Description
 
