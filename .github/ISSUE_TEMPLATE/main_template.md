@@ -1,3 +1,8 @@
+----
+name: Main Template
+about: General template for bug reports, etc.
+----
+
 # Description
 
 [Brief description of the problem]
