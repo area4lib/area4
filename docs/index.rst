@@ -143,6 +143,14 @@ Divider looks
 90. Airplane emojis
 91. Orange leave emojis
 92. Key emojis
+93. 😀
+94. 😂
+95. 😛
+96. 😝
+97. 😨
+98. 😩
+99. 😬
+100. 😰
 
 
 And more coming soon!  
