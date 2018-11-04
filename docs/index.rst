@@ -151,6 +151,10 @@ Divider looks
 98. 😩
 99. 😬
 100. 😰
+101. Surprised face
+102. Happy babies
+103. Happy ladies
+104. Happy men
 
 
 And more coming soon!  
