@@ -8,8 +8,4 @@ test_task:
     populate_script: python3 -m pip install --upgrade setuptools wheel twine
   test_script: python3 setup.py sdist bdist_wheel
 try_latest_version_task:
-  pip_cache:
-    folder: ~/.cache/pip
-    fingerprint_script: echo $PYTHON_VERSION && echo $CI && cat requirements.txt
-    populate_script: python3 -m pip install --upgrade area4
-  try_latest_version_script: python3 -m pip uninstall area4
+  try_latest_version_script: python3 -m pip install --upgrade area4
