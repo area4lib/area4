@@ -155,6 +155,19 @@ Divider looks
 102. Happy babies
 103. Happy ladies
 104. Happy men
+105. Happy ladies
+106. Happy men
+107. Happy grannies
+108. Happy grandpas
+109. Thumbs up
+110. Thumbs down
+111. Punch
+112. Fist
+113. Punch left
+114. Punch right
+115. Crossed fingers
+116. Crossed fingers v2
+
 
 
 And more coming soon!  
