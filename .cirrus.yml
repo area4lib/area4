@@ -12,4 +12,4 @@ try_latest_version_task:
     folder: ~/.cache/pip
     fingerprint_script: echo $PYTHON_VERSION && echo $CI && cat requirements.txt
     populate_script: python3 -m pip install --upgrade area4
-  try_latest_version_script: python3 import area4
+  try_latest_version_script: python3 -m pip uninstall area4
