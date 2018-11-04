@@ -167,6 +167,10 @@ Divider looks
 114. Punch right
 115. Crossed fingers
 116. Crossed fingers v2
+117. Unknown emoji
+118. Ok-hand
+119. Point left
+120. Point right
 
 
 
