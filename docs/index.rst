@@ -180,6 +180,39 @@ Divider looks
 127. 🖖
 128. Bye wave
 129. Call me wave
+130. Strong arm emoji
+131. Dog 
+132. Cat 
+133. Mouse
+134. Hampster 
+135. Bunny 
+136. Fox 
+137. Bear 
+138. Panda
+139. Koala
+140. Tiger
+141. Lion 
+142. Cow 
+143. Pig
+144. Frog
+145. Monkey
+146. Monkey eyes shielded
+147. Monkey eyes open
+148. Monkey hands over mouth
+149. Sitting monkey
+150. Penguin
+151. Chicken
+152. Parrot
+153. Bird
+154. Hatching ducks
+155. Ducks
+156. Geese
+157. Flower bundle
+158. Pink flower
+159. Roses
+160. Dead flowers
+161. Pink flower v2
+162. Pink flower v3
 
 
 
