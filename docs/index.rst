@@ -86,7 +86,7 @@ Divider looks
 33. Smiley faces I think  
 34. &*s  
 35. Random numbers
-36. `s
+36. The simbol that looks like '
 37. lowercase a
 38. uppercase a
 39. lowercase b
@@ -171,6 +171,15 @@ Divider looks
 118. Ok-hand
 119. Point left
 120. Point right
+121. Point up
+122. Point down
+123. Finger up
+124. Hand 
+125. Hand v2
+126. 5 fingers on hand
+127. 🖖
+128. Bye wave
+129. Call me wave
 
 
 
