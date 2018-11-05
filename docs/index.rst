@@ -200,15 +200,15 @@ Divider looks
 147. Monkey eyes open
 148. Monkey hands over mouth
 149. Sitting monkey
-150. Penguin
-151. Chicken
-152. Parrot
-153. Bird
+150. Penguins
+151. Chickens
+152. Parrots
+153. Birds
 154. Hatching ducks
 155. Ducks
 156. Geese
-157. Flower bundle
-158. Pink flower
+157. Flower bundles
+158. Pink flowers
 159. Roses
 160. Dead flowers
 161. Pink flower v2
@@ -217,6 +217,15 @@ Divider looks
 164. Yellow flower
 165. Small sun
 166. Big sun
+167. Half moons
+168. Full moons
+169. Stars 
+170. Multiple stars
+171. Lightning bolts 
+172. Water bolts 
+173. Fires 
+174. Thunder clouds 
+175. Rainbows 
 
 
 
