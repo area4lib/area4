@@ -238,13 +238,19 @@ Divider looks
 185. Ice creams in cups 
 186. Ice creams in cones 
 187. Pies 
-188. Cakes
-189. Cakes v2
-190. Beers
+188. Cakes 
+189. Cakes v2 
+190. Beers 
 191. Two touching beers 
-192. Two touching wine glasses
+192. Two touching wine glasses 
 193. Single wine glasses 
 194. Soccer balls 
+195. Medals 
+196. Cars 
+197. Alarm clocks 
+198. Money bags 
+199. Baloons 
+200. Hearts 
 
 
 
