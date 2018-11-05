@@ -211,35 +211,40 @@ Divider looks
 158. Pink flowers
 159. Roses
 160. Dead flowers
-161. Pink flower v2
-162. Pink flower v3
+161. Pink flowers v2
+162. Pink flowers v3
 163. White flower
 164. Yellow flower
 165. Small sun
 166. Big sun
-167. Half moons
-168. Full moons
-169. Stars 
-170. Multiple stars
-171. Lightning bolts 
-172. Water bolts 
-173. Fires 
-174. Thunder clouds 
-175. Rainbows 
-176. Partly eaten chickens 
-177. Not-really-eaten chickens 
-178. Hot dogs
-179. Hamburgers
-180. French fries 
-181. Pizza 
-182. Sandwitches 
-183. Sno-cones 
-184. Ice creams in cups 
-185. Ice creams in cones 
-186. Pies 
-187. Cakes
-188. Cakes v2
-189. Beers
+167. Half moons facing left
+168. Half moons facing right
+169. Full moons
+170. Stars 
+171. Multiple stars
+172. Lightning bolts 
+173. Water bolts 
+174. Fires 
+175. Thunder clouds 
+176. Rainbows 
+177. Partly eaten chickens 
+178. Not-really-eaten chickens 
+179. Hot dogs
+180. Hamburgers
+181. French fries 
+182. Pizza 
+183. Sandwitches 
+184. Sno-cones 
+185. Ice creams in cups 
+186. Ice creams in cones 
+187. Pies 
+188. Cakes
+189. Cakes v2
+190. Beers
+191. Two touching beers 
+192. Two touching wine glasses
+193. Single wine glasses 
+194. Soccer balls 
 
 
 
