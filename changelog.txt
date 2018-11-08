@@ -2,6 +2,7 @@
 
 Version 1.2.0:
 - Now distributing .tar.gz, .zip, and .tar.bz formats for source code
+- Did some small manifest changes  
 
 Version 1.1.9:
 - Added keywords to package
