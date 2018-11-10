@@ -6,4 +6,4 @@ test_task:
     folder: ~/.cache/pip
     fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
     populate_script: python3 -m pip install --upgrade setuptools wheel twine
-  test_script: python3 setup.py sdist bdist_wheel && rm -r build/ && rm -r area4.egg-info/ && pip install --upgrade area4
+  test_script: python3 setup.py sdist bdist_wheel && rm -r build/ && rm -r area4.egg-info/ && ls dist/ && pip install --upgrade area4
