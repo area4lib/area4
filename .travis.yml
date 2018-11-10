@@ -1,20 +1,36 @@
 language: python
+dist: trusty
+sudo: required
 os:
   - linux
 python:
   - "3.4"
   - "3.5"
+  - "3.5-dev"
+  - "pypy3.5"
   - "3.6"
+  - "3.6-dev"
+  - "3.7-dev"
+before_install:
+  - "echo Starting install phase...  "
 install:
   - pip install -r requirements.txt
   - "python3 -m pip install --upgrade setuptools wheel twine"
+after_install:
+  - "echo Finished install phase!  "
+before_script:
+  - "echo Starting test phase...  "
 script:
   - "python3 setup.py sdist bdist_wheel"
+after_script:
+  - "echo Test phase finished!  "
 after_success:
   - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
   - ./send.sh success $WEBHOOK_URL
+  - "echo Build finished without errors!  "
 after_failure:
   - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
   - ./send.sh failure $WEBHOOK_URL
+  - "echo Build finished, but failed/errored.  "
