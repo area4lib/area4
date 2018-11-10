@@ -2,12 +2,14 @@ language: python
 os:
   - linux
 python:
+  - "2.7"
   - "3.4"
   - "3.5"
   - "3.6"
   - "3.6-dev"
   - "3.7-dev"
-  - "PyPy"
+  - "pypy2.7"
+  - "pypy3.5"
 install:
   - pip install -r requirements.txt
   - "python3 -m pip install --upgrade setuptools wheel twine"
