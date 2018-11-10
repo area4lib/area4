@@ -1,4 +1,5 @@
 # ~ Area4 Package by RDIL ~
+# This package and source should be compatible with Python 3.4 and up!
 
 # Imports:
 import random
@@ -2077,3 +2078,11 @@ def area4info():
     info += f"\nAuthor Email: {author_email}"
     info += f"\nDescription: {description}"
     return info
+
+
+def check():
+    if __name__ == "__main__":
+        return True
+    else:
+        return False
+

@@ -16,7 +16,6 @@ setuptools.setup(
     classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
@@ -36,6 +35,6 @@ setuptools.setup(
         "Documentation": "https://area4.readthedocs.io/en/latest",
         "Source Code": "https://github.com/RDIL/area4",
     },
-    keywords=["area4", "dividers", "python", "utilities"],
+    keywords=["area4", "dividers", "python", "utilities", "enhancements"],
     include_package_data=True
 )

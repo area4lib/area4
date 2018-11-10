@@ -1,8 +1,16 @@
 - Changelog -  
 
-Version 1.2.0:
-- Now distributing .tar.gz, .zip, and .tar.bz formats for source code
+Version 1.2.1 (lots of random stuff):
+- Now distributing .tar.gz and.zip formats for source code  
 - Did some small manifest changes  
+- Fixed some stuff with CIs  
+- Updated issue templates  
+- Added new badge to README file 
+- Updated stale tags 
+- Did some things with the extras directory 
+- Added new tag 
+- Fixed some compatibility things 
+- Made the gitignore longer for no reason 
 
 Version 1.1.9:
 - Added keywords to package

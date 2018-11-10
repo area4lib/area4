@@ -4,3 +4,4 @@ include LICENSE
 include .github/CODEAUTHORS
 exclude *.yml
 exclude .github/*.yml
+exclude extras/*.*

@@ -16,10 +16,11 @@ There are a few things to keep in mind when contributing:
 ## Steps  
 
 1. Fork the repo.  
-2. Make your changes. 
-3. Push to your fork. 
-4. Create a PR. 
-5. If you need to, push extra commits (or rebase if requested). 
+2. Clone it if you are using a git client.  
+3. Make your changes.  
+4. Push to your fork.  
+5. Create a PR.  
+6. If you need to, push extra commits (or rebase if requested).  
 
 ## Coding
 
