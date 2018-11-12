@@ -1,5 +1,8 @@
 - Changelog -  
 
+Version 1.2.2:
+- Big bug fix
+
 Version 1.2.1 (lots of random stuff):
 - Now distributing .tar.gz and.zip formats for source code  
 - Did some small manifest changes  

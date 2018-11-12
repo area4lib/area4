@@ -143,11 +143,11 @@ Divider looks
 90. Airplane emojis
 91. Orange leave emojis
 92. Key emojis
-93. 😀
-94. 😂
-95. 😛
-96. 😝
-97. 😨
+93. Big smilies 
+94. Laughing face 
+95. Toung-sticking-out faces
+96. Toung-sticking-out faces v2 
+97. Surprised faces 
 98. 😩
 99. 😬
 100. 😰
@@ -181,21 +181,21 @@ Divider looks
 128. Bye wave
 129. Call me wave
 130. Strong arm emoji
-131. Dog 
-132. Cat 
-133. Mouse
-134. Hampster 
-135. Bunny 
-136. Fox 
-137. Bear 
-138. Panda
-139. Koala
+131. Dogs 
+132. Cats 
+133. Mice 
+134. Hampsters 
+135. Bunnies 
+136. Foxes
+137. Bears 
+138. Pandas 
+139. Koalas 
 140. Tiger
-141. Lion 
-142. Cow 
-143. Pig
+141. Lions 
+142. Cows 
+143. Pigs 
 144. Frog
-145. Monkey
+145. Monkeys
 146. Monkey eyes shielded
 147. Monkey eyes open
 148. Monkey hands over mouth
@@ -251,6 +251,7 @@ Divider looks
 198. Money bags 
 199. Baloons 
 200. Hearts 
+201. Surprised faces v2 
 
 
 
