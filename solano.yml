@@ -1,1 +1,5 @@
-
+python:
+  python_version: '3.6'
+  pip_requirements_file: requirements.txt
+tests:
+  - python3 setup.py sdist bdist_wheel
