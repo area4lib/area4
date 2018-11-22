@@ -1,5 +1,10 @@
 - Changelog -  
 
+Version 1.2.3:
+- Added 📌 dividers
+- Fixed some stuff in the docs
+- Added another PR check
+
 Version 1.2.2:
 - Big bug fix
 
