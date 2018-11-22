@@ -252,6 +252,7 @@ Divider looks
 199. Baloons 
 200. Hearts 
 201. Surprised faces v2 
+202. Pins 
 
 
 
@@ -503,6 +504,8 @@ Just using plain print commands:
     print(area4.divider198)
     print(area4.divider199)
     print(area4.divider200)
+    print(area4.divider201)
+    print(area4.divider202)
    
 
 
@@ -710,6 +713,8 @@ Using functions:
     print(area4.div198())
     print(area4.div199())
     print(area4.div200())
+    print(area4.div201())
+    print(area4.div202())
 
 
 .. warning:: In version 1.1.0, the functions changed in the way they operated.  Before 1.1.0, the functions printed the variables, but after the release, they now just return the variable.  
