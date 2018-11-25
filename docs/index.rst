@@ -148,9 +148,9 @@ Divider looks
 95. Toung-sticking-out faces
 96. Toung-sticking-out faces v2 
 97. Surprised faces 
-98. 😩
-99. 😬
-100. 😰
+98. Upset face
+99. Pretend-smile face
+100. Scared face
 101. Surprised face
 102. Happy babies
 103. Happy ladies
