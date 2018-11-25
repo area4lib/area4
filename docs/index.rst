@@ -85,7 +85,8 @@ Divider looks
 32. <>s  
 33. Smiley faces I think  
 34. &*s  
-35. Random numbers
+35. Random numbers (returned as string which is automatically converted
+from an integer) 
 36. The simbol that looks like '
 37. lowercase a
 38. uppercase a
