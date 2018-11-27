@@ -2083,6 +2083,10 @@ def _reduce_to_unit(divider: str) -> str:
     return divider  # return original if smaller unit not found
 
 
+def getDiv():
+    return False
+
+
 def area4info():
     info = f"Name: {name}"
     info += f"\nAuthor: {author}"
