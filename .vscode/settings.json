@@ -1,0 +1,6 @@
+{
+    "vscode-mysql.enableTelemetry": false,
+    "azurermtools.enableTelemetry": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false
+}
