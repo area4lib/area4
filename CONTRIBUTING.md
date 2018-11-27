@@ -1,9 +1,9 @@
 # CONTRIBUTING GUIDELINES  
 
-Hello, and welcome to Area4.  Before you contribute, please read this document to find out the best ways to contribute to this project.  
+Hello, and welcome to area4.  Before you contribute, please read this document to find out the best ways to contribute to this project.  
 
 ## What to contribute  
-There are many ways to contribute to Area4! You can help improve the documentation, submit bug reports and feature requests, or write code which can be incorporated into Area4. Don't be afraid to contribute to the project--the open source community will be here to help you should you need any!  
+There are many ways to contribute to area4! You can help improve the documentation, submit bug reports and feature requests, or write code which can be incorporated into area4. Don't be afraid to contribute to the project--the open source community will be here to help you should you need any!  
 
 ## A few ground rules  
 
@@ -39,4 +39,4 @@ The divider style can be found in the documentation.
 
 If your pull request is merged your name will be added to the author list (.github/CODEAUTHORS).  
 
-If you have any questions please contact [RDIL](https://github.com/RDIL), but before you do please please review our [documentation](https://area4.readthedocs.io/en/latest/). 
+If you have any questions please contact [RDIL](mailto:contactspaceboom@gmail.com), but before you do please please review our [documentation](https://area4.readthedocs.io/en/latest/) and [wikis](https://github.com/RDIL/area4/wiki). 
