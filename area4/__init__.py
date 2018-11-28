@@ -213,6 +213,7 @@ divider199 = str("🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈")
 divider200 = str("❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️")
 divider201 = str("😨😨😨😨😨😨😨😨😨😨😨😨")
 divider202 = str("📌📌📌📌📌📌📌📌📌📌📌📌")
+divider203 = str("🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴")
 
 custom_div = str("")
 
@@ -2033,6 +2034,15 @@ def div202():
 	
 	return divider202
 
+def div203():
+	"""
+	Returns the divider 🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴
+	
+	:return: divider203
+	"""
+	
+	return divider203
+
 def customdiv():
     return custom_div
 
@@ -2083,7 +2093,13 @@ def _reduce_to_unit(divider: str) -> str:
     return divider  # return original if smaller unit not found
 
 
+# Info function
 def area4info():
+    """
+    Gets you some info about the package
+    
+    :return: info
+    """    
     info = f"Name: {name}"
     info += f"\nAuthor: {author}"
     info += f"\nAuthor Email: {author_email}"
@@ -2091,7 +2107,7 @@ def area4info():
     return info
 
 
-def check():
+def check(__name__):
     if __name__ == "__main__":
         return True
     else:
