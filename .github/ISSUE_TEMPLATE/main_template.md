@@ -9,8 +9,8 @@ about: General template for bug reports, etc.
 [Brief description of the problem]
 
 # Steps to reproduce
-- Step 1
-- Step 2
+- Step 1:  
+- Step 2:  
 
 ## Expected behavior
 
