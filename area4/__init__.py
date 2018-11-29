@@ -2098,7 +2098,8 @@ def area4info():
     """
     Gets you some info about the package
     
-    :return: info
+    :return: Package info
+    :rtype: str
     """    
     info = f"Name: {name}"
     info += f"\nAuthor: {author}"
