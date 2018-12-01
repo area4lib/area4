@@ -1,5 +1,16 @@
 - Changelog -  
 
+Version 1.2.4:
+- Re-activated GitHub pages for the readme
+- Cleaned up some code
+- Updated issue templates
+- Updated the gitignore
+- Added workspace settings for VSCode
+- Now forcing CIs to use older pip version
+- Added 🕴 dividers
+- Added PyPy3.5 support classifiers
+- Made some changes to the docs
+
 Version 1.2.3:
 - Added 📌 dividers
 - Fixed some stuff in the docs
