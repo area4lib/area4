@@ -3,7 +3,8 @@
 Version 1.2.5:
 - Added dice divider
 - Added bowling ball and pins divider
-- Added cookie dividers! 
+- Added cookie dividers!
+- Added snowman dividers
 
 Version 1.2.4:
 - Re-activated GitHub pages for the readme

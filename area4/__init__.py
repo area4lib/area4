@@ -217,6 +217,7 @@ divider203 = str("🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴🕴")
 divider204 = str("🎲 🎲 🎲 🎲 🎲 🎲 🎲 🎲")
 divider205 = str("🎳🎳🎳🎳🎳🎳🎳🎳🎳🎳🎳")
 divider206 = str("🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪")
+divider207 = str("⛄⛄⛄⛄⛄⛄⛄⛄⛄⛄")
 
 custom_div = str("")
 
@@ -2072,6 +2073,15 @@ def div206():
 	"""
 
 	return divider206
+
+def div207():
+	"""
+	Returns the divider ⛄️⛄️⛄️⛄️⛄️⛄️⛄️⛄️⛄️⛄️
+
+	:return: divider207
+	"""
+
+	return divider207
 
 def customdiv():
     return custom_div
