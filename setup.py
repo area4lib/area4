@@ -28,7 +28,10 @@ setuptools.setup(
         'Topic :: Software Development :: Libraries',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Utilities',
+        'Topic :: System',
+        'Topic :: Terminals',
         'Development Status :: 5 - Production/Stable',
+        'Framework :: IDLE',
         'Natural Language :: English',
     ],
     project_urls={
