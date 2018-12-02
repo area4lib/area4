@@ -253,7 +253,9 @@ Divider looks
 200. Hearts 
 201. Surprised faces v2 
 202. Pins 
-203. A person 
+203. A person
+204. Dice
+205. Bowling ball and pins
 
 
 
