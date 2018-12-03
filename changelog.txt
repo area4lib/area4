@@ -1,5 +1,8 @@
 - Changelog -  
 
+Version 1.2.6:
+- Dropped Python2 support fully 
+
 Version 1.2.5:
 - Added dice divider
 - Added bowling ball and pins divider
