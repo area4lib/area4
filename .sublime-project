@@ -1,0 +1,18 @@
+{
+    "folders":
+    [
+        {
+            "path": "area4",
+            "follow_symlinks": true
+        },
+        {
+            "path": "docs",
+            "name": "Documentation",
+            "file_exclude_patterns": ["*.css"]
+        }
+    ],
+    "settings":
+    {
+        "tab_size": 4
+    }
+}
