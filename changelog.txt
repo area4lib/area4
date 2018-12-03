@@ -2,6 +2,7 @@
 
 Version 1.2.6:
 - Dropped Python2 support fully 
+- Added project-wide settings for sublime text
 
 Version 1.2.5:
 - Added dice divider
