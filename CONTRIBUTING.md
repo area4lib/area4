@@ -1,4 +1,4 @@
-# CONTRIBUTING GUIDELINES  
+# AREA4 CONTRIBUTING GUIDELINES  
 
 Hello, and welcome to area4.  Before you contribute, please read this document to find out the best ways to contribute to this project.  
 
@@ -30,7 +30,7 @@ This project code is intended to be...
 Documented. Keep it well documented, so one can learn from it.  
 * Reusable. Keep it cohese and modular, with as little responsibility per programming unit (function, method, class, module, project) as possible, so one can reuse it.  
 * Testable. Keep it easy to debug and test, so one can be confident that it works properly.  Please keep the [Travis CI build](https://travis-ci.com/RDIL/area4) and [Cirrus CI Build](https://cirrus-ci.com/github/RDIL/area4) at passing if possible.  Travis doesn't directly test the code for errors, rather checks to see if it is safe and ready to deploy to PyPI if needed!  
-* *Python 3 compatible.*  Area4 aims to mainly support Python 3 versions (including PyPy3.5), but it is an added bonus if the code is Python 2.7 compatible.  
+* Python 3 compatible.  Area4 aims to support Python 3 versions (including PyPy3.5), and does not support versions below Python3.  
 
 ### Divider style  
 The divider style can be found in the documentation.  
