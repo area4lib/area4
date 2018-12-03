@@ -11,7 +11,7 @@
             "file_exclude_patterns": ["*.css"]
         }
     ],
-    "settings":
+    "settings": 
     {
         "tab_size": 4
     }
