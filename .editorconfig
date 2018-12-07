@@ -1,0 +1,4 @@
+root = true
+
+[*.py]
+charset = utf-8
