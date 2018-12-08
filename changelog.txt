@@ -1,5 +1,11 @@
 - Changelog -  
 
+Version 1.2.7:
+- Added potato dividers for rocketpropelledpotato
+- Added a .editorconfig
+- Added Other OS classifier
+- Updated all readthedocs links to go to the stable version
+
 Version 1.2.6:
 - Dropped Python2 support fully 
 - Added project-wide settings for sublime text
