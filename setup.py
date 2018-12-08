@@ -46,7 +46,7 @@ setuptools.setup(
     ],
     project_urls={
         "Bug Tracker": "https://github.com/RDIL/area4/issues",
-        "Documentation": "https://area4.readthedocs.io/en/latest",
+        "Documentation": "https://area4.readthedocs.io/en/stable/",
         "Source Code": "https://github.com/RDIL/area4",
     },
     keywords=["area4", "dividers", "python", "utilities", "enhancements"],
