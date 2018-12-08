@@ -2,6 +2,7 @@
 
 Version 1.2.7:
 - Added potato dividers for rocketpropelledpotato
+- Added shrimp dividers
 - Added a .editorconfig
 - Added Other OS classifier
 - Updated all readthedocs links to go to the stable version
