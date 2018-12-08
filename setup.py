@@ -32,6 +32,7 @@ setuptools.setup(
         "Operating System :: MacOS",
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: POSIX :: Linux",
+        "Operating System :: Other OS",
         'Intended Audience :: Developers',
         'Intended Audience :: End Users/Desktop',
         'Topic :: Software Development :: Libraries',
