@@ -3,6 +3,11 @@ dist: trusty
 sudo: required
 os:
   - linux
+git:
+  quiet: true
+branches:
+  except:
+  - python-2-supported
 python:
   - "3.4"
   - "3.5"
