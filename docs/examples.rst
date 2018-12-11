@@ -28,8 +28,6 @@ A few examples just using plain print commands:
     print(area4.divider15)
 
 
-
-
 A few examples just using functions:
 
 .. code-block:: python
@@ -49,7 +47,6 @@ A few examples just using functions:
     print(area4.div13())
     print(area4.div14())
     print(area4.div15())
-
 
 
 .. _here: https://repl.it/@jumbocakeyumyum/area4tests
