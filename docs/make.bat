@@ -3,6 +3,7 @@
 pushd %~dp0
 
 REM Command file for Sphinx documentation
+REM Used to build area4
 
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
