@@ -1,5 +1,8 @@
 - Changelog -  
 
+Version 1.2.8:
+- Re-did all the docs
+
 Version 1.2.7:
 - Added potato dividers for rocketpropelledpotato
 - Added shrimp dividers
