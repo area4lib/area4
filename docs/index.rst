@@ -11,11 +11,11 @@ Welcome to Area4's documentation!
     :caption: Contents:
 
     installing
-    examples
     using
+    examples
+    div-looks
     customdivs
     stuff-for-devs
-    div-looks
 
 .. image:: https://snyk.io/test/github/RDIL/area4/badge.svg?targetFile=requirements.txt
     :target: https://snyk.io/test/github/RDIL/area4/
@@ -47,7 +47,7 @@ By RDIL [#RDIL]_
 Make sure to view our other documentation pages for more info!
 
 
-Important: Please read all pages before creating issues as the question may be answered here.  
+Important: Please read all pages before creating issues as the question may be answered here.
 
 
 .. _`View on GitHub`: https://github.com/RDIL/area4
