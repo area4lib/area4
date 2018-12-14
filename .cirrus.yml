@@ -1,9 +1,17 @@
-container:
-  image: python:latest
-
 test_task:
+  container:
+    image: python:latest
   pip_cache:
     folder: ~/.cache/pip
     fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
     populate_script: python3 -m pip install --upgrade pip==9.0.1 setuptools wheel twine
   test_script: python3 setup.py sdist bdist_wheel && rm -r build/ && rm -r area4.egg-info/ && ls dist/ && pip install --upgrade area4
+
+link_check_task:
+  container:
+    image: node:latest
+  node_modules_cache:
+    folder: node_modules
+    fingerprint_script: cat requirements.txt
+    populate_script: npm install -g markdown-link-check@3.7.2
+  script: find . -name \*.md -exec markdown-link-check {} \;
