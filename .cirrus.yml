@@ -10,9 +10,9 @@ test_task:
 spellcheck_task:
   container:
     image: node:latest
-    node_modules_cache:
-      folder: node_modules
-      fingerprint_script: cat requirements.txt
-      populate_script: sudo npm install -g markdown-spellcheck@0.11.0
-    script: mdspell '**/*.md' --ignore-numbers --ignore-acronyms --report --en-us;
+  node_modules_cache:
+    folder: node_modules
+    fingerprint_script: cat requirements.txt
+    populate_script: sudo npm install -g markdown-spellcheck@0.11.0
+  script: mdspell '**/*.md' --ignore-numbers --ignore-acronyms --report --en-us;
     
