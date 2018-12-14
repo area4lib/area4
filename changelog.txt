@@ -2,6 +2,7 @@
 
 Version 1.2.8:
 - Re-did all the docs
+- Added link check task for markdown files
 
 Version 1.2.7:
 - Added potato dividers for rocketpropelledpotato
