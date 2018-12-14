@@ -34,7 +34,7 @@ Documented. Keep it well documented, so one can learn from it.
 * Python 3 compatible.  Area4 aims to support Python 3 versions (including PyPy3.5), and does not support versions below Python3.  The one thing that does not follow this rule is the package info function, which requires F-strings (which are only supported in Python 3.6 and above).  
 
 ## Timing  
-Timing is important, all project staff have lives and don't hang 'round this repository 24/7.  They all are in United States
+Timing is important, all project staff have lives and don't hang 'round this repository 24/7.  They all are in United States eastern time.  
 
 ## Divider style  
 The divider style can be found in the `info for devs` section of the documentation.  
