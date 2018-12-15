@@ -1,5 +1,5 @@
 # ~ Area4 Package by RDIL ~
-# This package and source should be compatible with Python 3.4 and up!
+# This package and source should be compatible with Python 3.4 and up! (Except for the package info function its 3.6 and up) 
 
 # Imports:
 import random
@@ -931,6 +931,7 @@ def div71():
 
 	return divider71
 
+
 def div72():
 	"""
 	Returns the divider RRRRRRRRRRRR
@@ -939,6 +940,7 @@ def div72():
 	"""
 
 	return divider72
+
 
 def div73():
 	"""
@@ -949,6 +951,7 @@ def div73():
 
 	return divider73
 
+
 def div74():
 	"""
 	Returns the divider SSSSSSSSSSSS
@@ -957,6 +960,7 @@ def div74():
 	"""
 
 	return divider74
+
 
 def div75():
 	"""
@@ -967,6 +971,7 @@ def div75():
 
 	return divider75
 
+
 def div76():
 	"""
 	Returns the divider TTTTTTTTTTTT
@@ -975,6 +980,7 @@ def div76():
 	"""
 
 	return divider76
+
 
 def div77():
 	"""
@@ -985,6 +991,7 @@ def div77():
 
 	return divider77
 
+
 def div78():
 	"""
 	Returns the divider UUUUUUUUUUUU
@@ -993,6 +1000,7 @@ def div78():
 	"""
 
 	return divider78
+
 
 def div79():
 	"""
@@ -1003,6 +1011,7 @@ def div79():
 
 	return divider79
 
+
 def div80():
 	"""
 	Returns the divider VVVVVVVVVVVV
@@ -1011,6 +1020,7 @@ def div80():
 	"""
 
 	return divider80
+
 
 def div81():
 	"""
@@ -1021,6 +1031,7 @@ def div81():
 
 	return divider81
 
+
 def div82():
 	"""
 	Returns the divider WWWWWWWWWWWW
@@ -1029,6 +1040,7 @@ def div82():
 	"""
 
 	return divider82
+
 
 def div83():
 	"""
@@ -1039,6 +1051,7 @@ def div83():
 
 	return divider83
 
+
 def div84():
 	"""
 	Returns the divider XXXXXXXXXXXX
@@ -1047,6 +1060,7 @@ def div84():
 	"""
 
 	return divider84
+
 
 def div85():
 	"""
@@ -1057,6 +1071,7 @@ def div85():
 
 	return divider85
 
+
 def div86():
 	"""
 	Returns the divider YYYYYYYYYYYY
@@ -1065,6 +1080,7 @@ def div86():
 	"""
 
 	return divider86
+
 
 def div87():
 	"""
@@ -1075,6 +1091,7 @@ def div87():
 
 	return divider87
 
+
 def div88():
 	"""
 	Returns the divider ZZZZZZZZZZZZ
@@ -1083,6 +1100,7 @@ def div88():
 	"""
 
 	return divider88
+
 
 def div89():
 	"""
@@ -1093,6 +1111,7 @@ def div89():
 
 	return divider89
 
+
 def div90():
 	"""
 	Returns the divider ✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️
@@ -1101,6 +1120,7 @@ def div90():
 	"""
 
 	return divider90
+
 
 def div91():
 	"""
@@ -1111,6 +1131,7 @@ def div91():
 
 	return divider91
 
+
 def div92():
 	"""
 	Returns the divider 🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️
@@ -1120,6 +1141,7 @@ def div92():
 
 	return divider92
 
+
 def div93():
 	"""
 	Returns the divider 😀😀😀😀😀😀😀😀😀😀😀😀
@@ -1128,6 +1150,8 @@ def div93():
 	"""
 
 	return divider93
+
+
 def div94():
 	"""
 	Returns the divider 😂😂😂😂😂😂😂😂😂😂😂😂
@@ -1136,6 +1160,8 @@ def div94():
 	"""
 
 	return divider94
+
+
 def div95():
 	"""
 	Returns the divider 😛😛😛😛😛😛😛😛😛😛😛😛
@@ -1144,6 +1170,7 @@ def div95():
 	"""
 
 	return divider95
+
 
 def div96():
 	"""
@@ -1154,6 +1181,7 @@ def div96():
 
 	return divider96
 
+
 def div97():
 	"""
 	Returns the divider 😨😨😨😨😨😨😨😨😨😨😨😨
@@ -1162,6 +1190,7 @@ def div97():
 	"""
 
 	return divider97
+
 
 def div98():
 	"""
@@ -1172,6 +1201,7 @@ def div98():
 
 	return divider98
 
+
 def div99():
 	"""
 	Returns the divider 😬😬😬😬😬😬😬😬😬😬😬😬
@@ -1180,6 +1210,8 @@ def div99():
 	"""
 
 	return divider99
+
+
 def div100():
 	"""
 	Returns the divider 😰😰😰😰😰😰😰😰😰😰😰😰
@@ -1188,6 +1220,7 @@ def div100():
 	"""
 
 	return divider100
+
 
 def div101():
 	"""
@@ -1198,6 +1231,7 @@ def div101():
 
 	return divider101
 
+
 def div102():
 	"""
 	Returns the divider 👶👶👶👶👶👶👶👶👶👶👶👶
@@ -1206,6 +1240,7 @@ def div102():
 	"""
 
 	return divider102
+
 
 def div103():
 	"""
@@ -1216,6 +1251,7 @@ def div103():
 
 	return divider103
 
+
 def div104():
 	"""
 	Returns the divider 👦👦👦👦👦👦👦👦👦👦👦👦
@@ -1224,6 +1260,7 @@ def div104():
 	"""
 
 	return divider104
+
 
 def div105():
 	"""
@@ -1235,6 +1272,7 @@ def div105():
 
 	return divider105
 
+
 def div106():
 	"""
 	Returns the divider 👨👨👨👨👨👨👨👨👨👨👨👨
@@ -1243,6 +1281,7 @@ def div106():
 	"""
 
 	return divider106
+
 
 def div107():
 	"""
@@ -1253,6 +1292,7 @@ def div107():
 
 	return divider107
 
+
 def div108():
 	"""
 	Returns the divider 👴👴👴👴👴👴👴👴👴👴👴👴
@@ -1261,6 +1301,7 @@ def div108():
 	"""
 
 	return divider108
+
 
 def div109():
 	"""
@@ -1271,6 +1312,7 @@ def div109():
 
 	return divider109
 
+
 def div110():
 	"""
 	Returns the divider 👎👎👎👎👎👎👎👎👎👎👎👎
@@ -1279,6 +1321,7 @@ def div110():
 	"""
 
 	return divider110
+
 
 def div111():
 	"""
@@ -1299,6 +1342,7 @@ def div112():
 
 	return divider112
 
+
 def div113():
 	"""
 	Returns the divider 🤛🤛🤛🤛🤛🤛🤛🤛🤛🤛🤛🤛
@@ -1307,6 +1351,7 @@ def div113():
 	"""
 
 	return divider113
+
 
 def div114():
 	"""
@@ -1317,6 +1362,7 @@ def div114():
 
 	return divider114
 
+
 def div115():
 	"""
 	Returns the divider 🤞🤞🤞🤞🤞🤞🤞🤞🤞🤞🤞🤞
@@ -1325,6 +1371,7 @@ def div115():
 	"""
 
 	return divider115
+
 
 def div116():
 	"""
@@ -1335,6 +1382,7 @@ def div116():
 
 	return divider116
 
+
 def div117():
 	"""
 	Returns the divider 🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘🤘
@@ -1343,6 +1391,7 @@ def div117():
 	"""
 
 	return divider117
+
 
 def div118():
 	"""
@@ -1353,6 +1402,7 @@ def div118():
 
 	return divider118
 
+
 def div119():
 	"""
 	Returns the divider 👈👈👈👈👈👈👈👈👈👈👈👈
@@ -1361,6 +1411,7 @@ def div119():
 	"""
 
 	return divider119
+
 
 def div120():
 	"""
@@ -1371,6 +1422,7 @@ def div120():
 
 	return divider120
 
+
 def div121():
 	"""
 	Returns the divider 👆👆👆👆👆👆👆👆👆👆👆👆
@@ -1379,6 +1431,7 @@ def div121():
 	"""
 
 	return divider121
+
 
 def div122():
 	"""
@@ -1389,6 +1442,7 @@ def div122():
 
 	return divider122
 
+
 def div123():
 	"""
 	Returns the divider ☝☝☝☝☝☝☝☝☝☝☝☝
@@ -1397,6 +1451,7 @@ def div123():
 	"""
 
 	return divider123
+
 
 def div124():
 	"""
@@ -1407,6 +1462,7 @@ def div124():
 
 	return divider124
 
+
 def div125():
 	"""
 	Returns the divider 🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚
@@ -1415,6 +1471,7 @@ def div125():
 	"""
 
 	return divider125
+
 
 def div126():
 	"""
@@ -1425,6 +1482,7 @@ def div126():
 
 	return divider126
 
+
 def div127():
 	"""
 	Returns the divider 🖖🖖🖖🖖🖖🖖🖖🖖🖖🖖🖖🖖🖖
@@ -1434,6 +1492,7 @@ def div127():
 
 	return divider127
 
+
 def div128():
 	"""
 	Returns the divider 👋👋👋👋👋👋👋👋👋👋👋👋
@@ -1442,6 +1501,7 @@ def div128():
 	"""
 
 	return divider128
+
 
 def div129():
 	"""
