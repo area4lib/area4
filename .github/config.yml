@@ -2,7 +2,7 @@
 
 # Todo bot:
 todo:
-  keyword: "@todo"
+  keyword: "@todo:"
   autoAssign: true
   blobLines: 7
   caseSensitive: false
