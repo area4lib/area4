@@ -1,4 +1,13 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
 root = true
 
 [*.py]
 charset = utf-8
+indent_style = space
+indent_size = 4
+
+
+[*.{cirrus,travis}.yml]
+intend_style = space
+indent_size = 2
