@@ -2,6 +2,6 @@ include *.md
 include changelog.txt
 include LICENSE
 include .github/CODEAUTHORS
+include .editorconfig
 exclude *.yml
-exclude .github/*.yml
 exclude extras/*.*
