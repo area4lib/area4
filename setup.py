@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="area4",
-    version="1.2.8",
+    version="1.2.9",
     author="RDIL",
-    author_email="contactspaceboom@gmail.com",
+    author_email="me@rdil.rocks",
     description="Dividers in Python, the easy way! Many different divider looks.",
     long_description=long_description,
     long_description_content_type="text/markdown",
