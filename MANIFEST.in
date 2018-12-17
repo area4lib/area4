@@ -3,5 +3,5 @@ include changelog.txt
 include LICENSE
 include .github/CODEAUTHORS
 include .editorconfig
-exclude *.yml
+include .github/SUPPORT.md
 exclude extras/*.*
