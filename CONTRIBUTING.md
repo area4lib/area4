@@ -36,6 +36,12 @@ Documented. Keep it well documented, so one can learn from it.
 ## Timing  
 Timing is important, all project staff have lives and don't hang 'round this repository 24/7.  They all are in United States eastern time.  
 
+## Good vs bad contributions  
+Please don't spam us with one-liners.  Fixing one typo is fine but fixing five typos each with their own pull request is spammy and will be closed/locked by maintainers.  Big quality changes are fine and encouraged!  
+
+## Work-in-progress pull requests  
+If you open a pull request that is still a work in progress, please put `[ WIP ]` in the title.  It will make the work-in-progress bot keep its status check at pending.  This helps us out a ton as we know that a PR is NOT ready for merge.  
+
 ## Divider style  
 The divider style can be found in the `info for devs` section of the documentation.  
 
@@ -46,4 +52,4 @@ When adding dividers, it must be added to the list of dividers in the docs (`/pr
 
 If your pull request is merged your name will be added to the author list (/projectrootfolder/.github/CODEAUTHORS).  
 
-If you have any questions please contact [RDIL](mailto:contactspaceboom@gmail.com), but before you do please please review our [documentation](https://area4.readthedocs.io/en/latest/) and [wikis](https://github.com/RDIL/area4/wiki). 
+If you have any questions please contact [RDIL](mailto:me@rdil.rocks), but before you do please please review our [documentation](https://area4.readthedocs.io/en/latest/) and [wikis](https://github.com/RDIL/area4/wiki). 
