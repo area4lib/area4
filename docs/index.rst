@@ -12,33 +12,15 @@ Welcome to Area4's documentation!
 
     installing
     using
-    examples
     div-looks
+    examples
     customdivs
     stuff-for-devs
 
-.. image:: https://snyk.io/test/github/RDIL/area4/badge.svg?targetFile=requirements.txt
-    :target: https://snyk.io/test/github/RDIL/area4/
-    :alt: Vulnerabilities Count
-
-.. image:: https://travis-ci.com/RDIL/area4.svg?branch=master
-    :target: https://travis-ci.com/RDIL/area4
-    :alt: Travis CI Build Status
-
-.. image:: https://img.shields.io/badge/license-MIT-orange.svg
-    :alt: License
 
 .. image:: https://badge.fury.io/py/area4.svg
     :target: https://pypi.org/project/area4
     :alt: PyPI Package Version
-
-.. image:: https://www.codefactor.io/repository/github/rdil/area4/badge
-    :target: https://www.codefactor.io/repository/github/rdil/area4
-    :alt: CodeFactor Status
-
-.. image:: https://www.repostatus.org/badges/latest/active.svg
-    :target: https://repostatus.org/
-    :alt: Repo Status
 
 By RDIL [#RDIL]_
 
