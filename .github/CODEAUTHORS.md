@@ -1,4 +1,4 @@
-HERE IS A LIST OF EVERYONE THAT HAVE CONTRUBUTED TO THIS REPOSITORY:
+### HERE IS A LIST OF EVERYONE THAT HAVE CONTRUBUTED TO THIS REPOSITORY:
 
 - RDIL (Owner)
 - CoffeeGoddess (Maintainer)
@@ -22,4 +22,4 @@ HERE IS A LIST OF EVERYONE THAT HAVE CONTRUBUTED TO THIS REPOSITORY:
 - amrutha3
 - water900
 
-(If anybody got missed or wants to be removed from the list open a PR please)
+*(If anybody got missed or wants to be removed from the list open a PR please)*  
