@@ -2,7 +2,7 @@
 
 Version 1.2.9:
 - EditorConfig file now included in sdists
-- Updated author EMail
+- Updated author Email
 
 Version 1.2.8:
 - Re-did all the docs
