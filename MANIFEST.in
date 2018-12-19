@@ -1,7 +1,7 @@
 include *.md
 include changelog.txt
 include LICENSE
-include .github/CODEAUTHORS
+include .github/CODEAUTHORS.md
 include .editorconfig
 include .github/SUPPORT.md
 exclude extras/*.*
