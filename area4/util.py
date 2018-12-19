@@ -1,4 +1,5 @@
-# Area4 Package by RDIL
+# Area4 package by RDIL
+# Utilities module
 
 def check(__name__):
     """
