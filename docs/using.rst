@@ -20,6 +20,6 @@ And if you want to you can check to make sure the library is working:
 
     print(area4.area4info())
 
-.. warning:: The area4info function will only work on Python 3.6 or above.  Keep this in mind if using it!
+.. warning:: The area4info function will only work on Python 3.6 or above.  Keep this in mind if using it and you don't want SyntaxErrors!  
 
 
