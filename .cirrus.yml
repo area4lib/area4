@@ -10,6 +10,8 @@ test_task:
 link_check_task:
   container:
     image: node:latest
+  depends_on:
+    - test
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat requirements.txt
