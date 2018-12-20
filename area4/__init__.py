@@ -2369,11 +2369,14 @@ def area4info():
     :return: Package info
     :rtype: str
     """    
-    info = f"Name: {name}"
-    info += f"\nAuthor: {author}"
-    info += f"\nAuthor Email: {author_email}"
-    info += f"\nDescription: {description}"
-    return info
+    try:
+        info = f"Name: {name}"
+        info += f"\nAuthor: {author}"
+        info += f"\nAuthor Email: {author_email}"
+        info += f"\nDescription: {description}"
+        return info
+    except SyntaxError:
+        return "[SyntaxError] Please use Python 3.6 or above to run this function."
 
 
 def check():
