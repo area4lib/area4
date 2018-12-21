@@ -63,99 +63,99 @@ Version 1.2.1 (lots of random stuff):
 - Made the gitignore longer for no reason 
 
 Version 1.1.9:
-- Added keywords to package
++ Added keywords to package
 
 Version 1.1.8:
 - Added lots more emojis
 - Added issue templates
 - Added check to see if the libraries latest version installs without error  
-- Added PyCharm IDE files
-- Fixed some things with the docs
++ Added PyCharm IDE files
+* Fixed some things with the docs
 
 Version 1.1.7:
-- Added some emoji dividers
-- Fixed bug with manifest.in and setup.py (PR #42)
-- Added whatthefork in extras
-- Manifest now includes the codeauthors file
++ Added some emoji dividers
+* Fixed bug with manifest.in and setup.py (PR #42)
++ Added whatthefork in extras
+* Manifest now includes the codeauthors file
 
 Version 1.1.6:
-- Added alphabet dividers
++ Added alphabet dividers
 
 Version 1.1.5:
-- Added MANIFEST.in
-- Added config for new apps
-- New divider (`s)
++ Added MANIFEST.in
++ Added config for new apps
++ New divider (`s)
 
 Version 1.1.4:
-- Code cleanup
-- Random number dividers
-- Updated contributing guidelines
-- Added Cirrus CI along with Travis
+* Code cleanup
++ Added random number dividers
+* Updated contributing guidelines
++ Added Cirrus CI along with Travis
 
 Version 1.1.3:
-- Added a lot of dividers (https://github.com/RDIL/area4/pull/27/files) 
++ Added a lot of dividers (https://github.com/RDIL/area4/pull/27/files) 
 - Removed un-used import to speed up code a tiny bit
 
 Version 1.1.2:
-- Added shrug emoji dividers
-- The make_div function recieved an upgrade
-- Fixed a few typos in the docs
++ Added shrug emoji dividers
+* The make_div function recieved an upgrade
+* Fixed a few typos in the docs
 
 Version 1.1.1:
-- Added contributing guidelines
-- Added lenny dividers
-- Added cthulhu dividers
-- Created area4-story.md in extras
-- Added backslash dividers
-- Added make_div framework (see docs, thanks @ninexball!)
-- Configured Discord webhook (not important)
-- Added coffee cup dividers
-- Added and-sign dividers
-- Added up arrow dividers
++ Added contributing guidelines
++ Added lenny dividers
++ Added cthulhu dividers
++ Created area4-story.md in extras
++ Added backslash dividers
++ Added make_div framework (see docs, thanks @ninexball!)
+* Configured Discord webhook (not important)
++ Added coffee cup dividers
++ Added and-sign dividers
++ Added up arrow dividers
 
 Version 1.1.0 (Contains Breaking Changes):
-- Added tilde (~) dividers
-- Added broken bar dividers
-- Added slash dividers
-- Functions now return the variable rather then print it
-- Added some extra stuff in the extras directory
-- Added repo status badge
++ Added tilde (~) dividers
++ Added broken bar dividers
++ Added slash dividers
+* Functions now return the variable rather then print it
++ Added some extra stuff in the extras directory
++ Added repo status badge
 
 Version 1.0.7:
-- Added star / asterisk (*) dividers
-- Added comma (,) dividers
++ Added star / asterisk (*) dividers
++ Added comma (,) dividers
 
 Version 1.0.6:
 - Disabled GitHub pages (not needed)
-- Added docs!
-- Added hashtag (#) dividers
-- Updated badges in readme
++ Added docs!
++ Added hashtag (#) dividers
+* Updated badges in readme
 
 Version 1.0.5: 
-- Added equal sign dividers 
-- Added GitHub pages config (site up at https://rdil.github.io/area4!) 
-- Added more project links to setup.py file
++ Added equal sign dividers 
++ Added GitHub pages config (site up at https://rdil.github.io/area4!) 
++ Added more project links to setup.py file
 
 Version 1.0.4:
-- Added up arrow emoji dividers
-- Added down arrow emoji dividers
-- Added codefactor badge to the readme file
-- Added new classifiers to setup.py file
++ Added up arrow emoji dividers
++ Added down arrow emoji dividers
++ Added codefactor badge to the readme file
++ Added new classifiers to setup.py file
 
 Version 1.0.3:  
-- Added Travis CI (and .travis.yml file)
-- Added custom dividers!!!  
-- Updated the .gitignore to ignore the /build/ directory  
++ Added Travis CI (and .travis.yml file)
++ Added custom dividers!!!  
+* Updated the .gitignore to ignore the /build/ directory  
 
 Version 1.0.2:
-- Updated project description 
-- Added example section to readme 
-- Added divider looks section to readme  
-- Updated the info command because of an annoying text issue 
+* Updated project description 
++ Added example section to readme 
++ Added divider looks section to readme  
+* Updated the info command because of an annoying text issue 
 
 Version 1.0.1:
-- Readme fixes & badges
-- Added changelog 
+* Readme fixes & badges
++ Added changelog 
 
 Version 1.0.0:
-- First release! 
+* First release! 
