@@ -11,6 +11,7 @@ Version 1.3.0:
 * Documented check function
 * Updated Stale bot config
 * Reformatted changelog
++ Added some VCS stuff
 
 Version 1.2.9:
 * EditorConfig file now included in sdists
