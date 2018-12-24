@@ -3,6 +3,7 @@
 - RDIL (Owner)
 - CoffeeGoddess (Maintainer)
 - rocketpropelledpotato (Maintainer)
+- water900 (Maintainer)
 - 73VW 
 - Wittionary
 - jerry-le
@@ -20,6 +21,5 @@
 - Plutoberth
 - DirtySoc
 - amrutha3
-- water900
 
 *(If anybody got missed or wants to be removed from the list open a PR please)*  
