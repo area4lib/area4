@@ -48,6 +48,9 @@ Please keep your code as readable as possible.  We have apps to help out with th
 ## Divider style  
 The divider style can be found in the `info for devs` section of the documentation.  
 
+## Betas  
+Help us test new code with betas!  They are WIP builds that are not finished and may contain bugs, and it helps us to find those before we deploy to PyPI.  Betas can be found in issues when we have decided to use them.  
+
 ## Documentation format  
 When adding dividers, it must be added to the list of dividers in the docs (`/projectrootfolder/docs/div-looks.rst`) as well as have its own docs in the function in the code.  
 
