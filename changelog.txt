@@ -1,6 +1,10 @@
 - Changelog -  
 
-<<<<<<< HEAD
+Key: 
+* Means modification
++ Means addition
+- Means deletion
+
 Version 1.3.0 (contains breaking changes):
 * Fixed issues with package info function
 * Moved check function to util module
@@ -12,11 +16,6 @@ Version 1.3.0 (contains breaking changes):
 + Added new beta system (will be used with this release)
 + Documented some functions that needed it
 * Updated config for the LaTeX builds of the docs
-=======
-Key: 
-* Means modification
-+ Means addition
-- Means deletion
 
 Version 1.3.0:
 * Fixed issues with package info function
@@ -25,7 +24,6 @@ Version 1.3.0:
 * Updated Stale bot config
 * Reformatted changelog
 + Added some VCS stuff
->>>>>>> 8317c74bc8774653290f3a2db9980ef9ae3609b0
 
 Version 1.2.9:
 * EditorConfig file now included in sdists
@@ -41,11 +39,7 @@ Version 1.2.7:
 + Added shrimp dividers
 + Added a .editorconfig
 + Added Other OS classifier
-<<<<<<< HEAD
 * Updated all ReadTheDocs links to go to the stable version
-=======
-* Updated all readthedocs links to go to the stable version
->>>>>>> 8317c74bc8774653290f3a2db9980ef9ae3609b0
 
 Version 1.2.6:
 - Dropped Python2 support fully 
@@ -61,17 +55,10 @@ Version 1.2.4:
 + Re-activated GitHub pages for the readme
 * Cleaned up some code
 * Updated issue templates
-<<<<<<< HEAD
 * Updated the git ignore
 + Added workspace settings for VSCode
 * Now forcing CIs to use older pip version
 + Added🕴dividers
-=======
-* Updated the gitignore
-+ Added workspace settings for VSCode
-* Now forcing CIs to use older pip version
-+ Added 🕴 dividers
->>>>>>> 8317c74bc8774653290f3a2db9980ef9ae3609b0
 + Added PyPy3.5 support classifiers
 * Made some changes to the docs
 
@@ -84,7 +71,6 @@ Version 1.2.2:
 * Big bug fix
 
 Version 1.2.1 (lots of random stuff):
-<<<<<<< HEAD
 * Now distributing .tar.gz and.zip formats for source code
 * Did some small manifest changes
 * Fixed some stuff with CIs
@@ -95,18 +81,6 @@ Version 1.2.1 (lots of random stuff):
 + Added new tag
 * Fixed some compatibility issues
 * Made the git ignore longer
-=======
-* Now distributing .tar.gz and.zip formats for source code  
-* Did some small manifest changes  
-* Fixed some stuff with CIs  
-* Updated issue templates  
-+ Added new badge to README file 
-* Updated stale tags 
-* Did some things with the extras directory 
-+ Added new tag 
-* Fixed some compatibility things 
-* Made the gitignore longer for no reason 
->>>>>>> 8317c74bc8774653290f3a2db9980ef9ae3609b0
 
 Version 1.1.9:
 + Added keywords to package
@@ -114,11 +88,7 @@ Version 1.1.9:
 Version 1.1.8:
 + Added lots more emojis
 + Added issue templates
-<<<<<<< HEAD
 + Added check to see if the libraries latest version installs without error
-=======
-+ Added check to see if the libraries latest version installs without error  
->>>>>>> 8317c74bc8774653290f3a2db9980ef9ae3609b0
 + Added PyCharm IDE files
 * Fixed some things with the docs
 
