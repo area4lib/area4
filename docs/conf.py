@@ -20,6 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Area4'
+project_lowercase = project.lower()
 copyright = '2018, RDIL!'
 author = 'RDIL'
 
@@ -110,7 +111,7 @@ htmlhelp_basename = 'Area4doc'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+    'papersize': 'letterpaper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #

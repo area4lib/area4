@@ -1,7 +1,10 @@
-# Area4 package by RDIL
+#  Copyright (c) 2018 - present RDIL.  You should have received a copy of the MIT License with this program/distribution.
+
+# area4 package by RDIL
 # Utilities module
 
-def check(__name__):
+
+def check(__name__: str) -> bool:
     """
     Tells you if the module is being run directly or being imported
     

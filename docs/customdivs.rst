@@ -8,7 +8,7 @@ They can be called/used/updated this way:
 .. code-block:: python
 
     # Setting:
-    area4.custom_div = str("dividertexthere")
+    area4.custom_div = str("divider_text_here")
 
     # Using:
     print(area4.customdiv())

@@ -1,82 +1,88 @@
 - Changelog -  
 
-Version 1.3.0:
-- Fixed issues with package info function
-- Moved check function to util module
-- Documented check function
+Version 1.3.0 (contains breaking changes):
+* Fixed issues with package info function
+* Moved check function to util module
+* Documented check function
+* Updated git ignore
++ Added proper copyright
+* Re-formatted basically everything
+* Updated contributing guidelines
++ Added new beta system (will be used with this release)
++ Documented some functions that needed it
+* Updated config for the LaTeX builds of the docs
 
 Version 1.2.9:
-- EditorConfig file now included in sdists
-- Updated author Email
+* EditorConfig file now included in sdists
+* Updated author Email
 
 Version 1.2.8:
-- Re-did all the docs
-- Added link check task for markdown files
-- Made almost all code fit PEP8
+* Re-did all the docs
++ Added link check task for markdown files
+* Made almost all code fit PEP8
 
 Version 1.2.7:
-- Added potato dividers for rocketpropelledpotato
-- Added shrimp dividers
-- Added a .editorconfig
-- Added Other OS classifier
-- Updated all readthedocs links to go to the stable version
++ Added potato dividers for rocketpropelledpotato
++ Added shrimp dividers
++ Added a .editorconfig
++ Added Other OS classifier
+* Updated all ReadTheDocs links to go to the stable version
 
 Version 1.2.6:
 - Dropped Python2 support fully 
-- Added project-wide settings for sublime text
++ Added project-wide settings for sublime text
 
 Version 1.2.5:
-- Added dice divider
-- Added bowling ball and pins divider
-- Added cookie dividers!
-- Added snowman dividers
++ Added dice divider
++ Added bowling ball and pins divider
++ Added cookie dividers!
++ Added snowman dividers
 
 Version 1.2.4:
-- Re-activated GitHub pages for the readme
-- Cleaned up some code
-- Updated issue templates
-- Updated the gitignore
-- Added workspace settings for VSCode
-- Now forcing CIs to use older pip version
-- Added 🕴 dividers
-- Added PyPy3.5 support classifiers
-- Made some changes to the docs
++ Re-activated GitHub pages for the readme
+* Cleaned up some code
+* Updated issue templates
+* Updated the git ignore
++ Added workspace settings for VSCode
+* Now forcing CIs to use older pip version
++ Added🕴dividers
++ Added PyPy3.5 support classifiers
+* Made some changes to the docs
 
 Version 1.2.3:
-- Added 📌 dividers
-- Fixed some stuff in the docs
-- Added another PR check
++ Added pin emoji dividers
+* Fixed some stuff in the docs
++ Added another PR check
 
 Version 1.2.2:
-- Big bug fix
+* Big bug fix
 
 Version 1.2.1 (lots of random stuff):
-- Now distributing .tar.gz and.zip formats for source code  
-- Did some small manifest changes  
-- Fixed some stuff with CIs  
-- Updated issue templates  
-- Added new badge to README file 
-- Updated stale tags 
-- Did some things with the extras directory 
-- Added new tag 
-- Fixed some compatibility things 
-- Made the gitignore longer for no reason 
+* Now distributing .tar.gz and.zip formats for source code
+* Did some small manifest changes
+* Fixed some stuff with CIs
+* Updated issue templates
++ Added new badge to README file
+* Updated stale tags
+* Did some things with the extras directory
++ Added new tag
+* Fixed some compatibility issues
+* Made the git ignore longer
 
 Version 1.1.9:
 + Added keywords to package
 
 Version 1.1.8:
-- Added lots more emojis
-- Added issue templates
-- Added check to see if the libraries latest version installs without error  
++ Added lots more emojis
++ Added issue templates
++ Added check to see if the libraries latest version installs without error
 + Added PyCharm IDE files
 * Fixed some things with the docs
 
 Version 1.1.7:
 + Added some emoji dividers
 * Fixed bug with manifest.in and setup.py (PR #42)
-+ Added whatthefork in extras
-* Manifest now includes the codeauthors file
+* Manifest now includes the CodeAuthors file
 
 Version 1.1.6:
 + Added alphabet dividers

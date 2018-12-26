@@ -11,7 +11,7 @@ There are a few things to keep in mind when contributing:
 
 1. **Be nice**: All of your contributions should be genuine contributions that respect the time of the developers and of other contributers. Always be respectful to others who open issues or pull requests. If someone else has a question that you can answer, answer politely and respectfully, and point them in the direction of any other issues or resources if they need help. Make sure you're creating a safe environment for others to contribute!  
 
-2. **Follow the [code of conduct](https://github.com/RDIL/area4/blob/master/CODE_OF_CONDUCT.md)**: area4 has a code of conduct that details the kind of behavior you should be demonstrating when using and contributing to this project. Before you contribute, please take a few minutes to read the code of conduct and always follow it when contributing.  
+2. **Follow the [code of conduct](https://rdil.rocks/area4/CODE_OF_CONDUCT/)**: area4 has a code of conduct that details the kind of behavior you should be demonstrating when using and contributing to this project. Before you contribute, please take a few minutes to read the code of conduct and always follow it when contributing.  
 
 ## Steps  
 
@@ -46,7 +46,7 @@ If you open a pull request that is still a work in progress, please put `[ WIP ]
 Please keep your code as readable as possible.  We have apps to help out with this such as [CodeFactor](https://codefactor.io) and Codebeat to lint code.  Where possible please abide by their feedback.  
 
 ## Divider style  
-The divider style can be found in the `info for devs` section of the documentation.  
+The divider style can be found in the `info for devs` section of the documentation.  Note: please keep dividers at exactly 12 characters.  
 
 ## Documentation format  
 When adding dividers, it must be added to the list of dividers in the docs (`/projectrootfolder/docs/div-looks.rst`) as well as have its own docs in the function in the code.  
