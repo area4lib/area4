@@ -4,13 +4,13 @@ about: Request a divider or feature for the project
 
 ---  
 ## Idea  
-Describe the idea.  
+<!-- Describe the idea. -->  
 
 ## Context  
-How did you get this idea?  
+<!-- How did you get this idea? -->  
 
 ## Helpfulness  
-How will this help the project?  (If this is a divider request delete this section)  
+<!-- How will this help the project?  (If this is a divider request delete this section) -->  
 
 ## Anything Else  
-Put anything else here.  
+<!-- Put anything else here. -->  

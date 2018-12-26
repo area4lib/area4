@@ -12,8 +12,7 @@
 
 # JetBrains PyCharm IDE misc. files  
 .idea/workspace.xml
-.idea/dictionaries/
-.idea/area4.iml
+*.iml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -64,7 +63,7 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
+# Django stuff
 *.log
 local_settings.py
 db.sqlite3
@@ -162,11 +161,6 @@ Session.vim
 
 # Temporary
 .netrwhist
-*~
-# Auto-generated tag files
-tags
-# Persistent undo
-[._]*.un~
 
 # Windows thumbnail cache files
 Thumbs.db
@@ -189,10 +183,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Notepad++ backups 
+# Notepad++ backups
 *.bak
-
-*~
 
 # temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
@@ -206,8 +198,69 @@ $RECYCLE.BIN/
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# JPEG 2000
+*.jp2
+*.j2k
+*.jpf
+*.jpx
+*.jpm
+*.mj2
+
+# JPEG XR
+*.jxr
+*.hdp
+*.wdp
+
+# Graphics Interchange Format
+*.gif
+
 # RAW
 *.raw
+
+# Web P
+*.webp
+
+# Portable Network Graphics
+*.png
+
+# Animated Portable Network Graphics
+*.apng
+
+# Multiple-image Network Graphics
+*.mng
+
+# Tagged Image File Format
+*.tiff
+*.tif
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
+# Portable Document Format
+*.pdf
+
+# X BitMap
+*.xbm
+
+# BMP
+*.bmp
+*.dib
+
+# ICO
+*.ico
+
+# 3D Images
+*.3dm
+*.max
 
 *.7z
 *.jar
@@ -234,3 +287,6 @@ $RECYCLE.BIN/
 *.rpm
 *.msm
 *.msp
+
+*.vcs
+.idea/dictionaries/
