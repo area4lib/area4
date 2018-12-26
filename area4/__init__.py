@@ -33,7 +33,6 @@ divider15 = str("☕☕☕☕☕☕☕☕☕☕☕☕")
 divider16 = str('++++++++++++')
 divider17 = str("r(`,,,`)r r(`,,,`)r r(`,,,`)r ")
 divider18 = str("( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)")
-<<<<<<< HEAD
 divider19 = str("&&&&&&&&&&&&")
 divider20 = str("^^^^^^^^^^^^")
 divider21 = str("¯\\_(ツ)_/¯ ¯\\_(ツ)_/¯ ¯\\_(ツ)_/¯ ¯\\_(ツ)_/¯")  # each \ is escaped, ignore it please.
@@ -52,7 +51,6 @@ divider33 = str("^,^,^,^,^,^,")
 divider34 = str("&*&*&*&*&*&*")
 divider35 = str(random.randint(0, 99999999999999999999999))
 divider36 = str("````````````")
-=======
 divider19 = str("&&&&&&&&&&&&&&&&&&&&&&&&&")
 divider20 = str("^^^^^^^^^^^^^^^^^^^^^^^^^")
 divider21 = str("¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯")
@@ -71,7 +69,6 @@ divider33 = str("^,^,^,^,^,^,^,^,^,^,^,^")
 divider34 = str("&*&*&*&*&*&*&*&*&*&*&*&")
 divider35 = str(random.randint(0, 999999999999))
 divider36 = str("```````````````````````")
->>>>>>> 8317c74bc8774653290f3a2db9980ef9ae3609b0
 divider37 = str("aaaaaaaaaaaa")
 divider38 = str("AAAAAAAAAAAA")
 divider39 = str("bbbbbbbbbbbb")
