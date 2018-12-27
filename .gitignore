@@ -229,3 +229,4 @@ $RECYCLE.BIN/
 
 *.vcs
 .idea/dictionaries/
+.vscode/
