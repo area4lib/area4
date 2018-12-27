@@ -225,3 +225,5 @@ $RECYCLE.BIN/
 *.rpm
 *.msm
 *.vcs
+.idea/dictionaries/
+.vscode/
