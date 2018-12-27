@@ -14,6 +14,10 @@
 /.idea/workspace.xml
 /.idea/dictionaries/
 
+# Visual Studio Code config directories
+/.vscode/
+/docs/.vscode/
+
 # Byte-compiled / optimized / DLL files
 /__pycache__/
 *.py[cod]
@@ -225,5 +229,3 @@ $RECYCLE.BIN/
 *.rpm
 *.msm
 *.vcs
-.idea/dictionaries/
-.vscode/
