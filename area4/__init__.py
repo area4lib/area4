@@ -2309,7 +2309,7 @@ def div206():
 
 def div207():
     """
-    Returns the divider ⛄⛄⛄⛄⛄⛄⛄⛄⛄⛄
+    Returns the divider ⛄⛄⛄⛄⛄⛄⛄⛄⛄⛄⛄⛄
 
     :return: divider207
     """
