@@ -5,4 +5,6 @@ Dividers in Python, the easy way!  Many different types.  [(As seen on PyPI!)](h
 
 ## **[Documentation can be found here](https://area4.readthedocs.io/en/stable/)** <-------  
 
+# WARNING: THIS VERSION IS THE LAST LEGACY VERSION!!
+
 For help/troubleshooting see our [wiki](https://github.com/RDIL/area4/wiki).  
