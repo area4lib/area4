@@ -1,21 +1,7 @@
 Custom Dividers
 ===============
 
-.. important:: In version 1.0.3, custom dividers were added.  They can't be saved, but will stay applied until the Python script ends.
-
-They can be called/used/updated this way:
-
-.. code-block:: python
-
-    # Setting:
-    area4.custom_div = str("divider_text_here")
-
-    # Using:
-    print(area4.customdiv())
-    # or...
-    print(area4.custom_div)
-
-You can also generate a custom divider with the make_div function
+You can generate a custom divider with the make_div function
 
 .. code-block:: python
 
