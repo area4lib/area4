@@ -14,7 +14,7 @@ author_email = "me@rdil.rocks"
 support_email = "support@rdil.rocks"
 description = "Dividers in Python, the easy way! Multiple different divider looks."
 
-# The array to store dividers in: 
+# The array to store dividers in:
 dividers = []
 
 
