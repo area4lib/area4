@@ -6,6 +6,7 @@
 
 # Imports:
 import random
+import area4.util
 
 # Info variables:
 name = "area4"
@@ -19,10 +20,13 @@ dividers = []
 
 
 # Run some needed operations:
-def initLib():
-    with open("dividers.txt", "r") as fh:
-        lines = fh.readlines()
-        lines[35] = random.randint(0, 999999999999)
+def init_lib():
+    if not area4.util.check(internal_name=__name__):
+        with open("dividers.txt", "r") as fh:
+            lines = fh.readlines()
+            lines[35] = random.randint(0, 999999999999)
+    else:
+        raise EnvironmentError("The __init__.py file can't be run directly!")
 
 
 # Function to get a divider
@@ -64,4 +68,4 @@ def area4info():
         return "[SyntaxError] Please use Python 3.6 or above to run this function."
 
 
-initLib()
+init_lib()
