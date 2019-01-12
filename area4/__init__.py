@@ -25,6 +25,7 @@ def init_lib():
         with open("dividers.txt", "r") as fh:
             lines = fh.readlines()
             lines[35] = random.randint(0, 999999999999)
+            dividers = lines
     else:
         raise EnvironmentError("The __init__.py file can't be run directly!")
 
