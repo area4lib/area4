@@ -8,7 +8,7 @@ def check(internal_name: str) -> bool:
     """
     Tells you if the module is being run directly or being imported
 
-    :return: If __name__ is __main__ is true or false
+    :return: If __name__ is '__main__' (boolean)
     :rtype: bool
     """
     if internal_name == "__main__":
