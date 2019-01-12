@@ -7,13 +7,22 @@
 # Imports:
 import random
 
+# Info variables:
+name = "area4"
+author = "https://github.com/RDIL"
+author_email = "me@rdil.rocks"
+support_email = "support@rdil.rocks"
+description = "Dividers in Python, the easy way! Multiple different divider looks."
+
+# The array to store dividers in: 
+dividers = []
+
 
 # Run some needed operations:
 def initLib():
-    dividers = []
     with open("dividers.txt", "r") as fh:
         lines = fh.readlines()
-        dividers[35] = random.randint(0, 999999999999)
+        lines[35] = random.randint(0, 999999999999)
 
 
 # Function to get a divider
@@ -33,7 +42,6 @@ def divider(number: int) -> str:
     
     if number == 0:
         raise ValueError('Please use a number bigger then 0!')
-        return "Error"
     else:
         return dividers[number]
 
@@ -54,5 +62,6 @@ def area4info():
         return info
     except SyntaxError:
         return "[SyntaxError] Please use Python 3.6 or above to run this function."
+
 
 initLib()
