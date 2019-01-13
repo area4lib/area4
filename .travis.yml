@@ -28,7 +28,7 @@ before_install:
 
 install:
   - pip install -r requirements.txt
-  - "python3 -m pip install --upgrade setuptools wheel twine flake8"
+  - "python3 -m pip install --upgrade setuptools wheel twine"
 
 after_install:
   - "echo Finished install phase!  "
@@ -38,8 +38,6 @@ before_script:
 
 script:
   - "python3 setup.py sdist bdist_wheel bdist_egg dist_info"
-  - "flake8 /area4/"
-  - "flake8 /area4/util/"
   - "wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh"
   - "chmod +x send.sh"
 
