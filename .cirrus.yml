@@ -18,11 +18,11 @@ link_check_task:
     populate_script: npm install -g markdown-link-check@3.7.2
   script: find . -name \*.md -exec markdown-link-check {} \;
 
-flake8_task:
+linting_flake8_task:
   container:
     image: python:latest
   pip_cache:
     folder: ~/.cache/pip
     fingerprint_script: echo $PYTHON_VERSION
     populate_script: python3 -m pip install --upgrade flake8
-  flake8_script: flake8 /area4/ && flake8 /area4/util/
+  linting_flake8_script: flake8 /area4/ && flake8 /area4/util/
