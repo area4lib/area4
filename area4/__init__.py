@@ -1,7 +1,7 @@
 #  Copyright (c) 2018 - present RDIL.
-#  You should have received a copy of the 
+#  You should have received a copy of the
 #  MIT License with this program/distribution.
-
+# ---------------------------------------------------
 # ~ area4 Package by RDIL ~
 # This package and source should be compatible with Python 3.4 and up!
 # (not including the package info function; its 3.6 and up)
@@ -37,7 +37,6 @@ class Dividers:
     def divider(self, number: int) -> str:
         """
         Gets you the divider you requested!
-
         :param number: the divider number (NOT 0)
         :raises: ValueError
         :return: requested divider
@@ -56,7 +55,6 @@ class Dividers:
     def area4info(self):
         """
         Gets you some info about the package
-
         :return: Package info
         :rtype: str
         """
