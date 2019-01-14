@@ -8,7 +8,7 @@ setuptools.setup(
     version="2.0-dev",
     author="RDIL",
     author_email="me@rdil.rocks",
-    description="Dividers in Python, the easy way! Many different divider looks.",
+    description="Dividers in Python, the easy way!",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/RDIL/area4",
