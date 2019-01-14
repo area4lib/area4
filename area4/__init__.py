@@ -1,4 +1,5 @@
-#  Copyright (c) 2018 - present RDIL.  You should have received a copy of the MIT License with this program/distribution.
+#  Copyright (c) 2018 - present RDIL.
+#  You should have received a copy of the MIT License with this program/distribution.
 
 # ~ area4 Package by RDIL ~
 # This package and source should be compatible with Python 3.4 and up!
@@ -22,7 +23,7 @@ class Dividers:
     dividers = []
 
     # Run some needed operations:
-    def init_lib(self):
+    def __init__(self):
         if not area4.util.check(internal_name=__name__):
             with open("dividers.txt", "r") as fh:
                 lines = fh.readlines()
@@ -45,7 +46,6 @@ class Dividers:
         area4.divider(97)
         will return 🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️
         """
-
         if number == 0:
             raise ValueError('Please use a number bigger then 0!')
         else:
@@ -67,5 +67,3 @@ class Dividers:
             return info
         except SyntaxError:
             return "[SyntaxError] Please use Python 3.6 or above to run this function."
-
-    init_lib()
