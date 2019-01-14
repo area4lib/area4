@@ -1,5 +1,6 @@
 #  Copyright (c) 2018 - present RDIL.
-#  You should have received a copy of the MIT License with this program/distribution.
+#  You should have received a copy of the 
+#  MIT License with this program/distribution.
 
 # ~ area4 Package by RDIL ~
 # This package and source should be compatible with Python 3.4 and up!
@@ -17,7 +18,7 @@ class Dividers:
     author = "https://github.com/RDIL"
     author_email = "me@rdil.rocks"
     support_email = "support@rdil.rocks"
-    description = "Dividers in Python, the easy way! Multiple different divider looks."
+    description = "Dividers in Python, the easy way!"
 
     # The array to store dividers in:
     dividers = []
@@ -30,7 +31,7 @@ class Dividers:
                 lines[35] = random.randint(0, 999999999999)
                 self.dividers = lines
         else:
-            raise EnvironmentError("The __init__.py file can't be run directly!")
+            raise EnvironmentError("This file can't be run directly!")
 
     # Function to get a divider
     def divider(self, number: int) -> str:
@@ -66,4 +67,4 @@ class Dividers:
             info += f"\nDescription: {self.description}"
             return info
         except SyntaxError:
-            return "[SyntaxError] Please use Python 3.6 or above to run this function."
+            return "Use Python 3.6 or above to run this function."
