@@ -1,7 +1,7 @@
 Divider looks
 =============
 
-*The number before it is the number used in calling it, so for example if you want divider 1, it would be area4.divider1 or area4.div1().*
+*The number before it is the number you pass to the divider function.  So if you want divider 1 you would do instanceName.divider(1)*
 If you don't understand, see the examples part of the documentation.
 
 1. Dashed
