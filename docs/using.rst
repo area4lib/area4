@@ -9,16 +9,20 @@ You can do this by adding the following line to the top:
 
     import area4
 
-After doing so, you can use any of the methods listed in the examples section to get the dividers.
+After doing so, you need to create an instance of the class, for example:
+
+.. code-block:: python
+
+    a4 = area4.Dividers()
 
 
-.. warning:: In version 1.1.0, the functions changed in the way they operated.  Before 1.1.0, the functions printed the variables, but after the release, they now just return the variable.
+.. warning:: Legacy versions are no longer documented and don't work.   
 
 And if you want to you can check to make sure the library is working:
 
 .. code-block:: python
 
-    print(area4.area4info())
+    print(a4.area4info())
 
 .. warning:: The area4info function will only work on Python 3.6 or above.  Keep this in mind if using it and you don't want SyntaxErrors!  
 

@@ -43,7 +43,7 @@ Please don't spam us with one-liners.  Fixing one typo is fine but fixing five t
 If you open a pull request that is still a work in progress, please put `[ WIP ]` in the title.  It will make the work-in-progress bot keep its status check at pending.  This helps us out a ton as we know that a PR is NOT ready for merge.  
 
 ## Code quality  
-Please keep your code as readable as possible.  We have apps to help out with this such as [CodeFactor](https://codefactor.io) and Codebeat to lint code.  Where possible please abide by their feedback.  
+Please keep your code as readable as possible.  We have apps to help out with this such as [CodeFactor](https://codefactor.io) to lint code.  Where possible please abide by their feedback.  
 
 ## Divider style  
 The divider style can be found in the `info for devs` section of the documentation.  Note: please keep dividers at exactly 12 characters.  

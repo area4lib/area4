@@ -12,7 +12,7 @@ To install via pip, open a terminal, and type the following command:
 
 .. code-block:: console
 
-    $ pip install area4
+    $ pip install --upgrade area4
 
 It should install.
 
