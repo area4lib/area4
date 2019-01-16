@@ -47,7 +47,6 @@ script:
 
 after_script:
   - "echo Test phase finished!  "
-  - "codecov ."
 
 after_success:
   - ./send.sh success $WEBHOOK_URL
