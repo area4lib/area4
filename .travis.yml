@@ -54,6 +54,7 @@ script:
 after_script:
   - "echo Test phase finished!  "
   - "codecov --token $CODECOV_TOKEN --file *.py"
+  - "bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN"
 
 after_success:
   - ./send.sh success $WEBHOOK_URL
