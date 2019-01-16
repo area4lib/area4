@@ -10,6 +10,9 @@ os:
 git:
   quiet: true
 
+notifications:
+  email: false
+
 branches:
   except:
   - python-2-supported
@@ -18,6 +21,7 @@ python:
   - "3.4"
   - "3.5-dev"
   - "pypy3.5"
+  - "3.5"
   - "3.6"
   - "3.6-dev"
   - "3.7-dev"
