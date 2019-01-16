@@ -27,21 +27,18 @@ python:
   - "3.7-dev"
 
 before_install:
-  - "echo Starting install phase...  "
+  - "echo Starting install phase..."
   - "pip install --upgrade pip==9.0.1"
 
 install:
   - "python3 -m pip install --upgrade setuptools wheel twine"
   - "python3 -m pip install -r requirements.txt"
-  - "cd requirements/"
-  - "python3 -m pip install -r coverage-requirements.txt"
-  - "cd .."
 
 after_install:
-  - "echo Finished install phase!  "
+  - "echo Finished install phase!"
 
 before_script:
-  - "echo Starting test phase...  "
+  - "echo Starting test phase..."
 
 script:
   - "python3 setup.py sdist bdist_wheel bdist_egg dist_info"
@@ -49,12 +46,11 @@ script:
   - "chmod +x send.sh"
 
 after_script:
-  - "echo Test phase finished!  "
-  - "codecov --token $CODECOV_TOKEN --file *.py"
+  - "echo Test phase finished!"
 
 after_success:
   - ./send.sh success $WEBHOOK_URL
-  - "echo Build finished without errors!  "
+  - "echo Build finished without errors!"
 
 after_failure:
   - ./send.sh failure $WEBHOOK_URL
