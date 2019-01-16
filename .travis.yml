@@ -47,7 +47,9 @@ script:
   - "python3 setup.py sdist bdist_wheel bdist_egg dist_info"
   - "wget $WEBHOOK_WGET"
   - "chmod +x send.sh"
-  - "coverage run setup.py"
+  - "rm -r dist/"
+  - "rm -r build/"
+  - "coverage run setup.py sdist bdist_wheel"
 
 after_script:
   - "echo Test phase finished!  "
