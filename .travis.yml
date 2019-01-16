@@ -50,7 +50,7 @@ script:
 
 after_script:
   - "echo Test phase finished!  "
-  - "codecov ."
+  - "codecov --token $CODECOV_TOKEN --file *.py"
 
 after_success:
   - ./send.sh success $WEBHOOK_URL
