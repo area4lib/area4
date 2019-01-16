@@ -5,6 +5,14 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.0.0 (contains VERY BREAKING changes):
+* Completely changed the divider addition system
+* Removed most of the GitHub apps, added new ones (but somehow we still have 10 status checks, @dowlandaiello is probably laughing at me about that) (More specifically, KEPT Snyk, CodeFactor, Travis push & pull, and WIP, REMOVED Codebeat, Hound, Zolando Zappr, ADDED Lambda lint)
+* Redid docs
++ Gave the util module its own package so the import system isn't really odd
+* Updated GitIgnore
+* Made the main module class based ( /!\ VERY BREAKING CHANGES ALERT /!\ )
+
 Version 1.3.0 (contains breaking changes):
 * Fixed issues with package info function
 * Moved check function to util module
