@@ -1,6 +1,6 @@
 import setuptools
 
-if not __name__ == "__main__":
+if __name__ != "__main__":
     raise EnvironmentError()
 else:
     with open("README.md", "r") as fh:
