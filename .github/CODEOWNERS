@@ -1,0 +1,10 @@
+# Area: vscode
+.vscode/ @dowlandaiello
+
+# Area: Main code
+area4/      @RDIL @rocketpropelledpotato
+area4/util/ @RDIL @rocketpropelledpotato
+
+# Area: docs
+docs/        @CoffeeGoddess
+.github/*.md @CoffeeGoddess
