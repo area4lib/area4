@@ -1,10 +1,10 @@
 ### HERE IS A LIST OF EVERYONE THAT HAVE CONTRUBUTED TO THIS REPOSITORY:
 
-- RDIL (Owner)
-- CoffeeGoddess (Maintainer)
-- rocketpropelledpotato (Maintainer)
-- water900 (Maintainer)
-- theonetheonlydemon (Maintainer)
+- RDIL ***(Owner)***
+- CoffeeGoddess **(Maintainer)**
+- rocketpropelledpotato **(Maintainer)**
+- water900 **(Maintainer)**
+- theonetheonlydemon **(Maintainer)**
 - 73VW 
 - Wittionary
 - jerry-le
