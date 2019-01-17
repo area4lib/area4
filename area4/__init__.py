@@ -75,12 +75,13 @@ class Dividers:
             return "Use Python 3.6 or above to run this function."
 
 
-    def make_div(self, unit: str, length: int = 24, start: str = '', end: str = '', literal_unit=False) -> str:
+    def make_div(self, unit: str, length: int = 24, 
+                 start: str = '', end: str = '', literal_unit=False) -> str:
         """
         Generates and returns a custom divider
         :param self:
         :param unit: str containing a repeating unit
-        :param length: The maximum length that will not be exceeded (default: 24)
+        :param length: The maximum length (won't be exceeded) (default: 24)
         :param start: optional starting string
         :param end: optional ending string
         :param literal_unit: if True will not try to break unit down into smaller repeating subunits
