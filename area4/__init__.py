@@ -90,11 +90,15 @@ class Dividers:
 
         :Example:
         custom_div = make_div(unit='=-', length=40, start='<', end='=>')
-        note:: The generated string will be terminated at the specified length regardless
-        of whether all the input strings have been fully replicated.  A unit > 1 length may
-        not be able to be replicated to extend to the full length.  In this situation, the
+        note:: The generated string will be terminated 
+        at the specified length regardless
+        of whether all the input strings have been fully replicated.  
+        A unit > 1 length may
+        not be able to be replicated to extend to the full length.  
+        In this situation, the
         string will be shorter than the specified length.
-        Example: unit of 10 characters and a specified length of 25 will contain 2 units for
+        Example: unit of 10 characters and a specified length of 
+        25 will contain 2 units for
         a total length of 20 characters.
         """
 
@@ -104,7 +108,6 @@ class Dividers:
         repeats = (length - len(start + end)) // len(unit)
 
         return (start + unit * repeats + end)[0:length]
-
 
     def _reduce_to_unit(self, divider: str) -> str:
         """
@@ -121,7 +124,7 @@ class Dividers:
         for unit_size in range(1, len(divider) // 2 + 1):
             length = len(divider)
             unit = divider[:unit_size]
-            
+
             # ignores mismatches in final characters
             if unit * (length // unit_size) == divider[:unit_size * (length // unit_size)]:
                 return unit
