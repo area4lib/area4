@@ -4,6 +4,7 @@
 - CoffeeGoddess (Maintainer)
 - rocketpropelledpotato (Maintainer)
 - water900 (Maintainer)
+- theonetheonlydemon (Maintainer)
 - 73VW 
 - Wittionary
 - jerry-le
