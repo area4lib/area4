@@ -74,7 +74,6 @@ class Dividers:
         except SyntaxError:
             return "Use Python 3.6 or above to run this function."
 
-
     def make_div(self, unit: str, length: int = 24, 
                  start: str = '', end: str = '', literal_unit=False) -> str:
         """
@@ -84,20 +83,21 @@ class Dividers:
         :param length: The maximum length (won't be exceeded) (default: 24)
         :param start: optional starting string
         :param end: optional ending string
-        :param literal_unit: if True will not try to break unit down into smaller repeating subunits
+        :param literal_unit: if True will not try to break 
+        unit down into smaller repeating subunits
         :return: a custom created divider
         :rtype: str
 
         :Example:
         custom_div = make_div(unit='=-', length=40, start='<', end='=>')
-        note:: The generated string will be terminated 
+        note:: The generated string will be terminated
         at the specified length regardless
-        of whether all the input strings have been fully replicated.  
+        of whether all the input strings have been fully replicated.
         A unit > 1 length may
-        not be able to be replicated to extend to the full length.  
+        not be able to be replicated to extend to the full length.
         In this situation, the
         string will be shorter than the specified length.
-        Example: unit of 10 characters and a specified length of 
+        Example: unit of 10 characters and a specified length of
         25 will contain 2 units for
         a total length of 20 characters.
         """
