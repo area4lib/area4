@@ -28,7 +28,7 @@ class Dividers:
         """
         Inits the class
         :param self:
-        :return: nothing 
+        :return: nothing
         """
         if not area4.util.check(internal_name=__name__):
             with open("dividers.txt", "r") as fh:
@@ -42,7 +42,7 @@ class Dividers:
     def divider(self, number: int) -> str:
         """
         Gets you the divider you requested!
-        :param self: 
+        :param self:
         :param number: the divider number (NOT 0)
         :raises: ValueError
         :return: requested divider
@@ -73,8 +73,8 @@ class Dividers:
             return info
         except SyntaxError:
             return "Use Python 3.6 or above to run this function."
-    
-    
+
+
     def make_div(self, unit: str, length: int = 24, start: str = '', end: str = '', literal_unit=False) -> str:
         """
         Generates and returns a custom divider
@@ -86,7 +86,7 @@ class Dividers:
         :param literal_unit: if True will not try to break unit down into smaller repeating subunits
         :return: a custom created divider
         :rtype: str
-        
+
         :Example:
         custom_div = make_div(unit='=-', length=40, start='<', end='=>')
         note:: The generated string will be terminated at the specified length regardless
@@ -108,12 +108,12 @@ class Dividers:
     def _reduce_to_unit(self, divider: str) -> str:
         """
         Reduces a repeating divider to the smallest repeating unit possible
-        
+
         :param self:
         :param divider: the divider
         :return: smallest repeating unit possible
         :rtype: str
-        
+
         :Example:
         'XxXxXxX' -> 'Xx'
         """
