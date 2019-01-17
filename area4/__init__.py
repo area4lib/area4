@@ -8,8 +8,6 @@
 
 # Imports:
 import random
-import area4.util
-
 
 # Class:
 class Dividers:
@@ -30,13 +28,10 @@ class Dividers:
         :param self:
         :return: nothing
         """
-        if not area4.util.check(internal_name=__name__):
-            with open("dividers.txt", "r") as fh:
-                lines = fh.readlines()
-                lines[35] = random.randint(0, 999999999999)
-                self.dividers = lines
-        else:
-            raise EnvironmentError("This file can't be run directly!")
+        with open("dividers.txt", "r") as fh:
+            lines = fh.readlines()
+            lines[35] = random.randint(0, 999999999999)
+            self.dividers = lines
 
     # Function to get a divider
     def divider(self, number: int) -> str:
