@@ -31,11 +31,12 @@ before_install:
   - "pip install --upgrade pip==9.0.1"
 
 install:
-  - "python3 -m pip install --upgrade setuptools wheel twine"
-  - "python3 -m pip install -r requirements.txt"
+  - "cd requirements"
+  - "python3 -m pip install -r test-requirements.txt"
 
 after_install:
   - "echo Finished install phase!"
+  - "cd .."
 
 before_script:
   - "echo Starting test phase..."
