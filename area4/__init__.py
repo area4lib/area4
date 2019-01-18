@@ -5,6 +5,7 @@
 # ~ area4 Package by RDIL ~
 # This package and source should be compatible with Python 3.4 and up!
 # (not including the package info function; its 3.6 and up)
+# ---------------------------------------------------
 
 # Imports:
 import random
