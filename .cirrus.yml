@@ -29,3 +29,12 @@ markdown_lint_task:
     fingerprint_script: cat requirements.txt
     populate_script: npm install -g remark-lint remark-cli remark-preset-lint-recommended
   script: find . -name \*.md -exec remark {} \;
+
+rst_lint_task:
+  container:
+    image: python:latest
+  pip_cache:
+    folder: ~/.cache/pip
+    fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
+    populate_script: python3 -m pip install --upgrade restructuredtext-lint==1.2.2
+  test_script: rst-lint path docs/
