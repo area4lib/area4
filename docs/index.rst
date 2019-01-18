@@ -26,7 +26,7 @@ By RDIL [#RDIL]_
 `View on GitHub`_
 
 Examples
-========
+--------
 
 .. warning:: If you don't understand what we mean by dividers, fear not.
 
