@@ -31,10 +31,13 @@ markdown_lint_task:
   script: find . -name \*.md -exec remark {} \;
 
 rst_lint_task:
+  depends_on:
+    - test
+    - link_check
   container:
     image: python:latest
   pip_cache:
     folder: ~/.cache/pip
     fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
     populate_script: python3 -m pip install --upgrade restructuredtext-lint==1.2.2
-  test_script: rst-lint path docs/
+  test_script: python3 -m restructuredtext-lint path docs/
