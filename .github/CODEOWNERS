@@ -1,10 +1,14 @@
-# Area: vscode
-.vscode/ @dowlandaiello
+# Area: Visual Studio Code config
+.vscode/              @dowlandaiello
 
 # Area: Main code
-area4/      @RDIL @rocketpropelledpotato
-area4/util/ @RDIL @rocketpropelledpotato
+area4/                @RDIL @rocketpropelledpotato
+area4/util/           @RDIL @rocketpropelledpotato
 
-# Area: docs
-docs/        @CoffeeGoddess
-.github/*.md @CoffeeGoddess
+# Area: Docs
+docs/                 @CoffeeGoddess
+.github/*.md          @CoffeeGoddess
+
+# Area: Requirements
+requirements/*.txt    @RDIL @theonetheonlydemon
+requirements/         @RDIL @theonetheonlydemon
