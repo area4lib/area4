@@ -33,4 +33,4 @@ Important: Please read all pages before creating issues as the question may be a
 
 
 .. _`View on GitHub`: https://github.com/RDIL/area4
-.. [#RDIL] <contactspaceboom@gmail.com>
+.. [#RDIL] <me@rdil.rocks>
