@@ -31,12 +31,12 @@ before_install:
   - "pip install --upgrade pip==9.0.1"
 
 install:
-  - "cd requirements"
+  - "cd $TRAVIS_BUILD_DIR/requirements/"
   - "python3 -m pip install -r test.txt"
+  - "cd $TRAVIS_BUILD_DIR"
 
 after_install:
   - "echo Finished install phase!"
-  - "cd .."
 
 before_script:
   - "echo Starting test phase..."
