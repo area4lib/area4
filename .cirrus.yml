@@ -3,7 +3,7 @@ test_task:
     image: python:latest
   pip_cache:
     folder: ~/.cache/pip
-    fingerprint_script: echo $PYTHON_VERSION && cd requirements/ cat test.txt
+    fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
     populate_script: python3 -m pip install --upgrade pip==9.0.1 && python3 -m pip install --upgrade setuptools wheel twine
   test_script: python3 setup.py sdist bdist_wheel && rm -r build/ && ls dist/
 
