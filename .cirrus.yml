@@ -4,8 +4,8 @@ test_task:
   pip_cache:
     folder: ~/.cache/pip
     fingerprint_script: echo $PYTHON_VERSION && cd requirements/ cat test.txt
-    populate_script: python3 -m pip install --upgrade pip==9.0.1 && cd $CIRRUS_WORKING_DIR/requirements && python3 -m pip install -r test.txt && cd $CIRRUS_WORKING_DIR/
-  test_script: python3 setup.py sdist bdist_wheel && rm -r build/ && ls dist/ && pip install --upgrade area4
+    populate_script: python3 -m pip install --upgrade pip==9.0.1 && python3 -m pip install --upgrade setuptools wheel twine
+  test_script: python3 setup.py sdist bdist_wheel && rm -r build/ && ls dist/
 
 link_check_task:
   container:
