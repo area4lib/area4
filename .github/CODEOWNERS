@@ -1,14 +1,22 @@
 # Area: Visual Studio Code config
 .vscode/              @dowlandaiello
+docs/.vscode/         @dowlandaiello
 
 # Area: Main code
 area4/                @RDIL @rocketpropelledpotato
 area4/util/           @RDIL @rocketpropelledpotato
+*.py                  @RDIL @rocketpropelledpotato
 
 # Area: Docs
 docs/                 @CoffeeGoddess
 .github/*.md          @CoffeeGoddess
+*.md                  @CoffeeGoddess
 
 # Area: Requirements
 requirements/*.txt    @RDIL @theonetheonlydemon
 requirements/         @RDIL @theonetheonlydemon
+
+# Area: Configuration files
+setup.cfg             @RDIL @theonetheonlydemon
+setup.py              @RDIL @theonetheonlydemon
+.pypirc               @RDIL @theonetheonlydemon
