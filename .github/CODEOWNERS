@@ -10,6 +10,7 @@ area4/util/           @RDIL @rocketpropelledpotato
 # Area: Docs
 docs/                 @CoffeeGoddess
 .github/*.md          @CoffeeGoddess
+.github/
 *.md                  @CoffeeGoddess
 
 # Area: Requirements
