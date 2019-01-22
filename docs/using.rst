@@ -27,4 +27,12 @@ And if you want to you can check to make sure the library is working:
 
 .. warning:: The area4info function will only work on Python 3.6 or above.  Keep this in mind if using it and you don't want SyntaxErrors!  
 
+Now, to get dividers, use this function:
 
+.. code-block:: python
+
+    print(
+        instanceName.divider(4)
+    )  # This example prints divider number 4
+
+For what all the dividers look like, see the next section!  
