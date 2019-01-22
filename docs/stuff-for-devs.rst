@@ -4,6 +4,7 @@ Info for devs
 __name__ Checking
 -----------------
 You can check to see if __name__ is "__main__" by running this function: 
+
 .. code-block:: python
 
     # import the utilities module:  
