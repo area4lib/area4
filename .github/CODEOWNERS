@@ -14,10 +14,10 @@ docs/                 @CoffeeGoddess
 *.md                  @CoffeeGoddess
 
 # Area: Requirements
-requirements/*.txt    @RDIL @theonetheonlydemon
-requirements/         @RDIL @theonetheonlydemon
+requirements/*.txt    @RDIL
+requirements/         @RDIL
 
 # Area: Configuration files
-setup.cfg             @RDIL @theonetheonlydemon
-setup.py              @RDIL @theonetheonlydemon
-.pypirc               @RDIL @theonetheonlydemon
+setup.cfg             @RDIL
+setup.py              @RDIL
+.pypirc               @RDIL
