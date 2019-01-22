@@ -216,3 +216,4 @@ If you don't understand, see the examples part of the documentation.
 
 And more coming soon!
 
+Thanks to @amrutha3 on GitHub for making the majority of the emoji dividers!  
