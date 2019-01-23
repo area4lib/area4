@@ -12,6 +12,7 @@ Version 2.0.0 (contains VERY BREAKING changes):
 + Gave the util module its own package so the import system isn't really odd
 * Updated GitIgnore
 * Made the main module class based ( /!\ VERY BREAKING CHANGES ALERT /!\ )
+* Made sure the wheel is not build universally
 
 Version 1.3.0 (contains breaking changes):
 * Fixed issues with package info function
