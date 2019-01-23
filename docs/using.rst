@@ -13,7 +13,7 @@ After doing so, you need to create an instance of the class, for example:
 
 .. code-block:: python
 
-    instanceName = area4.Dividers()
+    instanceName = area4.Area4Instance()
 
 (replace instanceName with whatever you want, but do NOT use "area4" or "Area4")
 
