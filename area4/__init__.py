@@ -12,7 +12,7 @@ import random
 
 
 # Class:
-class Dividers:
+class Area4Instance:
     # Info variables:
     name = "area4"
     author = "https://github.com/RDIL"
