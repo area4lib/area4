@@ -25,7 +25,9 @@ copyright = '2018, RDIL!'
 author = 'RDIL'
 
 # The short X.Y version
+# AREA4 KEEP STATIC
 version = ''
+# AREA4 KEEP STATIC
 # The full version, including alpha/beta/rc tags
 release = ''
 
@@ -41,7 +43,8 @@ release = ''
 # ones.
 extensions = [
     'sphinx.ext.intersphinx',
-    'sphinx.ext.githubpages'
+    'sphinx.ext.githubpages',
+    'sphinx.ext.extlinks'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -100,6 +103,8 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
+# If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
+html_show_copyright = True
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
