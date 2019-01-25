@@ -8,7 +8,3 @@ Dividers in Python, the easy way!  Many different types.  [(As seen on PyPI!)](h
 ## **Documentation** [can be found here](https://area4.readthedocs.io/en/stable/) <-------  
 
 For help/troubleshooting see our [wiki](https://github.com/RDIL/area4/wiki).  
-
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FRDIL%2Farea4.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FRDIL%2Farea4?ref=badge_large)
