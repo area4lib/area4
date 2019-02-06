@@ -9,6 +9,7 @@
 
 # Imports:
 import random
+import os
 
 
 # Class:
@@ -30,7 +31,13 @@ class Area4Instance:
         :param self:
         :return: nothing
         """
-        with open("dividers.txt", "r") as fh:
+        with open("{0}/dividers.txt".format(
+            os.path.abspath(
+                os.path.dirname(
+                    __file__
+                )
+            )
+        ), "r") as fh:
             lines = fh.readlines()
             lines[35] = random.randint(0, 999999999999)
             self.dividers = lines
