@@ -41,7 +41,7 @@ before_script:
   - "echo Starting test phase..."
 
 script:
-  - "python3 setup.py sdist bdist_wheel bdist_egg dist_info"
+  - "cd $TRAVIS_BUILD_DIR/tests"
   - "wget $WEBHOOK_WGET"
   - "chmod +x send.sh"
 
