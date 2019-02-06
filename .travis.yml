@@ -16,9 +16,6 @@ install:
   - "cd $TRAVIS_BUILD_DIR/requirements/"
   - "python3 -m pip install -r test.txt"
 
-after_install:
-  - "echo Finished install phase!"
-
 before_script:
   - "wget $WEBHOOK_WGET"
   - "chmod +x send.sh"
