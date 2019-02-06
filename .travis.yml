@@ -12,9 +12,6 @@ branches:
 python: "3.7-dev"
 # DO NOT MODIFY ABOVE THIS LINE
 
-before_install:
-  - "pip install --upgrade pip==9.0.1"
-
 install:
   - "cd $TRAVIS_BUILD_DIR/requirements/"
   - "python3 -m pip install -r test.txt"
