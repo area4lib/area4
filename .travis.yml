@@ -27,9 +27,6 @@ script:
   - "python3 start.py"
   - "python3 testmodule.py"
 
-after_script:
-  - "echo Test phase finished!"
-
 #after_success:
 #  - ./send.sh success $WEBHOOK_URL
 
