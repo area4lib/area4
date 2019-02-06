@@ -7,7 +7,11 @@ print("now in working directory")
 # install package:
 os.system("{0} {1}{2}".format("cd", dir, "/dist/"))
 print("changed to dist directory")
-os.system("{0} {1}/dist/{2}".format("python3 -m pip install --upgrade", dir, "area4-2.0.dev0.whl"))
+os.system("{0} {1}/dist/{2}".format(
+    "python3 -m pip install --upgrade",
+    dir,
+    "area4-2.0.dev0.whl"
+))
 print("installed")
 # run the tests:
 print("time to run tests")
