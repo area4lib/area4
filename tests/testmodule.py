@@ -1,7 +1,7 @@
 try:
     import area4
 except ImportError:
-    raise Exception("Can't run tests because the package could not be imported.")
+    raise Exception("Failed to import beta build.")
 
 if not __name__ == "__main__":
     raise Exception("This module must be run directly!")
