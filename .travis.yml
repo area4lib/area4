@@ -1,23 +1,16 @@
 language: python
-
 dist: trusty
-
 sudo: required
-
-os:
-  - linux
-
+os: linux
 git:
   quiet: false
-
 notifications:
   email: false
-
 branches:
   except:
   - python-2-supported
-
 python: "3.7-dev"
+# DO NOT MODIFY ABOVE THIS LINE
 
 before_install:
   - "pip install --upgrade pip==9.0.1"
