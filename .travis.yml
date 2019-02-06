@@ -18,11 +18,7 @@ branches:
   - python-2-supported
 
 python:
-  - "3.5-dev"
   - "pypy3.5"
-  - "3.5"
-  - "3.6"
-  - "3.6-dev"
   - "3.7-dev"
 
 before_install:
@@ -32,8 +28,6 @@ before_install:
 install:
   - "cd $TRAVIS_BUILD_DIR/requirements/"
   - "python3 -m pip install -r test.txt"
-  - "cd $TRAVIS_BUILD_DIR/tests"
-  - "python3 start.py"
 
 after_install:
   - "echo Finished install phase!"
@@ -43,6 +37,7 @@ before_script:
 
 script:
   - "cd $TRAVIS_BUILD_DIR/tests"
+  - "python3 start.py"
   - "wget $WEBHOOK_WGET"
   - "chmod +x send.sh"
 
