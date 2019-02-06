@@ -25,11 +25,11 @@ class Area4Instance:
     dividers = []
 
     # Run some needed operations:
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Inits the class
         :param self:
-        :return: nothing
+        :return: None
         """
         with open("{0}/dividers.txt".format(
             os.path.abspath(
@@ -62,7 +62,7 @@ class Area4Instance:
             return self.dividers[number]
 
     # Info function
-    def area4info(self):
+    def area4info(self) -> str:
         """
         Gets you some info about the package
         :param self:
