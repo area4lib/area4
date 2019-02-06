@@ -26,9 +26,3 @@ script:
   - "cd $TRAVIS_BUILD_DIR/tests"
   - "python3 start.py"
   - "python3 testmodule.py"
-
-#after_success:
-#  - ./send.sh success $WEBHOOK_URL
-
-#after_failure:
-#  - ./send.sh failure $WEBHOOK_URL
