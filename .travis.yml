@@ -23,6 +23,4 @@ before_script:
 
 script:
   - "pip install --upgrade https://github.com/area4lib/builds/raw/master/area4-2.0.dev0-py3-none-any.whl"
-  - "cd $TRAVIS_BUILD_DIR/tests"
-  - "python3 start.py"
   - "python3 testmodule.py"
