@@ -1,3 +1,6 @@
+# import os so we can get ci env variables
+import os
+
 # try to import area4
 # this will fail if it could not be installed
 # or maybe if faulty code is present
