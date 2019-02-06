@@ -17,8 +17,7 @@ branches:
   except:
   - python-2-supported
 
-python:
-  - "3.7-dev"
+python: "3.7-dev"
 
 before_install:
   - "echo Starting install phase..."
@@ -38,6 +37,7 @@ before_script:
   - "cd $TRAVIS_BUILD_DIR"
 
 script:
+  - "python3 -m setup.py bdist_wheel"
   - "cd $TRAVIS_BUILD_DIR/tests"
   - "python3 start.py"
   - "python3 testmodule.py"
