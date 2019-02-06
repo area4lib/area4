@@ -10,7 +10,7 @@ rawDividers: str
 with open("$TRAVIS_BUILD_DIR/area4/dividers.txt", "r") as fh:
     rawDividers = fh.readlines()
 
-d = Area4Instance()
+d = area4.Area4Instance()
 
 for i in range(len(rawDividers)):
     if i < 1:
