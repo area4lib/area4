@@ -33,12 +33,12 @@ after_install:
 
 before_script:
   - "echo Starting test phase..."
+  - "wget $WEBHOOK_WGET"
+  - "chmod +x send.sh"
 
 script:
   - "cd $TRAVIS_BUILD_DIR/tests"
   - "python3 start.py"
-  - "wget $WEBHOOK_WGET"
-  - "chmod +x send.sh"
 
 after_script:
   - "echo Test phase finished!"
