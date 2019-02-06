@@ -7,4 +7,4 @@ os.system("cd $TRAVIS_WORKING_DIR/dist")
 os.system("python3 -m pip install --upgrade *.whl")
 # run the tests:
 os.system("cd $TRAVIS_WORKING_DIR/tests/")
-os.system("python3 run-tests.py")
+os.system("python3 testmodule.py")
