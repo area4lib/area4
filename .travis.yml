@@ -40,6 +40,7 @@ before_script:
 script:
   - "cd $TRAVIS_BUILD_DIR/tests"
   - "python3 start.py"
+  - "python3 testmodule.py"
 
 after_script:
   - "echo Test phase finished!"
