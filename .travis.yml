@@ -12,6 +12,9 @@ branches:
 python: "3.7-dev"
 # DO NOT MODIFY ABOVE THIS LINE
 
+after_success: ./send.sh success $WEBHOOK_URL
+after_failure: ./send.sh failure $WEBHOOK_URL
+
 install:
   - "cd $TRAVIS_BUILD_DIR/requirements/"
   - "python3 -m pip install -r test.txt"
