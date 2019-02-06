@@ -1,6 +1,6 @@
 try:
     import area4
-except (ImportError, ModuleNotFoundException):
+except ImportError:
     raise Exception("Failed to import beta build.")
 
 if not __name__ == "__main__":
