@@ -4,14 +4,12 @@ test_task:
   pip_cache:
     folder: ~/.cache/pip
     fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
-    populate_script: python3 -m pip install --upgrade pip==9.0.1 && python3 -m pip install --upgrade setuptools wheel twine
-  test_script: python3 setup.py sdist bdist_wheel && rm -r build/ && ls dist/
+    populate_script: python3 -m pip install --upgrade setuptools wheel twine
+  test_script: python3 setup.py sdist bdist_wheel && rm -r build/
 
 link_check_task:
   container:
     image: node:latest
-  depends_on:
-    - test
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat requirements.txt
@@ -21,9 +19,6 @@ link_check_task:
 markdown_lint_task:
   container:
     image: node:latest
-  depends_on:
-    - test
-    - link_check
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat requirements.txt
