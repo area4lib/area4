@@ -16,7 +16,7 @@ link_check_task:
     populate_script: npm install -g markdown-link-check@3.7.2
   script: find . -name \*.md -exec markdown-link-check {} \;
 
-markdown_lint_task:
-  container:
-    image: mivok/markdownlint:latest
-  lint_script: mdl *.md
+#markdown_lint_task:
+#  container:
+#    image: mivok/markdownlint:latest
+#  lint_script: mdl *.md
