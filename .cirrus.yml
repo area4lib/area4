@@ -18,9 +18,5 @@ link_check_task:
 
 markdown_lint_task:
   container:
-    image: node:latest
-  node_modules_cache:
-    folder: node_modules
-    fingerprint_script: cat requirements.txt
-    populate_script: npm install -g remark-lint remark-cli remark-preset-lint-recommended
-  script: find . -name \*.md -exec remark {} \;
+    image: mivok/markdownlint:latest
+  lint_script: mdl *.md
