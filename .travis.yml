@@ -20,7 +20,6 @@ branches:
 python: "3.7-dev"
 
 before_install:
-  - "echo Starting install phase..."
   - "pip install --upgrade pip==9.0.1"
 
 install:
@@ -31,13 +30,12 @@ after_install:
   - "echo Finished install phase!"
 
 before_script:
-  - "echo Starting test phase..."
   - "wget $WEBHOOK_WGET"
   - "chmod +x send.sh"
   - "cd $TRAVIS_BUILD_DIR"
 
 script:
-  - "python3 -m setup.py bdist_wheel"
+  - "python3 -m $TRAVIS_BUILD_DIR/setup.py sdist bdist_wheel"
   - "cd $TRAVIS_BUILD_DIR/tests"
   - "python3 start.py"
   - "python3 testmodule.py"
@@ -45,10 +43,8 @@ script:
 after_script:
   - "echo Test phase finished!"
 
-after_success:
-  - ./send.sh success $WEBHOOK_URL
-  - "echo Build finished without errors!"
+#after_success:
+#  - ./send.sh success $WEBHOOK_URL
 
-after_failure:
-  - ./send.sh failure $WEBHOOK_URL
-  - "echo Build finished, but failed or an error occurred."
+#after_failure:
+#  - ./send.sh failure $WEBHOOK_URL
