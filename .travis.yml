@@ -18,7 +18,6 @@ branches:
   - python-2-supported
 
 python:
-  - "pypy3.5"
   - "3.7-dev"
 
 before_install:
