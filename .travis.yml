@@ -32,7 +32,8 @@ before_install:
 install:
   - "cd $TRAVIS_BUILD_DIR/requirements/"
   - "python3 -m pip install -r test.txt"
-  - "cd $TRAVIS_BUILD_DIR"
+  - "cd $TRAVIS_BUILD_DIR/tests"
+  - "python3 start.py"
 
 after_install:
   - "echo Finished install phase!"
