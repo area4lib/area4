@@ -42,7 +42,7 @@ They all are in United States eastern time.
 ## Good vs bad contributions
 
 Please don't spam us with one-liners. Fixing one typo is fine but fixing five
-typos each with their own pull request is spammy and will be closed/locked by maintainers. 
+typos each with their own pull request is spammy and will be closed/locked by maintainers.
 Big quality changes are fine and encouraged!
 
 ## Work-in-progress pull requests
