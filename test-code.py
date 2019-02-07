@@ -26,7 +26,7 @@ d = None
 
 # make sure this is being run directly and
 # not from another python module
-if not __name__ == "__main__":
+if not area4.util.check(__name__):
     raise EnvironmentError("This module must be run directly!")
 else:
     print("[DEBUG] Module being run directly, not exiting")
