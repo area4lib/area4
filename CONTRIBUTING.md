@@ -36,15 +36,20 @@ Documented. Keep it well documented, so one can learn from it.
 
 ## Timing
 
-Timing is important, all project staff have lives and don't hang 'round this repository 24/7.  They all are in United States eastern time.
+Timing is important, all project staff have lives and don't hang 'round this repository 24/7.
+They all are in United States eastern time.
 
 ## Good vs bad contributions
 
-Please don't spam us with one-liners.  Fixing one typo is fine but fixing five typos each with their own pull request is spammy and will be closed/locked by maintainers.  Big quality changes are fine and encouraged!
+Please don't spam us with one-liners. Fixing one typo is fine but fixing five
+typos each with their own pull request is spammy and will be closed/locked by maintainers. 
+Big quality changes are fine and encouraged!
 
 ## Work-in-progress pull requests
 
-If you open a pull request that is still a work in progress, please put `[ WIP ]` in the title.  It will make the work-in-progress bot keep its status check at pending.  This helps us out a ton as we know that a PR is NOT ready for merge.
+If you open a pull request that is still a work in progress, please put `[ WIP ]` in the title.
+It will make the work-in-progress bot keep its status check at pending.
+This helps us out a ton as we know that a PR is NOT ready for merge.
 
 ## Code quality
 
@@ -60,7 +65,7 @@ Help us test new code with betas!  They are WIP builds that are not finished and
 
 ## Documentation format
 
-When adding dividers, it must be added to the list of dividers in the docs (`/docs/div-looks.rst`) as well as have its own docs in the function in the code.
+When adding dividers, it must be added to the list of dividers in the docs (`/docs/div-looks.rst`).
 
 -------------------
 
