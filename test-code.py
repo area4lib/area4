@@ -51,7 +51,7 @@ else:
     if c_message.contains("!extra-tests") or c_message == "!extra-tests":
         print("[DEBUG] Running extra tests!")
         extra = True
-        
+
 
 def test_dividers() -> None:
     # Test each divider
