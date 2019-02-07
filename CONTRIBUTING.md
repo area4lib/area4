@@ -27,15 +27,15 @@ There are a few things to keep in mind when contributing:
 
 This project code is intended to be...
 
-* Clean. Keep it well formatted and follow your favourite language conventions, so one can understand it.
+- Clean. Keep it well formatted and follow your favourite language conventions, so one can understand it.
 Documented. Keep it well documented, so one can learn from it.
-* Reusable. Keep it cohese and modular, with as little responsibility per programming unit (function, method, class, module, project) as possible, so one can reuse it.
-* Testable. Keep it easy to debug and test, so one can be confident that it works properly.  Please keep the [Travis CI build](https://travis-ci.com/RDIL/area4) and [Cirrus CI Build](https://cirrus-ci.com/github/RDIL/area4) at passing if possible.  Travis doesn't directly test the code for errors, rather checks to see if it is safe and ready to deploy to PyPI if needed!
-* Python 3 compatible.  Area4 aims to support Python 3 versions (including PyPy3.5), and does not support versions below Python3.  The one thing that does not follow this rule is the package info function, which requires F-strings (which are only supported in Python 3.6 and above).
+- Reusable. Keep it cohese and modular, with as little responsibility per programming unit (function, method, class, module, project) as possible, so one can reuse it.
+- Testable. Keep it easy to debug and test, so one can be confident that it works properly.  Please keep the [Travis CI build](https://travis-ci.com/RDIL/area4) and [Cirrus CI Build](https://cirrus-ci.com/github/RDIL/area4) at passing if possible.  Travis doesn't directly test the code for errors, rather checks to see if it is safe and ready to deploy to PyPI if needed!
+- Python 3 compatible.  Area4 aims to support Python 3 versions (including PyPy3.5), and does not support versions below Python3.  The one thing that does not follow this rule is the package info function, which requires F-strings (which are only supported in Python 3.6 and above).
 
 ## Timing
 
-Timing is important, all project staff have lives and don't hang 'round this repository 24/7.  They all are in United States eastern time.  
+Timing is important, all project staff have lives and don't hang 'round this repository 24/7.  They all are in United States eastern time.
 
 ## Good vs bad contributions
 
@@ -59,7 +59,7 @@ Help us test new code with betas!  They are WIP builds that are not finished and
 
 ## Documentation format
 
-When adding dividers, it must be added to the list of dividers in the docs (`/projectrootfolder/docs/div-looks.rst`) as well as have its own docs in the function in the code.
+When adding dividers, it must be added to the list of dividers in the docs (`/docs/div-looks.rst`) as well as have its own docs in the function in the code.
 
 -------------------
 
