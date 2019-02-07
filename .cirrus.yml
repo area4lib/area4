@@ -19,4 +19,4 @@ link_check_task:
 markdown_lint_task:
   container:
     image: mivok/markdownlint:latest
-  lint_script: mdl *.md
+  lint_script: mdl --config=.markdownlint.yml *.md
