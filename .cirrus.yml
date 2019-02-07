@@ -18,5 +18,6 @@ link_check_task:
 
 markdown_lint_task:
   container:
-    image: mivok/markdownlint:latest
+    image: node:latest
+  install_script: npm install -g markdownlint-cli
   lint_script: mdl --config=.markdownlint.yml *.md
