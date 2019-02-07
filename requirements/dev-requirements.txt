@@ -3,5 +3,4 @@ wheel
 twine
 numpy
 flake8
-pytest
 tox
