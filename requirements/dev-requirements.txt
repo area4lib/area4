@@ -1,6 +1,5 @@
 setuptools
 wheel
 twine
-numpy
 flake8
 tox
