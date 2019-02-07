@@ -48,7 +48,7 @@ else:
     print("[DEBUG] Creating instance of the library")
     d = area4.Area4Instance()
     print("[DEBUG] Created instance")
-    if c_message.contains("!extra-tests") or c_message == "!extra-tests":
+    if "!extra-tests" in c_message or c_message == "!extra-tests":
         print("[DEBUG] Running extra tests!")
         extra = True
 
