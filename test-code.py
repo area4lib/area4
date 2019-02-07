@@ -73,4 +73,4 @@ def test_dividers() -> None:
 # run tests:
 test_dividers()
 
-print("\n\n[DEBUG] Exiting tests!\n")
+print("\n[DEBUG] Exiting tests!")
