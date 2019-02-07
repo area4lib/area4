@@ -1,11 +1,11 @@
-# AREA4 CONTRIBUTING GUIDELINES  
+# AREA4 CONTRIBUTING GUIDELINES
 
 Hello, and welcome to area4.  Before you contribute, please read this document to find out the best ways to contribute to this project.  
 
 ## What to contribute  
 There are many ways to contribute to area4! You can help improve the documentation, submit bug reports and feature requests, or write code which can be incorporated into area4. Don't be afraid to contribute to the project--the open source community will be here to help you should you need any!  
 
-## A few ground rules  
+## A few ground rules
 
 There are a few things to keep in mind when contributing:  
 
@@ -13,7 +13,7 @@ There are a few things to keep in mind when contributing:
 
 2. **Follow the [code of conduct](https://rdil.rocks/area4/CODE_OF_CONDUCT/)**: area4 has a code of conduct that details the kind of behavior you should be demonstrating when using and contributing to this project. Before you contribute, please take a few minutes to read the code of conduct and always follow it when contributing.  
 
-## Steps  
+## Steps
 
 1. Fork the repo.  
 2. Clone it if you are using a git client.  
@@ -33,16 +33,20 @@ Documented. Keep it well documented, so one can learn from it.
 * Testable. Keep it easy to debug and test, so one can be confident that it works properly.  Please keep the [Travis CI build](https://travis-ci.com/RDIL/area4) and [Cirrus CI Build](https://cirrus-ci.com/github/RDIL/area4) at passing if possible.  Travis doesn't directly test the code for errors, rather checks to see if it is safe and ready to deploy to PyPI if needed!  
 * Python 3 compatible.  Area4 aims to support Python 3 versions (including PyPy3.5), and does not support versions below Python3.  The one thing that does not follow this rule is the package info function, which requires F-strings (which are only supported in Python 3.6 and above).  
 
-## Timing  
+## Timing
+
 Timing is important, all project staff have lives and don't hang 'round this repository 24/7.  They all are in United States eastern time.  
 
-## Good vs bad contributions  
+## Good vs bad contributions
+
 Please don't spam us with one-liners.  Fixing one typo is fine but fixing five typos each with their own pull request is spammy and will be closed/locked by maintainers.  Big quality changes are fine and encouraged!  
 
-## Work-in-progress pull requests  
+## Work-in-progress pull requests
+
 If you open a pull request that is still a work in progress, please put `[ WIP ]` in the title.  It will make the work-in-progress bot keep its status check at pending.  This helps us out a ton as we know that a PR is NOT ready for merge.  
 
-## Code quality  
+## Code quality
+
 Please keep your code as readable as possible.  We have apps to help out with this such as [CodeFactor](https://codefactor.io) to lint code.  Where possible please abide by their feedback.  
 
 ## Divider style  
