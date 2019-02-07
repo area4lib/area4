@@ -20,9 +20,9 @@ install:
   - "python3 -m pip install -r test.txt"
 
 before_script:
+  - "cd $TRAVIS_BUILD_DIR"
   - "wget $WEBHOOK_WGET"
   - "chmod +x send.sh"
-  - "cd $TRAVIS_BUILD_DIR"
 
 script:
   - "pip install --upgrade https://github.com/area4lib/builds/raw/master/area4-2.0.dev0-py3-none-any.whl"
