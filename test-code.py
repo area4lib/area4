@@ -22,6 +22,10 @@ rawDividers: str
 _dir: str
 # d is the area4 instance, keep it at None for now
 d = None
+# the commit message:
+c_message = os.getenv("TRAVIS_COMMIT_MESSAGE")
+# if extra tests should be run:
+extra: bool = False
 
 
 # make sure this is being run directly and
@@ -44,7 +48,10 @@ else:
     print("[DEBUG] Creating instance of the library")
     d = area4.Area4Instance()
     print("[DEBUG] Created instance")
-
+    if c_message.contains("!extra-tests") or c_message == "!extra-tests":
+        print("[DEBUG] Running extra tests!")
+        extra = True
+        
 
 def test_dividers() -> None:
     # Test each divider
