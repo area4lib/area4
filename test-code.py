@@ -14,8 +14,13 @@ except ImportError:
 
 # init some variables that
 # will be needed later
+# rawDividers is the array of dividers from the
+# text file
 rawDividers: str
+# _dir is the directory that travis supplies
+# as the build directory
 _dir: str
+# d is the area4 instance, keep it at None for now
 d = None
 
 
@@ -49,6 +54,7 @@ def test_dividers() -> None:
         if i < 1 or i == 35:
             print("[DEBUG] Manually skipping divider {0}".format(i))
             i = i + 1
+        # run tests normally for other dividers
         else:
             print("[DEBUG] Testing divider {0}".format(i))
             try:
@@ -69,6 +75,7 @@ def test_dividers() -> None:
                 print("\n[DEBUG] Ignoring an IndexError")
 
 
+# test make-div function
 def test_make_div() -> None:
     if d.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
         print("\n[DEBUG] make-div test did not fail")
@@ -81,4 +88,5 @@ def test_make_div() -> None:
 test_dividers()
 test_make_div()
 
+# notify user tests are complete
 print("\n\n[DEBUG] Exiting tests!")
