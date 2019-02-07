@@ -1,12 +1,5 @@
 # Config for Probot apps
 
-# Todo bot:
-todo:
-  keyword: "@todo:"
-  autoAssign: true
-  blobLines: 7
-  caseSensitive: false
-
 # new-issue-welcome bot:
 newIssueWelcomeComment: >
   Thanks for opening your first issue here! Someone will look over this issue shortly, hang tight for now!

@@ -52,5 +52,6 @@ setuptools.setup(
         "Source Code": "https://github.com/RDIL/area4",
     },
     keywords=["area4", "dividers", "python", "utilities", "enhancements"],
-    include_package_data=True
+    include_package_data=True,
+    zip_safe=False
 )

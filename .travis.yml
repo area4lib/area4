@@ -1,57 +1,26 @@
 language: python
-
 dist: trusty
-
 sudo: required
-
-os:
-  - linux
-
+os: linux
 git:
-  quiet: false
-
+  quiet: true
 notifications:
   email: false
-
 branches:
   except:
   - python-2-supported
-
-python:
-  - "3.5-dev"
-  - "pypy3.5"
-  - "3.5"
-  - "3.6"
-  - "3.6-dev"
-  - "3.7-dev"
-
-before_install:
-  - "echo Starting install phase..."
-  - "pip install --upgrade pip==9.0.1"
+python: "3.7-dev"
+before_script:
+  - "wget $WEBHOOK_WGET"
+  - "chmod +x send.sh"
+after_success: ./send.sh success $WEBHOOK_URL
+after_failure: ./send.sh failure $WEBHOOK_URL
+# DO NOT MODIFY ANYTHING ABOVE THIS LINE
 
 install:
   - "cd $TRAVIS_BUILD_DIR/requirements/"
   - "python3 -m pip install -r test.txt"
+  - "pip install --upgrade https://github.com/area4lib/builds/raw/master/area4-2.0.dev0-py3-none-any.whl"
   - "cd $TRAVIS_BUILD_DIR"
-
-after_install:
-  - "echo Finished install phase!"
-
-before_script:
-  - "echo Starting test phase..."
-
 script:
-  - "cd $TRAVIS_BUILD_DIR/tests"
-  - "wget $WEBHOOK_WGET"
-  - "chmod +x send.sh"
-
-after_script:
-  - "echo Test phase finished!"
-
-after_success:
-  - ./send.sh success $WEBHOOK_URL
-  - "echo Build finished without errors!"
-
-after_failure:
-  - ./send.sh failure $WEBHOOK_URL
-  - "echo Build finished, but failed or an error occurred."
+  - "python3 test-code.py"
