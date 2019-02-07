@@ -19,27 +19,26 @@ _dir: str
 d = None
 
 
-def setup() -> None:
-    # make sure this is being run directly and
-    # not from another python module
-    if not __name__ == "__main__":
-        raise Exception("This module must be run directly!")
-    else:
-        print("[DEBUG] Module being run directly, not exiting")
-        # get working directory:
-        print("[DEBUG] Getting working directory\n")
-        _dir = os.getenv("TRAVIS_BUILD_DIR")
-        print("[DEBUG] Got working directory ({0})\n".format(_dir))
-        # get divider file:
-        dividers_file: str = "{0}/{1}".format(_dir, "area4/dividers.txt")
-        print("[DEBUG] Divider file is located at {0}\n".format(dividers_file))
-        with open(dividers_file, "r") as fh:
-            rawDividers = fh.readlines()
-            print("[DEBUG] Fetched raw dividers text file")
-        # create instance we can use
-        print("[DEBUG] Creating instance of the library\n")
-        d = area4.Area4Instance()
-        print("[DEBUG] Created instance: {0}\n\n".format(d))
+# make sure this is being run directly and
+# not from another python module
+if not __name__ == "__main__":
+    raise Exception("This module must be run directly!")
+else:
+    print("[DEBUG] Module being run directly, not exiting")
+    # get working directory:
+    print("[DEBUG] Getting working directory\n")
+    _dir = os.getenv("TRAVIS_BUILD_DIR")
+    print("[DEBUG] Got working directory ({0})\n".format(_dir))
+    # get divider file:
+    dividers_file: str = "{0}/{1}".format(_dir, "area4/dividers.txt")
+    print("[DEBUG] Divider file is located at {0}\n".format(dividers_file))
+    with open(dividers_file, "r") as fh:
+        rawDividers = fh.readlines()
+        print("[DEBUG] Fetched raw dividers text file")
+    # create instance we can use
+    print("[DEBUG] Creating instance of the library")
+    d = area4.Area4Instance()
+    print("[DEBUG] Created instance: {0}\n\n".format(d))
 
 
 def test_dividers() -> None:
@@ -71,7 +70,6 @@ def test_dividers() -> None:
 
 
 # run setup functions:
-setup()
 # run tests:
 test_dividers()
 
