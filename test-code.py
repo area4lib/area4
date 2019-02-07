@@ -15,8 +15,9 @@ except ImportError:
 # init some variables that
 # will be needed later
 rawDividers: str
-dir: str
+_dir: str
 d = None
+
 
 def setup() -> None:
     # make sure this is being run directly and
@@ -27,10 +28,10 @@ def setup() -> None:
         print("[DEBUG] Module being run directly, not exiting")
         # get working directory:
         print("[DEBUG] Getting working directory\n")
-        dir = os.getenv("TRAVIS_BUILD_DIR")
-        print("[DEBUG] Got working directory ({0})\n".format(dir))
+        _dir = os.getenv("TRAVIS_BUILD_DIR")
+        print("[DEBUG] Got working directory ({0})\n".format(_dir))
         # get divider file:
-        dividers_file: str = "{0}/{1}".format(dir, "area4/dividers.txt")
+        dividers_file: str = "{0}/{1}".format(_dir, "area4/dividers.txt")
         print("[DEBUG] Divider file is located at {0}\n".format(dividers_file))
         with open(dividers_file, "r") as fh:
             rawDividers = fh.readlines()
@@ -67,6 +68,7 @@ def test_dividers() -> None:
                 # what we do about it is we just
                 # simply ignore it
                 print("\n[DEBUG] Ignoring an IndexError")
+
 
 # run setup functions:
 setup()
