@@ -10,7 +10,7 @@ try:
 except ImportError:
     # at this point, area4 either isn't in site-packages
     # or not on the system at all
-    raise Exception("Failed to import the library.")
+    raise OSError("Failed to import the library.")
 
 # init some variables that
 # will be needed later
@@ -22,7 +22,7 @@ d = None
 # make sure this is being run directly and
 # not from another python module
 if not __name__ == "__main__":
-    raise Exception("This module must be run directly!")
+    raise EnvironmentError("This module must be run directly!")
 else:
     print("[DEBUG] Module being run directly, not exiting")
     # get working directory:
@@ -38,7 +38,7 @@ else:
     # create instance we can use
     print("[DEBUG] Creating instance of the library")
     d = area4.Area4Instance()
-    print("[DEBUG] Created instance: {0}\n\n".format(d))
+    print("[DEBUG] Created instance")
 
 
 def test_dividers() -> None:
@@ -60,7 +60,7 @@ def test_dividers() -> None:
                 else:
                     # it does not match
                     print("[X] Divider {0} is broken!".format(i))
-                    raise ValueError("Broken divider detected!")
+                    raise RuntimeError("Broken divider detected!")
             except IndexError:
                 # this is thrown if a number is offset
                 # in the divider array
@@ -69,8 +69,16 @@ def test_dividers() -> None:
                 print("\n[DEBUG] Ignoring an IndexError")
 
 
+def test_make_div() -> None:
+    if d.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
+        print("[DEBUG] make-div test did not fail")
+    else:
+        raise RuntimeError("make-div tests failed")
+
+
 # run setup functions:
 # run tests:
 test_dividers()
+test_make_div()
 
 print("\n[DEBUG] Exiting tests!")
