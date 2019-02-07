@@ -4,4 +4,5 @@
 "MD013": false # Line length
 "MD025": false # Multiple top level headings in the same document
 "MD026": false # Trailing punctuation in heading
+"MD032": false # odd stuff with lists
 "MD033": false # Inline HTML
