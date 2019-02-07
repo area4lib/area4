@@ -2,7 +2,8 @@
 
 Hello, and welcome to area4.  Before you contribute, please read this document to find out the best ways to contribute to this project.
 
-## What to contribute  
+## What to contribute
+
 There are many ways to contribute to area4! You can help improve the documentation, submit bug reports and feature requests, or write code which can be incorporated into area4. Don't be afraid to contribute to the project--the open source community will be here to help you should you need any!
 
 ## A few ground rules
@@ -39,7 +40,7 @@ Timing is important, all project staff have lives and don't hang 'round this rep
 
 ## Good vs bad contributions
 
-Please don't spam us with one-liners.  Fixing one typo is fine but fixing five typos each with their own pull request is spammy and will be closed/locked by maintainers.  Big quality changes are fine and encouraged!  
+Please don't spam us with one-liners.  Fixing one typo is fine but fixing five typos each with their own pull request is spammy and will be closed/locked by maintainers.  Big quality changes are fine and encouraged!
 
 ## Work-in-progress pull requests
 
