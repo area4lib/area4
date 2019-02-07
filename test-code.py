@@ -31,6 +31,7 @@ with open(dividers_file, "r") as fh:
     rawDividers = fh.readlines()
     print("fetched raw dividers text file")
 
+# create instance we can use
 print("[DEBUG] Creating instance of area4")
 d = area4.Area4Instance()
 print("created instance: {0}".format(d))
@@ -41,17 +42,20 @@ for i in range(len(rawDividers)):
         i = i + 1
     print("[DEBUG] Testing divider {0}".format(i))
     try:
-        
+        # try to match the raw divider with the result
+        # of the function:
         if rawDividers[i] == d.divider(i):
+            # it matches
             print("[+] Divider {0} should work.".format(i))
         else:
+            # it does not match
             print("[X] Divider {0} is broken!".format(i))
             raise ValueError("Broken divider detected!")
-            
     except IndexError:
         # this is thrown if a number is offset
         # in the divider array
         # what we do about it is we just
         # simply ignore it
-            
+        print("[DEBUG] Ignoring an IndexError")
+
 print("[DEBUG] Exiting tests")
