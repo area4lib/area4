@@ -20,4 +20,4 @@ markdown_lint_task:
   container:
     image: node:latest
   install_script: npm install -g markdownlint-cli
-  lint_script: mdl --config=.markdownlint.yml *.md
+  lint_script: markdownlint --config=.markdownlint.yml *.md
