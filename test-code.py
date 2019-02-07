@@ -71,7 +71,7 @@ def test_dividers() -> None:
 
 def test_make_div() -> None:
     if d.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
-        print("[DEBUG] make-div test did not fail")
+        print("\n[DEBUG] make-div test did not fail")
     else:
         raise RuntimeError("make-div tests failed")
 
@@ -81,4 +81,4 @@ def test_make_div() -> None:
 test_dividers()
 test_make_div()
 
-print("\n[DEBUG] Exiting tests!")
+print("\n\n[DEBUG] Exiting tests!")
