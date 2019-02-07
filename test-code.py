@@ -41,7 +41,7 @@ def setup() -> None:
         print("[DEBUG] Created instance: {0}\n\n".format(d))
 
 
-def test_dividers() -> None
+def test_dividers() -> None:
     # Test each divider
     print("[DEBUG] Starting tests...\n\n")
     for i in range(len(rawDividers)):
