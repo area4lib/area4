@@ -104,7 +104,7 @@ def test_info() -> None:
     for x in range(
         len(right_data)
     ):
-        if not right_data[x] == from_class:
+        if not right_data[x] == from_class[x]:
             raise RuntimeError("[X] Failed package info test {0}".format(x))
         else:
             print("[+] Data item {0} works".format(x))
