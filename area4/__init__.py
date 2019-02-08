@@ -51,7 +51,6 @@ class Area4Instance:
         :raises: ValueError
         :return: requested divider
         :rtype: str
-
         :Example:
         area4.divider(97)
         will return 🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️
@@ -116,7 +115,7 @@ class Area4Instance:
     def _reduce_to_unit(self, divider: str) -> str:
         """
         Reduces a repeating divider to the smallest repeating unit possible
-
+        Note: this function is used by make-div
         :param self:
         :param divider: the divider
         :return: smallest repeating unit possible
