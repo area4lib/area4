@@ -90,10 +90,42 @@ def test_make_div() -> None:
         raise RuntimeError("make-div tests failed")
 
 
+def test_info() -> None:
+    right_data = ["area4", "https://github.com/RDIL",
+                  "me@rdil.rocks",
+                  "support@rdil.rocks",
+                  "Dividers in Python, the easy way!"
+                 ]
+    print("\n[DEBUG] Running extra test for package info")
+    for x in range(
+        len(right_data)
+    ):
+        if x < 1:
+            if not right_data[x] == d.name:
+                raise RuntimeError("[X] Failed at package info test number {0}".format(x))
+        elif x == 1:
+            if not right_data[x] == d.author:
+                raise RuntimeError("[X] Failed at package info test number {0}".format(x))
+        elif x == 2:
+            if not right_data[x] == d.author_email:
+                raise RuntimeError("[X] Failed at package info test number {0}".format(x))
+        elif x == 3:
+            if not right_data[x] == d.support_email:
+                raise RuntimeError("[X] Failed at package info test number {0}".format(x))
+        elif x == 3:
+            if not right_data[x] == d.description:
+                raise RuntimeError("[X] Failed at package info test number {0}".format(x))
+        print("[+] Data item {0} works".format(x))
+
+def extra_tests() -> None:
+    test_info()
+
 # run setup functions:
 # run tests:
 test_dividers()
 test_make_div()
+if extra:
+    extra_tests()
 
 # notify user tests are complete
 print("\n\n[DEBUG] Exiting tests!")
