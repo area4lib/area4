@@ -48,7 +48,7 @@ else:
     print("[DEBUG] Creating instance of the library")
     d = area4.Area4Instance()
     print("[DEBUG] Created instance")
-    if "!extra-tests" in c_message or c_message == "!extra-tests":
+    if "!extra" in c_message or c_message == "!extra":
         print("[DEBUG] Running extra tests!")
         extra = True
 
@@ -104,7 +104,7 @@ def test_info() -> None:
     for x in range(
         len(right_data)
     ):
-        if not right_data[x] == from_:
+        if not right_data[x] == from_class:
             raise RuntimeError("[X] Failed package info test {0}".format(x))
         else:
             print("[+] Data item {0} works".format(x))
