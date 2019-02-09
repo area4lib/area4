@@ -16,9 +16,9 @@ before_install:
 before_script:
   - "cd $TRAVIS_BUILD_DIR"
   - "wget $WEBHOOK_WGET"
-  - "chmod +x send.sh"
-after_success: ./send.sh success $WEBHOOK_URL
-after_failure: ./send.sh failure $WEBHOOK_URL
+  - "chmod +x area4.sh"
+after_success: ./area4.sh success $WEBHOOK_URL
+after_failure: ./area4.sh failure $WEBHOOK_URL
 # DO NOT MODIFY ANYTHING ABOVE THIS LINE
 
 install:
