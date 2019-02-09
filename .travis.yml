@@ -6,6 +6,7 @@ git:
   quiet: true
 notifications:
   email: false
+cache: pip
 branches:
   except:
   - python-2-supported
