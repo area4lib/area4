@@ -33,6 +33,8 @@ extra: bool = False
 if not __name__ == "__main__":
     raise EnvironmentError("This module must be run directly!")
 else:
+    # if this is being run directly,
+    # set up for tests
     print("[DEBUG] Module being run directly, not exiting")
     # get working directory:
     print("[DEBUG] Getting working directory\n")
@@ -48,11 +50,13 @@ else:
     print("[DEBUG] Creating instance of the library")
     d = area4.Area4Instance()
     print("[DEBUG] Created instance")
+    # see if we need to run extra tests
     if "!extra" in c_message or c_message == "!extra":
         print("[DEBUG] Running extra tests!")
         extra = True
 
 
+# divider tests:
 def test_dividers() -> None:
     # Test each divider
     print("[DEBUG] Starting tests...\n\n")
@@ -82,7 +86,7 @@ def test_dividers() -> None:
                 print("\n[DEBUG] Ignoring an IndexError")
 
 
-# test make-div function
+# make-div tests
 def test_make_div() -> None:
     if d.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
         print("\n[DEBUG] make-div test did not fail")
@@ -90,16 +94,23 @@ def test_make_div() -> None:
         raise RuntimeError("make-div tests failed")
 
 
+# extra test:
+# validate info variables
 def test_info() -> None:
-    right_data = ["area4", "https://github.com/RDIL",
-                  "me@rdil.rocks",
-                  "support@rdil.rocks",
-                  "Dividers in Python, the easy way!"]
-    from_class = [d.name,
-                  d.author,
-                  d.author_email,
-                  d.support_email,
-                  d.description]
+    right_data = [
+        "area4",
+        "https://github.com/RDIL",
+        "me@rdil.rocks",
+        "support@rdil.rocks",
+        "Dividers in Python, the easy way!"
+    ]
+    from_class = [
+        d.name,
+        d.author,
+        d.author_email,
+        d.support_email,
+        d.description
+    ]
     print("\n[DEBUG] Running extra test for package info")
     for x in range(
         len(right_data)
@@ -119,6 +130,8 @@ def extra_tests() -> None:
 test_dividers()
 test_make_div()
 if extra:
+    # run extra tests if the commit
+    # messages match
     extra_tests()
 
 # notify user tests are complete
