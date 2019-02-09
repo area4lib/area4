@@ -11,8 +11,6 @@ branches:
   except:
   - python-2-supported
 python: "3.7-dev"
-before_install:
-  - "pip install --upgrade https://github.com/area4lib/builds/raw/master/area4-2.0.dev0-py3-none-any.whl"
 before_script:
   - "cd $TRAVIS_BUILD_DIR"
   - "wget $WEBHOOK_WGET"
@@ -21,8 +19,11 @@ after_success: ./area4.sh success $WEBHOOK_URL
 after_failure: ./area4.sh failure $WEBHOOK_URL
 # DO NOT MODIFY ANYTHING ABOVE THIS LINE
 
+# stages:
 install:
   - "cd $TRAVIS_BUILD_DIR/requirements/"
   - "python3 -m pip install -r test.txt"
 script:
   - "python3 test-code.py"
+before_install:
+  - "pip install --upgrade https://github.com/area4lib/builds/raw/master/area4-2.0.dev0-py3-none-any.whl"
