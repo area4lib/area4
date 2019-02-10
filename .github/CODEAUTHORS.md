@@ -1,11 +1,11 @@
-### HERE IS A LIST OF EVERYONE THAT HAVE CONTRUBUTED TO THIS REPOSITORY:
+# Contributors
 
 - RDIL ***(Owner)***
 - CoffeeGoddess **(Maintainer)**
 - rocketpropelledpotato **(Maintainer)**
 - water900 **(Maintainer)**
 - theonetheonlydemon **(Maintainer)**
-- 73VW 
+- 73VW
 - Wittionary
 - jerry-le
 - Yugaank-Kalia
@@ -23,4 +23,4 @@
 - DirtySoc
 - amrutha3
 
-*(If anybody got missed or wants to be removed from the list open a PR please)*  
+(If anybody got missed or wants to be removed from the list open a PR please)
