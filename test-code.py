@@ -135,4 +135,4 @@ if extra:
     extra_tests()
 
 # notify user tests are complete
-print("\n\n[DEBUG] Exiting tests!")
+print("\n[DEBUG] Exiting tests!")
