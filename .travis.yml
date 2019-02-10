@@ -10,7 +10,9 @@ cache: pip
 branches:
   except:
   - python-2-supported
-python: "3.7-dev"
+python:
+  - "3.7-dev"
+  - "3.6-dev"
 before_script:
   - "cd $TRAVIS_BUILD_DIR"
   - "wget $WEBHOOK_WGET"
