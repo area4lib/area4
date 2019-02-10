@@ -24,9 +24,10 @@ _dir: str
 d = None
 # the commit message:
 c_message = os.getenv("TRAVIS_COMMIT_MESSAGE")
+if c_message is None:
+    raise EnvironmentError("No commit name detected!")
 # if extra tests should be run:
 extra: bool = False
-
 
 # make sure this is being run directly and
 # not from another python module
