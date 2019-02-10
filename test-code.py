@@ -44,7 +44,7 @@ else:
     # get divider file:
     dividers_file: str = "{0}/{1}".format(_dir, "area4/dividers.txt")
     print("[DEBUG] Divider file is located at {0}\n".format(dividers_file))
-    with open(dividers_file, "r") as fh:
+    with open(dividers_file, mode="r") as fh:
         rawDividers = fh.readlines()
         print("[DEBUG] Fetched raw dividers text file")
     # create instance we can use
