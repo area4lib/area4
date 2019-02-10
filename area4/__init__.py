@@ -33,17 +33,15 @@ class Area4Instance:
         """
         with open("{0}/dividers.txt".format(
             os.path.abspath(
-                os.path.dirname(
-                    __file__
-                )
+                os.path.dirname(__file__)
             )
-        ), "r") as fh:
+        ), mode="r") as fh:
             lines = fh.readlines()
             lines[35] = random.randint(0, 999999999999)
             self.dividers = lines
 
     # Function to get a divider
-    def divider(self, number: int) -> str:
+    def divider(self, number) -> str:
         """
         Gets you the divider you requested!
         :param self:
@@ -58,7 +56,7 @@ class Area4Instance:
         if number == 0:
             raise ValueError('Please use a number bigger then 0!')
         else:
-            return self.dividers[number]
+            return self.dividers[number].split("\n")[0]
 
     # Info function
     def area4info(self) -> str:
@@ -77,8 +75,8 @@ class Area4Instance:
         except SyntaxError:
             return "Use Python 3.6 or above to run this function."
 
-    def make_div(self, unit: str, length: int = 24,
-                 start: str = '', end: str = '', literal_unit=False) -> str:
+    def make_div(self, unit, length=24,
+                 start='', end='', literal_unit=False) -> str:
         """
         Generates and returns a custom divider
         :param self:

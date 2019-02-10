@@ -72,7 +72,7 @@ def test_dividers() -> None:
             try:
                 # try to match the raw divider with the result
                 # of the function:
-                if rawDividers[i] == d.divider(i):
+                if rawDividers[i].split("\n")[0] == d.divider(i):
                     # it matches
                     print("[+] Divider {0} should work.".format(i))
                 else:
