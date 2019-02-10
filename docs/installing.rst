@@ -15,7 +15,7 @@ To install via pip, open a terminal, and type one the following command:
     echo Windows:
     $ pip install --upgrade area4
     echo macOS/Linux:
-    $ python3 -m pip install --upgrade area4
+    $ /usr/bin/python3 -m pip install --upgrade area4
 
 It should install.
 If the install fails because of a permissions error, try running the command with sudo or with the --user flag.

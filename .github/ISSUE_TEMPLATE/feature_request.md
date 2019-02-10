@@ -1,16 +1,23 @@
----  
+---
 name: Feature request  
 about: Request a divider or feature for the project  
 
 ---  
-## Idea  
+
+# Feature Request
+
+## Idea
+
 <!-- Describe the idea. -->  
 
-## Context  
+## Context
+
 <!-- How did you get this idea? -->  
 
-## Helpfulness  
+## Helpfulness
+
 <!-- How will this help the project?  (If this is a divider request delete this section) -->  
 
-## Anything Else  
+## Anything Else
+
 <!-- Put anything else here. -->  

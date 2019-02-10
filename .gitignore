@@ -11,13 +11,9 @@
 /build/
 /area4.dist-info/
 
-# JetBrains PyCharm IDE misc. files  
+# JetBrains IDE misc. files
 /.idea/workspace.xml
 /.idea/dictionaries/
-
-# Visual Studio Code config directories
-/.vscode/
-/docs/.vscode/
 
 # Byte-compiled / optimized / DLL files
 /__pycache__/
@@ -125,8 +121,6 @@ dmypy.json
 .AppleDouble
 .LSOverride
 
-# Icon must end with two \r
-Icon
 
 # Thumbnails
 ._*

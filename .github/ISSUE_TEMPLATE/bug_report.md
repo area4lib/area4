@@ -1,14 +1,17 @@
----  
+---
 name: Bug report  
 about: General template for bug reports  
 
 ---  
+
+# Bug Report
 
 ## Description
 
 <!-- A brief description of the problem -->  
 
 ## Steps to reproduce
+
 - Step 1:  
 - Step 2:  
 

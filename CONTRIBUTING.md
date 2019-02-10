@@ -1,4 +1,4 @@
-# AREA4 CONTRIBUTING GUIDELINES
+# area4 Contributing Guidelines
 
 Hello, and welcome to area4.  Before you contribute, please read this document to find out the best ways to contribute to this project.
 
@@ -47,7 +47,7 @@ Big quality changes are fine and encouraged!
 
 ## Work-in-progress pull requests
 
-If you open a pull request that is still a work in progress, please put `[ WIP ]` in the title.
+If you open a pull request that is still a work in progress, please put `[WIP]` or `WIP:` in the title.
 It will make the work-in-progress bot keep its status check at pending.
 This helps us out a ton as we know that a PR is NOT ready for merge.
 

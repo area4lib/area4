@@ -4,5 +4,6 @@
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "terminal.integrated.confirmOnExit": true,
-    "python.pythonPath": "/usr/local/bin/python3"
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.autoAddFileAssociations": false
 }
