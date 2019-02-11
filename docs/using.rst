@@ -33,6 +33,6 @@ Now, to get dividers, use this function:
 
     print(
         instanceName.divider(4)
-    )  # This example prints divider number 4
+    )  # This example prints divider number 4 to the console
 
 For what all the dividers look like, see the next section!  
