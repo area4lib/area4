@@ -16,7 +16,7 @@ If you don't understand, see the examples part of the documentation.
 10. Commas
 11. Slashes
 12. Broken bars (|)
-13. Tildas
+13. Tildes
 14. Backslashes (not to be confused with #11)
 15. Coffee cups
 16. Plus signs
@@ -96,7 +96,7 @@ If you don't understand, see the examples part of the documentation.
 90. Airplane emojis
 91. Orange leave emojis
 92. Key emojis
-93. Big smilies
+93. Big smiles
 94. Laughing face
 95. Toung-sticking-out faces
 96. Toung-sticking-out faces v2
