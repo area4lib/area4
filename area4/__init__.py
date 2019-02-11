@@ -105,12 +105,12 @@ class Area4Instance:
 
         # reduce the size if possible to extend closer to full length
         if not literal_unit:
-            unit = self._reduce_to_unit(unit)
+            unit = self.reduce_to_unit(unit)
         repeats = (length - len(start + end)) // len(unit)
 
         return (start + unit * repeats + end)[0:length]
 
-    def _reduce_to_unit(self, divider: str) -> str:
+    def reduce_to_unit(self, divider: str) -> str:
         """
         Reduces a repeating divider to the smallest repeating unit possible
         Note: this function is used by make-div
