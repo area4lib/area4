@@ -39,7 +39,7 @@ If you don't understand, see the examples part of the documentation.
 33. Smiley faces I think
 34. &*s
 35. Random numbers (returned as string which is automatically converted from an integer)
-36. The simbol that looks like '
+36. The symbol that looks like '
 37. lowercase a
 38. uppercase a
 39. lowercase b
@@ -137,7 +137,7 @@ If you don't understand, see the examples part of the documentation.
 131. Dogs
 132. Cats
 133. Mice
-134. Hampsters
+134. Hamsters
 135. Bunnies
 136. Foxes
 137. Bears
@@ -186,7 +186,7 @@ If you don't understand, see the examples part of the documentation.
 180. Hamburgers
 181. French fries
 182. Pizza
-183. Sandwitches
+183. Sandwiches
 184. Sno-cones
 185. Ice creams in cups
 186. Ice creams in cones
@@ -202,7 +202,7 @@ If you don't understand, see the examples part of the documentation.
 196. Cars
 197. Alarm clocks
 198. Money bags
-199. Baloons
+199. Balloons
 200. Hearts
 201. Surprised faces v2
 202. Pins
