@@ -214,10 +214,11 @@ Divider looks
 207. Snowmen
 208. Potatoes
 209. Shrimp
-210. Hot person
-211. Cold person
-212. Robots
+210. Hot people
+211. Cold people
+212. Robot emojis
 213. Person having party
+214. Mind blown emojis
 
 And more coming soon!
 
