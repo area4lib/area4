@@ -131,7 +131,7 @@ def rst_lint_run() -> None:
 
 
 def travis_config_lint() -> None:
-    print("Linting Travis CI config")
+    print("\n[DEBUG] Linting Travis CI config")
     os.system("travislint --verbose .travis.yml")
 
 
