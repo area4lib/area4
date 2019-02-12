@@ -23,4 +23,4 @@ install:
 script:
   - "python3 test-code.py"
 before_install:
-  - "pip install --upgrade https://github.com/area4lib/builds/raw/master/area4-2.0.dev1-py3-none-any.whl"
+  - "pip install --upgrade area4"
