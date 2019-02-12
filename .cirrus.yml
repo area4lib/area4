@@ -16,4 +16,5 @@ MarkdownTests_task:
   MarkdownLint_script:
     - markdownlint --config=.markdownlint.yml *.md
     - markdownlint --config=.markdownlint.yml .github/*.md
+    - markdownlint --config=.markdownlint.yml extras/*.md
   LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
