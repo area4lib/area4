@@ -2,8 +2,6 @@ language: python
 dist: trusty
 sudo: required
 os: linux
-git:
-  quiet: false
 notifications:
   email: false
 cache: pip
