@@ -56,7 +56,10 @@ class Area4Instance:
         if number == 0:
             raise ValueError('Please use a number bigger then 0!')
         else:
-            return self.dividers[number].split("\n")[0]
+            try:
+                return self.dividers[number].split("\n")[0]
+            except IndexError:
+                raise ValueError('That divider doesn\'t exist!')
 
     # Info function
     def area4info(self) -> str:
