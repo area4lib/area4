@@ -1,6 +1,5 @@
 # Area: Visual Studio Code config
 .vscode/              @dowlandaiello
-docs/.vscode/         @dowlandaiello
 
 # Area: Main code
 area4/                @RDIL @rocketpropelledpotato
@@ -10,7 +9,7 @@ area4/util/           @RDIL @rocketpropelledpotato
 # Area: Docs
 docs/                 @CoffeeGoddess
 .github/*.md          @CoffeeGoddess
-.github/
+.github/              @CoffeeGoddess
 *.md                  @CoffeeGoddess
 
 # Area: Requirements
