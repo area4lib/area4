@@ -1,7 +1,6 @@
 # import OS module so we can
 # get CI build variables
 import os
-import sys
 import restructuredtext_lint
 
 # try to import area4
