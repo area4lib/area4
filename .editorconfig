@@ -8,5 +8,5 @@ indent_style = space
 indent_size = 4
 
 [*.{cirrus,travis}.yml]
-intend_style = space
+indent_style = space
 indent_size = 2
