@@ -158,7 +158,7 @@ Version 1.0.6:
 
 Version 1.0.5: 
 + Added equal sign dividers 
-+ Added GitHub pages config (site up at https://rdil.github.io/area4!) 
++ Added GitHub pages config (site down now)
 + Added more project links to setup.py file
 
 Version 1.0.4:
