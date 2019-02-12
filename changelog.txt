@@ -5,6 +5,10 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.0.1:
++ Added new 4 dividers
+* Cleaned up docs
+
 Version 2.0.0 (contains VERY BREAKING changes):
 * Completely changed the divider addition system
 * Removed most of the GitHub apps, added new ones
