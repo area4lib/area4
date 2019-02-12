@@ -14,5 +14,5 @@ markdown_tests_task:
   install_link_checker_script: npm install -g markdown-link-check@3.7.2
   lint_script:
     - markdownlint --config=.markdownlint.yml *.md
-    - markdownlint --config=.markdownlint.yml .github\*.md
+    - markdownlint --config=.markdownlint.yml .github/*.md
   link_check_script: find . -name \*.md -exec markdown-link-check {} \;
