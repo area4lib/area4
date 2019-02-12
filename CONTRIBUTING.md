@@ -24,7 +24,6 @@ There are a few things to keep in mind when contributing:
 
 There are many ways to contribute to area4! You can help improve the documentation, submit bug reports and feature requests, or write code which can be incorporated into area4. Don't be afraid to contribute to the project--the open source community will be here to help you should you need any!
 
-
 ## Coding
 
 This project code is intended to be...
