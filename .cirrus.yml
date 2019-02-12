@@ -1,18 +1,19 @@
-test_task:
-  container:
-    image: python:latest
+container:
+  image: python:latest
+
+Build_task:
   pip_cache:
     folder: ~/.cache/pip
     fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
     populate_script: python3 -m pip install --upgrade setuptools wheel twine
-  test_script: python3 setup.py sdist bdist_wheel
+  Build_script: python3 setup.py sdist bdist_wheel
 
-markdown_tests_task:
+MarkdownTests_task:
   container:
     image: node:latest
-  install_linter_script: npm install -g markdownlint-cli
-  install_link_checker_script: npm install -g markdown-link-check@3.7.2
-  lint_script:
+  InstallLinter_script: npm install -g markdownlint-cli
+  InstallLinkChecker_script: npm install -g markdown-link-check@3.7.2
+  Lint_script:
     - markdownlint --config=.markdownlint.yml *.md
     - markdownlint --config=.markdownlint.yml .github/*.md
-  link_check_script: find . -name \*.md -exec markdown-link-check {} \;
+  LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
