@@ -7,17 +7,10 @@ test_task:
     populate_script: python3 -m pip install --upgrade setuptools wheel twine
   test_script: python3 setup.py sdist bdist_wheel
 
-link_check_task:
+markdown_tests_task:
   container:
     image: node:latest
-  node_modules_cache:
-    folder: node_modules
-    fingerprint_script: cat requirements.txt
-    populate_script: npm install -g markdown-link-check@3.7.2
-  script: find . -name \*.md -exec markdown-link-check {} \;
-
-markdown_lint_task:
-  container:
-    image: node:latest
-  install_script: npm install -g markdownlint-cli
+  install_linter_script: npm install -g markdownlint-cli
+  install_link_checker_script: npm install -g markdown-link-check@3.7.2
   lint_script: markdownlint --config=.markdownlint.yml *.md
+  link_check_script: find . -name \*.md -exec markdown-link-check {} \;
