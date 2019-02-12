@@ -13,7 +13,7 @@ MarkdownTests_task:
     image: node:latest
   InstallLinter_script: npm install -g markdownlint-cli
   InstallLinkChecker_script: npm install -g markdown-link-check@3.7.2
-  Lint_script:
+  MarkdownLint_script:
     - markdownlint --config=.markdownlint.yml *.md
     - markdownlint --config=.markdownlint.yml .github/*.md
   LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
