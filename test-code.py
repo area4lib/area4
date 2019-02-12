@@ -1,6 +1,8 @@
 # import OS module so we can
 # get CI build variables
 import os
+import sys
+import restructuredtext_lint
 
 # try to import area4
 # this will fail if it could not be installed
@@ -122,8 +124,16 @@ def test_info() -> None:
             print("[+] Data item {0} works".format(x))
 
 
+def rst_lint_run() -> None:
+    print("\n[DEBUG] Running RST linting")
+    files = os.listdir("{0}/docs".format(_dir))
+    for name in files:
+        restructuredtext_lint.lint_file("{0}/docs/{1}".format(_dir, name))
+
+
 def extra_tests() -> None:
     test_info()
+    rst_lint_run()
 
 
 # run setup functions:
