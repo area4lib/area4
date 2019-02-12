@@ -6,7 +6,7 @@ Key:
 - Means deletion
 
 Version 2.0.1:
-+ Added new 5 dividers
++ Added new 6 dividers
 * Cleaned up docs
 
 Version 2.0.0 (contains VERY BREAKING changes):
