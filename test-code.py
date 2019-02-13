@@ -1,3 +1,5 @@
+"""Runs code tests in a CI environment."""
+
 # import OS module so we can
 # get CI build variables
 import os
@@ -60,7 +62,11 @@ else:
 
 # divider tests:
 def test_dividers() -> None:
-    # Test each divider
+    """
+    Test each divider against the raw ones from the text file.
+
+    :return: None
+    """
     print("[DEBUG] Starting tests...\n\n")
     for i in range(len(rawDividers)):
         # manually skip dividers 0 and 35:
@@ -90,6 +96,11 @@ def test_dividers() -> None:
 
 # make-div tests
 def test_make_div() -> None:
+    """
+    Tests the make-div function.
+
+    :return: None
+    """
     if d.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
         print("\n[DEBUG] make-div test did not fail")
     else:
@@ -99,6 +110,11 @@ def test_make_div() -> None:
 # extra test:
 # validate info variables
 def test_info() -> None:
+    """
+    Tests the info variables. This is an extra test.
+
+    :return: None
+    """
     right_data = [
         "area4",
         "https://github.com/RDIL",
@@ -124,6 +140,11 @@ def test_info() -> None:
 
 
 def rst_lint_run() -> None:
+    """
+    Lints all reStructuredText files. This is an extra check.
+
+    :return: None
+    """
     print("\n[DEBUG] Running RST linting")
     files = os.listdir("{0}/docs".format(_dir))
     for name in files:
@@ -131,11 +152,21 @@ def rst_lint_run() -> None:
 
 
 def travis_config_lint() -> None:
+    """
+    Lints the Travis CI config file. This is an extra check.
+
+    :return: None
+    """
     print("\n[DEBUG] Linting Travis CI config")
     os.system("travislint --verbose .travis.yml")
 
 
 def extra_tests() -> None:
+    """
+    Run the extra checks/tests.
+
+    :return: None
+    """
     test_info()
     rst_lint_run()
     travis_config_lint()
