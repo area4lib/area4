@@ -1,5 +1,5 @@
 setuptools==40.8.0
 wheel==0.33.0
-twine
+twine==1.12.1
 flake8
 tox
