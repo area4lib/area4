@@ -26,7 +26,7 @@ _dir: str
 # d is the area4 instance, keep it at None for now
 d = None
 # the commit message:
-c_message = os.getenv("TRAVIS_COMMIT_MESSAGE")
+c_message = os.getenv("CIRRUS_CHANGE_MESSAGE")
 if c_message is None:
     raise EnvironmentError("No commit name detected!")
 # if extra tests should be run:
@@ -42,7 +42,7 @@ else:
     print("[DEBUG] Module being run directly, not exiting")
     # get working directory:
     print("[DEBUG] Getting working directory\n")
-    _dir = os.getenv("TRAVIS_BUILD_DIR")
+    _dir = os.getenv("CIRRUS_WORKING_DIR")
     print("[DEBUG] Got working directory ({0})\n".format(_dir))
     # get divider file:
     dividers_file: str = "{0}/{1}".format(_dir, "area4/dividers.txt")
@@ -151,16 +151,6 @@ def rst_lint_run() -> None:
         restructuredtext_lint.lint_file("{0}/docs/{1}".format(_dir, name))
 
 
-def travis_config_lint() -> None:
-    """
-    Lints the Travis CI config file. This is an extra check.
-
-    :return: None
-    """
-    print("\n[DEBUG] Linting Travis CI config")
-    os.system("travislint --verbose .travis.yml")
-
-
 def extra_tests() -> None:
     """
     Run the extra checks/tests.
@@ -168,14 +158,13 @@ def extra_tests() -> None:
     :return: None
     """
     test_info()
-    rst_lint_run()
-    travis_config_lint()
 
 
 # run setup functions:
 # run tests:
 test_dividers()
 test_make_div()
+rst_lint_run()
 if extra:
     # run extra tests if the commit
     # messages match

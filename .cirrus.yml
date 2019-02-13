@@ -1,7 +1,7 @@
 container:
   image: python:latest
 
-Build_task:
+BuildTests_task:
   pip_cache:
     folder: ~/.cache/pip
     fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
@@ -18,3 +18,12 @@ MarkdownTests_task:
     - markdownlint --config=.markdownlint.yml .github/*.md
     - markdownlint --config=.markdownlint.yml extras/*.md
   LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
+
+CodeTests_task:
+  InstallTestDependencies_script:
+    - cd $CIRRUS_WORKING_DIR/requirements/
+    - python3 -m pip install -r test.txt
+    - python3 -m pip install --upgrade area4
+  Test_script:
+    - cd $CIRRUS_WORKING_DIR
+    - python3 test-code.py
