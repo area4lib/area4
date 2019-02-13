@@ -151,16 +151,6 @@ def rst_lint_run() -> None:
         restructuredtext_lint.lint_file("{0}/docs/{1}".format(_dir, name))
 
 
-def travis_config_lint() -> None:
-    """
-    Lints the Travis CI config file. This is an extra check.
-
-    :return: None
-    """
-    print("\n[DEBUG] Linting Travis CI config")
-    os.system("travislint --verbose .travis.yml")
-
-
 def extra_tests() -> None:
     """
     Run the extra checks/tests.
@@ -169,7 +159,6 @@ def extra_tests() -> None:
     """
     test_info()
     rst_lint_run()
-    travis_config_lint()
 
 
 # run setup functions:
