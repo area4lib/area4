@@ -163,7 +163,7 @@ def travis_config_lint() -> None:
 
 def extra_tests() -> None:
     """
-    Runs the extra checks/tests.
+    Run the extra checks/tests.
 
     :return: None
     """
