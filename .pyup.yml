@@ -30,11 +30,11 @@ requirements:
       # update all dependencies and pin them
       update: all
       pin: True
-- requirements/coverage-requirements.txt:
+  - requirements/coverage-requirements.txt:
       # update all dependencies and pin them
       update: all
       pin: True
-- requirements/dev-requirements.txt:
+  - requirements/dev-requirements.txt:
       # update all dependencies and pin them
       update: all
       pin: True
