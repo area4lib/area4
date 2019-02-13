@@ -43,7 +43,8 @@ class Area4Instance:
     # Function to get a divider
     def divider(self, number) -> str:
         """
-        Gets you the divider you requested!
+        Get the divider you requested.
+
         :param self:
         :param number: the divider number (NOT 0)
         :raises: ValueError
@@ -64,7 +65,8 @@ class Area4Instance:
     # Info function
     def area4info(self) -> str:
         """
-        Gets you some info about the package
+        Gets you some info about the package.
+
         :param self:
         :return: Package info
         :rtype: str
@@ -105,7 +107,6 @@ class Area4Instance:
         25 will contain 2 units for
         a total length of 20 characters.
         """
-
         # reduce the size if possible to extend closer to full length
         if not literal_unit:
             unit = self.reduce_to_unit(unit)
