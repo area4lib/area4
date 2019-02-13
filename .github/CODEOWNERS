@@ -17,7 +17,7 @@ docs/                 @CoffeeGoddess
 changelog.txt         @CoffeeGoddess
 
 # Area: Licensing
-LICENSE               @CoffeeGoddess @RDIL @rocketpropelledpotato
+LICENSE               @CoffeeGoddess @RDIL
 
 # Area: Requirements
 requirements/*.txt    @rocketpropelledpotato
@@ -26,4 +26,4 @@ requirements.txt      @rocketpropelledpotato
 # Area: Configuration files
 setup.cfg             @RDIL
 *.in                  @RDIL
-.markdownlint.yml     @RDIL
+*.yml                 @RDIL
