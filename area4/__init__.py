@@ -122,7 +122,7 @@ class Area4Instance:
     def reduce_to_unit(self, divider: str) -> str:
         """
         Reduce a repeating divider to the smallest repeating unit possible.
-        
+
         Note: this function is used by make-div
         :param self:
         :param divider: the divider
