@@ -1,3 +1,5 @@
+"""A fun little extra."""
+
 import random
 
 
