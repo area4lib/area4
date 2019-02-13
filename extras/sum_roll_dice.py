@@ -2,6 +2,11 @@ import random
 
 
 def roll_dice():
+    """
+    Rolls a die.
+    
+    :return: None
+    """
     sums: int = 0  # will return the sum of the roll calls.
     while True:
         roll = random.randint(1, 6)
