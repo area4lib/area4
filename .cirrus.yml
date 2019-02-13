@@ -26,6 +26,6 @@ CodeTests_task:
     - cd $CIRRUS_WORKING_DIR/requirements/
     - python3 -m pip install -r test.txt
     - python3 -m pip install --upgrade area4
-  Test_script: 
+  Test_script:
     - cd $CIRRUS_WORKING_DIR
     - python3 test-code.py
