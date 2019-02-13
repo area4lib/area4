@@ -12,6 +12,7 @@ Version 2.0.1:
 * Updated codeowners
 * Made code follow PyDocStyle
 * Removed Travis CI, moved on to Cirrus CI
+* Updated GitIgnore
 
 Version 2.0.0 (contains VERY BREAKING changes):
 * Completely changed the divider addition system
