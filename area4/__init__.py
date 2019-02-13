@@ -29,7 +29,8 @@ class Area4Instance:
     # Run some needed operations:
     def __init__(self) -> None:
         """
-        Inits the class
+        Init the class.
+
         :param self:
         :return: None
         """
@@ -67,7 +68,7 @@ class Area4Instance:
     # Info function
     def area4info(self) -> str:
         """
-        Gets you some info about the package.
+        Get some info about the package.
 
         :param self:
         :return: Package info
@@ -85,7 +86,8 @@ class Area4Instance:
     def make_div(self, unit, length=24,
                  start='', end='', literal_unit=False) -> str:
         """
-        Generates and returns a custom divider
+        Generate and return a custom divider.
+
         :param self:
         :param unit: str containing a repeating unit
         :param length: The maximum length (won't be exceeded) (default: 24)
@@ -118,7 +120,7 @@ class Area4Instance:
 
     def reduce_to_unit(self, divider: str) -> str:
         """
-        Reduces a repeating divider to the smallest repeating unit possible
+        Reduce a repeating divider to the smallest repeating unit possible.
         Note: this function is used by make-div
         :param self:
         :param divider: the divider
