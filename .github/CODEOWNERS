@@ -1,22 +1,29 @@
-# Area: Visual Studio Code config
+# Area: Editor configurations
 .vscode/              @dowlandaiello
+.idea/                @theonetheonlydemon
+.editorconfig         @theonetheonlydemon
+
+# Area: Tools
+tools/                @theonetheonlydemon
 
 # Area: Main code
-area4/                @RDIL @rocketpropelledpotato
-area4/util/           @RDIL @rocketpropelledpotato
-*.py                  @RDIL @rocketpropelledpotato
+area4/                @N8python @rocketpropelledpotato
+*.py                  @N8python @rocketpropelledpotato
 
 # Area: Docs
 docs/                 @CoffeeGoddess
-.github/*.md          @CoffeeGoddess
 .github/              @CoffeeGoddess
 *.md                  @CoffeeGoddess
+changelog.txt         @CoffeeGoddess
+
+# Area: Licensing
+LICENSE               @CoffeeGoddess @RDIL @rocketpropelledpotato
 
 # Area: Requirements
-requirements/*.txt    @RDIL
-requirements/         @RDIL
+requirements/*.txt    @rocketpropelledpotato
+requirements.txt      @rocketpropelledpotato
 
 # Area: Configuration files
 setup.cfg             @RDIL
-setup.py              @RDIL
-.pypirc               @RDIL
+*.in                  @RDIL
+.markdownlint.yml     @RDIL
