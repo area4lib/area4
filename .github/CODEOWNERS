@@ -2,6 +2,7 @@
 .vscode/              @dowlandaiello
 .idea/                @theonetheonlydemon
 .editorconfig         @theonetheonlydemon
+.sublime-project      @RDIL
 
 # Area: Tools
 tools/                @theonetheonlydemon
