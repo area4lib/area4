@@ -158,13 +158,13 @@ def extra_tests() -> None:
     :return: None
     """
     test_info()
-    rst_lint_run()
 
 
 # run setup functions:
 # run tests:
 test_dividers()
 test_make_div()
+rst_lint_run()
 if extra:
     # run extra tests if the commit
     # messages match
