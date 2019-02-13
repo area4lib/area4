@@ -1,3 +1,4 @@
+"""Utilities module."""
 #  Copyright (c) 2018 - present RDIL.
 #  You should have received a copy of the
 # MIT License with this program/distribution.
@@ -8,7 +9,7 @@
 
 def check(internal_name: str) -> bool:
     """
-    Tells you if the module is being run directly or being imported
+    Get if the module is being run directly or being imported.
 
     :return: If __name__ is '__main__' (boolean)
     :rtype: bool
