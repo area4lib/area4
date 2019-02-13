@@ -1,4 +1,4 @@
-"""Builds the package"""
+"""Builds the package."""
 
 import setuptools
 

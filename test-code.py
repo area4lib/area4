@@ -1,4 +1,4 @@
-"""Runs code tests in a CI environment"""
+"""Runs code tests in a CI environment."""
 
 # import OS module so we can
 # get CI build variables
