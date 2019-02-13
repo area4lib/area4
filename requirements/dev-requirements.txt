@@ -1,5 +1,5 @@
-setuptools
-wheel
-twine
-flake8
-tox
+setuptools==40.8.0
+wheel==0.33.0
+twine==1.12.1
+flake8==3.7.5
+tox==3.7.0
