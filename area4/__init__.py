@@ -1,3 +1,4 @@
+"""Main class."""
 #  Copyright (c) 2018 - present RDIL.
 #  You should have received a copy of the
 #  MIT License with this program/distribution.
@@ -14,6 +15,7 @@ import os
 
 # Class:
 class Area4Instance:
+    """All main functions."""
     # Info variables:
     name = "area4"
     author = "https://github.com/RDIL"
