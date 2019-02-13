@@ -16,6 +16,7 @@ import os
 # Class:
 class Area4Instance:
     """All main functions."""
+
     # Info variables:
     name = "area4"
     author = "https://github.com/RDIL"
