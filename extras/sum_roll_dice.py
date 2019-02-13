@@ -5,7 +5,7 @@ import random
 
 def roll_dice():
     """
-    Rolls a die.
+    Roll a die.
 
     :return: None
     """
