@@ -83,7 +83,7 @@ class Area4Instance:
         if type(div) is int: div = self.dividers[div]
         if len(stuff) == 1:
             retstr = stuff[0]
-            return retstr
+            return stuff[0]
         for s in stuff:
            retstr+=s
            retstr+="\n"
