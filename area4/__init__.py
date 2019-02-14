@@ -83,10 +83,10 @@ class Area4Instance:
             retstr = stuff[0]
             return stuff[0]
         for s in stuff:
-            retstr+=s
-            retstr+="\n"
-            retstr+=div
-            retstr+="\n"
+            retstr += s
+            retstr += "\n"
+            retstr += div
+            retstr += "\n"
         return retstr
 
 
