@@ -65,14 +65,18 @@ class Area4Instance:
                 return self.dividers[number].split("\n")[0]
             except IndexError:
                 raise ValueError('That divider doesn\'t exist!')
-    def logDivider(self, div, *stuff) -> None:
+    def logDivider(self, div, *stuff) -> str:
+        retstr = "";
         if type(div) is int: div = self.dividers[div]
         if len(stuff) == 1:
-            print(stuff[0])
-            return
+            retstr = stuff[0]
+            return retstr
         for s in stuff:
-           print(s)
-           print(div)
+           retstr+="s"
+           retstr+="\n"
+           retstr+=div
+           retstr+="\n"
+        return retstr
 
         
     # Info function
