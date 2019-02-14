@@ -68,9 +68,7 @@ class Area4Instance:
 
     def logDivider(self, div, *stuff) -> str:
         """
-        
         Input a string or number as a divider.
-        and a series of strings to return, divided.
         :return: newly made value
         :rtype: str
         :param self:
