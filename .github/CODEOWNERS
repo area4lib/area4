@@ -1,7 +1,7 @@
 # Area: Editor configurations
 .vscode/              @dowlandaiello
-.idea/                @theonetheonlydemon
-.editorconfig         @theonetheonlydemon
+.idea/                @RDIL
+.editorconfig         @RDIL
 .sublime-project      @RDIL
 
 # Area: Tools
