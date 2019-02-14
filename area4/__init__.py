@@ -65,8 +65,8 @@ class Area4Instance:
                 return self.dividers[number].split("\n")[0]
             except IndexError:
                 raise ValueError('That divider doesn\'t exist!')
-    
-    
+
+
     def logDivider(self, div, *stuff) -> str:
         """
         A function that takes a string or number as a divider, and a series of strings to return, divided.
@@ -83,10 +83,10 @@ class Area4Instance:
             retstr = stuff[0]
             return stuff[0]
         for s in stuff:
-           retstr+=s
-           retstr+="\n"
-           retstr+=div
-           retstr+="\n"
+            retstr+=s
+            retstr+="\n"
+            retstr+=div
+            retstr+="\n"
         return retstr
 
 
