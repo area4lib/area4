@@ -119,6 +119,7 @@ def testLogDivider() -> None:
     else:
         print("\n[DEBUG] Test of LogDivider passed")
 
+
 # extra test:
 # validate info variables
 def test_info() -> None:
