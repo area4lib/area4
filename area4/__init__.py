@@ -66,7 +66,7 @@ class Area4Instance:
             except IndexError:
                 raise ValueError('That divider doesn\'t exist!')
     def logDivider(self, div, *stuff) -> None:
-        if(type(div) is int) div = self.dividers[div]
+        if type(div) is int: div = self.dividers[div]
         if len(stuff) == 1:
             print(stuff[0])
             return
