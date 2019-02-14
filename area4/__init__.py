@@ -80,7 +80,7 @@ class Area4Instance:
             div = self.dividers[div]
         if len(args) == 1:
             return args[0]
-        for s in stuff:
+        for s in args:
             retstr += s
             retstr += "\n"
             retstr += div
