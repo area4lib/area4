@@ -105,7 +105,13 @@ def test_make_div() -> None:
         print("\n[DEBUG] make-div test did not fail")
     else:
         raise RuntimeError("make-div tests failed")
-
+        
+def testLogDivider() -> None:
+    print("[DEBUG] Running logDivider tests")
+    if not logDivider("---", "Hello") == "Hello" or not logDivider("---", "Hello", "Hello") == "Hello\n---\nHello":
+        raise RuntimeError("Test failed")
+    else:
+        print("It works!")
 
 # extra test:
 # validate info variables
@@ -165,6 +171,7 @@ def extra_tests() -> None:
 test_dividers()
 test_make_div()
 rst_lint_run()
+testLogDivider()
 if extra:
     # run extra tests if the commit
     # messages match
