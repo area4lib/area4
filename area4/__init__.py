@@ -70,9 +70,6 @@ class Area4Instance:
     def logDivider(self, div, *stuff) -> str:
         """
         A function that takes a string or number as a divider, and a series of strings to return, divided.
-        If the first parameter is a number, it looks it up in self.dividers.
-        Otherwise, it uses the string provided as a divider.
-        If only one additional string is provided, no dividers are printed.
 
         :return: newly made value
         :rtype: str
@@ -80,7 +77,8 @@ class Area4Instance:
         :param div: the divider
         """
         retstr = ""
-        if type(div) is int: div = self.dividers[div]
+        if type(div) is int:
+            div = self.dividers[div]
         if len(stuff) == 1:
             retstr = stuff[0]
             return stuff[0]
@@ -91,7 +89,7 @@ class Area4Instance:
            retstr+="\n"
         return retstr
 
-        
+
     # Info function
     def area4info(self) -> str:
         """
