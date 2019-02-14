@@ -105,7 +105,13 @@ def test_make_div() -> None:
         print("\n[DEBUG] make-div test did not fail")
     else:
         raise RuntimeError("make-div tests failed")
-
+        
+def testLogDivider() -> None:
+    print("[DEBUG] Running logDivider tests")
+    if not logDivider("---", "Hello") == "Hello":
+        raise RuntimeError("Test failed")
+    else:
+        print("It works!")
 
 # extra test:
 # validate info variables
