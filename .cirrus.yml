@@ -26,4 +26,4 @@ CodeTests_task:
   # Install new beta build:
   InstallBuiltBeta_script: python3 -m pip install .
   # Test the code:
-  script: python3 test-code.py
+  RunTests_script: python3 test-code.py
