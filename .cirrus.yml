@@ -1,13 +1,6 @@
 container:
   image: python:latest
 
-BuildTests_task:
-  pip_cache:
-    folder: ~/.cache/pip
-    fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
-    populate_script: python3 -m pip install --upgrade setuptools wheel twine
-  Build_script: python3 setup.py sdist bdist_wheel
-
 MarkdownTests_task:
   container:
     image: node:latest
@@ -20,9 +13,11 @@ MarkdownTests_task:
   LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
 
 CodeTests_task:
+  pip_cache:
+    folder: ~/.cache/pip
+    fingerprint_script: cd $CIRRUS_BUILD_DIR/REQUIREMENTS
+    populate_script: python3 -m pip install -r test.txt && cd $CIRRUS_WORKING_DIR
   InstallTestDependencies_script:
-    - cd $CIRRUS_WORKING_DIR/requirements/
-    - python3 -m pip install -r test.txt
     - python3 -m pip install --upgrade area4
   Test_script:
     - cd $CIRRUS_WORKING_DIR
