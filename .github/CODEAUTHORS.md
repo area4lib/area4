@@ -22,5 +22,6 @@
 - Plutoberth
 - DirtySoc
 - amrutha3
+- fkorotkov
 
 (If anybody got missed or wants to be removed from the list open a PR please)
