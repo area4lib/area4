@@ -109,7 +109,7 @@ def test_make_div() -> None:
 
 def testLogDivider() -> None:
     """
-    Test LogDivider
+    Test LogDivider.
 
     :return None:
     """
@@ -156,7 +156,7 @@ def test_info() -> None:
 
 def rst_lint_run() -> None:
     """
-    Lints all reStructuredText files. This is an extra check.
+    Lints all reStructuredText files. This is an extra test.
 
     :return: None
     """
