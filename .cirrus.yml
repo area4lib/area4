@@ -20,6 +20,6 @@ CodeTests_task:
   BuildPackage_script:
     - python3 setup.py bdist_wheel
   InstallTestDependencies_script:
-    - find . -name \*.whl -exec python3 -m pip install --upgrade .
+    - find . -name \*.whl -exec python3 -m pip install --upgrade . \;
   Test_script:
     - python3 test-code.py
