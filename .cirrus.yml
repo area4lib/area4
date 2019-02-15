@@ -1,25 +1,29 @@
+# Set the default Docker image to the latest Python version:
 container:
   image: python:latest
 
 MarkdownTests_task:
+  # Download NodeJS
   container:
     image: node:latest
+  # Install Markdown linter:
   InstallLinter_script: npm install -g markdownlint-cli
+  # Install Markdown link checker:
   InstallLinkChecker_script: npm install -g markdown-link-check@3.7.2
+  # Lint Markdown:
   MarkdownLint_script:
     - markdownlint --config=.markdownlint.yml *.md
     - markdownlint --config=.markdownlint.yml .github/*.md
     - markdownlint --config=.markdownlint.yml extras/*.md
+  # Check links:
   LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
 
 CodeTests_task:
-  pip_cache:
-    folder: ~/.cache/pip
-    fingerprint_script: cat requirements/test.txt
-    populate_script: python3 -m pip install -r requirements/test.txt
-  BuildPackage_script:
-    - python3 setup.py bdist_wheel
-  InstallTestDependencies_script:
-    - python3 -m pip install --upgrade area4
-  Test_script:
-    - python3 test-code.py
+  # Build the package:
+  BuildPackage_script: python3 setup.py sdist bdist_wheel
+  # Install test dependencies:
+  InstallTestDependencies_script: python3 -m pip install -r requirements/test.txt
+  # Install new beta build:
+  InstallBuiltBeta_script: python3 -m pip install .
+  # Test the code:
+  script: python3 test-code.py
