@@ -13,6 +13,8 @@ Version 2.0.1:
 * Made code follow PyDocStyle
 * Removed Travis CI, moved on to Cirrus CI
 * Updated GitIgnore
+* Updated markdownlint rules
+* Added depdency bumping bot
 
 Version 2.0.0 (contains VERY BREAKING changes):
 * Completely changed the divider addition system
