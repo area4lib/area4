@@ -15,7 +15,7 @@ MarkdownTests_task:
 CodeTests_task:
   pip_cache:
     folder: ~/.cache/pip
-    fingerprint_script: cd $CIRRUS_BUILD_DIR/REQUIREMENTS
+    fingerprint_script: cd $CIRRUS_BUILD_DIR/requirements
     populate_script: python3 -m pip install -r test.txt && cd $CIRRUS_WORKING_DIR
   InstallTestDependencies_script:
     - python3 -m pip install --upgrade area4
