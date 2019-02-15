@@ -15,8 +15,10 @@ MarkdownTests_task:
 CodeTests_task:
   pip_cache:
     folder: ~/.cache/pip
-    fingerprint_script: echo $PYTHON_VERSION && cat requirements/test.txt
+    fingerprint_script: cat requirements/test.txt
     populate_script: python3 -m pip install -r requirements/test.txt
+  BuildPackage_script:
+    - python3 setup.py bdist_wheel
   InstallTestDependencies_script:
     - python3 -m pip install --upgrade area4
   Test_script:
