@@ -2,6 +2,5 @@ include changelog.txt
 include LICENSE
 include area4/dividers.txt
 include .github/CODEAUTHORS.md
-include .editorconfig
 include .github/SUPPORT.md
 exclude extras/*.*
