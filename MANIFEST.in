@@ -1,4 +1,3 @@
-include *.md
 include changelog.txt
 include LICENSE
 include area4/dividers.txt
