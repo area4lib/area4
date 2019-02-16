@@ -24,6 +24,6 @@ CodeTests_task:
   # Install test dependencies:
   InstallTestDependencies_script: python3 -m pip install -r requirements/test.txt
   # Install new beta build:
-  InstallBuiltBeta_script: python3 -m pip install .
+  InstallBetaBuild_script: python3 -m pip install .
   # Test the code:
   RunTests_script: python3 test-code.py
