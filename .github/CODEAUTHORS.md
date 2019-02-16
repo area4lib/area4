@@ -1,10 +1,12 @@
+# Maintainers
+
+- RDIL *(Owner / Team Lead)*
+- rocketpropelledpotato *(Head of Code Review)*
+- CoffeeGoddess *(Head of Documentation)*
+- theonetheonlydemon
+
 # Contributors
 
-- RDIL ***(Owner)***
-- CoffeeGoddess **(Maintainer)**
-- rocketpropelledpotato **(Maintainer)**
-- water900 **(Maintainer)**
-- theonetheonlydemon **(Maintainer)**
 - 73VW
 - Wittionary
 - jerry-le
@@ -23,5 +25,6 @@
 - DirtySoc
 - amrutha3
 - fkorotkov
+- water900
 
 (If anybody got missed or wants to be removed from the list open a PR please)

@@ -1,23 +1,22 @@
 ---
-name: Feature request  
-about: Request a divider or feature for the project  
+name: Feature request
+about: Request a feature for the project
+---
 
----  
-
-# Feature Request
+# Feature request
 
 ## Idea
 
-<!-- Describe the idea. -->  
+<!--Describe the idea.-->
 
 ## Context
 
-<!-- How did you get this idea? -->  
+<!--How did you get this idea?-->
 
 ## Helpfulness
 
-<!-- How will this help the project?  (If this is a divider request delete this section) -->  
+<!--How will this help the project?-->
 
 ## Anything Else
 
-<!-- Put anything else here. -->  
+<!--Put anything else here.-->

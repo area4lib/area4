@@ -1,9 +1,9 @@
-# Set the default Docker image to the latest Python version:
+# Set the default container to the latest Python version:
 container:
   image: python:latest
 
 MarkdownTests_task:
-  # Download NodeJS
+  # Use NodeJS container:
   container:
     image: node:latest
   # Install Markdown linter:
@@ -20,7 +20,7 @@ MarkdownTests_task:
 
 CodeTests_task:
   # Build the package:
-  BuildPackage_script: python3 setup.py sdist bdist_wheel
+  BuildPackage_script: bash tools/build-package.sh
   # Install test dependencies:
   InstallTestDependencies_script: python3 -m pip install -r requirements/test.txt
   # Install new beta build:

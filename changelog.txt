@@ -5,16 +5,21 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.0.2:
+* Updated package build tools
+* Updated EditorConfig
+* Updated GitIgnore
+
 Version 2.0.1:
 + Added new 6 dividers
 * Cleaned up docs
 - Removed egg building tool
-* Updated codeowners
+* Updated CodeOwners
 * Made code follow PyDocStyle
 * Removed Travis CI, moved on to Cirrus CI
 * Updated GitIgnore
-* Updated markdownlint rules
-* Added depdency bumping bot
+* Updated MarkdownLint rules
+* Added dependency bumping bot
 
 Version 2.0.0 (contains VERY BREAKING changes):
 * Completely changed the divider addition system
