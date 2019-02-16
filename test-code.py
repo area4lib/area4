@@ -59,6 +59,8 @@ else:
             (os.getenv("CIRRUS_BRANCH") == "master"):
         print("[DEBUG] Running extra tests!")
         extra = True
+    else:
+        extra = False
 
 
 # divider tests:
