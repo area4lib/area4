@@ -55,7 +55,8 @@ else:
     d = area4.Area4Instance()
     print("[DEBUG] Created instance")
     # see if we need to run extra tests
-    if "!extra" in c_message or c_message == "!extra":
+    if ("!extra" in c_message or c_message == "!") or \
+            (os.getenv("CIRRUS_BRANCH") == "master"):
         print("[DEBUG] Running extra tests!")
         extra = True
 
