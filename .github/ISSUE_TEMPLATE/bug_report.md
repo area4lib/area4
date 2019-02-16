@@ -1,32 +1,31 @@
 ---
-name: Bug report  
-about: General template for bug reports  
+name: Bug report
+about: General template for bug reports
+---
 
----  
-
-# Bug Report
+# Bug report
 
 ## Description
 
-<!-- A brief description of the problem -->  
+<!--A brief description of the problem.-->
 
 ## Steps to reproduce
 
-- Step 1:  
-- Step 2:  
+- Step 1:
+- Step 2:
 
 ## Expected behavior
 
-<!-- Describe what was expected to happen -->  
+<!--Describe what was expected to happen.-->
 
 ## Actual behavior
 
-<!-- Describe what really happened -->  
+<!--Describe what really happened.-->
 
 ## Screenshots
 
-<!-- Add some screenshots if necessary -->  
+<!--Add some screenshots if necessary.-->
 
 ## Additional information
 
-<!-- Is there anything else that you might think that will help us investigate further the issue? -->  
+<!--Anything else that you might think that will help us investigate further.-->

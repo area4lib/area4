@@ -106,7 +106,8 @@ class Area4Instance:
             return "Use Python 3.6 or above to run this function."
 
     def make_div(self, unit, length=24,
-                 start='', end='', literal_unit=False) -> str:
+                 start='', end='',
+                 literal_unit=False) -> str:
         """
         Generate and return a custom divider.
 
