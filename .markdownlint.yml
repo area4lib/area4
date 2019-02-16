@@ -5,3 +5,5 @@
 "MD025": false # Multiple top level headings in the same file
 "MD026": false # Trailing punctuation in heading
 "MD032": false # Odd stuff with lists
+"MD002": false # headings
+"MD041": false
