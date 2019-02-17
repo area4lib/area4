@@ -180,7 +180,7 @@ def extra_tests() -> None:
 
 def on_start() -> None:
     """
-    What to run when the test starts.
+    Run when the test starts.
 
     :return: None
     """
@@ -189,7 +189,7 @@ def on_start() -> None:
 
 def on_finish() -> None:
     """
-    What to run when the test finishes.
+    Run when the test finishes.
 
     :return: None
     """
