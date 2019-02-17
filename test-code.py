@@ -85,7 +85,6 @@ def test_dividers() -> None:
 
     :return: None
     """
-    print("[DEBUG] Starting tests...\n\n")
     for i in range(len(rawDividers)):
         # manually skip dividers 0 and 35:
         if i < 1 or i == 35:
@@ -179,14 +178,33 @@ def extra_tests() -> None:
     rst_lint_run()
 
 
-# run setup functions:
-# run tests:
+def on_start() -> None:
+    """
+    What to run when the test starts.
+
+    :return: None
+    """
+    print("[DEBUG] Starting tests...\n\n")
+
+
+def on_finish() -> None:
+    """
+    What to run when the test finishes.
+
+    :return: None
+    """
+    print("\n[DEBUG] Exiting tests!")
+
+
+# Run tests:
+on_start()
+
 test_dividers()
 test_make_div()
+
 if extra:
-    # run extra tests if the commit
-    # messages match
+    # Run extra tests if needed:
     extra_tests()
 
-# notify user tests are complete
-print("\n[DEBUG] Exiting tests!")
+# Notify user tests are complete:
+on_finish()
