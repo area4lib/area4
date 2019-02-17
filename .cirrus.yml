@@ -20,7 +20,9 @@ MarkdownTests_task:
 
 CodeTests_task:
   # Build the package:
-  BuildPackage_script: bash tools/build-package.sh
+  BuildPackage_script:
+    - bash tools/build-package.sh
+    - bash tools/create-dist-info.sh
   # Install test dependencies:
   InstallTestDependencies_script: python3 -m pip install -r requirements/test.txt
   # Install new beta build:
