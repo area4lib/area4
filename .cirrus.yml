@@ -22,10 +22,12 @@ CodeTests_task:
   # Build the package:
   BuildPackage_script:
     - bash tools/build-package.sh
-    - bash tools/create-dist-info.sh
   # Install test dependencies:
-  InstallTestDependencies_script: python3 -m pip install -r requirements/test.txt
+  InstallTestDependencies_script:
+    - python3 -m pip install -r requirements/test.txt
   # Install new beta build:
-  InstallBetaBuild_script: python3 -m pip install .
+  InstallBetaBuild_script:
+    - python3 -m pip install .
   # Test the code:
-  RunTests_script: python3 test-code.py
+  RunTests_script:
+    - python3 test-code.py

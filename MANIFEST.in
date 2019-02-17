@@ -3,4 +3,3 @@ include LICENSE
 include area4/dividers.txt
 include .github/CODEAUTHORS.md
 include .github/SUPPORT.md
-exclude extras/*.*

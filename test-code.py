@@ -20,20 +20,34 @@ except ImportError:
 # rawDividers is the array of dividers from the
 # text file
 rawDividers: str
+
 # _dir is the directory that travis supplies
 # as the build directory
 _dir: str
-# d is the area4 instance, keep it at None for now
+
+# d is the area4 instance
+# keep it at None for now
 d = None
-# the commit message:
+
+# Get commit message:
 c_message = os.getenv("CIRRUS_CHANGE_MESSAGE")
 if c_message is None:
     raise EnvironmentError("No commit name detected!")
-# if extra tests should be run:
+
+# Get the branch:
+repo_branch = os.getenv("CIRRUS_BRANCH")
+if repo_branch is None:
+    raise EnvironmentError("Branch unknown")
+
+# Make the fetched values lowercase:
+c_message = c_message.lower()
+repo_branch = repo_branch.lower()
+
+# Check if extra tests should be run:
 extra: bool = False
 
-# make sure this is being run directly and
-# not from another python module
+# Make sure this is being run directly and
+# not from another python module:
 if not __name__ == "__main__":
     raise EnvironmentError("This module must be run directly!")
 else:
@@ -54,9 +68,10 @@ else:
     print("[DEBUG] Creating instance of the library")
     d = area4.Area4Instance()
     print("[DEBUG] Created instance")
-    # see if we need to run extra tests
-    if ("!extra" in c_message or c_message == "!") or \
-            (os.getenv("CIRRUS_BRANCH") == "master"):
+
+    # See if we need to run extra tests:
+    if ("!e" in c_message or c_message == "!e") or \
+            (repo_branch == "master"):
         print("[DEBUG] Running extra tests!")
         extra = True
     else:
@@ -70,7 +85,6 @@ def test_dividers() -> None:
 
     :return: None
     """
-    print("[DEBUG] Starting tests...\n\n")
     for i in range(len(rawDividers)):
         # manually skip dividers 0 and 35:
         if i < 1 or i == 35:
@@ -177,18 +191,37 @@ def extra_tests() -> None:
     :return: None
     """
     test_info()
+    rst_lint_run()
 
 
-# run setup functions:
-# run tests:
+def on_start() -> None:
+    """
+    Run when the test starts.
+
+    :return: None
+    """
+    print("[DEBUG] Starting tests...\n\n")
+
+
+def on_finish() -> None:
+    """
+    Run when the test finishes.
+
+    :return: None
+    """
+    print("\n[DEBUG] Exiting tests!")
+
+
+# Run tests:
+on_start()
+
 test_dividers()
 test_make_div()
-rst_lint_run()
 testLogDivider()
+
 if extra:
-    # run extra tests if the commit
-    # messages match
+    # Run extra tests if needed:
     extra_tests()
 
-# notify user tests are complete
-print("\n[DEBUG] Exiting tests!")
+# Notify user tests are complete:
+on_finish()
