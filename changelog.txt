@@ -9,6 +9,7 @@ Version 2.0.2:
 * Updated package build tools
 * Updated EditorConfig
 * Updated GitIgnore
+* Updated support information
 
 Version 2.0.1:
 + Added new 6 dividers
