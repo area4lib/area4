@@ -10,6 +10,11 @@ Version 2.0.2:
 * Updated EditorConfig
 * Updated GitIgnore
 * Updated support information
+* Updated issue templates
+* Updated Probot config
+* VSCode now suggests you install markdown lint
+* Updated contributing guidelines
+* Updated Twine to latest version
 
 Version 2.0.1:
 + Added new 6 dividers
