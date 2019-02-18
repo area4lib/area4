@@ -72,7 +72,6 @@ else:
         extra = False
 
 
-# Divider tests:
 def test_dividers() -> None:
     """
     Test each divider against the raw ones from the text file.
@@ -100,7 +99,6 @@ def test_dividers() -> None:
                 print("\n[DEBUG] Ignoring an IndexError")
 
 
-# make-div tests
 def test_make_div() -> None:
     """
     Tests the make-div function.
@@ -113,7 +111,6 @@ def test_make_div() -> None:
         raise RuntimeError("make-div tests failed")
 
 
-# Validate info variables
 def test_info() -> None:
     """
     Tests the info variables. This is an extra test.
