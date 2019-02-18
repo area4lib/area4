@@ -9,6 +9,7 @@ Version 2.0.3:
 * Updated flake8 to the latest version
 * Updated documentation config
 + Added suggested extensions in VSCode
+- Deactivated wikis
 
 Version 2.0.2:
 * Updated package build tools
