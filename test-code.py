@@ -168,16 +168,6 @@ def rst_lint_run() -> None:
         restructuredtext_lint.lint_file("{0}/docs/{1}".format(_dir, name))
 
 
-def extra_tests() -> None:
-    """
-    Run the extra checks/tests.
-
-    :return: None
-    """
-    test_info()
-    rst_lint_run()
-
-
 def on_start() -> None:
     """
     Run when the test starts.
@@ -204,7 +194,8 @@ test_make_div()
 
 if extra:
     # Run extra tests if needed:
-    extra_tests()
+    test_info()
+    rst_lint_run()
 
 # Notify user tests are complete:
 on_finish()
