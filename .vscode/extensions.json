@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "ms-python.python",
-    "DavidAnson.vscode-markdownlint"
+    "DavidAnson.vscode-markdownlint",
+    "editorconfig.editorconfig"
   ]
 }
