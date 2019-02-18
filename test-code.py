@@ -1,32 +1,26 @@
 """Runs code tests in a CI environment."""
 
-# import OS module so we can
-# get CI build variables
+# Import OS module so we can get CI build variables
 import os
 import restructuredtext_lint
 
-# try to import area4
-# this will fail if it could not be installed
-# or maybe if faulty code is present
+# Try to import area4.
+# This will fail if it could not be installed or if faulty code is present.
 try:
     import area4
 except ImportError:
-    # at this point, area4 either isn't in site-packages
-    # or not on the system at all
+    # At this point, area4 either isn't in site-packages,
+    # or not on the system at all.
     raise OSError("Failed to import the library.")
 
-# init some variables that
-# will be needed later
-# rawDividers is the array of dividers from the
-# text file
+# Create some variables that will be needed later.
+# rawDividers is the array of dividers from the text file
 rawDividers: str
 
-# _dir is the directory that travis supplies
-# as the build directory
+# _dir is the directory that the CI supplies as the build directory.
 _dir: str
 
 # d is the area4 instance
-# keep it at None for now
 d = None
 
 # Get commit message:
@@ -46,25 +40,25 @@ repo_branch = repo_branch.lower()
 # Check if extra tests should be run:
 extra: bool = False
 
-# Make sure this is being run directly and
+# Make sure this is being run directly, and
 # not from another python module:
 if not __name__ == "__main__":
     raise EnvironmentError("This module must be run directly!")
 else:
-    # if this is being run directly,
-    # set up for tests
+    # If this is being run directly,
+    # set up for tests:
     print("[DEBUG] Module being run directly, not exiting")
-    # get working directory:
+    # Get working directory:
     print("[DEBUG] Getting working directory\n")
     _dir = os.getenv("CIRRUS_WORKING_DIR")
     print("[DEBUG] Got working directory ({0})\n".format(_dir))
-    # get divider file:
+    # Get divider text file:
     dividers_file: str = "{0}/{1}".format(_dir, "area4/dividers.txt")
     print("[DEBUG] Divider file is located at {0}\n".format(dividers_file))
     with open(dividers_file, mode="r") as fh:
         rawDividers = fh.readlines()
         print("[DEBUG] Fetched raw dividers text file")
-    # create instance we can use
+    # Create instance:
     print("[DEBUG] Creating instance of the library")
     d = area4.Area4Instance()
     print("[DEBUG] Created instance")
@@ -78,7 +72,7 @@ else:
         extra = False
 
 
-# divider tests:
+# Divider tests:
 def test_dividers() -> None:
     """
     Test each divider against the raw ones from the text file.
@@ -86,28 +80,23 @@ def test_dividers() -> None:
     :return: None
     """
     for i in range(len(rawDividers)):
-        # manually skip dividers 0 and 35:
         if i < 1 or i == 35:
             print("[DEBUG] Manually skipping divider {0}".format(i))
+            # Manually skip dividers 0 and 35:
             i = i + 1
-        # run tests normally for other dividers
         else:
             print("[DEBUG] Testing divider {0}".format(i))
             try:
-                # try to match the raw divider with the result
+                # Try to match the raw divider with the result
                 # of the function:
                 if rawDividers[i].split("\n")[0] == d.divider(i):
-                    # it matches
                     print("[+] Divider {0} should work.".format(i))
                 else:
-                    # it does not match
                     print("[X] Divider {0} is broken!".format(i))
                     raise RuntimeError("Broken divider detected!")
             except IndexError:
-                # this is thrown if a number is offset
-                # in the divider array
-                # what we do about it is we just
-                # simply ignore it
+                # This is thrown if a number is offset in the divider array.
+                # What we do about it is we just simply ignore it
                 print("\n[DEBUG] Ignoring an IndexError")
 
 
@@ -124,8 +113,7 @@ def test_make_div() -> None:
         raise RuntimeError("make-div tests failed")
 
 
-# extra test:
-# validate info variables
+# Validate info variables
 def test_info() -> None:
     """
     Tests the info variables. This is an extra test.
