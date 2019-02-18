@@ -19,7 +19,7 @@ CodeTests_task:
   container:
     matrix:
       image: python:latest
-      image: python:3.6.5
+      image: python:3.7.0
   # Build the package:
   BuildPackage_script:
     - bash tools/build-package.sh
