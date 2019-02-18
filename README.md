@@ -1,6 +1,6 @@
 # area4
 
-Dividers in Python, the easy way!  Many different types.  [(As seen on PyPI!)](https://pypi.org/project/area4)  
+Dividers in Python, the easy way! Many different types. [(As seen on PyPI!)](https://pypi.org/project/area4)  
 
 ![MIT License Badge](https://img.shields.io/badge/license-MIT-green.svg)
 [![PyPI Project Version](https://badge.fury.io/py/area4.svg)](https://pypi.org/project/area4)
@@ -13,4 +13,4 @@ area4 is a flexible Python divider library. It makes dividers in console output 
 
 ## **Documentation** [can be found here](https://area4.readthedocs.io/en/stable/) <-------  
 
-For help/troubleshooting see our [wiki](https://github.com/RDIL/area4/wiki).  
+For help/troubleshooting see our [support information](https://github.com/RDIL/area4/wiki).
