@@ -1,7 +1,3 @@
-# Set the default container to the latest Python version:
-container:
-  image: python:latest
-
 MarkdownTests_task:
   # Use NodeJS container:
   container:
@@ -19,6 +15,11 @@ MarkdownTests_task:
   LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
 
 CodeTests_task:
+  # Use multiple Python containers:
+  container:
+    matrix:
+      image: python:latest
+      image: python:3.6.5
   # Build the package:
   BuildPackage_script:
     - bash tools/build-package.sh
