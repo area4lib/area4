@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "ms-python.python",
     "DavidAnson.vscode-markdownlint"
   ]
 }
