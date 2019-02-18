@@ -5,6 +5,9 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.0.3:
+* Updated flake8 to the latest version
+
 Version 2.0.2:
 * Updated package build tools
 * Updated EditorConfig
@@ -14,7 +17,7 @@ Version 2.0.2:
 * Updated Probot config
 * VSCode now suggests you install markdown lint
 * Updated contributing guidelines
-* Updated Twine to latest version
+* Updated twine to latest version
 
 Version 2.0.1:
 + Added new 6 dividers
