@@ -49,9 +49,6 @@ coverage.xml
 # Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
-/docs/_build/
-
 # IPython
 /profile_default/
 ipython_config.py
