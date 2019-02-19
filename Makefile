@@ -4,9 +4,10 @@ clean:
 .PHONY: clean
 
 dist: clean
+        chmod +x tools/build-package.sh
 	bash tools/build-package.sh
 .PHONY: dist
 
 test:
-	python test-code.py
+	python3 test-code.py
 .PHONY: test
