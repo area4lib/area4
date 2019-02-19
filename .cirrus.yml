@@ -3,6 +3,7 @@ container:
   image: python:latest
 
 MarkdownTests_task:
+  auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Use NodeJS container:
   container:
     image: node:latest
@@ -20,6 +21,7 @@ MarkdownTests_task:
   LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
 
 CodeTests_task:
+  auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Install test dependencies:
   InstallTestDependencies_script:
     - python3 -m pip install -r requirements/test.txt
