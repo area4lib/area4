@@ -7,6 +7,7 @@ MarkdownTests_task:
   # Use NodeJS container:
   container:
     image: node:latest
+    cpu: 1
   # Install Markdown linter:
   InstallLinter_script: npm install -g markdownlint-cli
   # Install Markdown link checker:
