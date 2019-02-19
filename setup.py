@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="area4",
-    version="2.0.2",
+    version="2.0.3",
     author="RDIL",
     author_email="me@rdil.rocks",
     description="Dividers in Python, the easy way!",

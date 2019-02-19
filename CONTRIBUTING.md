@@ -39,12 +39,6 @@ This project code is intended to be...
 Timing is important, all project staff have lives and don't hang 'round this repository 24/7.
 They all are in United States eastern time.
 
-## Good vs bad contributions
-
-Please don't spam us with one-liners. Fixing one typo is fine but fixing five
-typos each with their own pull request is spammy and will be closed/locked by maintainers.
-Big quality changes are fine and encouraged!
-
 ## Work-in-progress pull requests
 
 If you open a pull request that is still a work in progress, please put `[WIP]` or `WIP:` in the title.

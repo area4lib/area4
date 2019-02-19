@@ -35,7 +35,7 @@
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# Coverage reports
 /htmlcov/
 /.tox/
 /.nox/
@@ -48,9 +48,6 @@ coverage.xml
 
 # Scrapy stuff:
 .scrapy
-
-# Sphinx documentation
-/docs/_build/
 
 # IPython
 /profile_default/
