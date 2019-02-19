@@ -119,9 +119,7 @@ def testLogDivider() -> None:
     """
     print("[DEBUG] Running logDivider tests")
     compare1 = d.logDivider("---", "Hello") == "Hello"
-    compare2 = d.logDivider("---", "Hello", "Hello") == "Hello\n---\nHello"
-    if not compare1 or not compare2:
-        print(compare1, compare2)
+    if not compare1:
         raise RuntimeError("Test failed")
     else:
         print("\n[DEBUG] Test of LogDivider passed")
