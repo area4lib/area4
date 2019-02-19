@@ -21,12 +21,12 @@ CodeTests_task:
     matrix:
       image: python:latest
       image: python:3.7.0
-  # Build the package:
-  BuildPackage_script:
-    - bash tools/build-package.sh
   # Install test dependencies:
   InstallTestDependencies_script:
     - python3 -m pip install -r requirements/test.txt
+  # Build the package:
+  BuildPackage_script:
+    - bash tools/build-package.sh
   # Install new beta build:
   InstallBetaBuild_script:
     - python3 -m pip install .
