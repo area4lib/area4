@@ -45,8 +45,7 @@ extra: bool = False
 if not __name__ == "__main__":
     raise EnvironmentError("This module must be run directly!")
 else:
-    # If this is being run directly,
-    # set up for tests:
+    # If this is being run directly, set up for tests:
     print("[DEBUG] Module being run directly, not exiting")
     # Get working directory:
     print("[DEBUG] Getting working directory\n")
