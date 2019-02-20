@@ -26,10 +26,10 @@ task:
     - python3 -m pip install -r requirements/test.txt
   # Build the package:
   BuildPackage_script:
-    - bash tools/build-package.sh
+    - make dist
   # Install new beta build:
   InstallBetaBuild_script:
     - python3 -m pip install .
   # Test the code:
   RunTests_script:
-    - python3 test-code.py
+    - make test
