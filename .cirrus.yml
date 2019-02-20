@@ -22,6 +22,7 @@ MarkdownTests_task:
   LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
 
 CodeTests_task:
+  only_if: $CIRRUS_BRANCH != 'python-2-supported'
   auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Install test dependencies:
   InstallTestDependencies_script:
