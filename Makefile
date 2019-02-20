@@ -17,7 +17,14 @@ test:
 	python3 test-code.py
 .PHONY: test
 
-linktest: clean
+installlinkcheck: clean
 	npm install -g markdown-link-check@3.7.2
-	find . -name \*.md -exec markdown-link-check {} \;
 .PHONY: linktest
+
+installmdlint: clean
+	npm install -g markdownlint-cli
+.PHONY: installmdlint
+
+linkcheck: clean
+	find . -name \*.md -exec markdown-link-check {} \;
+.PHONY: linkcheck
