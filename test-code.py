@@ -171,3 +171,5 @@ if extra:
     # Run extra tests if needed:
     test_info()
     rst_lint_run()
+
+debug("Finished tests!")
