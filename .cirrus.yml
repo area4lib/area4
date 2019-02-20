@@ -5,7 +5,8 @@ MarkdownTests_task:
   container:
     image: node:latest
   # Install Markdown linter:
-  InstallLinter_script: make installmdlint
+  InstallLinter_script:
+    - make installmdlint
   # Install Markdown link checker:
   InstallLinkChecker_script:
     - make installlinkcheck
@@ -25,13 +26,13 @@ task:
   auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Install test dependencies:
   InstallTestDependencies_script:
-    - python3 -m pip install -r requirements/test.txt
+    - make installrequirements
   # Build the package:
   BuildPackage_script:
     - make dist
   # Install new beta build:
   InstallBetaBuild_script:
-    - python3 -m pip install .
+    - make beta
   # Test the code:
   RunTests_script:
     - make test

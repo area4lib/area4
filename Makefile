@@ -28,3 +28,11 @@ installmdlint: clean
 linkcheck: clean
 	find . -name \*.md -exec markdown-link-check {} \;
 .PHONY: linkcheck
+
+installrequirements:
+	python3 -m pip install -r requirements/test.txt
+.PHONY: installrequirements
+
+beta:
+	python3 -m pip install .
+.PHONY: beta
