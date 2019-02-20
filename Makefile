@@ -4,8 +4,8 @@ clean:
 .PHONY: clean
 
 dist: clean
-        chmod +x tools/build-package.sh
-        bash tools/build-package.sh
+	chmod +x tools/build-package.sh
+	bash tools/build-package.sh
 .PHONY: dist
 
 distinfo: clean
