@@ -3,7 +3,6 @@ container:
   image: python:latest
 
 MarkdownTests_task:
-  auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Use NodeJS container:
   container:
     image: node:latest
