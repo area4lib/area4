@@ -8,7 +8,7 @@ dist: clean
 	bash tools/build-package.sh
 .PHONY: dist
 
-distinfo: clean
+distinfo:
 	chmod +x tools/create-dist-info.sh
 	bash tools/create-dist-info.sh
 .PHONY: distinfo
@@ -17,7 +17,22 @@ test:
 	python3 test-code.py
 .PHONY: test
 
-linktest: clean
+installlinkcheck:
 	npm install -g markdown-link-check@3.7.2
-	find . -name \*.md -exec markdown-link-check {} \;
 .PHONY: linktest
+
+installmdlint:
+	npm install -g markdownlint-cli
+.PHONY: installmdlint
+
+linkcheck:
+	find . -name \*.md -exec markdown-link-check {} \;
+.PHONY: linkcheck
+
+installrequirements:
+	python3 -m pip install -r requirements/test.txt
+.PHONY: installrequirements
+
+beta:
+	python3 -m pip install .
+.PHONY: beta
