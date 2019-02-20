@@ -2,4 +2,6 @@ setuptools==40.8.0
 wheel==0.33.1
 twine==1.13.0
 flake8==3.7.6
+pyflakes
 virtualenv==16.4.0
+pipenv
