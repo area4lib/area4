@@ -17,7 +17,7 @@ test:
 	python3 test-code.py
 .PHONY: test
 
-linktest:
-	sudo npm install -g markdown-link-check@3.7.2
+linktest: clean
+	npm install -g markdown-link-check@3.7.2
 	find . -name \*.md -exec markdown-link-check {} \;
 .PHONY: linktest
