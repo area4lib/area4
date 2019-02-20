@@ -4,4 +4,4 @@ twine==1.13.0
 flake8==3.7.6
 pyflakes
 virtualenv==16.4.0
-pipenv
+pipenv==2018.11.26
