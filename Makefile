@@ -1,5 +1,5 @@
 clean:
-	-rm -rf build dist area4.egg-info
+	-rm -rf build dist area4.egg-info area4.dist-info
 	-find . -name '*.py[oc]' -exec rm {} \;
 .PHONY: clean
 
