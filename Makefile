@@ -1,3 +1,5 @@
+# -- Default command --
+
 default:
 	echo "Silly, the make command requires which function you want to run."
 .PHONY: default Makefile
