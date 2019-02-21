@@ -7,7 +7,7 @@
 # Utilities module
 
 
-def check(internal_name: str):
+def check(internal_name):
     """
     Get if the module is being run directly or being imported.
 
