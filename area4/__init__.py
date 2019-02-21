@@ -30,7 +30,7 @@ class Area4Instance:
     # Run some needed operations:
     def __init__(self):
         """
-        Init the class.
+        Create the class.
 
         :param self:
         :return: None
@@ -44,7 +44,6 @@ class Area4Instance:
             lines[35] = random.randint(0, 999999999999)
             self.dividers = lines
 
-    # Function to get a divider
     def divider(self, number):
         """
         Get the divider you requested.
@@ -66,7 +65,6 @@ class Area4Instance:
             except IndexError:
                 raise ValueError('That divider doesn\'t exist!')
 
-    # Info function
     def area4info(self):
         """
         Get some info about the package.
@@ -119,7 +117,7 @@ class Area4Instance:
         25 will contain 2 units for
         a total length of 20 characters.
         """
-        # reduce the size if possible to extend closer to full length
+        # Reduce the size if possible to extend closer to full length:
         if not literal_unit:
             unit = self.reduce_to_unit(unit)
         repeats = (length - len(start + end)) // len(unit)
@@ -143,8 +141,8 @@ class Area4Instance:
             length = len(divider)
             unit = divider[:unit_size]
 
-            # ignores mismatches in final characters:
+            # Ignores mismatches in final characters:
             d = divider[:unit_size * (length // unit_size)]
             if unit * (length // unit_size) == d:
                 return unit
-        return divider  # return original if smaller unit not found
+        return divider  # Return original if smaller unit not found
