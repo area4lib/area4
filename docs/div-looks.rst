@@ -220,6 +220,7 @@ Divider looks
 213. Person having party
 214. Mind blown emojis
 215. Be quiet emojis
+216. Semicolons
 
 And more coming soon!
 
