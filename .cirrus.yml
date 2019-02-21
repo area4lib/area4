@@ -1,16 +1,15 @@
-# Set the default container to the latest Python version:
 container:
   image: python:latest
 
 MarkdownTests_task:
-  auto_cancellation: $CIRRUS_BRANCH != 'master'
-  # Use NodeJS container:
   container:
     image: node:latest
   # Install Markdown linter:
-  InstallLinter_script: npm install -g markdownlint-cli
+  InstallLinter_script:
+    - make installmdlint
   # Install Markdown link checker:
-  InstallLinkChecker_script: npm install -g markdown-link-check@3.7.2
+  InstallLinkChecker_script:
+    - make installlinkcheck
   # Lint Markdown:
   MarkdownLint_script:
     - markdownlint --config=.markdownlint.yml *.md
@@ -18,19 +17,22 @@ MarkdownTests_task:
     - markdownlint --config=.markdownlint.yml .github/ISSUE_TEMPLATE/*.md
     - markdownlint --config=.markdownlint.yml extras/*.md
   # Check links:
-  LinkCheck_script: find . -name \*.md -exec markdown-link-check {} \;
+  LinkCheck_script:
+    - make linkcheck
 
-CodeTests_task:
+task:
+  name: CodeTests
+  only_if: $CIRRUS_BRANCH != 'python-2-supported'
   auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Install test dependencies:
   InstallTestDependencies_script:
-    - python3 -m pip install -r requirements/test.txt
+    - make installrequirements
   # Build the package:
   BuildPackage_script:
-    - bash tools/build-package.sh
+    - make dist
   # Install new beta build:
   InstallBetaBuild_script:
-    - python3 -m pip install .
+    - make beta
   # Test the code:
   RunTests_script:
-    - python3 test-code.py
+    - make test

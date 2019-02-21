@@ -40,33 +40,44 @@ repo_branch = repo_branch.lower()
 # Check if extra tests should be run:
 extra: bool = False
 
+
+# Function to send debug messages to the console:
+def debug(message) -> None:
+    """
+    Log a debug message.
+
+    :return: None
+    :param message: the message to log
+    """
+    print("{0}{1}{2}".format("[Verbose]", " ", message))
+
+
 # Make sure this is being run directly, and
 # not from another python module:
 if not __name__ == "__main__":
     raise EnvironmentError("This module must be run directly!")
 else:
-    # If this is being run directly,
-    # set up for tests:
-    print("[DEBUG] Module being run directly, not exiting")
+    # If this is being run directly, set up for tests:
+    debug("Module being run directly, not exiting")
     # Get working directory:
-    print("[DEBUG] Getting working directory\n")
+    debug("Getting working directory")
     _dir = os.getenv("CIRRUS_WORKING_DIR")
-    print("[DEBUG] Got working directory ({0})\n".format(_dir))
+    debug("Got working directory ({0})".format(_dir))
     # Get divider text file:
     dividers_file: str = "{0}/{1}".format(_dir, "area4/dividers.txt")
-    print("[DEBUG] Divider file is located at {0}\n".format(dividers_file))
+    debug("Divider file is located at {0}".format(dividers_file))
     with open(dividers_file, mode="r") as fh:
         rawDividers = fh.readlines()
-        print("[DEBUG] Fetched raw dividers text file")
+        debug("Fetched raw dividers text file")
     # Create instance:
-    print("[DEBUG] Creating instance of the library")
+    debug("Creating instance of the library")
     d = area4.Area4Instance()
-    print("[DEBUG] Created instance")
+    debug("Created instance")
 
     # See if we need to run extra tests:
     if ("!e" in c_message or c_message == "!e") or \
             (repo_branch == "master"):
-        print("[DEBUG] Running extra tests!")
+        debug("Running extra tests!")
         extra = True
     else:
         extra = False
@@ -80,23 +91,23 @@ def test_dividers() -> None:
     """
     for i in range(len(rawDividers)):
         if i < 1 or i == 35:
-            print("[DEBUG] Manually skipping divider {0}".format(i))
+            debug("Manually skipping divider {0}".format(i))
             # Manually skip dividers 0 and 35:
             i = i + 1
         else:
-            print("[DEBUG] Testing divider {0}".format(i))
+            debug("Testing divider {0}".format(i))
             try:
                 # Try to match the raw divider with the result
                 # of the function:
                 if rawDividers[i].split("\n")[0] == d.divider(i):
-                    print("[+] Divider {0} should work.".format(i))
+                    debug("[+] Divider {0} should work.".format(i))
                 else:
-                    print("[X] Divider {0} is broken!".format(i))
+                    debug("[X] Divider {0} is broken!".format(i))
                     raise RuntimeError("Broken divider detected!")
             except IndexError:
                 # This is thrown if a number is offset in the divider array.
                 # What we do about it is we just simply ignore it
-                print("\n[DEBUG] Ignoring an IndexError")
+                debug("Ignoring an IndexError")
 
 
 def test_make_div() -> None:
@@ -106,7 +117,7 @@ def test_make_div() -> None:
     :return: None
     """
     if d.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
-        print("\n[DEBUG] make-div test did not fail")
+        debug("make-div test did not fail")
     else:
         raise RuntimeError("make-div tests failed")
 
@@ -145,14 +156,14 @@ def test_info() -> None:
         d.support_email,
         d.description
     ]
-    print("\n[DEBUG] Running extra test for package info")
+    debug("Running extra test for package info")
     for x in range(
         len(right_data)
     ):
         if not right_data[x] == from_class[x]:
             raise RuntimeError("[X] Failed package info test {0}".format(x))
         else:
-            print("[+] Data item {0} works".format(x))
+            debug("[+] Data item {0} works".format(x))
 
 
 def rst_lint_run() -> None:
@@ -161,33 +172,13 @@ def rst_lint_run() -> None:
 
     :return: None
     """
-    print("\n[DEBUG] Running RST linting")
+    debug("Running reStructuredText linting.")
     files = os.listdir("{0}/docs".format(_dir))
     for name in files:
         restructuredtext_lint.lint_file("{0}/docs/{1}".format(_dir, name))
 
 
-def on_start() -> None:
-    """
-    Run when the test starts.
-
-    :return: None
-    """
-    print("[DEBUG] Starting tests...\n\n")
-
-
-def on_finish() -> None:
-    """
-    Run when the test finishes.
-
-    :return: None
-    """
-    print("\n[DEBUG] Exiting tests!")
-
-
 # Run tests:
-on_start()
-
 test_dividers()
 test_make_div()
 testLogDivider()
@@ -197,5 +188,4 @@ if extra:
     test_info()
     rst_lint_run()
 
-# Notify user tests are complete:
-on_finish()
+debug("Finished tests!")
