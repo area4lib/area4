@@ -63,7 +63,7 @@ class Area4Instance:
             try:
                 return self.dividers[number].split("\n")[0]
             except IndexError:
-                raise ValueError('That divider doesn\'t exist!')
+                raise ValueError('That divider does not exist!')
 
     def area4info(self):
         """

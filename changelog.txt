@@ -6,7 +6,7 @@ Key:
 - Means deletion
 
 Version 2.0.4:
-* Fixed a bug preventing the module from loading on Python 3.5
+* Fixed Python 3.4 and 3.5 compatibility issues
 * Lots of code cleanup
 * Moved tests onto GNU make
 + Added semicolon dividers
