@@ -13,6 +13,7 @@
 
 # JetBrains IDE
 /.idea/workspace.xml
+/.idea/vcs.xml
 /.idea/dictionaries/
 
 # Byte-compiled / optimized / DLL files
