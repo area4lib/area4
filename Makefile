@@ -19,7 +19,7 @@ test:
 
 installlinkcheck:
 	npm install -g markdown-link-check@3.7.2
-.PHONY: linktest
+.PHONY: installlinkcheck
 
 installmdlint:
 	npm install -g markdownlint-cli
