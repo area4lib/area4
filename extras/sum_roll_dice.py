@@ -9,7 +9,7 @@ def roll_dice():
 
     :return: None
     """
-    sums: int = 0  # will return the sum of the roll calls.
+    sums = 0  # will return the sum of the roll calls.
     while True:
         roll = random.randint(1, 6)
         sums += roll
