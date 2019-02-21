@@ -5,7 +5,7 @@
 # ---------------------------------------------------
 # ~ area4 Package by RDIL ~
 # This package and source should be compatible with Python 3.4 and up!
-# (not including the package info function; its 3.6 and up)
+# (not including the package info function)
 # ---------------------------------------------------
 
 # Imports:
@@ -28,7 +28,7 @@ class Area4Instance:
     dividers = []
 
     # Run some needed operations:
-    def __init__(self) -> None:
+    def __init__(self):
         """
         Init the class.
 
@@ -45,7 +45,7 @@ class Area4Instance:
             self.dividers = lines
 
     # Function to get a divider
-    def divider(self, number) -> str:
+    def divider(self, number):
         """
         Get the divider you requested.
 
@@ -67,7 +67,7 @@ class Area4Instance:
                 raise ValueError('That divider doesn\'t exist!')
 
     # Info function
-    def area4info(self) -> str:
+    def area4info(self):
         """
         Get some info about the package.
 
@@ -86,7 +86,7 @@ class Area4Instance:
 
     def make_div(self, unit, length=24,
                  start='', end='',
-                 literal_unit=False) -> str:
+                 literal_unit=False):
         """
         Generate and return a custom divider.
 
@@ -120,7 +120,7 @@ class Area4Instance:
 
         return (start + unit * repeats + end)[0:length]
 
-    def reduce_to_unit(self, divider: str) -> str:
+    def reduce_to_unit(self, divider: str):
         """
         Reduce a repeating divider to the smallest repeating unit possible.
 
