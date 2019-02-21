@@ -4,6 +4,8 @@ container:
 MarkdownTests_task:
   container:
     image: node:latest
+  only_if: $CIRRUS_BRANCH != 'python-2-supported'
+  auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Install Markdown linter:
   InstallLinter_script:
     - make installmdlint
