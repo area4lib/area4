@@ -1,5 +1,5 @@
 """Main class."""
-#  Copyright (c) 2018 - present RDIL.
+#  Copyright (c) 2018-present RDIL.
 #  You should have received a copy of the
 #  MIT License with this program/distribution.
 # ---------------------------------------------------
@@ -82,7 +82,13 @@ class Area4Instance:
             info += f"\nDescription: {self.description}"
             return info
         except SyntaxError:
-            return "Use Python 3.6 or above to run this function."
+            # Python <3.6 solution:
+            return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
+                "Name", self.name,
+                "Author", self.author,
+                "Author Email", self.author_email,
+                "Description", self.description
+            )
 
     def make_div(self, unit, length=24,
                  start='', end='',
@@ -137,7 +143,7 @@ class Area4Instance:
             length = len(divider)
             unit = divider[:unit_size]
 
-            # ignores mismatches in final characters
+            # ignores mismatches in final characters:
             d = divider[:unit_size * (length // unit_size)]
             if unit * (length // unit_size) == d:
                 return unit
