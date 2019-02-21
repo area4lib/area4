@@ -55,8 +55,8 @@ class Area4Instance:
         :return: requested divider
         :rtype: str
         :Example:
-        area4.divider(97)
-        will return 🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️
+        area4.divider(3)
+        will return ............
         """
         if number == 0:
             raise ValueError('Please use a number bigger then 0!')
