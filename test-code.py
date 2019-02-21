@@ -1,6 +1,6 @@
 """Runs code tests in a CI environment."""
 
-# Import OS module so we can get CI build variables
+# Import needed modules
 import os
 import restructuredtext_lint
 
