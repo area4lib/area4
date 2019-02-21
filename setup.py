@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 # Package version:
-version = "2.0.4"
+version = "2.0.5"
 
 setuptools.setup(
     name="area4",

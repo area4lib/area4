@@ -5,7 +5,7 @@ Key:
 + Means addition
 - Means deletion
 
-Version 2.0.4:
+Version 2.0.4 AND 2.0.5:
 * Fixed Python 3.4 and 3.5 compatibility issues
 * Lots of code cleanup
 * Moved tests onto GNU make
