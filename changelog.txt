@@ -9,7 +9,8 @@ Version 2.0.4:
 * Fixed a bug preventing the module from loading on Python 3.5
 * Lots of code cleanup
 * Moved tests onto GNU make
-* Added semicolon dividers
++ Added semicolon dividers
+* Updated EditorConfig
 
 Version 2.0.3:
 * Updated flake8 to the latest version

@@ -15,10 +15,10 @@ except ImportError:
 
 # Create some variables that will be needed later.
 # rawDividers is the array of dividers from the text file
-rawDividers: str
+rawDividers = None
 
 # _dir is the directory that the CI supplies as the build directory.
-_dir: str
+_dir = None
 
 # d is the area4 instance
 d = None
@@ -38,7 +38,7 @@ c_message = c_message.lower()
 repo_branch = repo_branch.lower()
 
 # Check if extra tests should be run:
-extra: bool = False
+extra = False
 
 
 # Function to send debug messages to the console:
