@@ -126,7 +126,7 @@ class Area4Instance:
 
         return (start + unit * repeats + end)[0:length]
 
-    def reduce_to_unit(self, divider: str):
+    def reduce_to_unit(self, divider):
         """
         Reduce a repeating divider to the smallest repeating unit possible.
 
