@@ -10,6 +10,7 @@
 # Imports:
 import random
 import os
+from . import util as utils
 
 
 # Class:
@@ -25,6 +26,9 @@ class Area4Instance:
 
     # The array to store dividers in:
     dividers = []
+
+    # Utilities module:
+    util_module = utils
 
     # Run some needed operations:
     def __init__(self):
