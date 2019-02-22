@@ -50,3 +50,5 @@ task:
     - make flake8
   PylintStyle_script:
     - make pylint
+  DependencySecurityTest_script:
+    - make safetyci

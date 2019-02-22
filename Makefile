@@ -56,6 +56,10 @@ pylint:
 	find . -name '*.py' -exec python3 -m pylint {} \;
 .PHONY: pylint
 
+safetyci:
+	find ./requirements/ -name '*.txt' -exec python3 -m safety check -r {} \;
+.PHONY: safetyci
+
 # -- MarkdownTests commands --
 
 installlinkcheck:
