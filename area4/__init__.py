@@ -97,20 +97,12 @@ class Area4Instance:
         :return: Package info
         :rtype: str
         """
-        try:
-            info = f"Name: {self.name}"
-            info += f"\nAuthor: {self.author}"
-            info += f"\nAuthor Email: {self.author_email}"
-            info += f"\nDescription: {self.description}"
-            return info
-        except SyntaxError:
-            # Python <3.6 solution:
-            return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
-                "Name", self.name,
-                "Author", self.author,
-                "Author Email", self.author_email,
-                "Description", self.description
-            )
+        return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
+            "Name", self.name,
+            "Author", self.author,
+            "Author Email", self.author_email,
+            "Description", self.description
+        )
 
     def make_div(self, unit, length=24,
                  start='', end='',
