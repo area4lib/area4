@@ -1,2 +1,2 @@
-cd ../
-python3 setup.py dist-info
+#!/usr/bin/env bash
+python3 setup.py dist_info

@@ -1,23 +1,47 @@
-test_task:
-  container:
-    image: python:latest
-  pip_cache:
-    folder: ~/.cache/pip
-    fingerprint_script: echo $PYTHON_VERSION && cat requirements.txt
-    populate_script: python3 -m pip install --upgrade setuptools wheel twine
-  test_script: python3 setup.py sdist bdist_wheel
+container:
+  image: python:latest
 
-link_check_task:
+MarkdownTests_task:
   container:
     image: node:latest
-  node_modules_cache:
-    folder: node_modules
-    fingerprint_script: cat requirements.txt
-    populate_script: npm install -g markdown-link-check@3.7.2
-  script: find . -name \*.md -exec markdown-link-check {} \;
+  only_if: $CIRRUS_BRANCH != 'python-2-supported'
+  auto_cancellation: $CIRRUS_BRANCH != 'master'
+  # Install Markdown linter:
+  InstallLinter_script:
+    - make installmdlint
+  # Install Markdown link checker:
+  InstallLinkChecker_script:
+    - make installlinkcheck
+  # Lint Markdown:
+  MarkdownLint_script:
+    - markdownlint --config=.markdownlint.yml *.md
+    - markdownlint --config=.markdownlint.yml .github/*.md
+    - markdownlint --config=.markdownlint.yml .github/ISSUE_TEMPLATE/*.md
+    - markdownlint --config=.markdownlint.yml extras/*.md
+  # Check links:
+  LinkCheck_script:
+    - make linkcheck
 
-markdown_lint_task:
-  container:
-    image: node:latest
-  install_script: npm install -g markdownlint-cli
-  lint_script: markdownlint --config=.markdownlint.yml *.md
+task:
+  name: CodeTests
+  only_if: $CIRRUS_BRANCH != 'python-2-supported'
+  auto_cancellation: $CIRRUS_BRANCH != 'master'
+  # Install test dependencies:
+  InstallTestDependencies_script:
+    - make testrequirements
+    - make devrequirements
+  # Build the package:
+  BuildPackage_script:
+    - make dist
+  # Install new beta build:
+  InstallBetaBuild_script:
+    - make beta
+  # Test the code:
+  RunTests_script:
+    - make test
+  PyDocStyle_script:
+    - make pydocstyle
+  PyCodeStyle_script:
+    - make pycodestyle
+  Flake8Style_script:
+    - make flake8

@@ -17,7 +17,7 @@ After doing so, you need to create an instance of the class, for example:
 
 (replace instanceName with whatever you want, but do NOT use "area4" or "Area4")
 
-.. warning:: Legacy versions are no longer documented and don't work with the new methods.  For old documentation, checkout to commit d5f0d703887d65dc476d783f671bde07492e0e72  
+.. warning:: Legacy versions don't work with the new methods. For old documentation, select 'v: stable' and then click 'legacy'.
 
 And if you want to you can check to make sure the library is working:
 
@@ -33,6 +33,6 @@ Now, to get dividers, use this function:
 
     print(
         instanceName.divider(4)
-    )  # This example prints divider number 4
+    )  # This example prints divider number 4 to the console
 
 For what all the dividers look like, see the next section!  

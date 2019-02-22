@@ -1,35 +1,11 @@
-# Config for Probot apps
-
 # new-issue-welcome bot:
 newIssueWelcomeComment: >
   Thanks for opening your first issue here! Someone will look over this issue shortly, hang tight for now!
 
 # new-pr-welcome bot:
 newPRWelcomeComment: >
-  Thanks for opening this pull request! A project maintainer will review your contribution shortly. 
+  Thanks for opening this pull request! A project maintainer will review your contribution shortly.
 
 # first-pr-merge bot:
 firstPRMergeComment: >
-  Congrats on getting your first pull request merged! You are now a contributor 😎! 
-
-# Configuration for request-info - https://github.com/behaviorbot/request-info
-
-# *Required* Comment to reply with
-requestInfoReplyComment: >
-  We would appreciate it if you could provide us with more info about this issue/PR!
-
-# *OPTIONAL* default titles to check against for lack of descriptiveness
-# MUST BE ALL LOWERCASE
-requestInfoDefaultTitles:
-  - update readme.md
-  - updates
-  - fixes
-  - fix
-  - oof
-  - cleanup
-  - fix please
-  - contribution
-  - hacktoberfest
-
-# *OPTIONAL* Label to be added to Issues and Pull Requests with insufficient information given
-requestInfoLabelToAdd: needs-more-info
+  Congrats on getting your first pull request merged! You are now a contributor 😎!

@@ -1,21 +1,7 @@
+"""Read The Docs configuration."""
 # -*- coding: utf-8 -*-
 #
 # Configuration file for the Sphinx documentation builder.
-#
-# This file does only contain a selection of the most common options. For a
-# full list see the documentation:
-# http://www.sphinx-doc.org/en/master/config
-
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
 
 # -- Project information -----------------------------------------------------
 
@@ -24,19 +10,13 @@ project_lowercase = project.lower()
 copyright = '2018, RDIL!'
 author = 'RDIL'
 
-# The short X.Y version
-# AREA4 KEEP STATIC
+# Do NOT change:
 version = ''
-# AREA4 KEEP STATIC
-# The full version, including alpha/beta/rc tags
+# Do NOT change:
 release = ''
 
 
 # -- General configuration ---------------------------------------------------
-
-# If your documentation needs a minimal Sphinx version, state it here.
-#
-# needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -50,10 +30,7 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
-# The suffix(es) of source filenames.
-# You can specify multiple suffix as a list of string:
-#
-# source_suffix = ['.rst', '.md']
+# The suffix(es) of source file names.
 source_suffix = '.rst'
 
 # The master toctree document.
@@ -79,7 +56,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
+
 html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -95,7 +72,6 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
-#
 # The default sidebars (for documents that don't match any pattern) are
 # defined by theme itself.  Builtin themes are using these templates by
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
@@ -103,7 +79,7 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-# If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
+# If true, "(C) Copyright ..." is shown in the HTML footer.
 html_show_copyright = True
 
 # -- Options for HTMLHelp output ---------------------------------------------
@@ -111,35 +87,17 @@ html_show_copyright = True
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'Area4doc'
 
-
 # -- Options for LaTeX output ------------------------------------------------
 
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
     'papersize': 'letterpaper',
-
-    # The font size ('10pt', '11pt' or '12pt').
-    #
     'pointsize': '12pt',
-
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
 }
 
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Area4.tex', 'Area4 Documentation',
      'RDIL', 'manual'),
 ]
-
 
 # -- Options for manual page output ------------------------------------------
 
@@ -149,7 +107,6 @@ man_pages = [
     (master_doc, 'area4', 'Area4 Documentation',
      [author], 1)
 ]
-
 
 # -- Options for Texinfo output ----------------------------------------------
 
@@ -162,24 +119,13 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
 epub_title = project
 
-# The unique identifier of the text. This can be a ISBN number
-# or the project homepage.
-#
-# epub_identifier = ''
-
-# A unique identification for the text.
-#
-# epub_uid = ''
-
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
 
 # -- Extension configuration -------------------------------------------------
 intersphinx_mapping = {'https://docs.python.org/': None}
@@ -190,7 +136,7 @@ html_theme_options = {
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
-    # Toc options
+    # Table-of-contents options
     'collapse_navigation': False,
     'sticky_navigation': True,
     'navigation_depth': 4,

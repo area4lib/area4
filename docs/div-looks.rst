@@ -1,8 +1,9 @@
 Divider looks
 =============
 
-*The number before it is the number you pass to the divider function.  So if you want divider 1 you would do instanceName.divider(1)*
-If you don't understand, see the examples part of the documentation.
+*The number before it is the number you pass to the divider function.*
+*So if you want divider 1 you would do instanceName.divider(1)*
+*If you don't understand, see the examples part of the documentation.*
 
 1. Dashed
 2. Solid
@@ -16,7 +17,7 @@ If you don't understand, see the examples part of the documentation.
 10. Commas
 11. Slashes
 12. Broken bars (|)
-13. Tildas
+13. Tildes
 14. Backslashes (not to be confused with #11)
 15. Coffee cups
 16. Plus signs
@@ -39,64 +40,64 @@ If you don't understand, see the examples part of the documentation.
 33. Smiley faces I think
 34. &*s
 35. Random numbers (returned as string which is automatically converted from an integer)
-36. The simbol that looks like '
-37. lowercase a
-38. uppercase a
-39. lowercase b
-40. uppercase b
-41. lowercase c
-42. uppercase c
-43. lowercase d
-44. uppercase d
-45. lowercase e
-46. uppercase e
-47. lowercase f
-48. uppercase f
-49. lowercase g
-50. uppercase g
-51. lowercase h
-52. uppercase h
-53. lowercase i
-54. uppercase i
-55. lowercase j
-56. uppercase j
-57. lowercase k
-58. uppercase k
-59. lowercase l
-60. uppercase l
-61. lowercase m
-62. uppercase m
-63. lowercase n
-64. uppercase n
-65. lowercase o
-66. uppercase o
-67. lowercase p
-68. uppercase p
-69. lowercase q
-70. uppercase q
-71. lowercase r
-72. uppercase r
-73. lowercase s
-74. uppercase s
-75. lowercase t
-76. uppercase t
-77. lowercase u
-78. uppercase u
-79. lowercase v
-80. uppercase v
-81. lowercase w
-82. uppercase w
-83. lowercase x
-84. uppercase x
-85. lowercase y
-86. uppercase y
-87. lowercase z
-88. uppercase z
+36. The symbol that looks like '
+37. Lowercase a
+38. Uppercase a
+39. Lowercase b
+40. Uppercase b
+41. Lowercase c
+42. Uppercase c
+43. Lowercase d
+44. Uppercase d
+45. Lowercase e
+46. Uppercase e
+47. Lowercase f
+48. Uppercase f
+49. Lowercase g
+50. Uppercase g
+51. Lowercase h
+52. Uppercase h
+53. Lowercase i
+54. Uppercase i
+55. Lowercase j
+56. Uppercase j
+57. Lowercase k
+58. Uppercase k
+59. Lowercase l
+60. Uppercase l
+61. Lowercase m
+62. Uppercase m
+63. Lowercase n
+64. Uppercase n
+65. Lowercase o
+66. Uppercase o
+67. Lowercase p
+68. Uppercase p
+69. Lowercase q
+70. Uppercase q
+71. Lowercase r
+72. Uppercase r
+73. Lowercase s
+74. Uppercase s
+75. Lowercase t
+76. Uppercase t
+77. Lowercase u
+78. Uppercase u
+79. Lowercase v
+80. Uppercase v
+81. Lowercase w
+82. Uppercase w
+83. Lowercase x
+84. Uppercase x
+85. Lowercase y
+86. Uppercase y
+87. Lowercase z
+88. Uppercase z
 89. Beach umbrella emojis
 90. Airplane emojis
 91. Orange leave emojis
 92. Key emojis
-93. Big smilies
+93. Big smiles
 94. Laughing face
 95. Toung-sticking-out faces
 96. Toung-sticking-out faces v2
@@ -137,7 +138,7 @@ If you don't understand, see the examples part of the documentation.
 131. Dogs
 132. Cats
 133. Mice
-134. Hampsters
+134. Hamsters
 135. Bunnies
 136. Foxes
 137. Bears
@@ -186,7 +187,7 @@ If you don't understand, see the examples part of the documentation.
 180. Hamburgers
 181. French fries
 182. Pizza
-183. Sandwitches
+183. Sandwiches
 184. Sno-cones
 185. Ice creams in cups
 186. Ice creams in cones
@@ -202,7 +203,7 @@ If you don't understand, see the examples part of the documentation.
 196. Cars
 197. Alarm clocks
 198. Money bags
-199. Baloons
+199. Balloons
 200. Hearts
 201. Surprised faces v2
 202. Pins
@@ -213,6 +214,13 @@ If you don't understand, see the examples part of the documentation.
 207. Snowmen
 208. Potatoes
 209. Shrimp
+210. Hot people
+211. Cold people
+212. Robot emojis
+213. Person having party
+214. Mind blown emojis
+215. Be quiet emojis
+216. Semicolons
 
 And more coming soon!
 

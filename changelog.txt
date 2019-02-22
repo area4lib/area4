@@ -1,9 +1,48 @@
-- Changelog -  
+- Changelog -
 
-Key: 
+Key:
 * Means modification
 + Means addition
 - Means deletion
+
+Version 2.0.7:
+* Fixed linting issues
+* Moved the utilities module to the main package
+
+Version 2.0.4 AND 2.0.5 AND 2.0.6:
+* Fixed Python 3.4 and 3.5 compatibility issues
+* Lots of code cleanup
+* Moved tests onto GNU make
++ Added semicolon dividers
+* Updated EditorConfig
+
+Version 2.0.3:
+* Updated flake8 to the latest version
+* Updated documentation config
++ Added suggested extensions in VSCode
+- Deactivated wikis
+
+Version 2.0.2:
+* Updated package build tools
+* Updated EditorConfig
+* Updated GitIgnore
+* Updated support information
+* Updated issue templates
+* Updated Probot config
+* VSCode now suggests you install markdown lint
+* Updated contributing guidelines
+* Updated twine to latest version
+
+Version 2.0.1:
++ Added new 6 dividers
+* Cleaned up docs
+- Removed egg building tool
+* Updated CodeOwners
+* Made code follow PyDocStyle
+* Removed Travis CI, moved on to Cirrus CI
+* Updated GitIgnore
+* Updated MarkdownLint rules
+* Added dependency bumping bot
 
 Version 2.0.0 (contains VERY BREAKING changes):
 * Completely changed the divider addition system
@@ -14,18 +53,10 @@ Version 2.0.0 (contains VERY BREAKING changes):
 * Made the main module class based ( /!\ VERY BREAKING CHANGES ALERT /!\ )
 * Made sure the wheel is not built universally
 * Added actual code testing with Travis CI
-
-Version 1.3.0 (contains breaking changes):
-* Fixed issues with package info function
-* Moved check function to util module
-* Documented check function
-* Updated git ignore
-+ Added proper copyright
-* Re-formatted basically everything
-* Updated contributing guidelines
-+ Added new beta system (will be used with this release)
-+ Documented some functions that needed it
-* Updated config for the LaTeX builds of the docs
++ Added build tools
+- Removed VCS lists
+* Updated the contributing guidelines
++ Added markdown linting
 
 Version 1.3.0:
 * Fixed issues with package info function
@@ -45,14 +76,14 @@ Version 1.2.8:
 * Made almost all code fit PEP8
 
 Version 1.2.7:
-+ Added potato dividers for rocketpropelledpotato
++ Added potato dividers
 + Added shrimp dividers
-+ Added a .editorconfig
++ Added an EditorConfig
 + Added Other OS classifier
 * Updated all ReadTheDocs links to go to the stable version
 
 Version 1.2.6:
-- Dropped Python2 support fully 
+- Dropped Python2 support fully
 + Added project-wide settings for sublime text
 
 Version 1.2.5:
@@ -87,7 +118,6 @@ Version 1.2.1 (lots of random stuff):
 * Updated issue templates
 + Added new badge to README file
 * Updated stale tags
-* Did some things with the extras directory
 + Added new tag
 * Fixed some compatibility issues
 * Made the git ignore longer
@@ -119,22 +149,21 @@ Version 1.1.4:
 * Code cleanup
 + Added random number dividers
 * Updated contributing guidelines
-+ Added Cirrus CI along with Travis
++ Added Cirrus CI along with Travis CI
 
 Version 1.1.3:
-+ Added a lot of dividers (https://github.com/RDIL/area4/pull/27/files) 
++ Added a lot of dividers (https://github.com/RDIL/area4/pull/27/files)
 - Removed un-used import to speed up code a tiny bit
 
 Version 1.1.2:
 + Added shrug emoji dividers
-* The make_div function recieved an upgrade
+* The make_div function received an upgrade
 * Fixed a few typos in the docs
 
 Version 1.1.1:
 + Added contributing guidelines
 + Added lenny dividers
 + Added cthulhu dividers
-+ Created area4-story.md in extras
 + Added backslash dividers
 + Added make_div framework (see docs, thanks @ninexball!)
 * Configured Discord webhook (not important)
@@ -147,7 +176,6 @@ Version 1.1.0 (Contains Breaking Changes):
 + Added broken bar dividers
 + Added slash dividers
 * Functions now return the variable rather then print it
-+ Added some extra stuff in the extras directory
 + Added repo status badge
 
 Version 1.0.7:
@@ -160,31 +188,31 @@ Version 1.0.6:
 + Added hashtag (#) dividers
 * Updated badges in readme
 
-Version 1.0.5: 
-+ Added equal sign dividers 
-+ Added GitHub pages config (site up at https://rdil.github.io/area4!) 
+Version 1.0.5:
++ Added equal sign dividers
++ Added GitHub pages config (site down now)
 + Added more project links to setup.py file
 
 Version 1.0.4:
 + Added up arrow emoji dividers
 + Added down arrow emoji dividers
-+ Added codefactor badge to the readme file
++ Added CodeFactor badge to the readme file
 + Added new classifiers to setup.py file
 
-Version 1.0.3:  
+Version 1.0.3:
 + Added Travis CI (and .travis.yml file)
-+ Added custom dividers!!!  
-* Updated the .gitignore to ignore the /build/ directory  
++ Added custom dividers!!
+* Updated the GitIgnore to ignore the /build/ directory
 
 Version 1.0.2:
-* Updated project description 
-+ Added example section to readme 
-+ Added divider looks section to readme  
-* Updated the info command because of an annoying text issue 
+* Updated project description
++ Added example section to readme
++ Added divider looks section to readme
+* Updated the info command because of an annoying text issue
 
 Version 1.0.1:
 * Readme fixes & badges
-+ Added changelog 
++ Added changelog
 
 Version 1.0.0:
-* First release! 
+* First release!

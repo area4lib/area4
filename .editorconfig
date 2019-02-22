@@ -7,6 +7,16 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 
-[*.{cirrus,travis}.yml]
-intend_style = space
+[*.{cirrus,pyup,checks,markdownlint}.yml]
+indent_style = space
 indent_size = 2
+
+[*.json]
+trim_trailing_whitespace = false
+
+[.sublime-project]
+indent_size = 4
+indent_style = space
+
+[Makefile]
+indent_style = tab
