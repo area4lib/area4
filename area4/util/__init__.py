@@ -14,7 +14,4 @@ def check(internal_name):
     :return: If __name__ is '__main__' (boolean)
     :rtype: bool
     """
-    if internal_name == "__main__":
-        return True
-    else:
-        return False
+    return internal_name is "__main__"
