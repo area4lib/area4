@@ -2,19 +2,19 @@
 
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+with open("README.md", mode="r") as FILE_HANDLER:
+    LONG_DESCRIPTION = FILE_HANDLER.read()
 
 # Package version:
-version = "2.0.8"
+VERSION = "2.0.8"
 
 setuptools.setup(
     name="area4",
-    version=version,
+    version=VERSION,
     author="RDIL",
     author_email="me@rdil.rocks",
     description="Dividers in Python, the easy way!",
-    long_description=long_description,
+    long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     url="https://github.com/RDIL/area4",
     license="MIT",
