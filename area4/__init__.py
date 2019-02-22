@@ -4,7 +4,7 @@
 #  MIT License with this program/distribution.
 # ---------------------------------------------------
 # ~ area4 Package by RDIL ~
-# This package and source should be compatible with Python 3.4 and up!
+# This package should be compatible with Python 3.4 and up!
 # ---------------------------------------------------
 
 # Imports:
