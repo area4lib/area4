@@ -135,6 +135,7 @@ def testLogDivider() -> None:
     else:
         print("\n[DEBUG] Test of LogDivider passed")
 
+
 def test_info():
     """
     Tests the info variables. This is an extra test.
