@@ -26,6 +26,9 @@ task:
   name: CodeTests
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
   auto_cancellation: $CIRRUS_BRANCH != 'master'
+  # Clean workspace:
+  CleanWorkspace_script:
+    - make clean
   # Install test dependencies:
   InstallTestDependencies_script:
     - make testrequirements
