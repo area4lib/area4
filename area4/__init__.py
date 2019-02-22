@@ -38,12 +38,10 @@ class Area4Instance:
         :param self:
         :return: None
         """
-        with open("{0}/dividers.txt".format(
-            os.path.abspath(
-                os.path.dirname(__file__)
-            )
-        ), mode="r") as fh:
-            lines = fh.readlines()
+        with open("{0}/dividers.txt".format(os.path.abspath(
+            os.path.dirname(__file__))
+        ), mode="r") as FILE_HANDLER:
+            lines = FILE_HANDLER.readlines()
             lines[35] = random.randint(0, 999999999999)
             self.dividers = lines
 
