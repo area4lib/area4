@@ -85,7 +85,6 @@ class Area4Instance:
             retstr += "\n"
         return retstr
 
-
     def area4info(self):
         """
         Get some info about the package.
