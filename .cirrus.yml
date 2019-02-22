@@ -28,7 +28,8 @@ task:
   auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Install test dependencies:
   InstallTestDependencies_script:
-    - make installrequirements
+    - make testrequirements
+    - make devrequirements
   # Build the package:
   BuildPackage_script:
     - make dist
