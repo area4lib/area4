@@ -4,5 +4,6 @@ twine==1.13.0
 flake8==3.7.6
 pyflakes==2.1.0
 pydocstyle==3.0.0
+pycodestyle
 virtualenv==16.4.0
 pipenv==2018.11.26
