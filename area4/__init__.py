@@ -64,7 +64,7 @@ class Area4Instance:
             raise ValueError('Please use a number bigger then 0!')
         else:
             try:
-                return self.dividers[number].split("\n")[0]  # remove any `\n`s from the output
+                return self.dividers[number].split("\n")[0]
             except IndexError:
                 raise ValueError('That divider does not exist!')
 
