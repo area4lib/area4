@@ -55,6 +55,7 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/RDIL/area4/issues",
         "Documentation": "https://area4.readthedocs.io/en/stable/",
         "Source Code": "https://github.com/RDIL/area4",
+        "License": "https://github.com/RDIL/area4/blob/master/LICENSE",
     },
     keywords=["area4", "dividers", "python", "utilities", "enhancements"],
     include_package_data=True,
