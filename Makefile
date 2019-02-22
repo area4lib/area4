@@ -1,3 +1,6 @@
+# area4 Makefile
+# Used to run tests in CIs
+
 # -- Default command --
 
 default:
