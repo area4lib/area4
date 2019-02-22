@@ -64,9 +64,9 @@ else:
     WORKING_DIRECTORY = os.getenv("CIRRUS_WORKING_DIR")
     debug("Got working directory ({0})".format(WORKING_DIRECTORY))
     # Get divider text file:
-    dividers_file = "{0}/{1}".format(WORKING_DIRECTORY, "area4/dividers.txt")
-    debug("Divider file is located at {0}".format(dividers_file))
-    with open(dividers_file, mode="r") as fh:
+    DIVIDERS_FILE = "{0}/{1}".format(WORKING_DIRECTORY, "area4/dividers.txt")
+    debug("Divider file is located at {0}".format(DIVIDERS_FILE))
+    with open(DIVIDERS_FILE, mode="r") as fh:
         RAW_DIVIDERS = fh.readlines()
         debug("Fetched raw dividers text file")
     # Create instance:
