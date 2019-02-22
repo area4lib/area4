@@ -49,7 +49,7 @@ def debug(message):
     :return: None
     :param message: the message to log
     """
-    print("{0}{1}{2}".format("[Verbose]", " ", message))
+    print("{0}{1}{2}{3}".format("[Verbose]", " ", message, "."))
 
 
 # Make sure this is being run directly, and
@@ -77,7 +77,7 @@ else:
     # See if we need to run extra tests:
     if ("!e" in c_message or c_message == "!e") or \
             (repo_branch == "master"):
-        debug("Running extra tests!")
+        debug("Running extra tests")
         extra = True
     else:
         extra = False
@@ -100,9 +100,9 @@ def test_dividers():
                 # Try to match the raw divider with the result
                 # of the function:
                 if rawDividers[i].split("\n")[0] == d.divider(i):
-                    debug("[+] Divider {0} should work.".format(i))
+                    debug("[+] Divider {0} should work".format(i))
                 else:
-                    debug("[X] Divider {0} is broken!".format(i))
+                    debug("[X] Divider {0} is broken".format(i))
                     raise RuntimeError("Broken divider detected!")
             except IndexError:
                 # This is thrown if a number is offset in the divider array.
@@ -170,4 +170,4 @@ if extra:
     test_info()
     rst_lint_run()
 
-debug("Finished tests!")
+debug("Finished tests")
