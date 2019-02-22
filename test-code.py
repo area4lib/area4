@@ -14,31 +14,31 @@ except ImportError:
     raise OSError("Failed to import the library.")
 
 # Create some variables that will be needed later.
-# rawDividers is the array of dividers from the text file
-rawDividers = None
+# RAW_DIVIDERS is the array of dividers from the text file
+RAW_DIVIDERS = None
 
 # _dir is the directory that the CI supplies as the build directory.
 _dir = None
 
-# d is the area4 instance
-d = None
+# D is the area4 instance
+D = None
 
 # Get commit message:
-c_message = os.getenv("CIRRUS_CHANGE_MESSAGE")
-if c_message is None:
+COMMIT_MESSAGE = os.getenv("CIRRUS_CHANGE_MESSAGE")
+if COMMIT_MESSAGE is None:
     raise EnvironmentError("No commit name detected!")
 
 # Get the branch:
-repo_branch = os.getenv("CIRRUS_BRANCH")
-if repo_branch is None:
+REPO_BRANCH = os.getenv("CIRRUS_BRANCH")
+if REPO_BRANCH is None:
     raise EnvironmentError("Branch unknown")
 
 # Make the fetched values lowercase:
-c_message = c_message.lower()
-repo_branch = repo_branch.lower()
+COMMIT_MESSAGE = COMMIT_MESSAGE.lower()
+REPO_BRANCH = REPO_BRANCH.lower()
 
 # Check if extra tests should be run:
-extra = False
+EXTRA_TESTS = False
 
 
 # Function to send debug messages to the console:
@@ -67,20 +67,20 @@ else:
     dividers_file = "{0}/{1}".format(_dir, "area4/dividers.txt")
     debug("Divider file is located at {0}".format(dividers_file))
     with open(dividers_file, mode="r") as fh:
-        rawDividers = fh.readlines()
+        RAW_DIVIDERS = fh.readlines()
         debug("Fetched raw dividers text file")
     # Create instance:
     debug("Creating instance of the library")
-    d = area4.Area4Instance()
+    D = area4.Area4Instance()
     debug("Created instance")
 
     # See if we need to run extra tests:
-    if ("!e" in c_message or c_message == "!e") or \
-            (repo_branch == "master"):
+    if ("!e" in COMMIT_MESSAGE or COMMIT_MESSAGE == "!e") or \
+            (REPO_BRANCH == "master"):
         debug("Running extra tests")
-        extra = True
+        EXTRA_TESTS = True
     else:
-        extra = False
+        EXTRA_TESTS = False
 
 
 def test_dividers():
@@ -89,7 +89,7 @@ def test_dividers():
 
     :return: None
     """
-    for i, item in enumerate(rawDividers):
+    for i, item in enumerate(RAW_DIVIDERS):
         if i < 1 or i == 35:
             debug("Manually skipping divider {0}".format(i))
             # Manually skip dividers 0 and 35:
@@ -99,7 +99,7 @@ def test_dividers():
             try:
                 # Try to match the raw divider with the result
                 # of the function:
-                if rawDividers[i].split("\n")[0] == d.divider(i):
+                if RAW_DIVIDERS[i].split("\n")[0] == D.divider(i):
                     debug("[+] Divider {0} should work".format(i))
                 else:
                     debug("[X] Divider {0} is broken".format(i))
@@ -116,7 +116,7 @@ def test_make_div():
 
     :return: None
     """
-    if d.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
+    if D.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
         debug("make-div test did not fail")
     else:
         raise RuntimeError("make-div tests failed")
@@ -136,11 +136,11 @@ def test_info():
         "Dividers in Python, the easy way!"
     ]
     from_class = [
-        d.name,
-        d.author,
-        d.author_email,
-        d.support_email,
-        d.description
+        D.name,
+        D.author,
+        D.author_email,
+        D.support_email,
+        D.description
     ]
     debug("Running extra test for package info")
     for x, xx in enumerate(right_data):
@@ -165,7 +165,7 @@ def rst_lint_run():
 # Run tests:
 test_dividers()
 test_make_div()
-if extra:
+if EXTRA_TESTS:
     # Run extra tests if needed:
     test_info()
     rst_lint_run()
