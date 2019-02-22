@@ -42,8 +42,8 @@ class Area4Instance:
             os.path.abspath(
                 os.path.dirname(__file__)
             )
-        ), mode="r") as FILE_HANDLER:
-            lines = FILE_HANDLER.readlines()
+        ), mode="r") as file_handler:
+            lines = file_handler.readlines()
             lines[35] = random.randint(0, 999999999999)
             self.dividers = lines
 
