@@ -18,7 +18,7 @@ except ImportError:
 RAW_DIVIDERS = None
 
 # _dir is the directory that the CI supplies as the build directory.
-_dir = None
+WORKING_DIRECTORY = None
 
 # D is the area4 instance
 D = None
@@ -61,10 +61,10 @@ else:
     debug("Module being run directly, not exiting")
     # Get working directory:
     debug("Getting working directory")
-    _dir = os.getenv("CIRRUS_WORKING_DIR")
-    debug("Got working directory ({0})".format(_dir))
+    WORKING_DIRECTORY = os.getenv("CIRRUS_WORKING_DIR")
+    debug("Got working directory ({0})".format(WORKING_DIRECTORY))
     # Get divider text file:
-    dividers_file = "{0}/{1}".format(_dir, "area4/dividers.txt")
+    dividers_file = "{0}/{1}".format(WORKING_DIRECTORY, "area4/dividers.txt")
     debug("Divider file is located at {0}".format(dividers_file))
     with open(dividers_file, mode="r") as fh:
         RAW_DIVIDERS = fh.readlines()
@@ -157,9 +157,9 @@ def rst_lint_run():
     :return: None
     """
     debug("Running reStructuredText linting")
-    files = os.listdir("{0}/docs".format(_dir))
+    files = os.listdir("{0}/docs".format(WORKING_DIRECTORY))
     for name in files:
-        restructuredtext_lint.lint_file("{0}/docs/{1}".format(_dir, name))
+        restructuredtext_lint.lint_file("{0}/docs/{1}".format(WORKING_DIRECTORY, name))
 
 
 # Run tests:
