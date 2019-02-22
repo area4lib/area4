@@ -53,7 +53,7 @@ flake8:
 .PHONY: flake8
 
 pylint:
-	find . -name '*.py' -exec python3 -m pylint {} \;
+	find area4/. -name '*.py' -exec python3 -m pylint {} \;
 .PHONY: pylint
 
 # -- MarkdownTests commands --
