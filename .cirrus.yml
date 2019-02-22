@@ -43,3 +43,5 @@ task:
     - make pydocstyle
   PyCodeStyle_script:
     - make pycodestyle
+  Flake8Style_script:
+    - make flake8

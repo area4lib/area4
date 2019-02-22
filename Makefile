@@ -45,6 +45,10 @@ pycodestyle:
 	find . -name '*.py' -exec python3 -m pycodestyle --show-source --show-pep8 {} \;
 .PHONY: pycodestyle
 
+flake8:
+	find . -name '*.py' -exec python3 -m flake8 --verbose --show-source --statistics {} \;
+.PHONY: flake8
+
 # -- MarkdownTests commands --
 
 installlinkcheck:
