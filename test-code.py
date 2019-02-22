@@ -156,7 +156,7 @@ def rst_lint_run():
 
     :return: None
     """
-    debug("Running reStructuredText linting.")
+    debug("Running reStructuredText linting")
     files = os.listdir("{0}/docs".format(_dir))
     for name in files:
         restructuredtext_lint.lint_file("{0}/docs/{1}".format(_dir, name))
