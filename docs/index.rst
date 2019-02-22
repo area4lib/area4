@@ -1,5 +1,5 @@
 .. Area4 documentation master file, created by
-   sphinx quick-start on Wed Oct  3 20:42:55 2018.
+   sphinx quick-start on Wed Oct 3 20:42:55 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
