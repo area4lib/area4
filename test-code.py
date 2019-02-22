@@ -54,7 +54,7 @@ def debug(message):
 
 # Make sure this is being run directly, and
 # not from another python module:
-if not __name__ == "__main__":
+if __name__ != "__main__":
     raise EnvironmentError("This module must be run directly!")
 else:
     # If this is being run directly, set up for tests:
