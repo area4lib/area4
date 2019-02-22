@@ -159,7 +159,8 @@ def rst_lint_run():
     debug("Running reStructuredText linting")
     files = os.listdir("{0}/docs".format(WORKING_DIRECTORY))
     for name in files:
-        restructuredtext_lint.lint_file("{0}/docs/{1}".format(WORKING_DIRECTORY, name))
+        path = "{0}/docs/{1}".format(WORKING_DIRECTORY, name)
+        restructuredtext_lint.lint_file(filepath=path)
 
 
 # Run tests:
