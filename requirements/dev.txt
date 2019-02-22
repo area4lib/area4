@@ -5,5 +5,5 @@ flake8==3.7.6
 pyflakes==2.1.0
 pydocstyle==3.0.0
 pycodestyle==2.5.0
-virtualenv==16.4.0
+virtualenv==16.4.1
 pipenv==2018.11.26
