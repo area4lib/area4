@@ -25,7 +25,7 @@ distinfo:
 .PHONY: distinfo
 
 test:
-	python3 test-code.py
+	python3 code_tests.py
 .PHONY: test
 
 testrequirements:
