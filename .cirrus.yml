@@ -41,3 +41,5 @@ task:
     - make test
   PyDocStyle_script:
     - make pydocstyle
+  PyCodeStyle_script:
+    - make pycodestyle

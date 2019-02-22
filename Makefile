@@ -41,6 +41,10 @@ pydocstyle:
 	find . -name '*.py' -exec pydocstyle {} \;
 .PHONY: pydocstyle
 
+pycodestyle:
+	find . -name '*.py' -exec pycodestyle --show-source --show-pep8 {} \;
+.PHONY: pycodestyle
+
 # -- MarkdownTests commands --
 
 installlinkcheck:
