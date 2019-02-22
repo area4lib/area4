@@ -1,10 +1,5 @@
 setuptools==40.8.0
 wheel==0.33.1
 twine==1.13.0
-flake8==3.7.6
-pyflakes==2.1.0
-pydocstyle==3.0.0
-pycodestyle==2.5.0
-pylint==2.2.2
 virtualenv==16.4.1
 pipenv==2018.11.26
