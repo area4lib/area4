@@ -37,6 +37,10 @@ beta:
 	python3 -m pip install .
 .PHONY: beta
 
+pydocstyle:
+	find . -name '*.py' -exec pydocstyle {} \;
+.PHONY: pydocstyle
+
 # -- MarkdownTests commands --
 
 installlinkcheck:

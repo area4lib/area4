@@ -39,3 +39,5 @@ task:
   # Test the code:
   RunTests_script:
     - make test
+  PyDocStyle_script:
+    - make pydocstyle
