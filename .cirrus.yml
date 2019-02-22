@@ -48,3 +48,5 @@ task:
     - make pycodestyle
   Flake8Style_script:
     - make flake8
+  PylintStyle_script:
+    - make pylint

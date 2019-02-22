@@ -49,6 +49,10 @@ flake8:
 	find . -name '*.py' -exec python3 -m flake8 --show-source --statistics {} \;
 .PHONY: flake8
 
+pylint:
+	find . -name '*.py' -exec python3 -m pylint {} \;
+.PHONY: pylint
+
 # -- MarkdownTests commands --
 
 installlinkcheck:
