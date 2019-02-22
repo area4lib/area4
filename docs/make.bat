@@ -3,7 +3,6 @@
 pushd %~dp0
 
 REM Command file for Sphinx documentation
-REM Used to build area4
 REM Do NOT run this, it is only for ReadTheDocs
 
 if "%SPHINXBUILD%" == "" (

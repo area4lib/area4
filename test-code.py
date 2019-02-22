@@ -143,9 +143,7 @@ def test_info():
         d.description
     ]
     debug("Running extra test for package info")
-    for x in range(
-        len(right_data)
-    ):
+    for x, xx in enumerate(right_data):
         if not right_data[x] == from_class[x]:
             raise RuntimeError("[X] Failed package info test {0}".format(x))
         else:
