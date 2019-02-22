@@ -38,7 +38,7 @@ beta:
 .PHONY: beta
 
 pydocstyle:
-	find . -name '*.py' -exec python3 -m pydocstyle {} \;
+	find . -name '*.py' -exec python3 -m pydocstyle --explain --count --source {} \;
 .PHONY: pydocstyle
 
 pycodestyle:
