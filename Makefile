@@ -37,6 +37,18 @@ beta:
 	python3 -m pip install .
 .PHONY: beta
 
+pydocstyle:
+	find . -name '*.py' -exec python3 -m pydocstyle {} \;
+.PHONY: pydocstyle
+
+pycodestyle:
+	find . -name '*.py' -exec python3 -m pycodestyle --show-source --show-pep8 {} \;
+.PHONY: pycodestyle
+
+flake8:
+	find . -name '*.py' -exec python3 -m flake8 --show-source --statistics {} \;
+.PHONY: flake8
+
 # -- MarkdownTests commands --
 
 installlinkcheck:
