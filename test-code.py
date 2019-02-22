@@ -89,7 +89,7 @@ def test_dividers():
 
     :return: None
     """
-    for i in range(len(rawDividers)):
+    for i, item in enumerate(rawDividers):
         if i < 1 or i == 35:
             debug("Manually skipping divider {0}".format(i))
             # Manually skip dividers 0 and 35:
