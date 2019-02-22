@@ -25,9 +25,13 @@ test:
 	python3 test-code.py
 .PHONY: test
 
-installrequirements:
+testrequirements:
 	python3 -m pip install -r requirements/test.txt
-.PHONY: installrequirements
+.PHONY: testrequirements
+
+devrequirements:
+	python3 -m pip install -r requirements/dev.txt
+.PHONY: devrequirements
 
 beta:
 	python3 -m pip install .

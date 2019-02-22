@@ -87,7 +87,6 @@ html_show_copyright = True
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'Area4doc'
 
-
 # -- Options for LaTeX output ------------------------------------------------
 
 latex_elements = {
@@ -100,7 +99,6 @@ latex_documents = [
      'RDIL', 'manual'),
 ]
 
-
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
@@ -109,7 +107,6 @@ man_pages = [
     (master_doc, 'area4', 'Area4 Documentation',
      [author], 1)
 ]
-
 
 # -- Options for Texinfo output ----------------------------------------------
 
@@ -121,7 +118,6 @@ texinfo_documents = [
      author, 'Area4', 'One line description of project.',
      'Miscellaneous'),
 ]
-
 
 # -- Options for Epub output -------------------------------------------------
 

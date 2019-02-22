@@ -54,7 +54,7 @@ def debug(message):
 
 # Make sure this is being run directly, and
 # not from another python module:
-if not __name__ == "__main__":
+if __name__ != "__main__":
     raise EnvironmentError("This module must be run directly!")
 else:
     # If this is being run directly, set up for tests:
@@ -89,7 +89,7 @@ def test_dividers():
 
     :return: None
     """
-    for i in range(len(rawDividers)):
+    for i, item in enumerate(rawDividers):
         if i < 1 or i == 35:
             debug("Manually skipping divider {0}".format(i))
             # Manually skip dividers 0 and 35:
@@ -156,9 +156,7 @@ def test_info():
         d.description
     ]
     debug("Running extra test for package info")
-    for x in range(
-        len(right_data)
-    ):
+    for x, xx in enumerate(right_data):
         if not right_data[x] == from_class[x]:
             raise RuntimeError("[X] Failed package info test {0}".format(x))
         else:
