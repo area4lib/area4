@@ -46,7 +46,7 @@ pycodestyle:
 .PHONY: pycodestyle
 
 flake8:
-	find . -name '*.py' -exec python3 -m flake8 --verbose --show-source --statistics {} \;
+	find . -name '*.py' -exec python3 -m flake8 --show-source --statistics {} \;
 .PHONY: flake8
 
 # -- MarkdownTests commands --
