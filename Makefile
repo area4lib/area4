@@ -38,11 +38,11 @@ beta:
 .PHONY: beta
 
 pydocstyle:
-	find . -name '*.py' -exec pydocstyle {} \;
+	find . -name '*.py' -exec python3 -m pydocstyle {} \;
 .PHONY: pydocstyle
 
 pycodestyle:
-	find . -name '*.py' -exec pycodestyle --show-source --show-pep8 {} \;
+	find . -name '*.py' -exec python3 -m pycodestyle --show-source --show-pep8 {} \;
 .PHONY: pycodestyle
 
 # -- MarkdownTests commands --
