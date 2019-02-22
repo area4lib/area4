@@ -56,7 +56,8 @@ Please keep dividers at exactly 12 characters.
 
 ## Betas
 
-Help us test new code with betas! They are WIP builds that are not finished and may contain bugs, and it helps us to find those before we deploy to PyPI. Betas can be found in issues when we have decided to use them.
+Help us test new code with betas! They are WIP builds that are not finished and may contain bugs, and it helps us to find those before we deploy to PyPI.
+Betas can be found in issues when we have decided to use them.
 
 ## Documentation format
 

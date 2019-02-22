@@ -17,3 +17,6 @@ trim_trailing_whitespace = false
 [.sublime-project]
 indent_size = 4
 indent_style = space
+
+[Makefile]
+indent_style = tab

@@ -1,11 +1,11 @@
 """Main class."""
-#  Copyright (c) 2018 - present RDIL.
+#  Copyright (c) 2018-present RDIL.
 #  You should have received a copy of the
 #  MIT License with this program/distribution.
 # ---------------------------------------------------
 # ~ area4 Package by RDIL ~
 # This package and source should be compatible with Python 3.4 and up!
-# (not including the package info function; its 3.6 and up)
+# (not including the package info function)
 # ---------------------------------------------------
 
 # Imports:
@@ -28,9 +28,9 @@ class Area4Instance:
     dividers = []
 
     # Run some needed operations:
-    def __init__(self) -> None:
+    def __init__(self):
         """
-        Init the class.
+        Create the class.
 
         :param self:
         :return: None
@@ -44,8 +44,7 @@ class Area4Instance:
             lines[35] = random.randint(0, 999999999999)
             self.dividers = lines
 
-    # Function to get a divider
-    def divider(self, number) -> str:
+    def divider(self, number):
         """
         Get the divider you requested.
 
@@ -55,8 +54,8 @@ class Area4Instance:
         :return: requested divider
         :rtype: str
         :Example:
-        area4.divider(97)
-        will return 🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️🏖️
+        area4.divider(3)
+        will return ............
         """
         if number == 0:
             raise ValueError('Please use a number bigger then 0!')
@@ -64,7 +63,7 @@ class Area4Instance:
             try:
                 return self.dividers[number].split("\n")[0]
             except IndexError:
-                raise ValueError('That divider doesn\'t exist!')
+                raise ValueError('That divider does not exist!')
 
     def logDivider(self, div, *args) -> str:
         """
@@ -87,8 +86,8 @@ class Area4Instance:
             retstr += "\n"
         return retstr
 
-    # Info function
-    def area4info(self) -> str:
+
+    def area4info(self):
         """
         Get some info about the package.
 
@@ -103,11 +102,17 @@ class Area4Instance:
             info += f"\nDescription: {self.description}"
             return info
         except SyntaxError:
-            return "Use Python 3.6 or above to run this function."
+            # Python <3.6 solution:
+            return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
+                "Name", self.name,
+                "Author", self.author,
+                "Author Email", self.author_email,
+                "Description", self.description
+            )
 
     def make_div(self, unit, length=24,
                  start='', end='',
-                 literal_unit=False) -> str:
+                 literal_unit=False):
         """
         Generate and return a custom divider.
 
@@ -134,14 +139,14 @@ class Area4Instance:
         25 will contain 2 units for
         a total length of 20 characters.
         """
-        # reduce the size if possible to extend closer to full length
+        # Reduce the size if possible to extend closer to full length:
         if not literal_unit:
             unit = self.reduce_to_unit(unit)
         repeats = (length - len(start + end)) // len(unit)
 
         return (start + unit * repeats + end)[0:length]
 
-    def reduce_to_unit(self, divider: str) -> str:
+    def reduce_to_unit(self, divider):
         """
         Reduce a repeating divider to the smallest repeating unit possible.
 
@@ -158,8 +163,8 @@ class Area4Instance:
             length = len(divider)
             unit = divider[:unit_size]
 
-            # ignores mismatches in final characters
+            # Ignores mismatches in final characters:
             d = divider[:unit_size * (length // unit_size)]
             if unit * (length // unit_size) == d:
                 return unit
-        return divider  # return original if smaller unit not found
+        return divider  # Return original if smaller unit not found

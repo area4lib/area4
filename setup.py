@@ -5,9 +5,12 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+# Package version:
+version = "2.0.6"
+
 setuptools.setup(
     name="area4",
-    version="2.0.4",
+    version=version,
     author="RDIL",
     author_email="me@rdil.rocks",
     description="Dividers in Python, the easy way!",

@@ -5,11 +5,11 @@
 .sublime-project      @RDIL
 
 # Area: Tools
-tools/                @theonetheonlydemon
+tools/                @RDIL
 
 # Area: Main code
-area4/                @N8python @rocketpropelledpotato
-*.py                  @N8python @rocketpropelledpotato
+area4/                @rocketpropelledpotato
+*.py                  @rocketpropelledpotato
 
 # Area: Docs
 docs/                 @CoffeeGoddess
@@ -25,6 +25,7 @@ requirements/*.txt    @rocketpropelledpotato
 requirements.txt      @rocketpropelledpotato
 
 # Area: Configuration files
-setup.cfg             @RDIL
+*.cfg                 @RDIL
 *.in                  @RDIL
 *.yml                 @RDIL
+*.yaml                @RDIL

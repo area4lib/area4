@@ -15,10 +15,10 @@ except ImportError:
 
 # Create some variables that will be needed later.
 # rawDividers is the array of dividers from the text file
-rawDividers: str
+rawDividers = None
 
 # _dir is the directory that the CI supplies as the build directory.
-_dir: str
+_dir = None
 
 # d is the area4 instance
 d = None
@@ -38,11 +38,11 @@ c_message = c_message.lower()
 repo_branch = repo_branch.lower()
 
 # Check if extra tests should be run:
-extra: bool = False
+extra = False
 
 
 # Function to send debug messages to the console:
-def debug(message) -> None:
+def debug(message):
     """
     Log a debug message.
 
@@ -64,7 +64,7 @@ else:
     _dir = os.getenv("CIRRUS_WORKING_DIR")
     debug("Got working directory ({0})".format(_dir))
     # Get divider text file:
-    dividers_file: str = "{0}/{1}".format(_dir, "area4/dividers.txt")
+    dividers_file = "{0}/{1}".format(_dir, "area4/dividers.txt")
     debug("Divider file is located at {0}".format(dividers_file))
     with open(dividers_file, mode="r") as fh:
         rawDividers = fh.readlines()
@@ -83,7 +83,7 @@ else:
         extra = False
 
 
-def test_dividers() -> None:
+def test_dividers():
     """
     Test each divider against the raw ones from the text file.
 
@@ -110,7 +110,7 @@ def test_dividers() -> None:
                 debug("Ignoring an IndexError")
 
 
-def test_make_div() -> None:
+def test_make_div():
     """
     Tests the make-div function.
 
@@ -135,8 +135,7 @@ def testLogDivider() -> None:
     else:
         print("\n[DEBUG] Test of LogDivider passed")
 
-
-def test_info() -> None:
+def test_info():
     """
     Tests the info variables. This is an extra test.
 
@@ -166,7 +165,7 @@ def test_info() -> None:
             debug("[+] Data item {0} works".format(x))
 
 
-def rst_lint_run() -> None:
+def rst_lint_run():
     """
     Lints all reStructuredText files. This is an extra test.
 
