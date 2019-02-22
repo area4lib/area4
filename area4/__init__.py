@@ -137,7 +137,7 @@ class Area4Instance:
             unit = divider[:unit_size]
 
             # Ignores mismatches in final characters:
-            d = divider[:unit_size * (length // unit_size)]
-            if unit * (length // unit_size) == d:
+            divider_item = divider[:unit_size * (length // unit_size)]
+            if unit * (length // unit_size) == divider_item:
                 return unit
         return divider  # Return original if smaller unit not found

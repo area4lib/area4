@@ -143,11 +143,13 @@ def test_info():
         D.description
     ]
     debug("Running extra test for package info")
-    for x, xx in enumerate(right_data):
-        if not right_data[x] == from_class[x]:
-            raise RuntimeError("[X] Failed package info test {0}".format(x))
+    for the_location, place_holder in enumerate(right_data):
+        if not right_data[the_location] == from_class[the_location]:
+            raise RuntimeError("[X] Failed package info test {0}"
+                               .format(the_location)
+                               )
         else:
-            debug("[+] Data item {0} works".format(x))
+            debug("[+] Data item {0} works".format(the_location))
 
 
 def rst_lint_run():
