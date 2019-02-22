@@ -6,4 +6,4 @@ pyflakes==2.1.0
 pydocstyle==3.0.0
 pycodestyle==2.5.0
 pylint==2.2.2
-safety
+safety==1.8.5
