@@ -7,13 +7,6 @@ Tests_task:
   # Do not skip if new commits are pushed to master:
   auto_cancellation: $CIRRUS_BRANCH != 'master'
 
-  # Cache npm modules:
-  npm_Modules_cache:
-    folder: $(npm root -g)
-    populate_script:
-      - make installlinkcheck
-      - make installmdlint
-
   # Install Python3 and NodeJS:
   Install_Python_script:
     - brew install python@3
@@ -23,6 +16,13 @@ Tests_task:
   # Clean workspace:
   Clean_Workspace_script:
     - make clean
+
+  # Cache npm modules:
+  npm_Modules_cache:
+    folder: $(npm root -g)
+    populate_script:
+      - make installlinkcheck
+      - make installmdlint
 
   # Install test dependencies:
   Install_Test_Dependencies_script:
