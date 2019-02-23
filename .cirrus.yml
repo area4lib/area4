@@ -31,6 +31,10 @@ Tests_task:
     - make pylint
   DependencySecurityTest_script:
     - make safetyci
+  InstallLinuxbrew_script:
+    - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+  InstallNodeJS_script:
+    - brew install node
   # Install Markdown linter:
   InstallLinter_script:
     - make installmdlint
