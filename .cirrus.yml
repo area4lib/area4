@@ -30,7 +30,7 @@ Tests_task:
   DependencySecurityTest_script:
     - make safetyci
   InstallLinuxbrew_script:
-    - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+    - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)
   InstallNodeJS_script:
     - brew install node
   # Install Markdown linter:
