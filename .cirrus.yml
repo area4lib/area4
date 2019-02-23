@@ -37,7 +37,7 @@ Tests_task:
     - make test
 
   # Run Python linting:
-  PythonLinting_script:
+  Python_Linting_script:
     - make pydocstyle
     - make pycodestyle
     - make flake8
