@@ -21,10 +21,8 @@ Tests_task:
 
   # Install test dependencies:
   Install_Test_Dependencies_script:
-    - make testrequirements
-    - make devrequirements
-    - make installlinkcheck
-    - make installmdlint
+    - make requirements
+    - make populate
 
   # Build the package:
   Build_Package_script:
