@@ -1,8 +1,7 @@
-container:
-  image: python:latest
-
 task:
-  name: area4 Tests
+  name: Tests
+  container:
+    image: python:latest
   additional_containers:
     - name: nodejs
       image: node:latest
