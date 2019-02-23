@@ -63,11 +63,11 @@ safetyci:
 # -- MarkdownTests commands --
 
 installlinkcheck:
-	npm install -g markdown-link-check@3.7.2
+	npm install markdown-link-check@3.7.2
 .PHONY: installlinkcheck
 
 installmdlint:
-	npm install -g markdownlint-cli
+	npm install markdownlint-cli
 .PHONY: installmdlint
 
 linkcheck:
