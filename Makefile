@@ -10,7 +10,7 @@ default:
 # -- area4 commands --
 
 clean:
-	-rm -rf build dist area4.egg-info area4.dist-info
+	-rm -rf build dist area4.egg-info area4.dist-info node_modules
 	-find . -name '*.py[oc]' -exec rm {} \;
 .PHONY: clean
 
