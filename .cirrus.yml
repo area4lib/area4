@@ -5,6 +5,10 @@ Tests_task:
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
   auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Clean workspace:
+  InstallNodeJS_script:
+    - brew install node
+  InstallPython_script:
+    - brew install python@3
   CleanWorkspace_script:
     - make clean
   # Install test dependencies:
@@ -30,8 +34,6 @@ Tests_task:
     - make pylint
   DependencySecurityTest_script:
     - make safetyci
-  InstallNodeJS_script:
-    - brew install node
   # Install Markdown linter:
   InstallLinter_script:
     - make installmdlint
