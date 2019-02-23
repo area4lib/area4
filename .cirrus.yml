@@ -7,7 +7,7 @@ Tests_task:
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
 
   # Do not skip if new commits are pushed to master:
-  auto_cancellation: $CIRRUS_REPO == 'RDIL/area4'
+  auto_cancellation: $CIRRUS_BRANCH != 'master'
 
   # Install Python3 and NodeJS:
   Install_Python_script:
