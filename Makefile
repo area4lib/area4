@@ -34,19 +34,19 @@ beta:
 .PHONY: beta
 
 pydocstyle:
-	find . *.py -exec python3 -m pydocstyle --explain --count --source {} \;
+	python3 -m pydocstyle --explain --count --source *.py area4/*.py
 .PHONY: pydocstyle
 
 pycodestyle:
-	find . *.py -exec python3 -m pycodestyle --show-source --show-pep8 {} \;
+	python3 -m pycodestyle --show-source --show-pep8 *.py area4/*.py
 .PHONY: pycodestyle
 
 flake8:
-	find . *.py -exec python3 -m flake8 --show-source --statistics {} \;
+	python3 -m flake8 --show-source --statistics *.py area4/*.py
 .PHONY: flake8
 
 pylint:
-	find . *.py -exec python3 -m pylint {} \;
+	python3 -m pylint *.py area4/*.py
 .PHONY: pylint
 
 safetyci:
