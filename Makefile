@@ -28,13 +28,10 @@ test:
 	python3 code_tests.py
 .PHONY: test
 
-testrequirements:
+requirements:
 	python3 -m pip install -r requirements/test.txt
-.PHONY: testrequirements
-
-devrequirements:
 	python3 -m pip install -r requirements/dev.txt
-.PHONY: devrequirements
+.PHONY: requirements
 
 beta:
 	python3 -m pip install .
@@ -62,13 +59,10 @@ safetyci:
 
 # -- MarkdownTests commands --
 
-installlinkcheck:
+populate:
 	npm install markdown-link-check@3.7.2
-.PHONY: installlinkcheck
-
-installmdlint:
 	npm install markdownlint-cli
-.PHONY: installmdlint
+.PHONY: populate
 
 linkcheck:
 	find . -name \*.md -exec markdown-link-check {} \;
