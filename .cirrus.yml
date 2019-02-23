@@ -17,17 +17,12 @@ Tests_task:
   Clean_Workspace_script:
     - make clean
 
-  # Cache npm modules:
-  npm_Modules_cache:
-    folder: node_modules
-    populate_script:
-      - make installlinkcheck
-      - make installmdlint
-
   # Install test dependencies:
   Install_Test_Dependencies_script:
     - make testrequirements
     - make devrequirements
+    - make installlinkcheck
+    - make installmdlint
 
   # Build the package:
   Build_Package_script:
