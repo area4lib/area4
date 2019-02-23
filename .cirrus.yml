@@ -1,29 +1,11 @@
 container:
   image: python:latest
 
-MarkdownTests_task:
-  container:
-    image: node:latest
-  only_if: $CIRRUS_BRANCH != 'python-2-supported'
-  auto_cancellation: $CIRRUS_BRANCH != 'master'
-  # Install Markdown linter:
-  InstallLinter_script:
-    - make installmdlint
-  # Install Markdown link checker:
-  InstallLinkChecker_script:
-    - make installlinkcheck
-  # Lint Markdown:
-  MarkdownLint_script:
-    - markdownlint --config=.markdownlint.yml *.md
-    - markdownlint --config=.markdownlint.yml .github/*.md
-    - markdownlint --config=.markdownlint.yml .github/ISSUE_TEMPLATE/*.md
-    - markdownlint --config=.markdownlint.yml extras/*.md
-  # Check links:
-  LinkCheck_script:
-    - make linkcheck
-
 task:
-  name: CodeTests
+  name: area4 Tests
+  additional_containers:
+    - name: nodejs
+      image: node:latest
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
   auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Clean workspace:
@@ -52,3 +34,15 @@ task:
     - make pylint
   DependencySecurityTest_script:
     - make safetyci
+  # Install Markdown linter:
+  InstallLinter_script:
+    - make installmdlint
+  # Install Markdown link checker:
+  InstallLinkChecker_script:
+   - make installlinkcheck
+  # Lint Markdown:
+  MarkdownLint_script:
+    - find . -name '*.md' -exec markdownlint --config=.markdownlint.yml {} \;
+  # Check links:
+  LinkCheck_script:
+    - make linkcheck
