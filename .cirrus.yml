@@ -7,6 +7,10 @@ Tests_task:
   # Do not skip if new commits are pushed to master:
   auto_cancellation: $CIRRUS_BRANCH != 'master'
 
+  # Cache npm modules:
+  npm_Modules_cache:
+    folder: $(npm root -g)
+
   # Install Python3 and NodeJS:
   Install_Python_script:
     - brew install python@3
