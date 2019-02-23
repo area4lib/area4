@@ -54,7 +54,8 @@ pylint:
 .PHONY: pylint
 
 safetyci:
-	find ./requirements/ -name '*.txt' -exec python3 -m safety check --full-report -r {} \;
+	python3 -m safety check --full-report -r dev.txt
+	python3 -m safety check --full-report -r test.txt
 .PHONY: safetyci
 
 populate:
@@ -63,8 +64,8 @@ populate:
 .PHONY: populate
 
 linkcheck:
-	- markdownlint --config=.markdownlint.yml *.md
-	- markdownlint --config=.markdownlint.yml .github/*.md
-	- markdownlint --config=.markdownlint.yml .github/ISSUE_TEMPLATE/*.md
-	- markdownlint --config=.markdownlint.yml extras/*.md
+	markdownlint --config=.markdownlint.yml *.md
+	markdownlint --config=.markdownlint.yml .github/*.md
+	markdownlint --config=.markdownlint.yml .github/ISSUE_TEMPLATE/*.md
+	markdownlint --config=.markdownlint.yml extras/*.md
 .PHONY: linkcheck
