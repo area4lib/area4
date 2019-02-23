@@ -42,13 +42,10 @@ Tests_task:
     - make test
 
   # Run Python linting:
-  PyDocStyle_script:
+  PythonLinting_script:
     - make pydocstyle
-  PyCodeStyle_script:
     - make pycodestyle
-  Flake8Style_script:
     - make flake8
-  PylintStyle_script:
     - make pylint
 
   # Test dependencies for security issues:
@@ -56,9 +53,6 @@ Tests_task:
     - make safetyci
 
   # Lint Markdown:
-  Markdown_Lint_script:
+  Markdown_Tests_script:
     - find . -name '*.md' -exec markdownlint --config=.markdownlint.yml {} \;
-
-  # Check links in markdown:
-  Link_Check_script:
     - make linkcheck
