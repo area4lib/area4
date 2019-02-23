@@ -8,30 +8,30 @@ Tests_task:
   auto_cancellation: $CIRRUS_BRANCH != 'master'
 
   # Install Python3 and NodeJS:
-  InstallNodeJS_script:
-    - brew install node
   InstallPython_script:
     - brew install python@3
+  InstallNodeJS_script:
+    - brew install node
 
   # Clean workspace:
-  CleanWorkspace_script:
+  Clean_Workspace_script:
     - make clean
 
   # Install test dependencies:
-  InstallTestDependencies_script:
+  Install_Test_Dependencies_script:
     - make testrequirements
     - make devrequirements
 
   # Build the package:
-  BuildPackage_script:
+  Build_Package_script:
     - make dist
 
   # Install new beta build:
-  InstallBetaBuild_script:
+  Install_Beta_Build_script:
     - make beta
 
   # Test the Python code:
-  RunTests_script:
+  Run_Python_Tests_script:
     - make test
 
   # Run Python linting:
@@ -45,7 +45,7 @@ Tests_task:
     - make pylint
 
   # Test dependencies for security issues:
-  DependencySecurityTest_script:
+  Dependency_Security_Test_script:
     - make safetyci
 
   # Install Markdown linter:
@@ -53,13 +53,13 @@ Tests_task:
     - make installmdlint
 
   # Install Markdown link checker:
-  InstallLinkChecker_script:
+  Install_Link_Checker_script:
     - make installlinkcheck
 
   # Lint Markdown:
-  MarkdownLint_script:
+  Markdown_Lint_script:
     - find . -name '*.md' -exec markdownlint --config=.markdownlint.yml {} \;
 
   # Check links in markdown:
-  LinkCheck_script:
+  Link_Check_script:
     - make linkcheck
