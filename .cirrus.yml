@@ -9,7 +9,7 @@ Tests_task:
 
   # Install Python3 and NodeJS:
   InstallNodeJS_script:
-    - brew install nod
+    - brew install node
   InstallPython_script:
     - brew install python@3
 
