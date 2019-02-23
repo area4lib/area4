@@ -44,4 +44,4 @@ task:
    - find . -name '*.md' -exec markdownlint --config=.markdownlint.yml {} \;
   # Check links:
   LinkCheck_script:
-    - make linkcheck
+   - make linkcheck
