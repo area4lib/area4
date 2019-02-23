@@ -57,8 +57,6 @@ safetyci:
 	find ./requirements/ -name '*.txt' -exec python3 -m safety check --full-report -r {} \;
 .PHONY: safetyci
 
-# -- MarkdownTests commands --
-
 populate:
 	npm install markdown-link-check@3.7.2
 	npm install markdownlint-cli

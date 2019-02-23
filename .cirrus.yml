@@ -2,8 +2,10 @@ Tests_task:
   # Run tests on macOS Mojave:
   osx_instance:
     image: mojave-xcode-10.1
+
   # Don't run on Python2 branch:
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
+
   # Do not skip if new commits are pushed to master:
   auto_cancellation: $CIRRUS_REPO == 'RDIL/area4'
 
