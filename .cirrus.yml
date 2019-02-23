@@ -22,16 +22,6 @@ MarkdownTests_task:
 task:
   container:
     matrix:
-      image: python:3.6.0
-      image: python:3.6.1
-      image: python:3.6.2
-      image: python:3.6.3
-      image: python:3.6.4
-      image: python:3.6.5
-      image: python:3.6.6
-      image: python:3.6.7
-      image: python:3.6.8
-      image: python:3.6.9
       image: python:3.7.0
       image: python:3.7.1
       image: python:3.7.2
