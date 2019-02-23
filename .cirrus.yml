@@ -21,8 +21,8 @@ Tests_task:
 
   # Install test dependencies:
   Install_Test_Dependencies_script:
-    - python3 -m pip install -r ./requirements/test.txt
-    - python3 -m pip install -r ./requirements/dev.txt
+    - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
+    - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
     - npm install markdown-link-check@3.7.2
     - npm install markdownlint-cli
 
