@@ -55,8 +55,8 @@ pylint:
 .PHONY: pylint
 
 safetyci:
-	python3 -m safety check --full-report -r dev.txt
-	python3 -m safety check --full-report -r test.txt
+	python3 -m safety check --full-report -r requirements/dev.txt
+	python3 -m safety check --full-report -r requirements/test.txt
 .PHONY: safetyci
 
 populate:
