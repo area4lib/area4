@@ -29,11 +29,6 @@ test:
 	python3 code_tests.py
 .PHONY: test
 
-requirements:
-	python3 -m pip install -r requirements/test.txt
-	python3 -m pip install -r requirements/dev.txt
-.PHONY: requirements
-
 beta:
 	python3 -m pip install .
 .PHONY: beta
@@ -58,11 +53,6 @@ safetyci:
 	python3 -m safety check --full-report -r requirements/dev.txt
 	python3 -m safety check --full-report -r requirements/test.txt
 .PHONY: safetyci
-
-populate:
-	npm install markdown-link-check@3.7.2
-	npm install markdownlint-cli
-.PHONY: populate
 
 linkcheck:
 	markdownlint --config=.markdownlint.yml *.md
