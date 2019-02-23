@@ -63,5 +63,8 @@ populate:
 .PHONY: populate
 
 linkcheck:
-	find . -name \*.md -exec markdown-link-check {} \;
+	- markdownlint --config=.markdownlint.yml *.md
+	- markdownlint --config=.markdownlint.yml .github/*.md
+	- markdownlint --config=.markdownlint.yml .github/ISSUE_TEMPLATE/*.md
+	- markdownlint --config=.markdownlint.yml extras/*.md
 .PHONY: linkcheck
