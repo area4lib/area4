@@ -17,7 +17,6 @@ Tests_task:
 
   # Install test dependencies:
   Install_Test_Dependencies_script:
-    - ls
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
     - npm install markdown-link-check@3.7.2
@@ -30,6 +29,7 @@ Tests_task:
   # Test the Python code:
   Run_Python_Tests_script:
     - make test
+    - make safetyci
 
   # Run Python linting:
   Python_Linting_script:
@@ -37,10 +37,6 @@ Tests_task:
     - make pycodestyle
     - make flake8
     - make pylint
-
-  # Test dependencies for security issues:
-  Dependency_Security_Test_script:
-    - make safetyci
 
   # Lint Markdown:
   Markdown_Tests_script:
