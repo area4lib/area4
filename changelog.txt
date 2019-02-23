@@ -5,6 +5,10 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.0.8:
++ Added clone tool
+* Fixed linting issues
+
 Version 2.0.7:
 * Fixed linting issues
 * Moved the utilities module to the main package
