@@ -3,6 +3,10 @@ Tests_task:
     image: python:latest
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
   auto_cancellation: $CIRRUS_BRANCH != 'master'
+  additional_containers:
+    - name: node
+      image: node:latest
+      port: 3306
   # Clean workspace:
   CleanWorkspace_script:
     - make clean
