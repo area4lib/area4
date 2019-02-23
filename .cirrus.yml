@@ -15,10 +15,6 @@ Tests_task:
   Install_NodeJS_script:
     - brew install node
 
-  # Clean workspace:
-  Clean_Workspace_script:
-    - make clean
-
   # Install test dependencies:
   Install_Test_Dependencies_script:
     - ls
@@ -26,10 +22,6 @@ Tests_task:
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
     - npm install markdown-link-check@3.7.2
     - npm install markdownlint-cli
-
-  # Build the package:
-  Build_Package_script:
-    - make dist
 
   # Install new beta build:
   Install_Beta_Build_script:
