@@ -10,6 +10,9 @@ Tests_task:
   # Cache npm modules:
   npm_Modules_cache:
     folder: $(npm root -g)
+    populate_script:
+      - make installlinkcheck
+      - make installmdlint
 
   # Install Python3 and NodeJS:
   Install_Python_script:
@@ -51,14 +54,6 @@ Tests_task:
   # Test dependencies for security issues:
   Dependency_Security_Test_script:
     - make safetyci
-
-  # Install Markdown linter:
-  InstallLinter_script:
-    - make installmdlint
-
-  # Install Markdown link checker:
-  Install_Link_Checker_script:
-    - make installlinkcheck
 
   # Lint Markdown:
   Markdown_Lint_script:
