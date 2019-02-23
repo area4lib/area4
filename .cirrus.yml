@@ -1,9 +1,6 @@
 Tests_task:
   container:
     image: python:latest
-  additional_containers:
-    - name: node
-      image: node:latest
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
   auto_cancellation: $CIRRUS_BRANCH != 'master'
   # Clean workspace:
