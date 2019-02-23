@@ -6,7 +6,6 @@ Tests_task:
   additional_containers:
     - name: node
       image: node:latest
-      port: 3306
   # Clean workspace:
   CleanWorkspace_script:
     - make clean
