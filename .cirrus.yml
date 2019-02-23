@@ -1,3 +1,6 @@
+osx_instance:
+  image: mojave-xcode-10.1
+
 container:
   image: python:latest
 
