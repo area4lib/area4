@@ -5,6 +5,10 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.0.9:
++ Added CI auto-deploying
+* Updated GitIgnore
+
 Version 2.0.8:
 + Added clone tool
 * Fixed linting issues
