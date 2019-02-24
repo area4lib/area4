@@ -1,7 +1,6 @@
 """Runs code tests in a CI environment."""
 
 # Import needed modules
-import subprocess as s
 import os
 import restructuredtext_lint
 
@@ -193,22 +192,22 @@ def markdown_tests_run():
     for name in files2:
         if name.__contains__(".md"):
             path = "{0}/.github/{1}".format(WORKING_DIRECTORY, name)
-            s.call("markdown-link-check {0}".format(path))
-            s.call("markdownlint --config=.markdownlint.yml {0}".
+            os.system("markdown-link-check {0}".format(path))
+            os.system("markdownlint --config=.markdownlint.yml {0}".
                       format(path))
     for name in files3:
         if name.__contains__(".md"):
             path = "{0}/.github/ISSUE_TEMPLATE/{1}".format(
                 WORKING_DIRECTORY, name
             )
-            s.call("markdown-link-check {0}".format(path))
-            s.call("markdownlint --config=.markdownlint.yml {0}".
+            os.system("markdown-link-check {0}".format(path))
+            os.system("markdownlint --config=.markdownlint.yml {0}".
                       format(path))
     for name in files4:
         if name.__contains__(".md"):
             path = "{0}/extras/{1}".format(WORKING_DIRECTORY, name)
-            s.call("markdown-link-check {0}".format(path))
-            s.call("markdownlint --config=.markdownlint.yml {0}".
+            os.system("markdown-link-check {0}".format(path))
+            os.system("markdownlint --config=.markdownlint.yml {0}".
                       format(path))
 
 
@@ -218,7 +217,7 @@ def safety_run():
 
     :return: None
     """
-    s.call("./Makefile safetyci", shell=False)
+    os.system("make safetyci")
 
 
 if TARGET == "code":
