@@ -10,11 +10,9 @@ Tests_task:
   auto_cancellation: $CIRRUS_BRANCH != 'master'
 
   # Install Python3 and NodeJS:
-  Homebrew_cache:
-    folder: ~/Library/Caches/Homebrew
-    populate_script:
-      - brew install node
-      - brew install python@3
+  Install_Test_Programs_script:
+    - brew install node
+    - brew install python@3
 
   # Install test dependencies:
   Install_Test_Dependencies_script:
