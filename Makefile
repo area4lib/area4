@@ -5,9 +5,7 @@ default:
 .PHONY: default Makefile
 
 clean:
-	-rm -rf build dist area4.egg-info area4.dist-info node_modules
-	-find . *.pyc -exec rm {} \;
-	-find . *.pyo -exec rm {} \;
+	rm -rf build dist area4.egg-info area4.dist-info node_modules
 .PHONY: clean
 
 dist: clean
@@ -33,9 +31,6 @@ safetyci:
 	python3 -m safety check --full-report -r requirements/test.txt
 .PHONY: safetyci
 
-markdownlint:
-	markdownlint --config=.markdownlint.yml *.md
-	markdownlint --config=.markdownlint.yml .github/*.md
-	markdownlint --config=.markdownlint.yml .github/ISSUE_TEMPLATE/*.md
-	markdownlint --config=.markdownlint.yml extras/*.md
-.PHONY: markdownlint
+setupmarkdown:
+	export TARGET=markdown
+.PHONY: setupmarkdown
