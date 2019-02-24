@@ -18,7 +18,7 @@ except ImportError:
 # RAW_DIVIDERS is the array of dividers from the text file
 RAW_DIVIDERS = None
 
-# _dir is the directory that the CI supplies as the build directory.
+# WORKING_DIRECTORY is the location that the CI supplies as the build directory.
 WORKING_DIRECTORY = None
 
 # D is the area4 instance
@@ -34,9 +34,14 @@ REPO_BRANCH = os.getenv("CIRRUS_BRANCH")
 if REPO_BRANCH is None:
     raise EnvironmentError("Branch unknown")
 
+# Get the target:
+TARGET = os.getenv("TARGET")
+
 # Make the fetched values lowercase:
 COMMIT_MESSAGE = COMMIT_MESSAGE.lower()
 REPO_BRANCH = REPO_BRANCH.lower()
+if TARGET is not None:
+    TARGET = TARGET.lower()
 
 # Check if extra tests should be run:
 EXTRA_TESTS = False
@@ -221,10 +226,16 @@ def markdown_tests_run():
                       format(path))
 
 
-# Get the target:
-TARGET = os.getenv("TARGET")
+def safety_run():
+    """
+    Run SafetyCI by pyup.io
 
-if TARGET != "markdown":
+    :return: None
+    """
+    os.system("make safetyci")
+
+
+if TARGET == "code":
     # Run tests:
     test_dividers()
     test_make_div()
@@ -233,7 +244,8 @@ if TARGET != "markdown":
         # Run extra tests if needed:
         test_info()
         rst_lint_run()
-else:
+        safety_run()
+elif TARGET == "markdown":
     markdown_tests_run()
 
 debug("Finished tests")
