@@ -33,9 +33,6 @@ Tests_task:
 
   # Run Python linting:
   Python_Linting_script:
-    - make pydocstyle
-    - make pycodestyle
-    - make flake8
     - make pylint
 
   # Lint Markdown:

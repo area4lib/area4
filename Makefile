@@ -33,18 +33,6 @@ beta:
 	python3 -m pip install .
 .PHONY: beta
 
-pydocstyle:
-	python3 -m pydocstyle --explain --count --source *.py area4/*.py
-.PHONY: pydocstyle
-
-pycodestyle:
-	python3 -m pycodestyle --show-source --show-pep8 *.py area4/*.py
-.PHONY: pycodestyle
-
-flake8:
-	python3 -m flake8 --show-source --statistics *.py area4/*.py
-.PHONY: flake8
-
 pylint:
 	python3 -m pylint *.py area4/*.py
 .PHONY: pylint
