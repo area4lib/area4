@@ -41,3 +41,37 @@ task:
     - export TARGET=markdown
     # Run tests:
     - make test
+
+# Upon releasing a new version, upload to PyPI:
+Upload_task:
+
+  # Use Python3 to run this task:
+  container:
+    image: python:latest
+    cpu: 4
+    memory: 12G
+
+  # Store PyPI login info:
+  env:
+    TWINE_USERNAME: ENCRYPTED[873192f078ce655e47d834cc16676ab2b46034417e07b3ee3c511634fffc9f896ca542deed11dc0327a5d03e295212b5]
+    TWINE_PASSWORD: ENCRYPTED[23d92fc2662cd441296c401059da7a20601a9b748691d27eeed68555c624892d79e007ac4f55550e964ad768ffa1d5bb]
+
+  # Only run if this is a tag build:
+  only_if: $CIRRUS_TAG != ''
+
+  depends_on:
+    - Continuous Integration
+
+  # Download requirements:
+  Get_Requirements_script:
+    - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
+    - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
+
+  # Build the package:
+  Build_script:
+    - make clean
+    - make dist
+
+  # Upload to PyPI:
+  script:
+    - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
