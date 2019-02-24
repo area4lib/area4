@@ -18,7 +18,7 @@ except ImportError:
 # RAW_DIVIDERS is the array of dividers from the text file
 RAW_DIVIDERS = None
 
-# WORKING_DIRECTORY is the location that the CI supplies as the build directory.
+# WORKING_DIRECTORY is the place that the tests are running in.
 WORKING_DIRECTORY = None
 
 # D is the area4 instance
@@ -228,7 +228,7 @@ def markdown_tests_run():
 
 def safety_run():
     """
-    Run SafetyCI by pyup.io
+    Run SafetyCI by PyUp.
 
     :return: None
     """
