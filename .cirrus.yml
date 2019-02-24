@@ -27,8 +27,8 @@ Tests_task:
 
   # Test the Python code:
   Run_Python_Tests_script:
+    - export TARGET=code
     - make test
-    - make safetyci
 
   # Lint Markdown:
   Markdown_Tests_script:

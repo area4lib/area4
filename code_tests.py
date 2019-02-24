@@ -33,9 +33,14 @@ REPO_BRANCH = os.getenv("CIRRUS_BRANCH")
 if REPO_BRANCH is None:
     raise EnvironmentError("Branch unknown")
 
+# Get the target:
+TARGET = os.getenv("TARGET")
+
 # Make the fetched values lowercase:
 COMMIT_MESSAGE = COMMIT_MESSAGE.lower()
 REPO_BRANCH = REPO_BRANCH.lower()
+if TARGET is not None:
+    TARGET = TARGET.lower()
 
 # Check if extra tests should be run:
 EXTRA_TESTS = False
@@ -206,18 +211,25 @@ def markdown_tests_run():
                       format(path))
 
 
-# Get the target:
-TARGET = os.getenv("TARGET")
+def safety_run():
+    """
+    Run SafetyCI by pyup.io
 
-if TARGET != "markdown":
+    :return: None
+    """
+    os.system("make safetyci")
+
+
+if TARGET == "code":
     # Run tests:
     test_dividers()
     test_make_div()
+    safety_run()
     if EXTRA_TESTS:
         # Run extra tests if needed:
         test_info()
         rst_lint_run()
-else:
+elif TARGET == "markdown":
     markdown_tests_run()
 
 debug("Finished tests")
