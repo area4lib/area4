@@ -23,6 +23,10 @@ WORKING_DIRECTORY = None
 # D is the area4 instance
 D = None
 
+# Determine if this is a tag build:
+tag = (os.getenv("CIRRUS_TAG") is not None) and \
+      (os.getenv("CIRRUS_TAG") != "")
+
 # Get commit message:
 COMMIT_MESSAGE = os.getenv("CIRRUS_CHANGE_MESSAGE")
 if COMMIT_MESSAGE is None:
@@ -81,7 +85,8 @@ else:
 
     # See if we need to run extra tests:
     if ("!e" in COMMIT_MESSAGE or COMMIT_MESSAGE == "!e") or \
-            (REPO_BRANCH == "master"):
+            (REPO_BRANCH == "master") or \
+            tag:
         debug("Running extra tests")
         EXTRA_TESTS = True
     else:
