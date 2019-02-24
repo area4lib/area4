@@ -213,7 +213,7 @@ def markdown_tests_run():
 
 def safety_run():
     """
-    Run SafetyCI by pyup.io
+    Run SafetyCI by PyUp.
 
     :return: None
     """
