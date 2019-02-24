@@ -33,4 +33,5 @@ Tests_task:
   # Lint Markdown:
   Markdown_Tests_script:
     - make markdownlint
-    - markdown-link-check *.md
+    - export TARGET=markdown
+    - make test
