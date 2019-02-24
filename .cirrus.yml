@@ -1,4 +1,7 @@
-Tests_task:
+task:
+  # Task name:
+  name: Tests
+
   # Run tests on macOS Mojave:
   osx_instance:
     image: mojave-xcode-10.1
@@ -9,15 +12,15 @@ Tests_task:
   # Do not skip if new commits are pushed to master:
   auto_cancellation: $CIRRUS_BRANCH != 'master'
 
-  # Install Python3 and NodeJS:
-  Install_Test_Programs_script:
-    - brew install node
-    - brew install python@3
-
   # Install test dependencies:
   Install_Test_Dependencies_script:
+    # Install Python3 and NodeJS:
+    - brew install node
+    - brew install python@3
+    # Install Python dependencies:
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
+    # Install NodeJS dependencies:
     - npm install -g markdown-link-check@3.7.2
     - npm install -g markdownlint-cli
 
@@ -27,10 +30,14 @@ Tests_task:
 
   # Test the Python code:
   Run_Python_Tests_script:
+    # Set target:
     - export TARGET=code
+    # Run tests:
     - make test
 
-  # Lint Markdown:
-  Markdown_Tests_script:
+  # Lint Markdown files:
+  Run_Markdown_Tests_script:
+    # Set target:
     - export TARGET=markdown
+    # Run tests:
     - make test
