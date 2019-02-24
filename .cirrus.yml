@@ -1,6 +1,6 @@
 task:
   # Task name:
-  name: Tests
+  name: Continuous Integration
 
   # Run tests on macOS Mojave:
   osx_instance:
