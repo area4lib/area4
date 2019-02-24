@@ -17,7 +17,7 @@ except ImportError:
 # RAW_DIVIDERS is the array of dividers from the text file
 RAW_DIVIDERS = None
 
-# _dir is the directory that the CI supplies as the build directory.
+# WORKING_DIRECTORY is the location that the CI supplies as the build directory.
 WORKING_DIRECTORY = None
 
 # D is the area4 instance
@@ -224,11 +224,11 @@ if TARGET == "code":
     # Run tests:
     test_dividers()
     test_make_div()
-    safety_run()
     if EXTRA_TESTS:
         # Run extra tests if needed:
         test_info()
         rst_lint_run()
+        safety_run()
 elif TARGET == "markdown":
     markdown_tests_run()
 
