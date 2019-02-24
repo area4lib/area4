@@ -31,11 +31,7 @@ Tests_task:
     - make test
     - make safetyci
 
-  # Run Python linting:
-  Python_Linting_script:
-    - make pylint
-
   # Lint Markdown:
   Markdown_Tests_script:
-    - find . -name '*.md' -exec markdownlint --config=.markdownlint.yml {} \;
-    - make linkcheck
+    - make markdownlint
+    - markdown-link-check *.md

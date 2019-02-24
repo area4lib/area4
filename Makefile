@@ -42,9 +42,9 @@ safetyci:
 	python3 -m safety check --full-report -r requirements/test.txt
 .PHONY: safetyci
 
-linkcheck:
+markdownlint:
 	markdownlint --config=.markdownlint.yml *.md
 	markdownlint --config=.markdownlint.yml .github/*.md
 	markdownlint --config=.markdownlint.yml .github/ISSUE_TEMPLATE/*.md
 	markdownlint --config=.markdownlint.yml extras/*.md
-.PHONY: linkcheck
+.PHONY: markdownlint
