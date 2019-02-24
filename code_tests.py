@@ -218,7 +218,7 @@ def safety_run():
 
     :return: None
     """
-    s.call("make safetyci", shell=False)
+    s.call("./Makefile safetyci", shell=False)
 
 
 if TARGET == "code":
