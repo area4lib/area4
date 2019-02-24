@@ -20,8 +20,8 @@ Tests_task:
   Install_Test_Dependencies_script:
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
-    - npm install markdown-link-check@3.7.2
-    - npm install markdownlint-cli
+    - npm install -g markdown-link-check@3.7.2
+    - npm install -g markdownlint-cli
 
   # Install new beta build:
   Install_Beta_Build_script:
