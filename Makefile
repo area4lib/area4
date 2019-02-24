@@ -30,7 +30,3 @@ safetyci:
 	python3 -m safety check --full-report -r requirements/dev.txt
 	python3 -m safety check --full-report -r requirements/test.txt
 .PHONY: safetyci
-
-setupmarkdown:
-	export TARGET=markdown
-.PHONY: setupmarkdown

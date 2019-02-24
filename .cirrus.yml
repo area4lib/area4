@@ -32,5 +32,5 @@ Tests_task:
 
   # Lint Markdown:
   Markdown_Tests_script:
-    - make setupmarkdown
+    - export TARGET=markdown
     - make test
