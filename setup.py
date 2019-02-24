@@ -1,10 +1,6 @@
 """Builds the package."""
 
 import setuptools
-import sys
-
-if __name__ != "__main__":
-    sys.exit(1)
 
 with open("README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
