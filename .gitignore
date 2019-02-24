@@ -1,7 +1,4 @@
-# Compiled python modules.
-*.pyc
-
-# setuptools distribution
+# setuptools distributions
 /dist/
 /area4.egg-info/
 /area4.dist-info/
@@ -14,17 +11,18 @@
 # JetBrains IDE
 /.idea/workspace.xml
 /.idea/vcs.xml
-/.idea/*.iml
+/.idea/area4.iml
 /.idea/misc.xml
 /.idea/dictionaries/
 
 # Byte-compiled / optimized / DLL files
 /__pycache__/
-*.py[cod]
+*.pyc
+*.pyo
+*.pyd
 
 # Distribution / packaging
 .Python
-/develop-eggs/
 /downloads/
 /lib/
 /lib64/
@@ -40,7 +38,6 @@ pip-delete-this-directory.txt
 
 # Coverage reports
 /htmlcov/
-/.tox/
 /.nox/
 .coverage
 .coverage.*
@@ -98,50 +95,34 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Session
+# Vim Session
 Session.vim
-
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
 
 # Dump file
 *.stackdump
 
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
+# Windows
 $RECYCLE.BIN/
-
-# Windows shortcuts
 *.lnk
+desktop.ini
+Desktop.ini
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
 
-# Notepad++ backups
-*.bak
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
+# Linux
 .directory
-
-# Linux trash folder which might appear on any partition or disk
+.fuse_hidden*
 .Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-# Zip formats
 *.raw
 *.zip
 *.gz
 *.tgz
 *.bzip
 *.bz2
-
-# Package management formats
 *.egg
 *.rpm
 *.vcs
+*.bak

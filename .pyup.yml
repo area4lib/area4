@@ -2,8 +2,6 @@ update: all
 
 pin: True
 
-search: True
-
 assignees:
  - rocketpropelledpotato
 

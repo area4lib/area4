@@ -5,9 +5,15 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.0.9:
++ Added CI auto-deploying
+* Updated GitIgnore
+
 Version 2.0.8:
 + Added clone tool
 * Fixed linting issues
+* Updated badges
+* Migrated CI tests to macOS
 
 Version 2.0.7:
 * Fixed linting issues
