@@ -4,7 +4,7 @@
 #  MIT License with this program/distribution.
 # ---------------------------------------------------
 # ~ area4 Package by RDIL ~
-# This package and source should be compatible with Python 3.4 and up!
+# This package should be compatible with Python 3.4 and up!
 # ---------------------------------------------------
 
 # Imports:
@@ -42,8 +42,8 @@ class Area4Instance:
             os.path.abspath(
                 os.path.dirname(__file__)
             )
-        ), mode="r") as fh:
-            lines = fh.readlines()
+        ), mode="r") as file_handler:
+            lines = file_handler.readlines()
             lines[35] = random.randint(0, 999999999999)
             self.dividers = lines
 
@@ -158,7 +158,7 @@ class Area4Instance:
             unit = divider[:unit_size]
 
             # Ignores mismatches in final characters:
-            d = divider[:unit_size * (length // unit_size)]
-            if unit * (length // unit_size) == d:
+            divider_item = divider[:unit_size * (length // unit_size)]
+            if unit * (length // unit_size) == divider_item:
                 return unit
         return divider  # Return original if smaller unit not found

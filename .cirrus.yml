@@ -1,50 +1,36 @@
-container:
-  image: python:latest
+Tests_task:
+  # Run tests on macOS Mojave:
+  osx_instance:
+    image: mojave-xcode-10.1
 
-MarkdownTests_task:
-  container:
-    image: node:latest
+  # Don't run on Python2 branch:
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
-  auto_cancellation: $CIRRUS_BRANCH != 'master'
-  # Install Markdown linter:
-  InstallLinter_script:
-    - make installmdlint
-  # Install Markdown link checker:
-  InstallLinkChecker_script:
-    - make installlinkcheck
-  # Lint Markdown:
-  MarkdownLint_script:
-    - markdownlint --config=.markdownlint.yml *.md
-    - markdownlint --config=.markdownlint.yml .github/*.md
-    - markdownlint --config=.markdownlint.yml .github/ISSUE_TEMPLATE/*.md
-    - markdownlint --config=.markdownlint.yml extras/*.md
-  # Check links:
-  LinkCheck_script:
-    - make linkcheck
 
-task:
-  name: CodeTests
-  only_if: $CIRRUS_BRANCH != 'python-2-supported'
+  # Do not skip if new commits are pushed to master:
   auto_cancellation: $CIRRUS_BRANCH != 'master'
-  # Clean workspace:
-  CleanWorkspace_script:
-    - make clean
+
+  # Install Python3 and NodeJS:
+  Install_Test_Programs_script:
+    - brew install node
+    - brew install python@3
+
   # Install test dependencies:
-  InstallTestDependencies_script:
-    - make testrequirements
-    - make devrequirements
-  # Build the package:
-  BuildPackage_script:
-    - make dist
+  Install_Test_Dependencies_script:
+    - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
+    - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
+    - npm install -g markdown-link-check@3.7.2
+    - npm install -g markdownlint-cli
+
   # Install new beta build:
-  InstallBetaBuild_script:
+  Install_Beta_Build_script:
     - make beta
-  # Test the code:
-  RunTests_script:
+
+  # Test the Python code:
+  Run_Python_Tests_script:
     - make test
-  PyDocStyle_script:
-    - make pydocstyle
-  PyCodeStyle_script:
-    - make pycodestyle
-  Flake8Style_script:
-    - make flake8
+    - make safetyci
+
+  # Lint Markdown:
+  Markdown_Tests_script:
+    - export TARGET=markdown
+    - make test

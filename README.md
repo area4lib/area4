@@ -2,7 +2,7 @@
 
 Dividers in Python, the easy way! Many different types. [(As seen on PyPI!)](https://pypi.org/project/area4)  
 
-![MIT License Badge](https://img.shields.io/badge/license-MIT-green.svg)
+[![MIT License Badge](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/RDIL/area4/blob/master/LICENSE)
 [![PyPI Project Version](https://badge.fury.io/py/area4.svg)](https://pypi.org/project/area4)
 [![CodeFactor](https://www.codefactor.io/repository/github/rdil/area4/badge)](https://www.codefactor.io/repository/github/rdil/area4)
 [![Documentation Status](https://readthedocs.org/projects/area4/badge/?version=latest)](https://area4.readthedocs.io/en/latest/?badge=latest)

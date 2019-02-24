@@ -14,31 +14,32 @@ except ImportError:
     raise OSError("Failed to import the library.")
 
 # Create some variables that will be needed later.
-# rawDividers is the array of dividers from the text file
-rawDividers = None
+
+# RAW_DIVIDERS is the array of dividers from the text file
+RAW_DIVIDERS = None
 
 # _dir is the directory that the CI supplies as the build directory.
-_dir = None
+WORKING_DIRECTORY = None
 
-# d is the area4 instance
-d = None
+# D is the area4 instance
+D = None
 
 # Get commit message:
-c_message = os.getenv("CIRRUS_CHANGE_MESSAGE")
-if c_message is None:
+COMMIT_MESSAGE = os.getenv("CIRRUS_CHANGE_MESSAGE")
+if COMMIT_MESSAGE is None:
     raise EnvironmentError("No commit name detected!")
 
 # Get the branch:
-repo_branch = os.getenv("CIRRUS_BRANCH")
-if repo_branch is None:
+REPO_BRANCH = os.getenv("CIRRUS_BRANCH")
+if REPO_BRANCH is None:
     raise EnvironmentError("Branch unknown")
 
 # Make the fetched values lowercase:
-c_message = c_message.lower()
-repo_branch = repo_branch.lower()
+COMMIT_MESSAGE = COMMIT_MESSAGE.lower()
+REPO_BRANCH = REPO_BRANCH.lower()
 
 # Check if extra tests should be run:
-extra = False
+EXTRA_TESTS = False
 
 
 # Function to send debug messages to the console:
@@ -49,7 +50,7 @@ def debug(message):
     :return: None
     :param message: the message to log
     """
-    print("{0}{1}{2}".format("[Verbose]", " ", message))
+    print("{0}{1}{2}{3}".format("[Verbose]", " ", message, "."))
 
 
 # Make sure this is being run directly, and
@@ -61,26 +62,26 @@ else:
     debug("Module being run directly, not exiting")
     # Get working directory:
     debug("Getting working directory")
-    _dir = os.getenv("CIRRUS_WORKING_DIR")
-    debug("Got working directory ({0})".format(_dir))
+    WORKING_DIRECTORY = os.getenv("CIRRUS_WORKING_DIR")
+    debug("Got working directory ({0})".format(WORKING_DIRECTORY))
     # Get divider text file:
-    dividers_file = "{0}/{1}".format(_dir, "area4/dividers.txt")
-    debug("Divider file is located at {0}".format(dividers_file))
-    with open(dividers_file, mode="r") as fh:
-        rawDividers = fh.readlines()
+    DIVIDERS_FILE = "{0}/{1}".format(WORKING_DIRECTORY, "area4/dividers.txt")
+    debug("Divider file is located at {0}".format(DIVIDERS_FILE))
+    with open(DIVIDERS_FILE, mode="r") as fh:
+        RAW_DIVIDERS = fh.readlines()
         debug("Fetched raw dividers text file")
     # Create instance:
     debug("Creating instance of the library")
-    d = area4.Area4Instance()
+    D = area4.Area4Instance()
     debug("Created instance")
 
     # See if we need to run extra tests:
-    if ("!e" in c_message or c_message == "!e") or \
-            (repo_branch == "master"):
-        debug("Running extra tests!")
-        extra = True
+    if ("!e" in COMMIT_MESSAGE or COMMIT_MESSAGE == "!e") or \
+            (REPO_BRANCH == "master"):
+        debug("Running extra tests")
+        EXTRA_TESTS = True
     else:
-        extra = False
+        EXTRA_TESTS = False
 
 
 def test_dividers():
@@ -89,7 +90,7 @@ def test_dividers():
 
     :return: None
     """
-    for i, item in enumerate(rawDividers):
+    for i, item in enumerate(RAW_DIVIDERS):
         if i < 1 or i == 35:
             debug("Manually skipping divider {0}".format(i))
             # Manually skip dividers 0 and 35:
@@ -99,10 +100,10 @@ def test_dividers():
             try:
                 # Try to match the raw divider with the result
                 # of the function:
-                if rawDividers[i].split("\n")[0] == d.divider(i):
-                    debug("[+] Divider {0} should work.".format(i))
+                if RAW_DIVIDERS[i].split("\n")[0] == D.divider(i):
+                    debug("[+] Divider {0} should work".format(i))
                 else:
-                    debug("[X] Divider {0} is broken!".format(i))
+                    debug("[X] Divider {0} is broken".format(i))
                     raise RuntimeError("Broken divider detected!")
             except IndexError:
                 # This is thrown if a number is offset in the divider array.
@@ -116,7 +117,7 @@ def test_make_div():
 
     :return: None
     """
-    if d.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
+    if D.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
         debug("make-div test did not fail")
     else:
         raise RuntimeError("make-div tests failed")
@@ -150,40 +151,89 @@ def test_info():
         "Dividers in Python, the easy way!"
     ]
     from_class = [
-        d.name,
-        d.author,
-        d.author_email,
-        d.support_email,
-        d.description
+        D.name,
+        D.author,
+        D.author_email,
+        D.support_email,
+        D.description
     ]
     debug("Running extra test for package info")
-    for x, xx in enumerate(right_data):
-        if not right_data[x] == from_class[x]:
-            raise RuntimeError("[X] Failed package info test {0}".format(x))
+    for the_location, place_holder in enumerate(right_data):
+        if not right_data[the_location] == from_class[the_location]:
+            raise RuntimeError("[X] Failed package info test {0}"
+                               .format(the_location)
+                               )
         else:
-            debug("[+] Data item {0} works".format(x))
+            debug("[+] Data item {0} works".format(the_location))
 
 
 def rst_lint_run():
     """
-    Lints all reStructuredText files. This is an extra test.
+    Lints all reStructuredText files. This is an extra check.
 
     :return: None
     """
-    debug("Running reStructuredText linting.")
-    files = os.listdir("{0}/docs".format(_dir))
+    debug("Running reStructuredText linting")
+    files = os.listdir("{0}/docs".format(WORKING_DIRECTORY))
     for name in files:
-        restructuredtext_lint.lint_file("{0}/docs/{1}".format(_dir, name))
+        path = "{0}/docs/{1}".format(WORKING_DIRECTORY, name)
+        restructuredtext_lint.lint_file(filepath=path)
 
 
-# Run tests:
-test_dividers()
-test_make_div()
-testLogDivider()
+def markdown_tests_run():
+    """
+    Run markdown lint and link check.
 
-if extra:
-    # Run extra tests if needed:
-    test_info()
-    rst_lint_run()
+    :return: None
+    """
+    debug("Running markdown tests")
+    files1 = os.listdir(WORKING_DIRECTORY)
+    files2 = os.listdir("{0}/.github".format(WORKING_DIRECTORY))
+    files3 = os.listdir("{0}/.github/ISSUE_TEMPLATE".format(
+        WORKING_DIRECTORY)
+    )
+    files4 = os.listdir("{0}/extras".format(WORKING_DIRECTORY))
+    for name in files1:
+        if name.__contains__(".md"):
+            path = "{0}/{1}".format(WORKING_DIRECTORY, name)
+            os.system("markdown-link-check {0}".format(path))
+            os.system("markdownlint --config=.markdownlint.yml {0}".
+                      format(path))
+    for name in files2:
+        if name.__contains__(".md"):
+            path = "{0}/.github/{1}".format(WORKING_DIRECTORY, name)
+            os.system("markdown-link-check {0}".format(path))
+            os.system("markdownlint --config=.markdownlint.yml {0}".
+                      format(path))
+    for name in files3:
+        if name.__contains__(".md"):
+            path = "{0}/.github/ISSUE_TEMPLATE/{1}".format(
+                WORKING_DIRECTORY, name
+            )
+            os.system("markdown-link-check {0}".format(path))
+            os.system("markdownlint --config=.markdownlint.yml {0}".
+                      format(path))
+    for name in files4:
+        if name.__contains__(".md"):
+            path = "{0}/extras/{1}".format(WORKING_DIRECTORY, name)
+            os.system("markdown-link-check {0}".format(path))
+            os.system("markdownlint --config=.markdownlint.yml {0}".
+                      format(path))
 
-debug("Finished tests!")
+
+# Get the target:
+TARGET = os.getenv("TARGET")
+
+if TARGET != "markdown":
+    # Run tests:
+    test_dividers()
+    test_make_div()
+    testLogDivider()
+    if EXTRA_TESTS:
+        # Run extra tests if needed:
+        test_info()
+        rst_lint_run()
+else:
+    markdown_tests_run()
+
+debug("Finished tests")

@@ -1,2 +1,3 @@
 - pydocstyle
+- pycodestyle
 - flake8
