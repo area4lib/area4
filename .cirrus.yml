@@ -70,7 +70,6 @@ Upload_task:
 
   # Build the package:
   Build_script:
-    - make clean
     - make dist
 
   # Upload to PyPI:
