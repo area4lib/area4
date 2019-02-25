@@ -18,7 +18,7 @@ task:
     - brew install python@3
 
   # Install npm dependencies:
-  npm_background_script:
+  Install_npm_dependencies_background_script:
     - npm install -g markdown-link-check@3.7.2
     - npm install -g markdownlint-cli@0.14.0
 
@@ -34,14 +34,14 @@ task:
 
   # Install new beta build:
   Install_Beta_Build_script:
-    - make beta
+    - python3 -m pip install .
 
   # Test the Python code:
   Run_Python_Tests_script:
     # Set target:
     - export TARGET=code
     # Run tests:
-    - make test
+    - python3 code_tests.py
 
   # Lint Markdown files:
   Run_Markdown_Tests_script:
@@ -49,7 +49,7 @@ task:
     - export TARGET=markdown
 
     # Run tests:
-    - make test
+    - python3 code_tests.py
 
 
 
