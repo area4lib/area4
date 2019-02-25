@@ -68,9 +68,9 @@ class Area4Instance:
             except IndexError:
                 raise ValueError('That divider does not exist!')
 
-    def logDivider(self, div, *args) -> str:
+    def splitter(self, div, *args) -> str:
         """
-        Input a string or number as a divider.
+        Split text with dividers easily.
 
         :return: newly made value
         :rtype: str

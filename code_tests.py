@@ -140,7 +140,7 @@ def testLogDivider() -> None:
     :return None:
     """
     print("[DEBUG] Running logDivider tests")
-    compare1 = D.logDivider("---", "Hello") == "Hello"
+    compare1 = D.splitter("---", "Hello") == "Hello"
     if not compare1:
         raise RuntimeError("Test failed")
     else:
