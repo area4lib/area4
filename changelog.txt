@@ -8,6 +8,7 @@ Key:
 Version 2.1.0:
 + Added eye emoji dividers
 + Added splitter function (finally!)
+* Moved reduce_to_unit function to utility module
 
 Version 2.0.9:
 + Added CI auto-deploying
