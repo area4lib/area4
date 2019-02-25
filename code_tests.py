@@ -70,7 +70,6 @@ else:
     # If this is being run directly, set up for tests:
     debug("Module being run directly, not exiting")
     # Get working directory:
-    debug("Getting working directory")
     WORKING_DIRECTORY = os.getenv("CIRRUS_WORKING_DIR")
     debug("Got working directory ({0})".format(WORKING_DIRECTORY))
     if TARGET != "markdown":
