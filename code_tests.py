@@ -137,9 +137,9 @@ def test_make_div():
         raise RuntimeError("make-div tests failed")
 
 
-def testLogDivider() -> None:
+def test_splitter() -> None:
     """
-    Test LogDivider.
+    Test splitter function.
 
     :return None:
     """
@@ -248,7 +248,7 @@ if TARGET == "code":
     # Run tests:
     test_dividers()
     test_make_div()
-    testLogDivider()
+    test_splitter()
     if EXTRA_TESTS:
         # Run extra tests if needed:
         test_info()
