@@ -14,6 +14,7 @@ except ImportError:
     raise OSError("Failed to import the library.")
 
 # Create some variables that will be needed later.
+
 # RAW_DIVIDERS is the array of dividers from the text file
 RAW_DIVIDERS = None
 
@@ -136,6 +137,20 @@ def test_make_div():
         raise RuntimeError("make-div tests failed")
 
 
+def testLogDivider() -> None:
+    """
+    Test LogDivider.
+
+    :return None:
+    """
+    print("[DEBUG] Running logDivider tests")
+    compare1 = D.splitter("---", "Hello") == "Hello"
+    if not compare1:
+        raise RuntimeError("Test failed")
+    else:
+        print("\n[DEBUG] Test of LogDivider passed")
+
+
 def test_info():
     """
     Tests the info variables. This is an extra test.
@@ -233,6 +248,7 @@ if TARGET == "code":
     # Run tests:
     test_dividers()
     test_make_div()
+    testLogDivider()
     if EXTRA_TESTS:
         # Run extra tests if needed:
         test_info()

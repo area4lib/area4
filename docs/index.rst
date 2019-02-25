@@ -14,6 +14,7 @@ Welcome to Area4's documentation!
     using
     div-looks
     customdivs
+    other
 
 
 .. image:: https://badge.fury.io/py/area4.svg

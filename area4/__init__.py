@@ -68,6 +68,27 @@ class Area4Instance:
             except IndexError:
                 raise ValueError('That divider does not exist!')
 
+    def splitter(self, div, *args) -> str:
+        """
+        Split text with dividers easily.
+
+        :return: newly made value
+        :rtype: str
+        :param self:
+        :param div: the divider
+        """
+        retstr = ""
+        if type(div) is int:
+            div = self.dividers[div]
+        if len(args) == 1:
+            return args[0]
+        for s in args:
+            retstr += s
+            retstr += "\n"
+            retstr += div
+            retstr += "\n"
+        return retstr
+
     def area4info(self):
         """
         Get some info about the package.
