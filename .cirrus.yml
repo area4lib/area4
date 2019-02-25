@@ -21,9 +21,10 @@ task:
     # Install Python3 and NodeJS:
     - brew install node
     - brew install python@3
+
     # Install Python dependencies:
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
-    - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
+
     # Install NodeJS dependencies:
     - npm install -g markdown-link-check@3.7.2
     - npm install -g markdownlint-cli
@@ -34,8 +35,10 @@ task:
 
   # Test the Python code:
   Run_Python_Tests_script:
+
     # Set target:
     - export TARGET=code
+
     # Run tests:
     - make test
 
@@ -43,13 +46,14 @@ task:
   Run_Markdown_Tests_script:
     # Set target:
     - export TARGET=markdown
+
     # Run tests:
     - make test
 
 # Upon releasing a new version, upload to PyPI:
 Deploy_task:
 
-  # Use Python3 to run this task:
+  # Use Python3 on Linux to run this task:
   container:
     image: python:latest
 
@@ -65,12 +69,12 @@ Deploy_task:
   auto_cancellation: false
 
   depends_on:
+    # Tests need to pass before running this task:
     - Continuous Integration
 
-  # Download requirements:
+  # Install Python requirements:
   Install_Requirements_script:
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
-    - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
 
   # Build the package:
   Build_script:
@@ -78,4 +82,5 @@ Deploy_task:
 
   # Upload to PyPI:
   Upload_script:
+    # Use Twine to upload artifacts:
     - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
