@@ -69,3 +69,20 @@ Deploy_task:
   Upload_script:
     # Use Twine to upload artifacts:
     - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
+
+
+
+# -------------------------------------------------------------------------------------------------------------------------
+
+# Other uncommented tasks:
+
+markdown_tests_task:
+  container:
+    image: node:latest
+  use_compute_credits: false
+  auto_cancellation: true
+  script:
+    - npm install -g markdown-link-check@3.7.2
+    - npm install -g markdownlint-cli@0.14.0
+    - find . -name \*.md -exec markdown-link-check {} \;
+    - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;

@@ -193,47 +193,6 @@ def rst_lint_run():
         restructuredtext_lint.lint_file(filepath=path)
 
 
-def markdown_tests_run():
-    """
-    Run markdown lint and link check.
-
-    :return: None
-    """
-    debug("Running markdown tests")
-    files1 = os.listdir(WORKING_DIRECTORY)
-    files2 = os.listdir("{0}/.github".format(WORKING_DIRECTORY))
-    files3 = os.listdir("{0}/.github/ISSUE_TEMPLATE".format(
-        WORKING_DIRECTORY)
-    )
-    files4 = os.listdir("{0}/extras".format(WORKING_DIRECTORY))
-    for name in files1:
-        if name.__contains__(".md"):
-            path = "{0}/{1}".format(WORKING_DIRECTORY, name)
-            os.system("markdown-link-check {0}".format(path))
-            os.system("markdownlint --config=.markdownlint.yml {0}".
-                      format(path))
-    for name in files2:
-        if name.__contains__(".md"):
-            path = "{0}/.github/{1}".format(WORKING_DIRECTORY, name)
-            os.system("markdown-link-check {0}".format(path))
-            os.system("markdownlint --config=.markdownlint.yml {0}".
-                      format(path))
-    for name in files3:
-        if name.__contains__(".md"):
-            path = "{0}/.github/ISSUE_TEMPLATE/{1}".format(
-                WORKING_DIRECTORY, name
-            )
-            os.system("markdown-link-check {0}".format(path))
-            os.system("markdownlint --config=.markdownlint.yml {0}".
-                      format(path))
-    for name in files4:
-        if name.__contains__(".md"):
-            path = "{0}/extras/{1}".format(WORKING_DIRECTORY, name)
-            os.system("markdown-link-check {0}".format(path))
-            os.system("markdownlint --config=.markdownlint.yml {0}".
-                      format(path))
-
-
 def safety_run():
     """
     Run SafetyCI by PyUp.
@@ -253,7 +212,5 @@ if TARGET == "code":
         test_info()
         rst_lint_run()
         safety_run()
-elif TARGET == "markdown":
-    markdown_tests_run()
 
 debug("Finished tests")
