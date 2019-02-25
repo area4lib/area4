@@ -63,6 +63,7 @@ safety_task:
   use_compute_credits: false
   auto_cancellation: true
   script:
+    - python3 -m pip install --upgrade -r requirements/test.txt
     - export TARGET=safety
     - python3 code_tests.py
 
@@ -72,5 +73,6 @@ rst_lint_task:
   use_compute_credits: false
   auto_cancellation: true
   script:
+    - python3 -m pip install --upgrade -r requirements/test.txt
     - export TARGET=rst
     - python3 code_tests.py
