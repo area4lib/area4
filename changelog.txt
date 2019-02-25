@@ -5,6 +5,9 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.1.4:
+* Added BrewMake tool
+
 Version 2.1.2 AND 2.1.3:
 * Moved library to area4lib organization!!
 
