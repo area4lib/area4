@@ -135,30 +135,7 @@ class Area4Instance:
         """
         # Reduce the size if possible to extend closer to full length:
         if not literal_unit:
-            unit = self.reduce_to_unit(unit)
+            unit = self.util_module.reduce_to_unit(unit)
         repeats = (length - len(start + end)) // len(unit)
 
         return (start + unit * repeats + end)[0:length]
-
-    def reduce_to_unit(self, divider):
-        """
-        Reduce a repeating divider to the smallest repeating unit possible.
-
-        Note: this function is used by make-div
-        :param self:
-        :param divider: the divider
-        :return: smallest repeating unit possible
-        :rtype: str
-
-        :Example:
-        'XxXxXxX' -> 'Xx'
-        """
-        for unit_size in range(1, len(divider) // 2 + 1):
-            length = len(divider)
-            unit = divider[:unit_size]
-
-            # Ignores mismatches in final characters:
-            divider_item = divider[:unit_size * (length // unit_size)]
-            if unit * (length // unit_size) == divider_item:
-                return unit
-        return divider  # Return original if smaller unit not found
