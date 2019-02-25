@@ -8,7 +8,7 @@
         {
             "path": "docs",
             "name": "Documentation",
-            "file_exclude_patterns": ["*.css"]
+            "file_exclude_patterns": ["*.css", "*.html", "*.pdf"]
         }
     ],
     "settings": 
