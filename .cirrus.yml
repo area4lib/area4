@@ -1,20 +1,15 @@
 task:
   # Task name:
   name: Continuous Integration
-  # Run tests on macOS Mojave:
-  osx_instance:
-    image: mojave-xcode-10.1
+  # Run tests on latest Python Docker image:
+  container:
+    image: python:latest
   # Don't run on Python2 branch:
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
   # Make our macOS builds run right away:
   use_compute_credits: $CIRRUS_BRANCH == 'master' || $CIRRUS_TAG != ''
   # Skip if new commits are pushed:
   auto_cancellation: true
-
-  # Prep for tests:
-  Bootstrap_script:
-    # Install Python3 and NodeJS:
-    - brew install python@3
 
   # Install and cache Python dependencies:
   Python_cache:
