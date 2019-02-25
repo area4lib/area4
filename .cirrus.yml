@@ -17,6 +17,11 @@ task:
     - brew install node
     - brew install python@3
 
+  # Install npm dependencies:
+  npm_background_script:
+    - npm install -g markdown-link-check@3.7.2
+    - npm install -g markdownlint-cli@0.14.0
+
   # Install and cache Python dependencies:
   Python_cache:
 
@@ -26,16 +31,6 @@ task:
     # Script to install the dependencies:
     populate_script:
       - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
-
-  # Install and cache npm dependencies:
-  npm_cache:
-    # Where npm global packages are stored:
-    folder: /usr/local/lib/node_modules
-    
-    # Scripts to install the dependencies:
-    populate_script:
-      - npm install -g markdown-link-check@3.7.2
-      - npm install -g markdownlint-cli@0.14.0
 
   # Install new beta build:
   Install_Beta_Build_script:
