@@ -6,7 +6,7 @@ with open("README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
 
 # Package version:
-VERSION = "2.1.0"
+VERSION = "2.1.1"
 
 setuptools.setup(
     name="area4",
