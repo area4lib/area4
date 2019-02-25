@@ -5,6 +5,9 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.1.2:
+* Moved library to area4lib organization!!
+
 Version 2.1.1:
 * Fixed an issue in the code with the splitter function
 
@@ -173,7 +176,7 @@ Version 1.1.4:
 + Added Cirrus CI along with Travis CI
 
 Version 1.1.3:
-+ Added a lot of dividers (https://github.com/RDIL/area4/pull/27/files)
++ Added a lot of dividers (https://github.com/area4lib/area4/pull/27/files)
 - Removed un-used import to speed up code a tiny bit
 
 Version 1.1.2:
