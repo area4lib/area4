@@ -11,8 +11,8 @@ task:
   # Skip if new commits are pushed:
   auto_cancellation: true
 
-  # Install test dependencies:
-  Install_Test_Programs_script:
+  # Prep for tests:
+  Bootstrap_script:
     # Install Python3 and NodeJS:
     - brew install node
     - brew install python@3
@@ -70,6 +70,8 @@ Deploy_task:
   only_if: $CIRRUS_TAG != ''
   # Prevent this from being cancelled by new pushes:
   auto_cancellation: false
+  # Use compute credits:
+  use_compute_credits: true
   depends_on:
     # Tests need to pass before running this task:
     - Continuous Integration
