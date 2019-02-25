@@ -11,12 +11,12 @@ VERSION = "2.1.1"
 setuptools.setup(
     name="area4",
     version=VERSION,
-    author="RDIL",
+    author="area4 Team",
     author_email="me@rdil.rocks",
     description="Dividers in Python, the easy way!",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url="https://github.com/RDIL/area4",
+    url="https://github.com/area4lib/area4",
     license="MIT",
     packages=setuptools.find_packages(),
     classifiers=[
@@ -52,10 +52,10 @@ setuptools.setup(
         "Natural Language :: English",
     ],
     project_urls={
-        "Bug Tracker": "https://github.com/RDIL/area4/issues",
+        "Bug Tracker": "https://github.com/area4lib/area4/issues",
         "Documentation": "https://area4.readthedocs.io/en/stable/",
-        "Source Code": "https://github.com/RDIL/area4",
-        "License": "https://github.com/RDIL/area4/blob/master/LICENSE",
+        "Source Code": "https://github.com/area4lib/area4",
+        "License": "https://github.com/area4lib/area4/blob/master/LICENSE",
     },
     keywords=["area4", "dividers", "python", "utilities", "enhancements"],
     include_package_data=True,
