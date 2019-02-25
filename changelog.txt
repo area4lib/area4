@@ -6,7 +6,9 @@ Key:
 - Means deletion
 
 Version 2.1.4:
-* Added BrewMake tool
++ Added BrewMake tool
+* Fixed broken links
+* Updated contributing guidelines
 
 Version 2.1.2 AND 2.1.3:
 * Moved library to area4lib organization!!
