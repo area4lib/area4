@@ -10,6 +10,9 @@ task:
   # Don't run on Python2 branch:
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
 
+  # Make our macOS builds run right away:
+  use_compute_credits: $CIRRUS_BRANCH == 'master' || $CIRRUS_TAG != ''
+
   # Do not skip if new commits are pushed to master:
   auto_cancellation: $CIRRUS_BRANCH != 'master'
 
