@@ -2,8 +2,7 @@
 
 pushd %~dp0
 
-REM Command file for Sphinx documentation
-REM Do NOT run this, it is only for ReadTheDocs
+REM PLEASE DO NOT RUN THIS
 
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
