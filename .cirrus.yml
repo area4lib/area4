@@ -11,14 +11,11 @@ task:
   # Do not skip if new commits are pushed to master:
   auto_cancellation: true
 
-
   # Install test dependencies:
   Install_Test_Programs_script:
-
     # Install Python3 and NodeJS:
     - brew install node
     - brew install python@3
-
 
   # Install and cache Python dependencies:
   Python_cache:
@@ -30,12 +27,10 @@ task:
     populate_script:
       - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
 
-
   # Install and cache npm dependencies:
   npm_cache:
-
     # Where npm global packages are stored:
-    folder: /usr/local/lib/python3.7/site-packages
+    folder: /usr/local/lib/node_modules
     
     # Scripts to install the dependencies:
     populate_script:
@@ -50,7 +45,6 @@ task:
 
   # Test the Python code:
   Run_Python_Tests_script:
-
     # Set target:
     - export TARGET=code
 
@@ -85,19 +79,15 @@ Deploy_task:
     # Tests need to pass before running this task:
     - Continuous Integration
 
-
   # Install Python requirements:
   Install_Requirements_script:
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
-
 
   # Build the package:
   Build_script:
     - make dist
 
-
   # Upload to PyPI:
   Upload_script:
-
     # Use Twine to upload artifacts:
     - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
