@@ -5,6 +5,9 @@ Key:
 + Means addition
 - Means deletion
 
+Version 2.1.1:
+* Fixed an issue in the code with the splitter function
+
 Version 2.1.0:
 + Added eye emoji dividers
 + Added splitter function (finally!)
