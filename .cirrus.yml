@@ -14,13 +14,7 @@ task:
   # Prep for tests:
   Bootstrap_script:
     # Install Python3 and NodeJS:
-    - brew install node
     - brew install python@3
-
-  # Install npm dependencies:
-  Install_npm_dependencies_background_script:
-    - npm install -g markdown-link-check@3.7.2
-    - npm install -g markdownlint-cli@0.14.0
 
   # Install and cache Python dependencies:
   Python_cache:
@@ -40,14 +34,6 @@ task:
   Run_Python_Tests_script:
     # Set target:
     - export TARGET=code
-    # Run tests:
-    - python3 code_tests.py
-
-  # Lint Markdown files:
-  Run_Markdown_Tests_script:
-    # Set target:
-    - export TARGET=markdown
-
     # Run tests:
     - python3 code_tests.py
 
