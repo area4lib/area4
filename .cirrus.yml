@@ -49,8 +49,6 @@ Upload_task:
   # Use Python3 to run this task:
   container:
     image: python:latest
-    cpu: 4
-    memory: 12G
 
   # Store PyPI login info:
   env:
