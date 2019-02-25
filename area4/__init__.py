@@ -68,7 +68,7 @@ class Area4Instance:
             except IndexError:
                 raise ValueError('That divider does not exist!')
 
-    def splitter(self, div, *args) -> str:
+    def splitter(self, div, *args):
         """
         Split text with dividers easily.
 
