@@ -14,7 +14,7 @@ task:
   use_compute_credits: $CIRRUS_BRANCH == 'master' || $CIRRUS_TAG != ''
 
   # Do not skip if new commits are pushed to master:
-  auto_cancellation: $CIRRUS_BRANCH != 'master'
+  auto_cancellation: true
 
   # Install test dependencies:
   Install_Test_Dependencies_script:
@@ -47,7 +47,7 @@ task:
     - make test
 
 # Upon releasing a new version, upload to PyPI:
-Upload_task:
+Deploy_task:
 
   # Use Python3 to run this task:
   container:
@@ -68,7 +68,7 @@ Upload_task:
     - Continuous Integration
 
   # Download requirements:
-  Get_Requirements_script:
+  Install_Requirements_script:
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/dev.txt
 
@@ -77,5 +77,5 @@ Upload_task:
     - make dist
 
   # Upload to PyPI:
-  script:
+  Upload_script:
     - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
