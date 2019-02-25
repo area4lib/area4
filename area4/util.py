@@ -1,10 +1,11 @@
 """Utilities module."""
-# Copyright (c) 2018 - present RDIL.
-# You should have received a copy of the
-# MIT License with this program/distribution.
-
-# area4 package by RDIL
-# Utilities module
+#  Copyright (c) 2018-present RDIL.
+#  You should have received a copy of the
+#  MIT License with this program/distribution.
+# ---------------------------------------------------
+# ~ area4 Package by RDIL ~
+# This package should be compatible with Python 3.4 and up!
+# ---------------------------------------------------
 
 
 def check(internal_name):
