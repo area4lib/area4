@@ -60,6 +60,9 @@ Upload_task:
   # Only run if this is a tag build:
   only_if: $CIRRUS_TAG != ''
 
+  # Prevent this from being cancelled by new pushes:
+  auto_cancellation: false
+
   depends_on:
     - Continuous Integration
 
@@ -70,7 +73,6 @@ Upload_task:
 
   # Build the package:
   Build_script:
-    - make clean
     - make dist
 
   # Upload to PyPI:

@@ -73,25 +73,30 @@ else:
     debug("Getting working directory")
     WORKING_DIRECTORY = os.getenv("CIRRUS_WORKING_DIR")
     debug("Got working directory ({0})".format(WORKING_DIRECTORY))
-    # Get divider text file:
-    DIVIDERS_FILE = "{0}/{1}".format(WORKING_DIRECTORY, "area4/dividers.txt")
-    debug("Divider file is located at {0}".format(DIVIDERS_FILE))
-    with open(DIVIDERS_FILE, mode="r") as fh:
-        RAW_DIVIDERS = fh.readlines()
-        debug("Fetched raw dividers text file")
-    # Create instance:
-    debug("Creating instance of the library")
-    D = area4.Area4Instance()
-    debug("Created instance")
+    if TARGET != "markdown":
+        # Get divider text file:
+        DIVIDERS_FILE = "{0}/{1}".format(
+            WORKING_DIRECTORY, "area4/dividers.txt"
+        )
+        debug("Divider file is located at {0}".format(
+            DIVIDERS_FILE)
+        )
+        with open(DIVIDERS_FILE, mode="r") as fh:
+            RAW_DIVIDERS = fh.readlines()
+            debug("Fetched raw dividers text file")
+        # Create instance:
+        debug("Creating instance of the library")
+        D = area4.Area4Instance()
+        debug("Created instance")
 
-    # See if we need to run extra tests:
-    if ("!e" in COMMIT_MESSAGE or COMMIT_MESSAGE == "!e") or \
-            (REPO_BRANCH == "master") or \
-            tag:
-        debug("Running extra tests")
-        EXTRA_TESTS = True
-    else:
-        EXTRA_TESTS = False
+        # See if we need to run extra tests:
+        if ("!e" in COMMIT_MESSAGE or COMMIT_MESSAGE == "!e") or \
+                (REPO_BRANCH == "master") or \
+                tag:
+            debug("Running extra tests")
+            EXTRA_TESTS = True
+        else:
+            EXTRA_TESTS = False
 
 
 def test_dividers():
@@ -106,7 +111,6 @@ def test_dividers():
             # Manually skip dividers 0 and 35:
             i = i + 1
         else:
-            debug("Testing divider {0}".format(i))
             try:
                 # Try to match the raw divider with the result
                 # of the function:
@@ -128,7 +132,7 @@ def test_make_div():
     :return: None
     """
     if D.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
-        debug("make-div test did not fail")
+        debug("make-div test passed")
     else:
         raise RuntimeError("make-div tests failed")
 
