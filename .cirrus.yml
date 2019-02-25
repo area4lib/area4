@@ -15,12 +15,6 @@ task:
     - export TARGET=code
     - python3 code_tests.py
 
-
-
-# -------------------------------------------------------------------------------------------------------------------------
-
-
-
 Deploy_task:
   container:
     image: python:latest
@@ -40,12 +34,6 @@ Deploy_task:
     # Use Twine to upload artifacts:
     - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
 
-
-
-# -------------------------------------------------------------------------------------------------------------------------
-
-
-
 markdown_tests_task:
   container:
     image: node:latest
@@ -62,8 +50,11 @@ safety_task:
     image: python:latest
   use_compute_credits: false
   auto_cancellation: true
+  Python_cache:
+    folder: /usr/local/lib/python3.7/site-packages
+    populate_script:
+      - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
   script:
-    - python3 -m pip install --upgrade -r requirements/test.txt
     - export TARGET=safety
     - python3 code_tests.py
 
@@ -72,7 +63,10 @@ rst_lint_task:
     image: python:latest
   use_compute_credits: false
   auto_cancellation: true
+  Python_cache:
+    folder: /usr/local/lib/python3.7/site-packages
+    populate_script:
+      - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
   script:
-    - python3 -m pip install --upgrade -r requirements/test.txt
     - export TARGET=rst
     - python3 code_tests.py
