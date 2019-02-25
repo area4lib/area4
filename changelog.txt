@@ -7,6 +7,7 @@ Key:
 
 Version 2.1.0:
 + Added eye emoji dividers
++ Added splitter function (finally!)
 
 Version 2.0.9:
 + Added CI auto-deploying
