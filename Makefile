@@ -8,13 +8,16 @@ clean:
 	rm -rf build dist area4.egg-info area4.dist-info node_modules
 .PHONY: clean
 
-dist: clean
+dist:
 	chmod +x tools/build-package.sh
 	bash tools/build-package.sh
 	chmod -x tools/build-package.sh
 .PHONY: dist
 
-distinfo:
+freshdist: clean dist
+.PHONY: freshdist
+
+distinfo: clean
 	chmod +x tools/create-dist-info.sh
 	bash tools/create-dist-info.sh
 .PHONY: distinfo
