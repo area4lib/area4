@@ -36,7 +36,7 @@ This project code is intended to be...
 
 ## Timing
 
-Timing is important, all project staff have lives and don't hang 'round this repository 24/7.
+Timing is important, all project maintainers have lives and don't stay on GitHub 24/7.
 They all are in United States eastern time.
 
 ## Work-in-progress pull requests
@@ -48,7 +48,7 @@ This helps us out a ton as we know that a PR is NOT ready for merge.
 
 ## Code quality
 
-Please keep your code as readable as possible. We have apps to help out with this such as [CodeFactor](https://codefactor.io) to lint code. Where possible please abide by their feedback.
+Please keep your code as readable as possible. We have apps to help out with this such as [Lambda Lint](https://lambdalint.github.io) to lint code. Where possible please abide by their feedback.
 
 ## Divider style
 
