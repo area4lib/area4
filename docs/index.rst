@@ -39,6 +39,6 @@ Make sure to view our other documentation pages for more info!
 .. important:: Please read all pages before creating issues as the question may be answered here.
 
 
-.. _`View on GitHub`: https://github.com/RDIL/area4
+.. _`View on GitHub`: https://github.com/area4lib/area4
 .. _here: https://repl.it/@jumbocakeyumyum/area4tests
 .. [#RDIL] <me@rdil.rocks>
