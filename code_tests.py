@@ -210,7 +210,11 @@ if TARGET == "code":
     if EXTRA_TESTS:
         # Run extra tests if needed:
         test_info()
-        rst_lint_run()
-        safety_run()
+
+elif TARGET == "rst":
+    rst_lint_run()
+
+elif TARGET == "safety":
+    safety_run()
 
 debug("Finished tests")

@@ -1,35 +1,18 @@
 task:
-  # Task name:
   name: Continuous Integration
-  # Run tests on latest Python Docker image:
   container:
     image: python:latest
-  # Don't run on Python2 branch:
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
-  # Make our macOS builds run right away:
   use_compute_credits: $CIRRUS_BRANCH == 'master' || $CIRRUS_TAG != ''
-  # Skip if new commits are pushed:
   auto_cancellation: true
-
-  # Install and cache Python dependencies:
   Python_cache:
-
-    # Where Python packages are stored:
     folder: /usr/local/lib/python3.7/site-packages
-    
-    # Script to install the dependencies:
     populate_script:
       - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
-
-  # Install new beta build:
   Install_Beta_Build_script:
     - python3 -m pip install .
-
-  # Test the Python code:
   Run_Python_Tests_script:
-    # Set target:
     - export TARGET=code
-    # Run tests:
     - python3 code_tests.py
 
 
@@ -38,35 +21,22 @@ task:
 
 
 
-# Upon releasing a new version, upload to PyPI:
 Deploy_task:
-  # Use Python3 on Linux to run this task:
   container:
     image: python:latest
-  # Store PyPI login info:
   env:
     TWINE_USERNAME: ENCRYPTED[174042b48782072dfd0c112ac176d000b1f4753424d0781a7d5a9fb8a50f14cdf54b2fa9b340ba1c5c4cb017a979d956]
     TWINE_PASSWORD: ENCRYPTED[00e22066a3e9d3cfde8533ab01441d876b42ec46e80a1c673c46b94f771728d6aac8382d0f1b8366fb3261fd3145ed58]
-  # Only run if this is a tag build:
   only_if: $CIRRUS_TAG != ''
-  # Prevent this from being cancelled by new pushes:
   auto_cancellation: false
-  # Use compute credits:
   use_compute_credits: true
   depends_on:
-    # Tests need to pass before running this task:
     - Continuous Integration
-
-  # Install Python requirements:
   Install_Requirements_script:
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
-
-  # Build the package:
   Build_script:
     - make dist
-
-  # Upload to PyPI:
-  Upload_script:
+  script:
     # Use Twine to upload artifacts:
     - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
 
@@ -74,7 +44,7 @@ Deploy_task:
 
 # -------------------------------------------------------------------------------------------------------------------------
 
-# Other uncommented tasks:
+
 
 markdown_tests_task:
   container:
@@ -86,3 +56,21 @@ markdown_tests_task:
     - npm install -g markdownlint-cli@0.14.0
     - find . -name \*.md -exec markdown-link-check {} \;
     - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;
+
+safety_task:
+  container:
+    image: python:latest
+  use_compute_credits: false
+  auto_cancellation: true
+  script:
+    - export TARGET=safety
+    - python3 code_tests.py
+
+rst_lint_task:
+  container:
+    image: python:latest
+  use_compute_credits: false
+  auto_cancellation: true
+  script:
+    - export TARGET=rst
+    - python3 code_tests.py
