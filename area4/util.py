@@ -38,4 +38,3 @@ def reduce_to_unit(divider):
         if unit * (length // unit_size) == divider_item:
             return unit
     return divider  # Return original if smaller unit not found
-
