@@ -34,7 +34,8 @@ Deploy_task:
     # Use Twine to upload artifacts:
     - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
 
-markdown_tests_task:
+task:
+  name: Markdown Tests
   container:
     image: node:latest
   use_compute_credits: false
@@ -45,7 +46,8 @@ markdown_tests_task:
     - find . -name \*.md -exec markdown-link-check {} \;
     - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;
 
-safety_task:
+task:
+  name: Dependency Safety Tests
   container:
     image: python:latest
   use_compute_credits: false
@@ -58,7 +60,8 @@ safety_task:
     - export TARGET=safety
     - python3 code_tests.py
 
-rst_lint_task:
+task:
+  name: reStructuredText Linting Tests
   container:
     image: python:latest
   use_compute_credits: false
