@@ -221,6 +221,7 @@ Divider looks
 214. Mind blown emojis
 215. Be quiet emojis
 216. Semicolons
+217. Eye emojis
 
 And more coming soon!
 
