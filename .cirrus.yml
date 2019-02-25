@@ -21,6 +21,7 @@ task:
     # Install Python3 and NodeJS:
     - brew install node
     - brew install python@3
+    - npm root -g
 
     # Install NodeJS dependencies:
     - npm install -g markdown-link-check@3.7.2
