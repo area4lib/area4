@@ -26,6 +26,7 @@ Deploy_task:
   use_compute_credits: true
   depends_on:
     - Continuous Integration
+    - Documentation Tests
   Install_Requirements_script:
     - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
   Build_script:
@@ -64,7 +65,7 @@ task:
   name: reStructuredText Linting Tests
   container:
     image: python:latest
-  use_compute_credits: false
+  use_compute_credits: $CIRRUS_TAG != ""
   auto_cancellation: true
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
@@ -78,7 +79,7 @@ task:
   name: Documentation Tests
   container:
     image: python:latest
-  use_compute_credits: false
+  use_compute_credits: $CIRRUS_TAG != ""
   auto_cancellation: true
   Download_Sphinx_script:
     - python3 -m pip install --upgrade sphinx
