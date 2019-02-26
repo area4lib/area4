@@ -88,3 +88,4 @@ task:
   script:
     - cd ./docs/
     - make html
+    - make latexpdf
