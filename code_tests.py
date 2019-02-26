@@ -59,7 +59,7 @@ def debug(message):
     :return: None
     :param message: the message to log
     """
-    print("{0}{1}{2}{3}".format("[Verbose]", " ", message, "."))
+    print("[Verbose] {0}.".format(message))
 
 
 # Make sure this is being run directly, and
