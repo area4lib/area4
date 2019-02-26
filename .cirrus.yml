@@ -73,3 +73,17 @@ task:
   script:
     - export TARGET=rst
     - python3 code_tests.py
+
+task:
+  name: Documentation Tests
+  container:
+    image: python:latest
+  use_compute_credits: false
+  auto_cancellation: true
+  Python_cache:
+    folder: /usr/local/lib/python3.7/site-packages
+    populate_script:
+      - python3 -m pip install --upgrade sphinx
+  script:
+    - cd ./docs/
+    - make html
