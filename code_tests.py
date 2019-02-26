@@ -72,7 +72,7 @@ else:
     # Get working directory:
     WORKING_DIRECTORY = os.getenv("CIRRUS_WORKING_DIR")
     debug("Got working directory ({0})".format(WORKING_DIRECTORY))
-    if TARGET != "markdown":
+    if TARGET != "safety":
         # Get divider text file:
         DIVIDERS_FILE = "{0}/{1}".format(
             WORKING_DIRECTORY, "area4/dividers.txt"
