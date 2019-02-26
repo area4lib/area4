@@ -31,6 +31,6 @@ beta:
 .PHONY: beta
 
 safetyci:
-	python3 -m safety check --full-report -r requirements/dev.txt
-	python3 -m safety check --full-report -r requirements/test.txt
+	cd ./requirements/
+	find . -name \*.txt -exec python3 -m safety check --full-report -r {} \;
 .PHONY: safetyci
