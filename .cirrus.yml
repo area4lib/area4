@@ -82,8 +82,7 @@ task:
   use_compute_credits: $CIRRUS_TAG != ""
   auto_cancellation: true
   Download_Sphinx_script:
-    - python3 -m pip install --upgrade sphinx
-    - python3 -m pip install --upgrade sphinx_rtd_theme
+    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/docs.txt
   script:
     - cd ./docs/
     - make html
