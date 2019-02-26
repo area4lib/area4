@@ -80,11 +80,9 @@ task:
     image: python:latest
   use_compute_credits: false
   auto_cancellation: true
-  Python_cache:
-    folder: /usr/local/lib/python3.7/site-packages
-    populate_script:
-      - python3 -m pip install --upgrade sphinx
-      - python3 -m pip install --upgrade sphinx_rtd_theme
+  Download_Sphinx_script:
+    - python3 -m pip install --upgrade sphinx
+    - python3 -m pip install --upgrade sphinx_rtd_theme
   script:
     - cd ./docs/
     - make html
