@@ -1,9 +1,14 @@
 - Changelog -
 
 Key:
-* Means modification
-+ Means addition
-- Means deletion
+* means modification
++ means addition
+- means deletion
+
+Version 2.1.5:
+* Made tests way faster
++ Added documentation tests
+* Cleaned up documentation
 
 Version 2.1.4:
 + Added BrewMake tool
