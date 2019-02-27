@@ -232,5 +232,3 @@ elif TARGET == "safety":
     safety_run()
 
 debug("Finished tests")
-
-print(area4.Area4Instance.util_module.check(__name__))
