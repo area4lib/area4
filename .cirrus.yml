@@ -8,7 +8,7 @@ task:
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
     populate_script:
-      - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
+      - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
   Install_Beta_Build_script:
     - python3 -m pip install .
   Run_Python_Tests_script:
@@ -28,7 +28,7 @@ Deploy_task:
     - Continuous Integration
     - Documentation Tests
   Install_Requirements_script:
-    - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
+    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
   Build_script:
     - make dist
   script:
@@ -58,7 +58,7 @@ task:
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
     populate_script:
-      - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
+      - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
   script:
     - export TARGET=safety
     - python3 code_tests.py
@@ -72,7 +72,7 @@ task:
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
     populate_script:
-      - python3 -m pip install -r $CIRRUS_WORKING_DIR/requirements/test.txt
+      - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
   script:
     - export TARGET=rst
     - python3 code_tests.py
