@@ -14,13 +14,13 @@ Second, ensure all tests are passing.
 
 Next, create a release on GitHub. The release information box should have the following put in it:
 
-```
+```none
 New version now live on PyPI. The tar archive and wheel can be found on the downloads page on PyPI.
 ```
 
 Make sure to input a version for the tag number and the title should look like:
 
-```
+```none
 v#.#.#
 ```
 
