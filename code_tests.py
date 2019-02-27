@@ -150,6 +150,19 @@ def test_splitter() -> None:
         print("\n[DEBUG] Test of LogDivider passed")
 
 
+def test_utilities():
+    """
+    Test utility module.
+
+    :return: None
+    """
+    util_module = D.util_module
+    if not util_module.check(__name__):
+        raise RuntimeError("Utility module tests failed")
+    else:
+        debug("Utility module test passed")
+
+
 def test_info():
     """
     Tests the info variables. This is an extra test.
@@ -207,6 +220,7 @@ if TARGET == "code":
     test_dividers()
     test_make_div()
     test_splitter()
+    test_utilities()
     if EXTRA_TESTS:
         # Run extra tests if needed:
         test_info()
@@ -218,3 +232,5 @@ elif TARGET == "safety":
     safety_run()
 
 debug("Finished tests")
+
+print(area4.Area4Instance.util_module.check(__name__))
