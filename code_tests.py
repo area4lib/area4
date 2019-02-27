@@ -159,8 +159,11 @@ def test_utilities():
     util_module = D.util_module
     if not util_module.check(__name__):
         raise RuntimeError("Utility module tests failed")
-    else:
-        debug("Utility module test passed")
+
+    if not util_module.material(7) == "=":
+        raise RuntimeError("Utility module tests failed")
+
+    debug("Utilities module tests passed")
 
 
 def test_info():
