@@ -3,7 +3,7 @@ task:
   container:
     image: python:latest
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
-  use_compute_credits: $CIRRUS_BRANCH == 'master' || $CIRRUS_TAG != ''
+  use_compute_credits: true
   auto_cancellation: true
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
@@ -38,7 +38,7 @@ task:
   name: Markdown Tests
   container:
     image: node:latest
-  use_compute_credits: $CIRRUS_TAG != ""
+  use_compute_credits: true
   auto_cancellation: true
   Install_script:
     - npm install -g markdown-link-check@3.7.2
@@ -53,7 +53,7 @@ task:
   name: Dependency Safety Tests
   container:
     image: python:latest
-  use_compute_credits: $CIRRUS_TAG != ""
+  use_compute_credits: true
   auto_cancellation: true
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
@@ -67,7 +67,7 @@ task:
   name: reStructuredText Linting Tests
   container:
     image: python:latest
-  use_compute_credits: $CIRRUS_TAG != ""
+  use_compute_credits: true
   auto_cancellation: true
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
