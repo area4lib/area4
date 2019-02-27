@@ -93,12 +93,10 @@ task:
   name: Description Validation
   container:
     image: python:latest
-  use_compute_credits: CIRRUS_TAG != ''
+  use_compute_credits: $CIRRUS_TAG != ''
   auto_cancellation: true
-  Python_cache:
-    folder: /usr/local/lib/python3.7/site-packages
-    populate_script:
-      - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
+  Install_script:
+    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
   Build_script:
     - python3 setup.py sdist bdist_wheel
   script:
