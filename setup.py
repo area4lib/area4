@@ -6,7 +6,7 @@ with open("README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
 
 # Package version:
-VERSION = "2.1.5"
+VERSION = "2.1.6"
 
 setuptools.setup(
     name="area4",
@@ -14,7 +14,7 @@ setuptools.setup(
     author="area4 Team",
     author_email="me@rdil.rocks",
     description="Dividers in Python, the easy way!",
-    long_description=LONG_DESCRIPTION,
+    long_descrip6tion=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     url="https://github.com/area4lib/area4",
     license="MIT",
