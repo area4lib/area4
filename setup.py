@@ -14,7 +14,7 @@ setuptools.setup(
     author="area4 Team",
     author_email="me@rdil.rocks",
     description="Dividers in Python, the easy way!",
-    long_descrip6tion=LONG_DESCRIPTION,
+    long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     url="https://github.com/area4lib/area4",
     license="MIT",
