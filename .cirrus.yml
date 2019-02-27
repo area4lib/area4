@@ -47,7 +47,7 @@ task:
   script:
     - find . -name \*.md -exec markdown-link-check {} \;
     - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;
-    - mdspell '**/*.md' '!CODE_OF_CONDUCT.md' '!.github/CODEAUTHORS.md' --ignore-numbers --ignore-acronyms --report --en-us;
+    - mdspell '**/*.md' '!CODE_OF_CONDUCT.md' '!.github/CODEAUTHORS.md' '!extras/*.md' --ignore-numbers --ignore-acronyms --report --en-us;
 
 task:
   name: Dependency Safety Tests
