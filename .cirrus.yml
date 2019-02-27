@@ -97,7 +97,7 @@ task:
   auto_cancellation: true
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
-    populate_script:	
+    populate_script:
       - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
   Build_script:
     - python3 setup.py sdist bdist_wheel
