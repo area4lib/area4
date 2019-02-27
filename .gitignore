@@ -23,11 +23,6 @@
 
 # Distribution / packaging
 .Python
-/downloads/
-/lib/
-/lib64/
-/parts/
-.installed.cfg
 
 # PyInstaller
 *.spec
