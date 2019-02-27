@@ -100,5 +100,5 @@ task:
     populate_script:
       - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
   script:
-    - python3 setup.py sdist bdist_wheels
+    - python3 setup.py sdist bdist_wheel
     - twine check dist/*
