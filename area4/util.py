@@ -72,4 +72,4 @@ def material(divider_id):
     will return:
     '='
     """
-    return dividers[divider_id][0]
+    return get_raw_file()[divider_id][0]
