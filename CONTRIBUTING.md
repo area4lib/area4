@@ -33,7 +33,7 @@ will be here to help you should you need any!
 
 This project code is intended to be...
 
-- Clean. Keep it well formatted and follow your favourite language conventions, so one can understand it.
+- Clean. Keep it well formatted and follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) conventions please, so all can understand it.
 - Documented. Keep it well documented, so one can learn from it.
 - Reusable. Keep it clean and modular, with as little responsibility per programming unit (function, method, class, module, project) as possible, so one can reuse it.
 - Testable. Keep it easy to debug and test, so one can be confident that it works properly.  Please keep the [Cirrus CI Build](https://cirrus-ci.com/github/area4lib/area4) at passing if possible.
