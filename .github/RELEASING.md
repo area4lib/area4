@@ -4,7 +4,7 @@
 
 ## Stable
 
-First, ensure the code is in a stable position.
+First, ensure the [code](https://github.com/area4lib/area4) is in a stable position.
 
 ## Tests
 
@@ -18,7 +18,7 @@ Next, create a [release](https://github.com/area4lib/area4/releases) on GitHub. 
 New version now live on PyPI. The tar archive and wheel can be found on the downloads page on PyPI.
 ```
 
-Make sure to input a version for the tag number and the title should look like:
+Make sure to input a [version](https://semver.org) for the tag number and the title should look like:
 
 ```none
 v#.#.#
