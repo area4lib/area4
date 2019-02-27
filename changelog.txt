@@ -8,6 +8,7 @@ Key:
 Version 2.1.6:
 + Added releasing guidelines for maintainers
 + Added tests for utility module
++ Added markdown spellchecking
 
 Version 2.1.5:
 * Made tests way faster
