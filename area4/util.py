@@ -68,7 +68,8 @@ def get_divider_character(divider_id):
     :return: the character
     :rtype: str
     :Example:
-    material(7)  # get what divider number 7 is made of
+    # Get what divider number 7 is made of:
+    get_divider_character(7)
     will return:
     '='
     """
