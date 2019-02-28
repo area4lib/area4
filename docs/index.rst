@@ -1,7 +1,6 @@
 .. Area4 documentation master file, created by
-   sphinx quick-start on Wed Oct 3 20:42:55 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+   Sphinx on Wed Oct 3 20:42:55 2018.
+
 
 Welcome to Area4's documentation!
 =================================
@@ -15,7 +14,6 @@ Welcome to Area4's documentation!
     div-looks
     customdivs
     other
-
 
 .. image:: https://badge.fury.io/py/area4.svg
     :target: https://pypi.org/project/area4
