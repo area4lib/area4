@@ -73,6 +73,16 @@ def get_divider_character(divider_id):
     will return:
     '='
     """
+    blacklisted = [
+        18,
+        19,
+        22,
+        33,
+        34,
+        35
+    ]
+    if divider_id in blacklisted:
+        return None
     try:
         return get_raw_file()[divider_id][0]
     except IndexError:
