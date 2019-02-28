@@ -6,6 +6,25 @@
 # ~ area4 Package by RDIL ~
 # This package should be compatible with Python 3.4 and up!
 # ---------------------------------------------------
+import os
+import random
+
+
+def get_raw_file():
+    """
+    Get the raw divider file in a string array.
+
+    :return: the array
+    :rtype: str
+    """
+    with open("{0}/dividers.txt".format(
+        os.path.abspath(
+            os.path.dirname(__file__)
+        )
+    ), mode="r") as file_handler:
+        lines = file_handler.readlines()
+        lines[35] = random.randint(0, 999999999999)
+        return lines
 
 
 def check(internal_name):
@@ -39,3 +58,18 @@ def reduce_to_unit(divider):
         if unit * (length // unit_size) == divider_item:
             return unit
     return divider  # Return original if smaller unit not found
+
+
+def get_divider_character(divider_id):
+    """
+    Get the character the divider is made of.
+
+    :param divider_id: the divider's number
+    :return: the character
+    :rtype: str
+    :Example:
+    material(7)  # get what divider number 7 is made of
+    will return:
+    '='
+    """
+    return get_raw_file()[divider_id][0]
