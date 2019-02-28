@@ -60,7 +60,7 @@ def reduce_to_unit(divider):
     return divider  # Return original if smaller unit not found
 
 
-def material(divider_id):
+def get_divider_character(divider_id):
     """
     Get the character the divider is made of.
 

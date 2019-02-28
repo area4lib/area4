@@ -160,7 +160,7 @@ def test_utilities():
     if not util_module.check(__name__):
         raise RuntimeError("Utility module tests failed")
 
-    if not util_module.material(7) == "=":
+    if not util_module.get_divider_character(7) == "=":
         raise RuntimeError("Utility module tests failed")
 
     debug("Utilities module tests passed")
