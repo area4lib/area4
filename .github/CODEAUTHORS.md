@@ -1,9 +1,9 @@
 # Maintainers
 
 - RDIL *(Owner / Team Lead)*
-- rocketpropelledpotato *(Head of Code Review)*
 - CoffeeGoddess *(Head of Documentation)*
-- theonetheonlydemon
+- theonetheonlydemon *(Release Planner)*
+- rocketpropelledpotato
 
 # Contributors
 
