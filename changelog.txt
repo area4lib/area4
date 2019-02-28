@@ -5,6 +5,10 @@ Key:
 + means addition
 - means deletion
 
+Version 2.1.8:
+- Removed BrewMake tool due to lack of use
++ Blacklisted certain dividers from the get_divider_character utility function
+
 Version 2.1.7:
 + Added get_divider_character utility function
 
