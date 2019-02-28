@@ -8,8 +8,6 @@
 # ---------------------------------------------------
 
 # Imports:
-import random
-import os
 from . import util as utils
 
 
@@ -38,14 +36,7 @@ class Area4Instance:
         :param self:
         :return: None
         """
-        with open("{0}/dividers.txt".format(
-            os.path.abspath(
-                os.path.dirname(__file__)
-            )
-        ), mode="r") as file_handler:
-            lines = file_handler.readlines()
-            lines[35] = random.randint(0, 999999999999)
-            self.dividers = lines
+        self.dividers = utils.get_raw_file()
 
     def divider(self, number):
         """
