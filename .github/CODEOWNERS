@@ -8,8 +8,8 @@
 tools/                @RDIL
 
 # Area: Main code
-area4/                @rocketpropelledpotato
-*.py                  @rocketpropelledpotato
+area4/                @N8python
+*.py                  @N8python
 
 # Area: Docs
 docs/                 @CoffeeGoddess
@@ -21,11 +21,10 @@ changelog.txt         @CoffeeGoddess
 LICENSE               @CoffeeGoddess @RDIL
 
 # Area: Requirements
-requirements/*.txt    @rocketpropelledpotato
-requirements.txt      @rocketpropelledpotato
+requirements/*.txt    @RDIL
+requirements.txt      @RDIL
 
 # Area: Configuration files
 *.cfg                 @RDIL
 *.in                  @RDIL
 *.yml                 @RDIL
-*.yaml                @RDIL
