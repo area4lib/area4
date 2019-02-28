@@ -73,4 +73,7 @@ def get_divider_character(divider_id):
     will return:
     '='
     """
-    return get_raw_file()[divider_id][0]
+    try:
+        return get_raw_file()[divider_id][0]
+    except IndexError:
+        raise ValueError("That divider doesn't exist!")
