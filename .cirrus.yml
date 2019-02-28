@@ -89,7 +89,6 @@ task:
     - cd ./docs/
     - make html
     - rm -rf _build
-    - make htmldir
 
 task:
   name: Description Validation
