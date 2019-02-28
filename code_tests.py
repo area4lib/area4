@@ -142,12 +142,12 @@ def test_splitter() -> None:
 
     :return None:
     """
-    print("[DEBUG] Running logDivider tests")
+    debug("Running splitter tests")
     compare1 = D.splitter("---", "Hello") == "Hello"
     if not compare1:
-        raise RuntimeError("Test failed")
+        raise RuntimeError("splitter test failed")
     else:
-        print("\n[DEBUG] Test of LogDivider passed")
+        debug("Test of splitter passed")
 
 
 def test_utilities():
