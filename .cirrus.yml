@@ -24,7 +24,7 @@ Deploy_task:
   auto_cancellation: false
   use_compute_credits: true
   depends_on:
-    - Continuous Integration
+    - CI
     - Documentation Tests
   Install_Requirements_script:
     - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
