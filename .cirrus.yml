@@ -1,5 +1,4 @@
-task:
-  name: Continuous Integration
+CI_task:
   container:
     image: python:latest
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
