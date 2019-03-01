@@ -20,3 +20,6 @@ indent_style = space
 
 [Makefile]
 indent_style = tab
+
+[area4/dividers.txt]
+insert_final_newline = false
