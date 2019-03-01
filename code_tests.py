@@ -136,7 +136,7 @@ def test_make_div():
         raise RuntimeError("make-div tests failed")
 
 
-def test_splitter() -> None:
+def test_splitter():
     """
     Test splitter function.
 
