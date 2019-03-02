@@ -2,9 +2,13 @@
 
 *area4 Releasing Manual - [maintainers](https://github.com/area4lib/area4/blob/master/.github/CODEAUTHORS.md#maintainers) only.*
 
+## Timing
+
+For information on when to release, see our [release schedule](https://github.com/area4lib/area4/blob/master/.github/release-schedule.md)
+
 ## Stable
 
-First, ensure the [code](https://github.com/area4lib/area4) is in a stable position.
+First, ensure the [code](https://github.com/area4lib/area4) is in a [stable position](https://github.com/area4lib/area4/blob/master/.github/release-schedule.md#stable-build).
 
 ## Tests
 

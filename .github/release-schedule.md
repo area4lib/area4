@@ -2,7 +2,7 @@
 
 ## Fixed Dates
 
-area4 doesn't have a fixed number of days in between releases.
+area4 does not have a fixed number of days in between releases.
 
 ## Stable Build
 
