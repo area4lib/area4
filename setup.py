@@ -8,6 +8,16 @@ with open("README.md", mode="r") as FILE_HANDLER:
 # Package version:
 VERSION = "2.2.0"
 
+DESC = "Dividers in Python, the easy way!"
+
+TAGS = [
+    "area4",
+    "dividers",
+    "python",
+    "utilities",
+    "enhancements"
+]
+
 CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -41,6 +51,8 @@ CLASSIFIERS = [
     "Natural Language :: English",
 ]
 
+MainURL = "https://github.com/area4lib/area4"
+
 URLs = \
     {
         "Bug Tracker": "https://github.com/area4lib/area4/issues",
@@ -55,15 +67,15 @@ setuptools.setup(
     version=VERSION,
     author="area4 Team",
     author_email="me@rdil.rocks",
-    description="Dividers in Python, the easy way!",
+    description=DESC,
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url="https://github.com/area4lib/area4",
+    url=MainURL,
     license="MIT",
     packages=setuptools.find_packages(),
     classifiers=CLASSIFIERS,
     project_urls=URLs,
-    keywords=["area4", "dividers", "python", "utilities", "enhancements"],
+    keywords=TAGS,
     include_package_data=True,
     zip_safe=False
 )
