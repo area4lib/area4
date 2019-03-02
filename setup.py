@@ -2,14 +2,17 @@
 
 import setuptools
 
-with open("README.md", mode="r") as FILE_HANDLER:
+# Read the long description:
+with open(file="README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
 
 # Package version:
 VERSION = "2.2.0"
 
+# Description:
 DESC = "Dividers in Python, the easy way!"
 
+# Keywords:
 TAGS = [
     "area4",
     "dividers",
@@ -18,6 +21,7 @@ TAGS = [
     "enhancements"
 ]
 
+# Classifiers:
 CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -51,8 +55,10 @@ CLASSIFIERS = [
     "Natural Language :: English",
 ]
 
+# GitHub URL:
 MainURL = "https://github.com/area4lib/area4"
 
+# Other Project URLs:
 URLs = \
     {
         "Bug Tracker": "https://github.com/area4lib/area4/issues",
