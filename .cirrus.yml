@@ -58,6 +58,8 @@ task:
 
 task:
   name: Pull Request Checker
+  container:
+    image: python:latest
   use_compute_credits: true
   only_if: $CIRRUS_PR != ''
   auto_cancellation: false
