@@ -251,7 +251,7 @@ elif TARGET == "rst":
 elif TARGET == "safety":
     safety_run()
 
-elif TARGET == "pull_request":
+elif TARGET == "pull_request" and pull:
     pr()
 
 debug("Finished tests")
