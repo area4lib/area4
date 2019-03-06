@@ -28,6 +28,11 @@ D = None
 tag = (os.getenv("CIRRUS_TAG") is not None) and \
       (os.getenv("CIRRUS_TAG") != "")
 
+# Determine if this is a Pull Request build:
+pull = (not tag) and \
+       (os.getenv("CIRRUS_PR") is not None) and \
+       (os.getenv("CIRRUS_PR") != "")
+
 # Get commit message:
 COMMIT_MESSAGE = os.getenv("CIRRUS_CHANGE_MESSAGE")
 if COMMIT_MESSAGE is None:
@@ -72,7 +77,9 @@ else:
     # Get working directory:
     WORKING_DIRECTORY = os.getenv("CIRRUS_WORKING_DIR")
     debug("Got working directory ({0})".format(WORKING_DIRECTORY))
-    if TARGET != "safety" and TARGET != "rst":
+    if (TARGET != "safety") and \
+       (TARGET != "rst") and \
+       (TARGET != "pull_request"):
         # Get divider text file:
         DIVIDERS_FILE = "{0}/{1}".format(
             WORKING_DIRECTORY, "area4/dividers.txt"
@@ -218,6 +225,16 @@ def safety_run():
     os.system("make safetyci")
 
 
+def pr():
+    """
+    Check PR for issues.
+
+    :return None:
+    """
+    if "blocked" in os.getenv("CIRRUS_CHANGE_MESSAGE").lower():
+        raise OSError("Pull Request not ready for merge!")
+
+
 if TARGET == "code":
     # Run tests:
     test_dividers()
@@ -233,5 +250,8 @@ elif TARGET == "rst":
 
 elif TARGET == "safety":
     safety_run()
+
+elif TARGET == "pull_request" and pull:
+    pr()
 
 debug("Finished tests")
