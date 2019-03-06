@@ -57,6 +57,20 @@ task:
     - find . -name \*.md -exec markdown-link-check {} \;
 
 task:
+  name: Pull Request Checker
+  use_compute_credits: true
+  only_if: $CIRRUS_PR != ''
+  auto_cancellation: false
+  env:
+    TARGET: pull_request
+  Python_cache:
+    folder: /usr/local/lib/python3.7/site-packages
+  Populate_script:
+    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
+  Run_Python_Tests_script:
+    - python3 code_tests.py
+
+task:
   name: Dependency Safety Tests
   container:
     image: python:latest
