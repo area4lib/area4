@@ -49,6 +49,8 @@ task:
 
 task:
   name: Markdown Link Checking
+  use_compute_credits: true
+  auto_cancellation: true
   container:
     image: jumbocakeyumyum/mdlink:latest
   script:
@@ -58,7 +60,7 @@ task:
   name: Dependency Safety Tests
   container:
     image: python:latest
-  use_compute_credits: $CIRRUS_BRANCH == 'master' || $CIRRUS_TAG != ''
+  use_compute_credits: true
   auto_cancellation: true
   env:
     TARGET: safety
