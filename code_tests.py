@@ -227,6 +227,7 @@ def pr():
     if "blocked" in os.getenv("CIRRUS_CHANGE_MESSAGE").lower():
         raise OSError("Pull Request not ready for merge!")
 
+
 if TARGET == "code":
     # Run tests:
     test_dividers()
