@@ -30,7 +30,7 @@ tag = (os.getenv("CIRRUS_TAG") is not None) and \
 
 # Determine if this is a Pull Request build:
 pull = (not tag) and \
-       (os.getenv("CIRRUS_PR" is not None) and \
+       (os.getenv("CIRRUS_PR") is not None) and \
        (os.getenv("CIRRUS_PR") != "")
 
 # Get commit message:
