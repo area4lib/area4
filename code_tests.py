@@ -29,7 +29,7 @@ tag = (os.getenv("CIRRUS_TAG") is not None) and \
       (os.getenv("CIRRUS_TAG") != "")
 
 # Determine if this is a Pull Request build:
-pull = (tag is not True) and \
+pull = (not tag) and \
        (os.getenv("CIRRUS_PR" is not None) and \
        (os.getenv("CIRRUS_PR") != "")
 
