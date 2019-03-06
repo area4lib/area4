@@ -218,6 +218,15 @@ def safety_run():
     os.system("make safetyci")
 
 
+def pr():
+    """
+    Check PR for issues.
+
+    :return None:
+    """
+    if "blocked" in os.getenv("CIRRUS_CHANGE_MESSAGE").lower():
+        raise OSError("Pull Request not ready for merge!")
+
 if TARGET == "code":
     # Run tests:
     test_dividers()
@@ -233,5 +242,8 @@ elif TARGET == "rst":
 
 elif TARGET == "safety":
     safety_run()
+
+elif TARGET == "pull_request":
+    pr()
 
 debug("Finished tests")
