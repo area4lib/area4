@@ -47,7 +47,8 @@ task:
     - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;
     - mdspell '**/*.md' '!CODE_OF_CONDUCT.md' '!.github/CODEAUTHORS.md' --ignore-numbers --ignore-acronyms --report --en-us;
 
-link_task:
+task:
+  name: Markdown Link Checking
   container:
     image: jumbocakeyumyum/mdlink:latest
   script:
