@@ -77,8 +77,9 @@ else:
     # Get working directory:
     WORKING_DIRECTORY = os.getenv("CIRRUS_WORKING_DIR")
     debug("Got working directory ({0})".format(WORKING_DIRECTORY))
-    if \
-         TARGET != "safety" and TARGET != "rst" and TARGET != "pull_request":
+    if (TARGET != "safety") and \
+       (TARGET != "rst") and \
+       (TARGET != "pull_request"):
         # Get divider text file:
         DIVIDERS_FILE = "{0}/{1}".format(
             WORKING_DIRECTORY, "area4/dividers.txt"
