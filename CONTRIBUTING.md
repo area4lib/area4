@@ -9,7 +9,7 @@ There are a few things to keep in mind when contributing:
 
 1. **Be nice**: All of your contributions should be genuine contributions that respect the time of the maintainers and of other contributors. Always be respectful to others who open issues or pull requests. If someone else has a question that you can answer, answer politely and respectfully, and point them in the direction of any other issues or resources if they need help. Make sure you're creating a safe environment for others to contribute!
 
-2. **Follow the [code of conduct](https://github.com/area4lib/area4/blob/master/CODE_OF_CONDUCT.md)**: area4 has a code of conduct that details the kind of behavior you should be demonstrating when using and contributing to this project. Before you contribute, please take a few minutes to read the code of conduct and always follow it when contributing.
+2. **Follow the [code of conduct](https://github.com/area4lib/area4/blob/master/CODE_OF_CONDUCT.md)**: area4 has a code of conduct that details the kind of behavior you should be demonstrating when using and contributing to this project. Before you contribute, please take a few minutes to read the code of conducsdft and always follow it when contributing.
 
 ## Steps to make changes
 
@@ -20,7 +20,7 @@ There are a few things to keep in mind when contributing:
 5. Create a PR.
 6. If you need to, push extra commits (or rebase if requested).
 7. You should be done!
-
+sdfsadfasdf
 ## What to contribute
 
 There are many ways to contribute to area4!
@@ -43,7 +43,7 @@ This project code is intended to be...
 
 Timing is important, all project maintainers have lives and don't stay on GitHub 24/7.
 They all are in United States eastern time.
-
+sagsdfg
 ## Work-in-progress pull requests
 
 If you open a pull request that is still a work in progress,
