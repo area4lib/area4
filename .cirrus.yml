@@ -40,26 +40,23 @@ Deploy_task:
     - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
 
 task:
-  name: Markdown Tests
-  container:
-    image: node:latest
+  matrix:
+    - name: Markdown Tests
+      container:
+        image: node:latest
+      Install_script:
+        - npm install -g markdownlint-cli@0.14.0
+        - npm install -g markdown-spellcheck@0.11.0
+      script:
+        - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;
+        - mdspell '**/*.md' '!CODE_OF_CONDUCT.md' '!.github/CODEAUTHORS.md' --ignore-numbers --ignore-acronyms --report --en-us;
+    - name: Markdown Link Checking
+      container:
+        image: jumbocakeyumyum/mdlink:latest
+      script:
+        - find . -name \*.md -exec markdown-link-check {} \;
   use_compute_credits: true
   auto_cancellation: true
-  Install_script:
-    - npm install -g markdownlint-cli@0.14.0
-    - npm install -g markdown-spellcheck@0.11.0
-  script:
-    - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;
-    - mdspell '**/*.md' '!CODE_OF_CONDUCT.md' '!.github/CODEAUTHORS.md' --ignore-numbers --ignore-acronyms --report --en-us;
-
-task:
-  name: Markdown Link Checking
-  use_compute_credits: true
-  auto_cancellation: true
-  container:
-    image: jumbocakeyumyum/mdlink:latest
-  script:
-    - find . -name \*.md -exec markdown-link-check {} \;
 
 task:
   name: Documentation Tests
