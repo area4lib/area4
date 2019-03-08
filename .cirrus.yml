@@ -13,7 +13,10 @@ task:
       TARGET: safety
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
-    fingerprint_script: find ./requirements/ -name \*.txt -exec cat {} \;
+    fingerprint_script:
+      - echo $CI
+      - echo $OS
+      - find ./requirements/ -name \*.txt -exec cat {} \;
     populate_script: find ./requirements/ -name \*.txt -exec python3 -m pip install --upgrade -r {} \;
   Install_Beta_Build_script:
     - python3 -m pip install .
