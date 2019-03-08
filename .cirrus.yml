@@ -1,18 +1,26 @@
-CI_task:
+task:
+  name: Test
   container:
     image: python:latest
   only_if: $CIRRUS_BRANCH != 'python-2-supported'
   use_compute_credits: true
   auto_cancellation: true
   env:
-    TARGET: code
+    matrix:
+      TARGET: code
+      TARGET: rst
+      TARGET: pull_request
+      TARGET: safety
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
-  Populate_script:
-    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
+    fingerprint_script:
+      - echo $CI
+      - echo $OS
+      - find ./requirements/ -name \*.txt -exec cat {} \;
+    populate_script: find ./requirements/ -name \*.txt -exec python3 -m pip install --upgrade -r {} \;
   Install_Beta_Build_script:
     - python3 -m pip install .
-  Run_Python_Tests_script:
+  Run_Tests_script:
     - python3 code_tests.py
 
 Deploy_task:
@@ -35,72 +43,23 @@ Deploy_task:
     - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
 
 task:
-  name: Markdown Tests
-  container:
-    image: node:latest
+  matrix:
+    - name: Markdown Tests
+      container:
+        image: node:latest
+      Install_script:
+        - npm install -g markdownlint-cli@0.14.0
+        - npm install -g markdown-spellcheck@0.11.0
+      script:
+        - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;
+        - mdspell '**/*.md' '!CODE_OF_CONDUCT.md' '!.github/CODEAUTHORS.md' --ignore-numbers --ignore-acronyms --report --en-us;
+    - name: Markdown Link Checking
+      container:
+        image: jumbocakeyumyum/mdlink:latest
+      script:
+        - find . -name \*.md -exec markdown-link-check {} \;
   use_compute_credits: true
   auto_cancellation: true
-  Install_script:
-    - npm install -g markdownlint-cli@0.14.0
-    - npm install -g markdown-spellcheck@0.11.0
-  script:
-    - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;
-    - mdspell '**/*.md' '!CODE_OF_CONDUCT.md' '!.github/CODEAUTHORS.md' --ignore-numbers --ignore-acronyms --report --en-us;
-
-task:
-  name: Markdown Link Checking
-  use_compute_credits: true
-  auto_cancellation: true
-  container:
-    image: jumbocakeyumyum/mdlink:latest
-  script:
-    - find . -name \*.md -exec markdown-link-check {} \;
-
-task:
-  name: Pull Request Checker
-  container:
-    image: python:latest
-  use_compute_credits: true
-  only_if: $CIRRUS_PR != ''
-  auto_cancellation: false
-  env:
-    TARGET: pull_request
-  Python_cache:
-    folder: /usr/local/lib/python3.7/site-packages
-  Populate_script:
-    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
-  Run_Python_Tests_script:
-    - python3 code_tests.py
-
-task:
-  name: Dependency Safety Tests
-  container:
-    image: python:latest
-  use_compute_credits: true
-  auto_cancellation: true
-  env:
-    TARGET: safety
-  Python_cache:
-    folder: /usr/local/lib/python3.7/site-packages
-  Populate_script:
-    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
-  script:
-    - python3 code_tests.py
-
-task:
-  name: reStructuredText Linting Tests
-  container:
-    image: python:latest
-  use_compute_credits: true
-  auto_cancellation: true
-  env:
-    TARGET: rst
-  Python_cache:
-    folder: /usr/local/lib/python3.7/site-packages
-  Populate_script:
-    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
-  script:
-    - python3 code_tests.py
 
 task:
   name: Documentation Tests
