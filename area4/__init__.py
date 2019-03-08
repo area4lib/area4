@@ -22,9 +22,6 @@ class Area4Instance:
     support_email = "support@rdil.rocks"
     description = "Dividers in Python, the easy way!"
 
-    # The array to store dividers in:
-    dividers = []
-
     # Utilities module:
     util_module = utils
 
