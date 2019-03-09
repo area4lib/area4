@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.2.0:
+* Code cleanup
+
 Version 2.1.9:
 * Fixed a compatibility issue
 * Fixed CI caching
