@@ -4,7 +4,7 @@
 
 ## Timing
 
-For information on when to release, see our [release schedule](https://github.com/area4lib/area4/blob/master/.github/release-schedule.md)
+For information on when to release, see our [release schedule](https://github.com/area4lib/area4/blob/master/.github/release-schedule.md).
 
 ## Stable
 
