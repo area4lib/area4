@@ -21,6 +21,11 @@ description = "Dividers in Python, the easy way!"
 util_module = utils
 
 def theArray():
+    """
+    Get array of divs.
+
+    :return: the array
+    """
     return utils.get_raw_file()
 
 def divider(number):
