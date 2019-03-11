@@ -63,6 +63,7 @@ def splitter(div, *args):
             retstr += "\n"
         return retstr
 
+
 def area4info():
     """
     Get some info about the package.
@@ -70,12 +71,19 @@ def area4info():
     :return: Package info
     :rtype: str
     """
+    # Info variables:
+    name = "area4"
+    author = "https://github.com/RDIL"
+    author_email = "me@rdil.rocks"
+    support_email = "support@rdil.rocks"
+    description = "Dividers in Python, the easy way!"
     return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
-        "Name", self.name,
-        "Author", self.author,
-        "Author Email", self.author_email,
-        "Description", self.description
+        "Name", name,
+        "Author", author,
+        "Author Email", author_email,
+        "Description", description
     )
+
 
 def make_div(unit, length=24,
              start='', end='',
