@@ -1,7 +1,7 @@
 Other Functions
 ===============
 
-* area4.instanceName.splitter
+* area4.splitter
 
 The splitter function takes a string or number as a divider, and a series of strings to return, divided.
 If the first parameter is a number, it looks it up in the divider list.
