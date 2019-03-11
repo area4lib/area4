@@ -1,46 +1,53 @@
 task:
-  name: Test
   container:
     image: python:latest
-  only_if: $CIRRUS_BRANCH != 'python-2-supported'
   use_compute_credits: true
   auto_cancellation: true
-  env:
-    matrix:
-      TARGET: code
-      TARGET: rst
-      TARGET: pull_request
-      TARGET: safety
   Python_cache:
     folder: /usr/local/lib/python3.7/site-packages
     fingerprint_script:
       - echo $CI
       - echo $OS
+      - echo $CIRRUS_SHELL
       - find ./requirements/ -name \*.txt -exec cat {} \;
     populate_script: find ./requirements/ -name \*.txt -exec python3 -m pip install --upgrade -r {} \;
   Install_Beta_Build_script:
     - python3 -m pip install .
-  Run_Tests_script:
-    - python3 code_tests.py
-
-Deploy_task:
-  container:
-    image: python:latest
-  env:
-    TWINE_USERNAME: ENCRYPTED[174042b48782072dfd0c112ac176d000b1f4753424d0781a7d5a9fb8a50f14cdf54b2fa9b340ba1c5c4cb017a979d956]
-    TWINE_PASSWORD: ENCRYPTED[00e22066a3e9d3cfde8533ab01441d876b42ec46e80a1c673c46b94f771728d6aac8382d0f1b8366fb3261fd3145ed58]
-  only_if: $CIRRUS_TAG != ''
-  auto_cancellation: false
-  use_compute_credits: true
-  depends_on:
-    - CI
-    - Documentation Tests
-  Install_Requirements_script:
-    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
-  Build_script:
-    - make dist
-  script:
-    - twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
+  matrix:
+    - env:
+        TARGET: code
+      name: Code Tests
+      only_if: $CIRRUS_BRANCH != 'python-2-supported'
+      script: python3 code_tests.py
+    - env:
+        TARGET: rst
+      name: reStructuredText Tests
+      script: python3 code_tests.py
+    - env:
+        TARGET: pull_request
+      only_if: $CIRRUS_PR != ''
+      script: python3 code_tests.py
+    - env:
+        TARGET: safety
+      name: Test Dependencies
+      script: python3 code_tests.py
+    - env:
+        TARGET: sphinxdocs
+      script: cd ./docs/ && make html && rm -rf _build
+      name: Documentation Tests
+    - env:
+        TARGET: description
+      script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
+      name: Description Validation
+    - env:
+        TARGET: deploy
+        TWINE_USERNAME: ENCRYPTED[174042b48782072dfd0c112ac176d000b1f4753424d0781a7d5a9fb8a50f14cdf54b2fa9b340ba1c5c4cb017a979d956]
+        TWINE_PASSWORD: ENCRYPTED[00e22066a3e9d3cfde8533ab01441d876b42ec46e80a1c673c46b94f771728d6aac8382d0f1b8366fb3261fd3145ed58]
+        name: Deploy
+        depends_on:
+          - Code Tests
+          - Documentation Tests
+        script: make dist && python3 -m twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
 
 task:
   matrix:
@@ -60,31 +67,3 @@ task:
         - find . -name \*.md -exec markdown-link-check {} \;
   use_compute_credits: true
   auto_cancellation: true
-
-task:
-  name: Documentation Tests
-  container:
-    image: python:latest
-  use_compute_credits: true
-  auto_cancellation: true
-  Download_Sphinx_script:
-    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/docs.txt
-  script:
-    - cd ./docs/
-    - make html
-    - rm -rf _build
-
-task:
-  name: Description Validation
-  container:
-    image: python:latest
-  use_compute_credits: true
-  auto_cancellation: true
-  Python_cache:
-    folder: /usr/local/lib/python3.7/site-packages
-  Populate_script:
-    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/test.txt
-  Build_script:
-    - python3 setup.py sdist bdist_wheel
-  script:
-    - python3 -m twine check dist/*
