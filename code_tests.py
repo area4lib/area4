@@ -143,8 +143,7 @@ def test_splitter():
     :return None:
     """
     debug("Running splitter tests")
-    compare1 = area4.splitter("---", "Hello") == "Hello"
-    if not compare1:
+    if not area4.splitter("---", "Hello") == "Hello":
         raise RuntimeError("splitter test failed")
     else:
         debug("Test of splitter passed")
