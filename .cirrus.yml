@@ -34,7 +34,7 @@ task:
       script: python3 code_tests.py
     - env:
         TARGET: sphinxdocs
-      script: cd ./docs/ && make html && rm -rf _build
+      script: python3 -m pip install --upgrade sphinx && cd ./docs/ && make html && rm -rf _build
       name: Documentation Tests
     - env:
         TARGET: description
