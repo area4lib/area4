@@ -20,6 +20,7 @@ description = "Dividers in Python, the easy way!"
 # Utilities module:
 util_module = utils
 
+
 def theArray():
     """
     Get array of divs.
@@ -27,6 +28,7 @@ def theArray():
     :return: the array
     """
     return utils.get_raw_file()
+
 
 def divider(number):
     """
@@ -47,6 +49,7 @@ def divider(number):
             return theArray()[number].split("\n")[0]
         except IndexError:
             raise ValueError('That divider does not exist!')
+
 
 def splitter(div, *args):
     """
@@ -80,7 +83,6 @@ def area4info():
     name = "area4"
     author = "https://github.com/RDIL"
     author_email = "me@rdil.rocks"
-    support_email = "support@rdil.rocks"
     description = "Dividers in Python, the easy way!"
     return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
         "Name", name,
