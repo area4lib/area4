@@ -27,6 +27,7 @@ task:
         TARGET: pull_request
       only_if: $CIRRUS_PR != ''
       script: python3 code_tests.py
+      name: Pull Request Validator
     - env:
         TARGET: safety
       name: Test Dependencies
