@@ -33,10 +33,6 @@ task:
       name: Test Dependencies
       script: python3 code_tests.py
     - env:
-        TARGET: sphinxdocs
-      script: python3 -m pip install -r requirements/docs.txt && cd ./docs/ && make html && rm -rf _build
-      name: Documentation Tests
-    - env:
         TARGET: description
       script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
       name: Description Validation
@@ -69,3 +65,16 @@ task:
         - find . -name \*.md -exec markdown-link-check {} \;
   use_compute_credits: true
   auto_cancellation: true
+
+task:
+  name: Documentation Tests
+  container:
+    image: python:latest
+  use_compute_credits: true
+  auto_cancellation: true
+  Download_Sphinx_script:
+    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/docs.txt
+  script:
+    - cd ./docs/
+    - make html
+    - rm -rf _build
