@@ -21,9 +21,6 @@ RAW_DIVIDERS = None
 # WORKING_DIRECTORY is the place that the tests are running in.
 WORKING_DIRECTORY = None
 
-# D is the area4 instance
-D = None
-
 # Determine if this is a tag build:
 tag = (os.getenv("CIRRUS_TAG") is not None) and \
       (os.getenv("CIRRUS_TAG") != "")
@@ -90,10 +87,6 @@ else:
         with open(DIVIDERS_FILE, mode="r") as fh:
             RAW_DIVIDERS = fh.readlines()
             debug("Fetched raw dividers text file")
-        # Create instance:
-        debug("Creating instance of the library")
-        D = area4.Area4Instance()
-        debug("Created instance")
 
         # See if we need to run extra tests:
         if ("!e" in COMMIT_MESSAGE or COMMIT_MESSAGE == "!e") or \
@@ -120,7 +113,7 @@ def test_dividers():
             try:
                 # Try to match the raw divider with the result
                 # of the function:
-                if RAW_DIVIDERS[i].split("\n")[0] == D.divider(i):
+                if RAW_DIVIDERS[i].split("\n")[0] == area4.divider(i):
                     debug("[+] Divider {0} should work".format(i))
                 else:
                     debug("[X] Divider {0} is broken".format(i))
@@ -137,7 +130,7 @@ def test_make_div():
 
     :return: None
     """
-    if D.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
+    if area4.make_div('=-', length=9, start='<', end='=>') == "<=-=-=-=>":
         debug("make-div test passed")
     else:
         raise RuntimeError("make-div tests failed")
@@ -150,7 +143,7 @@ def test_splitter():
     :return None:
     """
     debug("Running splitter tests")
-    compare1 = D.splitter("---", "Hello") == "Hello"
+    compare1 = area4.splitter("---", "Hello") == "Hello"
     if not compare1:
         raise RuntimeError("splitter test failed")
     else:
@@ -163,7 +156,7 @@ def test_utilities():
 
     :return: None
     """
-    util_module = D.util_module
+    util_module = area4.util_module
     if not util_module.check(__name__):
         raise RuntimeError("Utility module tests failed")
 
@@ -187,11 +180,11 @@ def test_info():
         "Dividers in Python, the easy way!"
     ]
     from_class = [
-        D.name,
-        D.author,
-        D.author_email,
-        D.support_email,
-        D.description
+        area4.name,
+        area4.author,
+        area4.author_email,
+        area4.support_email,
+        area4.description
     ]
     debug("Running extra test for package info")
     for the_location, place_holder in enumerate(right_data):
