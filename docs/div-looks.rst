@@ -2,7 +2,7 @@ Divider looks
 =============
 
 *The number before it is the number you pass to the divider function.*
-*So if you want divider 1 you would do instanceName.divider(1)*
+*So if you want divider 1 you would do area4.divider(1)*
 *If you don't understand, see the examples part of the documentation.*
 
 1. Dashed
