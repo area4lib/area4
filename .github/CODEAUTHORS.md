@@ -1,9 +1,9 @@
 # Maintainers
 
-- RDIL *(Owner / Team Lead)*
-- CoffeeGoddess *(Head of Documentation)*
-- theonetheonlydemon *(Release Planner)*
-- rocketpropelledpotato
+- [RDIL](https://github.com/RDIL) *(Owner / Team Lead)*
+- [CoffeeGoddess](https://github.com/CoffeeGoddess) *(Head of Documentation)*
+- [theonetheonlydemon](https://github.com/theonetheonlydemon) *(Release Planner)*
+- [rocketpropelledpotato](https://github.com/rocketpropelledpotato)
 
 # Contributors
 
