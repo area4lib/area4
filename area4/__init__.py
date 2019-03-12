@@ -62,14 +62,14 @@ def splitter(div, *args):
     retstr = ""
     if type(div) is int:
         div = theArray()[div]
-        if len(args) == 1:
-            return args[0]
-        for s in args:
-            retstr += s
-            retstr += "\n"
-            retstr += div
-            retstr += "\n"
-        return retstr
+    if len(args) == 1:
+        return args[0]
+    for s in args:
+        retstr += s
+        retstr += "\n"
+        retstr += div
+        retstr += "\n"
+    return retstr
 
 
 def area4info():
