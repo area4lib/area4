@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.3.0:
+- Removed class based system
+
 Version 2.2.0:
 * Code cleanup
 
