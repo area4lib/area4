@@ -31,6 +31,7 @@ task:
     - env:
         TARGET: safety
       name: Test Dependencies
+      skip: "!changesInclude('requirements/*.txt')"
       script: python3 code_tests.py
     - env:
         TARGET: description
@@ -65,6 +66,7 @@ task:
         - find . -name \*.md -exec markdown-link-check {} \;
   use_compute_credits: true
   auto_cancellation: true
+  skip: "!changesInclude('.cirrus.yml', '*.md', '**/*.md')"
 
 task:
   name: Documentation Tests
