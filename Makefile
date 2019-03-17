@@ -5,7 +5,7 @@ default:
 .PHONY: default Makefile
 
 clean:
-	rm -rf build dist area4.egg-info area4.dist-info node_modules
+	rm -rf build dist area4.egg-info area4.dist-info node_modules MANIFEST
 .PHONY: clean
 
 dist:
