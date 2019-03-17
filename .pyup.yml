@@ -2,7 +2,4 @@ update: all
 
 pin: True
 
-assignees:
- - rocketpropelledpotato
-
 close_prs: False
