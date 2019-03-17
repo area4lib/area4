@@ -157,7 +157,7 @@ def test_utilities():
     :return: None
     """
     util_module = area4.util_module
-    if not util_module.check(__name__) or \
+    if not util_module.check(__name__) and \
             util_module.get_divider_character(7) == "=":
         raise RuntimeError("Utility module tests failed")
     else:
@@ -235,16 +235,12 @@ if TARGET == "code":
     if EXTRA_TESTS:
         # Run extra tests if needed:
         test_info()
-
 elif TARGET == "rst":
     rst_lint_run()
-
 elif TARGET == "safety":
     safety_run()
-
 elif TARGET == "pull_request" and pull:
     pr()
-
 else:
     raise EnvironmentError("No tests specified!")
 
