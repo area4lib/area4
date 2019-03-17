@@ -1,9 +1,5 @@
 # area4 Makefile
 
-default:
-	echo "Silly, the make command requires which function you want to run."
-.PHONY: default Makefile
-
 clean:
 	rm -rf build dist area4.egg-info area4.dist-info node_modules MANIFEST
 .PHONY: clean
