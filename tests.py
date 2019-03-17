@@ -79,12 +79,13 @@ else:
        (TARGET != "pull_request"):
         # Get divider text file:
         DIVIDERS_FILE = "{0}/{1}".format(
-            WORKING_DIRECTORY, "area4/dividers.txt"
+            WORKING_DIRECTORY,
+            "area4/dividers.txt"
         )
         debug("Divider file is located at {0}".format(
             DIVIDERS_FILE)
         )
-        with open(DIVIDERS_FILE, mode="r") as fh:
+        with open(file=DIVIDERS_FILE, mode="r") as fh:
             RAW_DIVIDERS = fh.readlines()
             debug("Fetched raw dividers text file")
 
@@ -156,13 +157,11 @@ def test_utilities():
     :return: None
     """
     util_module = area4.util_module
-    if not util_module.check(__name__):
+    if not util_module.check(__name__) or \
+            util_module.get_divider_character(7) == "=":
         raise RuntimeError("Utility module tests failed")
-
-    if not util_module.get_divider_character(7) == "=":
-        raise RuntimeError("Utility module tests failed")
-
-    debug("Utilities module tests passed")
+    else:
+        debug("Utilities module tests passed")
 
 
 def test_info():
@@ -245,5 +244,8 @@ elif TARGET == "safety":
 
 elif TARGET == "pull_request" and pull:
     pr()
+
+else:
+    raise EnvironmentError("No tests specified!")
 
 debug("Finished tests")

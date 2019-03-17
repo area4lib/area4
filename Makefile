@@ -20,10 +20,11 @@ freshdist: clean dist
 distinfo: clean
 	chmod +x tools/create-dist-info.sh
 	bash tools/create-dist-info.sh
+	chmod -x tools/create-dist-info.sh
 .PHONY: distinfo
 
 test:
-	python3 code_tests.py
+	python3 tests.py
 .PHONY: test
 
 beta:
@@ -33,3 +34,7 @@ beta:
 safetyci:
 	find ./requirements/ -name \*.txt -exec python3 -m safety check --full-report -r {} \;
 .PHONY: safetyci
+
+zip:
+	python3 setup.py sdist --formats=zip
+.PHONY: zip

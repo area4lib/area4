@@ -3,7 +3,7 @@
 import setuptools
 
 # Read the long description:
-with open(file="README.md", mode="r") as FILE_HANDLER:
+with open("README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
 
 # Package version:

@@ -18,22 +18,22 @@ task:
         TARGET: code
       name: Code Tests
       only_if: $CIRRUS_BRANCH != 'python-2-supported'
-      script: python3 code_tests.py
+      script: python3 tests.py
     - env:
         TARGET: rst
       name: reStructuredText Tests
-      script: python3 code_tests.py
+      script: python3 tests.py
       skip: "!changesInclude(='**/*.rst')"
     - env:
         TARGET: pull_request
       only_if: $CIRRUS_PR != ''
-      script: python3 code_tests.py
+      script: python3 tests.py
       name: Pull Request Validator
     - env:
         TARGET: safety
       name: Test Dependencies
       skip: "!changesInclude('requirements/*.txt')"
-      script: python3 code_tests.py
+      script: python3 tests.py
     - env:
         TARGET: description
       script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
