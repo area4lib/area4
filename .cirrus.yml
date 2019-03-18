@@ -23,7 +23,6 @@ task:
         TARGET: rst
       name: reStructuredText Tests
       script: python3 tests.py
-      skip: "!changesInclude(='**/*.rst')"
     - env:
         TARGET: pull_request
       only_if: $CIRRUS_PR != ''
