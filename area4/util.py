@@ -81,6 +81,7 @@ def get_divider_character(divider_id):
     except IndexError:
         raise ValueError("That divider doesn't exist!")
 
+
 def redditHorizontal():
     """
     Get Reddit horizontal divider
