@@ -80,3 +80,12 @@ def get_divider_character(divider_id):
         return get_raw_file()[divider_id][0]
     except IndexError:
         raise ValueError("That divider doesn't exist!")
+
+def redditHorizontal():
+    """
+    Get Reddit horizontal divider
+
+    :return: the divider
+    :rtype: str
+    """
+    return "*****"
