@@ -1,1 +1,1 @@
-pypinfo
+pypinfo==15.0.0
