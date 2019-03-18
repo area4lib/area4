@@ -84,7 +84,7 @@ def get_divider_character(divider_id):
 
 def redditHorizontal():
     """
-    Get Reddit horizontal divider
+    Get Reddit horizontal divider.
 
     :return: the divider
     :rtype: str
