@@ -35,7 +35,6 @@ def divider(number):
     Get the divider you requested.
 
     :param number: the divider number (NOT 0)
-    :raises: ValueError
     :return: requested divider
     :rtype: str
     :Example:
