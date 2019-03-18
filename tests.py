@@ -73,6 +73,12 @@ else:
     debug("Module being run directly, not exiting")
     # Get working directory:
     WORKING_DIRECTORY = os.getenv("CIRRUS_WORKING_DIR")
+    if WORKING_DIRECTORY is None:
+        WORKING_DIRECTORY = os.path.abspath(
+            os.path.dirname(__file__)
+        )
+        if WORKING_DIRECTORY is None:
+            raise EnvironmentError("Could not find working directory!")
     debug("Got working directory ({0})".format(WORKING_DIRECTORY))
     if (TARGET != "safety") and \
        (TARGET != "rst") and \
@@ -85,14 +91,18 @@ else:
         debug("Divider file is located at {0}".format(
             DIVIDERS_FILE)
         )
-        with open(file=DIVIDERS_FILE, mode="r") as fh:
-            RAW_DIVIDERS = fh.readlines()
-            debug("Fetched raw dividers text file")
+        try:
+            with open(file=DIVIDERS_FILE, mode="r") as fh:
+                RAW_DIVIDERS = fh.readlines()
+                debug("Fetched raw dividers text file")
+        except FileNotFoundError:
+            raise EnvironmentError("Raw divider file not found!")
 
         # See if we need to run extra tests:
-        if ("!e" in COMMIT_MESSAGE or COMMIT_MESSAGE == "!e") or \
-                (REPO_BRANCH == "master") or \
-                tag:
+        if (
+            ("!e" in COMMIT_MESSAGE or COMMIT_MESSAGE == "!e") or
+                (REPO_BRANCH == "master") or tag
+        ) and TARGET is not "all":
             debug("Running extra tests")
             EXTRA_TESTS = True
         else:
@@ -158,7 +168,9 @@ def test_utilities():
     """
     util_module = area4.util_module
     if not util_module.check(__name__) and \
-            util_module.get_divider_character(7) == "=":
+            util_module.get_divider_character(7) == "=" and \
+            util_module.redditHorizontal() \
+            is not "*****":
         raise RuntimeError("Utility module tests failed")
     else:
         debug("Utilities module tests passed")
@@ -213,7 +225,10 @@ def safety_run():
 
     :return: None
     """
-    os.system("make safetyci")
+    results = os.system("make safetyci")
+    debug("SafetyCI exited with code {0}".format(results))
+    if results == 1 or results == "1":
+        raise RuntimeError("SafetyCI failed!")
 
 
 def pr():
@@ -241,6 +256,17 @@ elif TARGET == "safety":
     safety_run()
 elif TARGET == "pull_request" and pull:
     pr()
+elif TARGET == "all":
+    debug("Running ALL tests")
+    test_dividers()
+    test_make_div()
+    test_splitter()
+    test_utilities()
+    test_info()
+    rst_lint_run()
+    safety_run()
+    if pull:
+        pr()
 else:
     raise EnvironmentError("No tests specified!")
 
