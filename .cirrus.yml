@@ -66,7 +66,6 @@ task:
         - find . -name \*.md -exec markdown-link-check {} \;
   use_compute_credits: true
   auto_cancellation: true
-  skip: "!changesInclude('*.md', '**/*.md')"
 
 task:
   name: Documentation Tests
