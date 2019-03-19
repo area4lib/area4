@@ -102,7 +102,7 @@ else:
         if (
             ("!e" in COMMIT_MESSAGE or COMMIT_MESSAGE == "!e") or
                 (REPO_BRANCH == "master") or tag
-        ) and TARGET is not "all":
+        ) and TARGET != "all":
             debug("Running extra tests")
             EXTRA_TESTS = True
         else:
@@ -170,7 +170,7 @@ def test_utilities():
     if not util_module.check(__name__) and \
             util_module.get_divider_character(7) == "=" and \
             util_module.redditHorizontal() \
-            is not "*****":
+            != "*****":
         raise RuntimeError("Utility module tests failed")
     else:
         debug("Utilities module tests passed")
