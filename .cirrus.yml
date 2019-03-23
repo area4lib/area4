@@ -3,11 +3,12 @@ task:
     image: python:latest
   use_compute_credits: true
   auto_cancellation: true
-  Python_cache:
+  Python_modules_cache:
     folder: /usr/local/lib/python3.7/site-packages
     fingerprint_script:
       - echo $CI
       - echo $OS
+      - echo $CIRRUS_CLONE_DEPTH
       - echo $PYTHON_VERSION
       - echo $CIRRUS_SHELL
       - find ./requirements/ -name \*.txt -exec cat {} \;
