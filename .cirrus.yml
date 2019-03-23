@@ -48,6 +48,13 @@ task:
         - Code Tests
         - Documentation Tests
       script: make dist && python3 -m twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
+  on_failure:
+    on_failure_script:
+      - echo $PYTHON_VERSION
+      - python3 -m pip list
+      - python3 -m pip check
+  before_cache_script:
+    - python3 -m pip uninstall area4
 
 task:
   matrix:
