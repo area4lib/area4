@@ -19,22 +19,17 @@ task:
     - env:
         TARGET: code
       name: Code Tests
-      only_if: $CIRRUS_BRANCH != 'python-2-supported'
-      script: python3 tests.py
+      skip: $CIRRUS_BRANCH == 'python-2-supported'
+      script: python3 -m unittests tests.py
     - env:
         TARGET: rst
       name: reStructuredText Tests
-      script: python3 tests.py
-    - env:
-        TARGET: pull_request
-      only_if: $CIRRUS_PR != ''
-      script: python3 tests.py
-      name: Pull Request Validator
+      script: python3 -m unittests tests.py
     - env:
         TARGET: safety
       name: Test Dependencies
       skip: "!changesInclude('requirements/*.txt')"
-      script: python3 tests.py
+      script: python3 -m unittests tests.py
     - env:
         TARGET: description
       script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
@@ -54,8 +49,7 @@ task:
       - echo $PYTHON_VERSION
       - python3 -m pip list
       - python3 -m pip check
-  before_cache_script:
-    - python3 -m pip uninstall --yes area4
+  before_cache_script: python3 -m pip uninstall --yes area4
 
 task:
   matrix:
