@@ -238,7 +238,7 @@ def pr():
     :return None:
     """
     if "blocked" in os.getenv("CIRRUS_CHANGE_MESSAGE").lower():
-        raise OSError("Pull Request not ready for merge!")
+        raise NotImplementedError("Pull Request not ready for merge!")
 
 
 if TARGET == "code":
