@@ -170,7 +170,9 @@ def test_utilities():
     if not util_module.check(__name__) and \
             util_module.get_divider_character(7) == "=" and \
             util_module.redditHorizontal() \
-            != "*****":
+            != "*****" and \
+            util_module.redditHorizontalEscaped() \
+            != "\*\*\*\*\*":
         raise RuntimeError("Utility module tests failed")
     else:
         debug("Utilities module tests passed")
