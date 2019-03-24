@@ -88,7 +88,10 @@ class TestCode(unittest.TestCase):
         self.assertEqual(results, 0)
 
     def test_make_div(self):
-        self.assertEqual(area4.make_div('=-', length=9, start='<', end='=>'), "<=-=-=-=>")
+        self.assertEqual(
+            area4.make_div('=-', length=9, start='<', end='=>'),
+            "<=-=-=-=>"
+        )
 
 
 if __name__ == '__main__':
