@@ -85,7 +85,7 @@ class TestCode(unittest.TestCase):
 
     def test_deps(self):
         results = os.system("make safetyci")
-        self.assertEqual(results, "0")
+        self.assertEqual(results, 0)
 
     def test_make_div(self):
         self.assertEqual(area4.make_div('=-', length=9, start='<', end='=>'), "<=-=-=-=>")
