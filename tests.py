@@ -45,7 +45,7 @@ class TestCode(unittest.TestCase):
                 try:
                     # Try to match the raw divider with the result
                     # of the function:
-                    self.assertEqual(self.raw_dividers[i].split("\n")[0], area4.divider(i))
+                    self.assertEqual(self.raw_dividers[i], area4.divider(i))
                 finally:
                     print()
 
