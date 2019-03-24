@@ -21,18 +21,6 @@ class TestCode(unittest.TestCase):
     """
     def setUp(self):
 
-        # Get commit message:
-        self.commit_message = os.getenv("CIRRUS_CHANGE_MESSAGE")
-        if self.commit_message is None:
-            raise EnvironmentError("No commit name detected!")
-
-        # Get the target:
-        self.TARGET = os.getenv("TARGET")
-
-        # Make the fetched values lowercase:
-        if self.TARGET is not None:
-            self.TARGET = self.TARGET.lower()
-
         # Get working directory:
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
         if self.working_directory is None:
@@ -52,13 +40,6 @@ class TestCode(unittest.TestCase):
         except FileNotFoundError:
             raise EnvironmentError("Raw divider file not found!")
 
-    # for skipIf annotations
-    TARGET = os.getenv("TARGET")
-
-    @unittest.skipIf(
-        TARGET != "code",
-        "test is part of a different set then this run"
-    )
     def test_dividers(self):
         for i in range(len(self.raw_dividers)):
             if not i < 1 or i == 35:
@@ -69,27 +50,15 @@ class TestCode(unittest.TestCase):
                 finally:
                     print()
 
-    @unittest.skipIf(
-        TARGET != "code",
-        "test is part of a different set then this run"
-    )
     def test_splitter(self):
         self.assertEqual(area4.splitter("---", "Hello"), "Hello")
 
-    @unittest.skipIf(
-        TARGET != "code",
-        "test is part of a different set then this run"
-    )
     def test_utilities(self):
         module_to_test = area4.util
         self.assertTrue(module_to_test.check(__name__))
         self.assertEqual(module_to_test.get_divider_character(7), "=")
         self.assertEqual(module_to_test.redditHorizontal(), "*****")
 
-    @unittest.skipIf(
-        TARGET != "code",
-        "test is part of a different set then this run"
-    )
     def test_info(self):
         right_data = [
             "area4",
@@ -108,20 +77,12 @@ class TestCode(unittest.TestCase):
         for i, e in enumerate(right_data):
             self.assertEqual(right_data[i], from_class[i])
 
-    @unittest.skipIf(
-        (TARGET != "rst" and TARGET != "all"),
-        "test is part of a different set then this run"
-    )
     def test_restructuredtext(self):
         files = os.listdir("{0}/docs".format(self.working_directory))
         for name in files:
             path = "{0}/docs/{1}".format(self.working_directory, name)
             print("e" + restructuredtext_lint.lint_file(filepath=path))
 
-    @unittest.skipIf(
-        (TARGET != "safety" and TARGET != "all"),
-        "test is part of a different set then this run"
-    )
     def test_deps(self):
         results = os.system("make safetyci")
         self.assertEqual(results, (0 or "0"))

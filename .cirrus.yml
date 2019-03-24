@@ -17,19 +17,10 @@ task:
     - python3 -m pip install .
   matrix:
     - env:
-        TARGET: code
-      name: Code Tests
+        TARGET: all
+      name: Unit Tests
       skip: $CIRRUS_BRANCH == 'python-2-supported'
-      script: python3 -m unittests tests.py
-    - env:
-        TARGET: rst
-      name: reStructuredText Tests
-      script: python3 -m unittests tests.py
-    - env:
-        TARGET: safety
-      name: Test Dependencies
-      skip: "!changesInclude('requirements/*.txt')"
-      script: python3 -m unittests tests.py
+      script: python3 -m unittest tests.py
     - env:
         TARGET: description
       script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
@@ -41,7 +32,7 @@ task:
       name: Deploy
       only_if: $CIRRUS_TAG != ''
       depends_on:
-        - Code Tests
+        - Unit Tests
         - Documentation Tests
       script: make dist && python3 -m twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
   on_failure:
