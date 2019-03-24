@@ -3,4 +3,4 @@ wheel==0.33.1
 twine==1.13.0
 restructuredtext_lint==1.2.2
 safety==1.8.5
-unittest-xml-reporting
+unittest-xml-reporting==2.5.0
