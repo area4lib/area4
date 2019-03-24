@@ -20,7 +20,6 @@ class TestCode(unittest.TestCase):
     The class.
     """
     def setUp(self):
-
         # Get working directory:
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
         if self.working_directory is None:
@@ -81,7 +80,7 @@ class TestCode(unittest.TestCase):
         files = os.listdir("{0}/docs".format(self.working_directory))
         for name in files:
             path = "{0}/docs/{1}".format(self.working_directory, name)
-            print("e" + restructuredtext_lint.lint_file(filepath=path))
+            restructuredtext_lint.lint_file(filepath=path)
 
     def test_deps(self):
         results = os.system("make safetyci")
