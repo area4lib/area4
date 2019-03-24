@@ -90,12 +90,3 @@ def redditHorizontal():
     :rtype: str
     """
     return "*****"
-
-def redditHorizontalEscaped():
-    """
-    Get Reddit horizontal divider (but escaped).
-
-    :return: the divider
-    :rtype: str
-    """
-    return "\*\*\*\*\*"
