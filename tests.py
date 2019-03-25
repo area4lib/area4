@@ -20,6 +20,9 @@ class TestCode(unittest.TestCase):
     The class.
     """
     def setUp(self):
+        """
+        Prepare for a test.
+        """
         # Get working directory:
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
         if self.working_directory is None:
@@ -40,6 +43,9 @@ class TestCode(unittest.TestCase):
             raise EnvironmentError("Raw divider file not found!")
 
     def test_dividers(self):
+        """
+        Test dividers.
+        """
         for i in range(len(self.raw_dividers)):
             if not i < 1 or i == 35:
                 try:
@@ -51,15 +57,24 @@ class TestCode(unittest.TestCase):
                     print()
 
     def test_splitter(self):
+        """
+        Test splitter.
+        """
         self.assertEqual(area4.splitter("---", "Hello"), "Hello")
 
     def test_utilities(self):
+        """
+        Test util module.
+        """
         module_to_test = area4.util
         self.assertTrue(module_to_test.check(__name__))
         self.assertEqual(module_to_test.get_divider_character(7), "=")
         self.assertEqual(module_to_test.redditHorizontal(), "*****")
 
     def test_info(self):
+        """
+        Test info.
+        """
         right_data = [
             "area4",
             "https://github.com/RDIL",
@@ -78,16 +93,25 @@ class TestCode(unittest.TestCase):
             self.assertEqual(right_data[i], from_class[i])
 
     def test_restructuredtext(self):
+        """
+        Test RST file.
+        """
         files = os.listdir("{0}/docs".format(self.working_directory))
         for name in files:
             path = "{0}/docs/{1}".format(self.working_directory, name)
             restructuredtext_lint.lint_file(filepath=path)
 
     def test_deps(self):
+        """
+        Use SafetyCI
+        """
         results = os.system("make safetyci")
         self.assertEqual(results, 0)
 
     def test_make_div(self):
+        """
+        Test make_div.
+        """
         self.assertEqual(
             area4.make_div('=-', length=9, start='<', end='=>'),
             "<=-=-=-=>"
