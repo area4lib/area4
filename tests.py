@@ -19,9 +19,7 @@ class TestCode(unittest.TestCase):
     """The test class."""
 
     def setUp(self):
-        """
-        Prepare for a test.
-        """
+        """Prepare for a test."""
         # Get working directory:
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
         if self.working_directory is None:
@@ -55,19 +53,16 @@ class TestCode(unittest.TestCase):
 
     def test_splitter(self):
         """Test splitter."""
-
         self.assertEqual(area4.splitter("---", "Hello"), "Hello")
 
     def test_utilities(self):
         """Test util module."""
-
         module_to_test = area4.util
         self.assertEqual(module_to_test.get_divider_character(7), "=")
         self.assertEqual(module_to_test.redditHorizontal(), "*****")
 
     def test_info(self):
         """Test info."""
-
         right_data = [
             "area4",
             "https://github.com/RDIL",
@@ -87,7 +82,6 @@ class TestCode(unittest.TestCase):
 
     def test_restructuredtext(self):
         """Test RST file."""
-
         files = os.listdir("{0}/docs".format(self.working_directory))
         for name in files:
             path = "{0}/docs/{1}".format(self.working_directory, name)
@@ -95,12 +89,10 @@ class TestCode(unittest.TestCase):
 
     def test_deps(self):
         """Use SafetyCI."""
-
         self.assertEqual(os.system("make safetyci"), 0)
 
     def test_make_div(self):
         """Test make_div."""
-
         self.assertEqual(
             area4.make_div('=-', length=9, start='<', end='=>'),
             "<=-=-=-=>"
