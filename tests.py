@@ -41,7 +41,6 @@ class TestCode(unittest.TestCase):
 
     def test_dividers(self):
         """Test dividers."""
-
         for i in range(len(self.raw_dividers)):
             try:
                 # Try to match the raw divider with the result
