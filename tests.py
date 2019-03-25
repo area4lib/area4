@@ -52,7 +52,7 @@ class TestCode(unittest.TestCase):
             try:
                 # Try to match the raw divider with the result
                 # of the function:
-                if i is not 35:
+                if i is not 35 and i is not 0:
                     self.assertEqual(self.raw_dividers[i], area4.divider(i))
             finally:
                 print()
