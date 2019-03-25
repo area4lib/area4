@@ -51,10 +51,9 @@ class TestCode(unittest.TestCase):
         for i in range(len(self.raw_dividers)):
             if not i < 1 or i == 35:
                 try:
-                    with_new_line = area4.divider(i) + "\n"
                     # Try to match the raw divider with the result
                     # of the function:
-                    self.assertEqual(self.raw_dividers[i], with_new_line)
+                    self.assertEqual(self.raw_dividers[i], area4.divider(i))
                 finally:
                     print()
 
