@@ -36,8 +36,6 @@ class TestCode(unittest.TestCase):
             self.working_directory,
             "area4/dividers.txt"
         )
-        # Force __name__ to be True for tests:
-        self.__name__ = True
         try:
             with open(file=self.dividers_file, mode="r") as fh:
                 self.raw_dividers = fh.readlines()
@@ -49,14 +47,13 @@ class TestCode(unittest.TestCase):
         Test dividers.
         """
         for i in range(len(self.raw_dividers)):
-            if not i < 1 or i == 35:
-                try:
-                    with_new_line = area4.divider(i) + "\n"
-                    # Try to match the raw divider with the result
-                    # of the function:
-                    self.assertEqual(self.raw_dividers[i], with_new_line)
-                finally:
-                    print()
+            try:
+                # Try to match the raw divider with the result
+                # of the function:
+                if i is not 35 and i is not 0:
+                    self.assertEqual(self.raw_dividers[i], area4.divider(i))
+            finally:
+                print()
 
     def test_splitter(self):
         """
@@ -69,7 +66,6 @@ class TestCode(unittest.TestCase):
         Test util module.
         """
         module_to_test = area4.util
-        self.assertTrue(module_to_test.check(self.__name__))
         self.assertEqual(module_to_test.get_divider_character(7), "=")
         self.assertEqual(module_to_test.redditHorizontal(), "*****")
 
