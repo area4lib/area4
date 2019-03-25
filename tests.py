@@ -37,7 +37,7 @@ class TestCode(unittest.TestCase):
             "area4/dividers.txt"
         )
         # Force __name__ to be True for tests:
-        self.__name__ = True
+        self.name = True
         try:
             with open(file=self.dividers_file, mode="r") as fh:
                 self.raw_dividers = fh.readlines()
@@ -68,7 +68,7 @@ class TestCode(unittest.TestCase):
         Test util module.
         """
         module_to_test = area4.util
-        self.assertTrue(module_to_test.check(self.__name__))
+        self.assertTrue(module_to_test.check(self.name))
         self.assertEqual(module_to_test.get_divider_character(7), "=")
         self.assertEqual(module_to_test.redditHorizontal(), "*****")
 
