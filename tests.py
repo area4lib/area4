@@ -49,13 +49,13 @@ class TestCode(unittest.TestCase):
         Test dividers.
         """
         for i in range(len(self.raw_dividers)):
-            if not i < 1 or i == 35:
-                try:
-                    # Try to match the raw divider with the result
-                    # of the function:
+            try:
+                # Try to match the raw divider with the result
+                # of the function:
+                if i is not 35:
                     self.assertEqual(self.raw_dividers[i], area4.divider(i))
-                finally:
-                    print()
+            finally:
+                print()
 
     def test_splitter(self):
         """
