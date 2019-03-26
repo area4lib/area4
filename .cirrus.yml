@@ -18,6 +18,8 @@ task:
       name: Unit Tests
       skip: $CIRRUS_BRANCH == 'python-2-supported'
       script: python3 -m xmlrunner tests
+      unittest_results_artifacts:
+        path: *.xml
     - env:
         TARGET: description
       script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
@@ -39,7 +41,7 @@ task:
       - python3 -m pip check
   build_artifacts:
     path: dist/*.*
-  before_cache_script: ls && python3 -m pip uninstall --yes area4
+  before_cache_script: python3 -m pip uninstall --yes area4
 
 task:
   matrix:
