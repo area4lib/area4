@@ -6,15 +6,12 @@ task:
   Python_modules_cache:
     folder: /usr/local/lib/python3.7/site-packages
     fingerprint_script:
-      - echo $CI
-      - echo $OS
-      - echo $CIRRUS_CLONE_DEPTH
-      - echo $PYTHON_VERSION
-      - echo $CIRRUS_SHELL
+      - echo $CI $OS $CIRRUS_CLONE_DEPTH $PYTHON_VERSION $CIRRUS_SHELL
       - find ./requirements/ -name \*.txt -exec cat {} \;
     populate_script: find ./requirements/ -name \*.txt -exec python3 -m pip install --upgrade -r {} \;
   Install_Beta_Build_script:
     - python3 -m pip install .
+  Build_script: make dist
   matrix:
     - env:
         TARGET: all
@@ -34,13 +31,15 @@ task:
       depends_on:
         - Unit Tests
         - Documentation Tests
-      script: make dist && python3 -m twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
+      script: python3 -m twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
   on_failure:
     on_failure_script:
       - echo $PYTHON_VERSION
       - python3 -m pip list
       - python3 -m pip check
-  before_cache_script: python3 -m pip uninstall --yes area4
+  build_artifacts:
+    path: dist/
+  before_cache_script: ls && python3 -m pip uninstall --yes area4
 
 task:
   matrix:
