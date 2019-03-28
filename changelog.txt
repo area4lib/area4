@@ -5,6 +5,10 @@ Key:
 + means addition
 - means deletion
 
+Version 2.3.2:
+* Moved tests to unittest module
+* Fixed bug
+
 Version 2.3.1:
 + Added reddit horizontal divider to utilities module
 
