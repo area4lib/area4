@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.3.3:
+* Built on newer version of setuptools
+
 Version 2.3.2:
 * Moved tests to unittest module
 * Fixed bug
