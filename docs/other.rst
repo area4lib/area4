@@ -26,3 +26,4 @@ Example:
 * area4.util.redditHorizontal
 
 This function returns the Reddit markdown divider (for Reddit bots).
+This function takes no parameters.
