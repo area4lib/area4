@@ -5,6 +5,10 @@ Key:
 + means addition
 - means deletion
 
+Version 2.3.4:
++ Added more unit tests
+* Updated package info function
+
 Version 2.3.3:
 * Built on newer version of setuptools
 
