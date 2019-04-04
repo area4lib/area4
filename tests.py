@@ -65,7 +65,6 @@ class TestCode(unittest.TestCase):
         self.assertEqual(module.get_divider_character(7), "=")
         self.assertEqual(module.get_divider_character(9), "*")
         self.assertEqual(module.get_divider_character(13), "~")
-        self.assertEqual(module.get_divider_character(19), "&")
         self.assertNotEqual(module.get_divider_character(21), "¯\\_(ツ)_/¯")
         self.assertEqual(module.get_divider_character(21), None)
         self.assertEqual(module.get_divider_character(216), ";")
