@@ -19,25 +19,24 @@ class TestCode(unittest.TestCase):
     """The test class."""
 
     def setUp(self):
-        """Prepare for a test."""
+        """
+        Prepare for a test.
+
+        :return: nothing
+        """
         # Get working directory:
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
         if self.working_directory is None:
             working_directory = os.path.abspath(
                 os.path.dirname(__file__)
             )
-            if working_directory is None:
-                raise EnvironmentError("Could not find working directory!")
         # Get divider text file:
         self.dividers_file = "{0}/{1}".format(
             self.working_directory,
             "area4/dividers.txt"
         )
-        try:
-            with open(file=self.dividers_file, mode="r") as fh:
-                self.raw_dividers = fh.readlines()
-        except FileNotFoundError:
-            raise EnvironmentError("Raw divider file not found!")
+        with open(file=self.dividers_file, mode="r") as fh:
+            self.raw_dividers = fh.readlines()
 
     def test_dividers(self):
         """Test dividers."""
