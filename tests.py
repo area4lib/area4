@@ -27,7 +27,7 @@ class TestCode(unittest.TestCase):
         # Get working directory:
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
         if self.working_directory is None:
-            working_directory = os.path.abspath(
+            self.working_directory = os.path.abspath(
                 os.path.dirname(__file__)
             )
         # Get divider text file:
