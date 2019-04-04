@@ -47,7 +47,9 @@ task:
       - python3 -m pip check
   build_artifacts:
     path: dist/*.*
-  before_cache_script: python3 -m pip uninstall --yes area4
+  before_cache_script: |
+    rm -rf /tmp/cirrus-ci-build/area4.dist-info
+    python3 -m pip uninstall --yes area4
 
 task:
   matrix:
