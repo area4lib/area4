@@ -21,6 +21,12 @@ task:
       unittest_results_artifacts:
         path: ./*.xml
     - env:
+        TARGET: distinfo
+      name: Dist Info Packaging
+      script: make distinfo
+      distinfo_artifacts:
+        path: area4.d*/**/**
+    - env:
         TARGET: description
       script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
       name: Description Validation
