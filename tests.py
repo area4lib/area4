@@ -58,9 +58,18 @@ class TestCode(unittest.TestCase):
 
     def test_utilities(self):
         """Test util module."""
-        module_to_test = area4.util
-        self.assertEqual(module_to_test.get_divider_character(7), "=")
-        self.assertEqual(module_to_test.redditHorizontal(), "*****")
+        module = area4.util
+        self.assertEqual(module.get_divider_character(1), "-")
+        self.assertEqual(module.get_divider_character(2), "_")
+        self.assertEqual(module.get_divider_character(3), ".")
+        self.assertEqual(module.get_divider_character(7), "=")
+        self.assertEqual(module.get_divider_character(9), "*")
+        self.assertEqual(module.get_divider_character(13), "~")
+        self.assertEqual(module.get_divider_character(19), "&")
+        self.assertNotEqual(module.get_divider_character(21), "¯\\_(ツ)_/¯")
+        self.assertEqual(module.get_divider_character(21), None)
+        self.assertEqual(module.get_divider_character(216), ";")
+        self.assertEqual(module.redditHorizontal(), "*****")
 
     def test_info(self):
         """Test info."""
