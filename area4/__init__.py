@@ -84,10 +84,10 @@ def area4info():
     author_email = "me@rdil.rocks"
     description = "Dividers in Python, the easy way!"
     return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
-        "Name", name,
-        "Author", author,
-        "Author Email", author_email,
-        "Description", description
+        "Name:", name,
+        "Author:", author,
+        "Author Email:", author_email,
+        "Description:", description
     )
 
 
