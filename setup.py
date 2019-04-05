@@ -7,7 +7,7 @@ with open("README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
 
 # Package version:
-VERSION = "2.3.4"
+VERSION = "2.3.5"
 
 # Description:
 DESC = "Dividers in Python, the easy way!"
