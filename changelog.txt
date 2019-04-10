@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.3.7:
+- virtualenv is no longer required
+
 Version 2.3.6:
 * Updated Sphinx
 * Updated contributing guidelines
