@@ -47,15 +47,14 @@ They all are in United States eastern time.
 ## Work-in-progress pull requests
 
 If you open a pull request that is still a work in progress,
-please put `[WIP]` or `WIP:` in the title.
+please put `WIP:` in the title.
 You can also use the new GitHub pull request drafting feature.
-It will make the work-in-progress bot keep its status check at pending.
 This helps us out a ton as we know that a PR is NOT ready for merge.
 
 ## Code quality
 
 Please keep your code as readable as possible.
-We have apps to help out with this such as [Lambda Lint](https://lambdalint.github.io) to lint code.
+We have apps to help out with this such as [Fussy Fox](https://lambdalint.github.io) to lint code.
 Where possible please abide by their feedback.
 
 ## Divider style
@@ -76,5 +75,5 @@ When adding dividers, it must be added to the list of dividers in the docs (`doc
 
 If your pull request is merged your name will be added to the author list (`.github/CODEAUTHORS.md`).
 
-If you have any questions please contact [RDIL](mailto:me@rdil.rocks),
+If you have any questions please contact [a maintainer](mailto:support@rdil.rocks),
 but before you do please please review our [documentation](https://area4.readthedocs.io/en/latest/).
