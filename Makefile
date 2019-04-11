@@ -1,13 +1,13 @@
 # area4 Makefile
 
-dist:
+dist: clean
 	chmod +x tools/build-package.sh
 	bash tools/build-package.sh
 	chmod -x tools/build-package.sh
 .PHONY: dist
 
 clean:
-	rm -rf build dist area4.egg-info area4.dist-info node_modules MANIFEST
+	rm -rf build dist area4.egg-info area4.dist-info MANIFEST
 .PHONY: clean
 
 freshdist: clean dist
