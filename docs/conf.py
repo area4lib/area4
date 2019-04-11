@@ -3,20 +3,15 @@
 #
 # Configuration file for the Sphinx documentation builder.
 
-# -- Project information -----------------------------------------------------
-
 project = 'Area4'
 project_lowercase = project.lower()
-copyright = '2018, RDIL!'
+copyright = '2019, RDIL!'
 author = 'RDIL'
 
 # Do NOT change:
 version = ''
 # Do NOT change:
 release = ''
-
-
-# -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -51,9 +46,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
-
-# -- Options for HTML output -------------------------------------------------
-
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
@@ -82,12 +74,8 @@ html_static_path = ['_static']
 # If true, "(C) Copyright ..." is shown in the HTML footer.
 html_show_copyright = True
 
-# -- Options for HTMLHelp output ---------------------------------------------
-
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'Area4doc'
-
-# -- Options for LaTeX output ------------------------------------------------
 
 latex_elements = {
     'papersize': 'letterpaper',
@@ -99,16 +87,12 @@ latex_documents = [
      'RDIL', 'manual'),
 ]
 
-# -- Options for manual page output ------------------------------------------
-
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
     (master_doc, 'area4', 'Area4 Documentation',
      [author], 1)
 ]
-
-# -- Options for Texinfo output ----------------------------------------------
 
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
@@ -119,15 +103,12 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-# -- Options for Epub output -------------------------------------------------
-
 # Bibliographic Dublin Core info.
 epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
-# -- Extension configuration -------------------------------------------------
 intersphinx_mapping = {'https://docs.python.org/': None}
 html_theme_options = {
     'canonical_url': '',
