@@ -5,6 +5,10 @@ Key:
 + means addition
 - means deletion
 
+Version 2.3.9:
+* Updated copyright years in documentation
+* Updated Makefile
+
 Version 2.3.8:
 - Removed clone tool as it had no use
 * Updated extras
