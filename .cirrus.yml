@@ -81,4 +81,5 @@ task:
   script:
     - cd ./docs/
     - make html
-    - rm -rf _build
+  build_artifacts:
+    path: _build/**/**
