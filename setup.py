@@ -7,7 +7,7 @@ with open("README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
 
 # Package version:
-VERSION = "2.3.9"
+VERSION = "2.4.0"
 
 # Keywords:
 TAGS = [
