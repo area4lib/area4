@@ -9,9 +9,6 @@ with open("README.md", mode="r") as FILE_HANDLER:
 # Package version:
 VERSION = "2.3.9"
 
-# Description:
-DESC = "Dividers in Python, the easy way!"
-
 # Keywords:
 TAGS = [
     "area4",
@@ -73,7 +70,7 @@ setuptools.setup(
     version=VERSION,
     author="area4 Team",
     author_email="me@rdil.rocks",
-    description=DESC,
+    description="Dividers in Python, the easy way!",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     url=MainURL,
