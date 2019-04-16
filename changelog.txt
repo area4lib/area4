@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.4.0:
++ Added new divider
+
 Version 2.3.9:
 * Updated copyright years in documentation
 * Updated Makefile
