@@ -39,7 +39,11 @@ class TestCode(unittest.TestCase):
             self.raw_dividers = fh.readlines()
 
     def test_dividers(self):
-        """Test dividers."""
+        """
+        Test dividers.
+
+        :return None:
+        """
         for i in range(len(self.raw_dividers)):
             try:
                 # Try to match the raw divider with the result
@@ -52,11 +56,19 @@ class TestCode(unittest.TestCase):
                 print()
 
     def test_splitter(self):
-        """Test splitter."""
+        """
+        Test splitter function.
+
+        :return None:
+        """
         self.assertEqual(area4.splitter("---", "Hello"), "Hello")
 
     def test_utilities(self):
-        """Test util module."""
+        """
+        Test util module.
+
+        :return None:
+        """
         module = area4.util
         self.assertEqual(module.get_divider_character(1), "-")
         self.assertEqual(module.get_divider_character(2), "_")
@@ -77,7 +89,11 @@ class TestCode(unittest.TestCase):
         self.assertEqual(module.redditHorizontal(), "*****")
 
     def test_info(self):
-        """Test info."""
+        """
+        Test info.
+
+        :return None:
+        """
         right_data = [
             "area4",
             "https://github.com/RDIL",
@@ -96,18 +112,30 @@ class TestCode(unittest.TestCase):
             self.assertEqual(right_data[i], from_class[i])
 
     def test_restructuredtext(self):
-        """Test RST file."""
+        """
+        Test RST file.
+
+        :return None:
+        """
         files = os.listdir("{0}/docs".format(self.working_directory))
         for name in files:
             path = "{0}/docs/{1}".format(self.working_directory, name)
             restructuredtext_lint.lint_file(filepath=path)
 
     def test_deps(self):
-        """Use SafetyCI."""
+        """
+        Use SafetyCI.
+
+        :return None:
+        """
         self.assertEqual(os.system("make safetyci"), 0)
 
     def test_make_div(self):
-        """Test make_div."""
+        """
+        Test make_div.
+
+        :return None:
+        """
         self.assertEqual(
             area4.make_div('=-', length=9, start='<', end='=>'),
             "<=-=-=-=>"
