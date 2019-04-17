@@ -23,7 +23,9 @@ def get_raw_file():
         )
     ), mode="r") as file_handler:
         lines = file_handler.readlines()
-        lines[35] = random.randint(0, 999999999999)
+        lines[35] = str(
+            random.randint(0, 999999999999)
+        )
         return lines
 
 

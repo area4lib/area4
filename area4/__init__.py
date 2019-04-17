@@ -45,7 +45,7 @@ def divider(number):
         raise ValueError('Please use a number bigger then 0!')
     else:
         try:
-            return theArray()[number]
+            return theArray()[number].replace("\n", "")
         except IndexError:
             raise ValueError('That divider does not exist!')
 
