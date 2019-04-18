@@ -5,6 +5,10 @@ Key:
 + means addition
 - means deletion
 
+Version 2.5.1:
+* Changed Reddit divider function name to match style guide
+* Updated tests
+
 Version 2.5.0:
 • Shoutout to N8python for helping get this release out!
 * Made divider function strip newlines from output
