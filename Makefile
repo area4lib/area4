@@ -8,10 +8,6 @@ clean:
 	rm -rf build dist area4.egg-info area4.dist-info MANIFEST
 .PHONY: clean
 
-test:
-	python3 tests.py
-.PHONY: test
-
 beta:
 	python3 -m pip install .
 .PHONY: beta
