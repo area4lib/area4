@@ -23,7 +23,7 @@ Example:
     # This example prints a single equal sign to the console
     # because that divider is '============'
 
-* area4.util.redditHorizontal
+* area4.util.reddit_horizontal
 
 This function returns the Reddit markdown divider (for Reddit bots).
 This function takes no parameters.
