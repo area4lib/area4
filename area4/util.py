@@ -72,8 +72,7 @@ def get_divider_character(divider_id):
     :Example:
     # Get what divider number 7 is made of:
     get_divider_character(7)
-    will return:
-    '='
+    will return '='
     """
     blacklisted = [18, 19, 22, 33, 34, 35]
     if divider_id in blacklisted:
