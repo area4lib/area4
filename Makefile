@@ -10,15 +10,6 @@ clean:
 	rm -rf build dist area4.egg-info area4.dist-info MANIFEST
 .PHONY: clean
 
-freshdist: clean dist
-.PHONY: freshdist
-
-distinfo: clean
-	chmod +x tools/create-dist-info.sh
-	bash tools/create-dist-info.sh
-	chmod -x tools/create-dist-info.sh
-.PHONY: distinfo
-
 test:
 	python3 tests.py
 .PHONY: test
