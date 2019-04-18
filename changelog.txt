@@ -5,6 +5,10 @@ Key:
 + means addition
 - means deletion
 
+Version 2.5.2:
+- Removed all dist-info related code
+* Updated docs
+
 Version 2.5.1:
 * Changed Reddit divider function name to match style guide
 * Updated tests
