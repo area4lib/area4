@@ -56,8 +56,8 @@ class TestCode(unittest.TestCase):
                     )
                 elif i == 35 and i != 0:
                     self.assertNotEqual(self.raw_dividers[i], area4.divider(i))
-         finally:
-             pass
+        finally:
+            pass
 
     def test_splitter(self):
         """
