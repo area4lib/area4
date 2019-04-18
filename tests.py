@@ -26,6 +26,7 @@ class TestCode(unittest.TestCase):
         """
         # Get working directory:
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
+        # Falback in case this is being run locally:
         if self.working_directory is None:
             self.working_directory = os.path.abspath(
                 os.path.dirname(__file__)
@@ -56,6 +57,7 @@ class TestCode(unittest.TestCase):
                 elif i == 35 and i != 0:
                     self.assertNotEqual(self.raw_dividers[i], area4.divider(i))
             finally:
+                # Ignore this, it is just to suppress warnings
                 print()
 
     def test_splitter(self):
