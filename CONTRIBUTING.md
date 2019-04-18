@@ -76,4 +76,4 @@ When adding dividers, it must be added to the list of dividers in the docs (`doc
 If your pull request is merged your name will be added to the author list (`.github/CODEAUTHORS.md`).
 
 If you have any questions please contact [a maintainer](mailto:support@rdil.rocks),
-but before you do please please review our [documentation](https://area4.readthedocs.io/en/latest/).
+but before you do please please review our [documentation](https://area4.readthedocs.io).
