@@ -5,7 +5,7 @@ dist: clean
 .PHONY: dist
 
 clean:
-	rm -rf build dist area4.egg-info area4.dist-info MANIFEST
+	rm -rf build dist area4.egg-info MANIFEST
 .PHONY: clean
 
 beta:
