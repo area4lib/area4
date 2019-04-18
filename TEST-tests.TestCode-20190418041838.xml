@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file="tests.py" name="tests.TestCode-20190418041838" skipped="0" tests="7" time="7.229" timestamp="2019-04-18T04:18:45">
+	<testcase classname="tests.TestCode" file="tests.py" line="130" name="test_deps" time="5.824" timestamp="2019-04-18T04:18:44">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="tests.TestCode" file="tests.py" line="42" name="test_dividers" time="0.058" timestamp="2019-04-18T04:18:44">
+		<system-out>
+<![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="tests.TestCode" file="tests.py" line="96" name="test_info" time="0.001" timestamp="2019-04-18T04:18:44">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="tests.TestCode" file="tests.py" line="138" name="test_make_div" time="0.001" timestamp="2019-04-18T04:18:44">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="tests.TestCode" file="tests.py" line="119" name="test_restructuredtext" time="1.338" timestamp="2019-04-18T04:18:45">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="tests.TestCode" file="tests.py" line="63" name="test_splitter" time="0.001" timestamp="2019-04-18T04:18:45">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="tests.TestCode" file="tests.py" line="71" name="test_utilities" time="0.006" timestamp="2019-04-18T04:18:45">
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

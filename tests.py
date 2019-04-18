@@ -26,7 +26,7 @@ class TestCode(unittest.TestCase):
         """
         # Get working directory:
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
-        # Falback in case this is being run locally:
+        # Fallback in case this is being run locally:
         if self.working_directory is None:
             self.working_directory = os.path.abspath(
                 os.path.dirname(__file__)
