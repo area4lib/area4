@@ -42,7 +42,7 @@ class TestCode(unittest.TestCase):
         """
         Test dividers.
 
-        :return None:
+        :return: nothing
         """
         for i in range(len(self.raw_dividers)):
             try:
@@ -62,7 +62,7 @@ class TestCode(unittest.TestCase):
         """
         Test splitter function.
 
-        :return None:
+        :return: nothing
         """
         self.assertEqual(area4.splitter("---", "Hello"), "Hello")
 
@@ -70,7 +70,7 @@ class TestCode(unittest.TestCase):
         """
         Test util module.
 
-        :return None:
+        :return: nothing
         """
         module = area4.util
         self.assertEqual(module.get_divider_character(1), "-")
@@ -89,13 +89,13 @@ class TestCode(unittest.TestCase):
         self.assertEqual(module.get_divider_character(29), "8")
         self.assertEqual(module.get_divider_character(30), "9")
         self.assertEqual(module.get_divider_character(216), ";")
-        self.assertEqual(module.redditHorizontal(), "*****")
+        self.assertEqual(module.reddit_horizontal(), "*****")
 
     def test_info(self):
         """
         Test info.
 
-        :return None:
+        :return: nothing
         """
         right_data = [
             "area4",
@@ -118,7 +118,7 @@ class TestCode(unittest.TestCase):
         """
         Test RST file.
 
-        :return None:
+        :return: nothing
         """
         files = os.listdir("{0}/docs".format(self.working_directory))
         for name in files:
@@ -129,7 +129,7 @@ class TestCode(unittest.TestCase):
         """
         Use SafetyCI.
 
-        :return None:
+        :return: nothing
         """
         self.assertEqual(os.system("make safetyci"), 0)
 
@@ -137,7 +137,7 @@ class TestCode(unittest.TestCase):
         """
         Test make_div.
 
-        :return None:
+        :return: nothing
         """
         self.assertEqual(
             area4.make_div('=-', length=9, start='<', end='=>'),
