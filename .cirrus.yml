@@ -18,8 +18,9 @@ task:
       name: Unit Tests
       skip: $CIRRUS_BRANCH == 'python-2-supported'
       script: python3 -m xmlrunner tests
-      unittest_results_artifacts:
-        path: ./*.xml
+      always:
+        unittest_results_artifacts:
+          path: ./*.xml
     - env:
         TARGET: description
       script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
