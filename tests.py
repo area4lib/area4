@@ -45,8 +45,8 @@ class TestCode(unittest.TestCase):
 
         :return: nothing
         """
-        for i in range(len(self.raw_dividers)):
-            try:
+        try:
+            for i in range(len(self.raw_dividers)):
                 # Try to match the raw divider with the result
                 # of the function:
                 if i != 35 and i != 0:
@@ -56,6 +56,8 @@ class TestCode(unittest.TestCase):
                     )
                 elif i == 35 and i != 0:
                     self.assertNotEqual(self.raw_dividers[i], area4.divider(i))
+         finally:
+             pass
 
     def test_splitter(self):
         """
