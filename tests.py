@@ -15,7 +15,7 @@ except ImportError:
     raise OSError("Failed to import the library.")
 
 
-class TestCode(unittest.TestCase):
+class Tests(unittest.TestCase):
     """The test class."""
 
     def setUp(self):
