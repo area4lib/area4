@@ -9,11 +9,12 @@
 
 # Imports:
 from . import util as utils
+import rdillib
 
 # Info variables:
 name = "area4"
 author = "https://github.com/RDIL"
-author_email = "me@rdil.rocks"
+author_email = rdillib.get_email()
 support_email = "support@rdil.rocks"
 description = "Dividers in Python, the easy way!"
 
@@ -81,7 +82,7 @@ def area4info():
     # Info variables:
     name = "area4"
     author = "https://github.com/RDIL"
-    author_email = "me@rdil.rocks"
+    author_email = rdillib.get_email()
     description = "Dividers in Python, the easy way!"
     return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
         "Name:", name,
