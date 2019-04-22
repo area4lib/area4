@@ -2,12 +2,12 @@
 
 import setuptools
 
+# Package version:
+VERSION = "2.5.4"
+
 # Read the long description:
 with open("README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
-
-# Package version:
-VERSION = "2.5.3"
 
 # Keywords:
 TAGS = [
