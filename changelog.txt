@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.5.4:
+* Built with newer version of setuptools
+
 Version 2.5.3:
 + Added our first ever runtime dependency - RDILLib (for dynamic emails)
 - Removed pycodestyle config from setup.cfg
