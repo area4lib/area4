@@ -15,9 +15,7 @@ And if you want to you can check to make sure the library is working:
 
 .. code-block:: python
 
-    print(area4.area4info())
-
-.. warning:: The area4info function will only work on Python 3.6 or above. Keep this in mind if using it and you don't want SyntaxErrors!  
+    print(area4.area4info()) 
 
 Now, to get dividers, use this function:
 
