@@ -48,22 +48,10 @@ task:
     python3 -m pip uninstall --yes area4
 
 task:
-  matrix:
-    - name: Markdown Tests
-      container:
-        image: node:latest
-      Install_script:
-        - npm install -g markdownlint-cli@0.14.0
-        - npm install -g markdown-spellcheck@0.11.0
-      script:
-        - find . -name \*.md -exec markdownlint --config=.markdownlint.yml {} \;
-        - mdspell '**/*.md' '!CODE_OF_CONDUCT.md' '!.github/CODEAUTHORS.md' --ignore-numbers --ignore-acronyms --report --en-us;
-    - name: Markdown Link Checking
-      container:
-        image: jumbocakeyumyum/mdlink:latest
-      script:
-        - find . -name \*.md -exec markdown-link-check {} \;
-  use_compute_credits: true
+  name: Markdown Link Checking
+  container:
+    image: jumbocakeyumyum/mdlink:latest
+  script: find . -name \*.md -exec markdown-link-check {} \;
   auto_cancellation: true
 
 task:
