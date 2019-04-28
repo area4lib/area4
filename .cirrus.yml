@@ -21,6 +21,7 @@ task:
       always:
         unittest_results_artifacts:
           path: ./*.xml
+          format: junit
     - env:
         TARGET: description
       script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
