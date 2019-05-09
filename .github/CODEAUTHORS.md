@@ -2,8 +2,6 @@
 
 - [RDIL](https://github.com/RDIL) *(Owner / Team Lead)*
 - [CoffeeGoddess](https://github.com/CoffeeGoddess) *(Head of Documentation)*
-- [theonetheonlydemon](https://github.com/theonetheonlydemon) *(Release Planner)*
-- [rocketpropelledpotato](https://github.com/rocketpropelledpotato)
 
 # Contributors
 
@@ -26,5 +24,8 @@
 - amrutha3
 - fkorotkov
 - water900
+- rocketpropelledpotato
+- theonetheonlydemon
+- N8python
 
-(If anybody got missed or wants to be removed from the list open a PR please)
+> (If anybody got missed or wants to be removed from the list open a PR please)
