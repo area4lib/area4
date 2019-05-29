@@ -100,7 +100,7 @@ class Tests(unittest.TestCase):
         """
         right_data = [
             "area4",
-            "https://github.com/RDIL",
+            "RDIL",
             "me@rdil.rocks",
             "support@rdil.rocks",
             "Dividers in Python, the easy way!"
