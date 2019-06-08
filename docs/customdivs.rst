@@ -9,10 +9,10 @@ You can generate a custom divider with the make_div function
     area4.make_div('<>', length=24) # returns a string
 
     # Add start or end elements
-    area4.make_div('=-', length=9, start='<', end='=>')    # Returns: '<=-=-=-=>'
+    area4.make_div('=-', length=9, start='<', end='=>')  # Returns: '<=-=-=-=>'
 
     # Resize existing dividers
-    area4.make_div(instanceName.divider(1), 6)    # Returns: '------'
+    area4.make_div(instanceName.divider(1), 6)  # Returns: '------'
 
     # Setting to custom div:
     custom_div = area4.make_div('<>', 24)
