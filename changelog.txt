@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.5.8:
+* Updated documentation
+
 Version 2.5.7:
 * Shortened author value
 
