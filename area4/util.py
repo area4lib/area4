@@ -33,7 +33,7 @@ def check(internal_name):
     """
     Get if the module is being run directly or being imported.
 
-    :return: If __name__ is '__main__' (boolean)
+    :return: If __name__ is '__main__'
     :rtype: bool
     """
     return internal_name == "__main__"
@@ -59,7 +59,7 @@ def reduce_to_unit(divider):
         divider_item = divider[:unit_size * (length // unit_size)]
         if unit * (length // unit_size) == divider_item:
             return unit
-    return divider  # Return original if smaller unit not found
+    return divider  # Return original if no smaller unit
 
 
 def get_divider_character(divider_id):
