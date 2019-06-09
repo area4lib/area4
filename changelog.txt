@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.5.9:
+- Don't include changelogs in builds
+
 Version 2.5.8:
 * Updated documentation
 
