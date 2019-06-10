@@ -1,7 +1,7 @@
 task:
   container:
     image: python:latest
-  use_compute_credits: $CIRRUS_BRANCH == 'master' && $CIRRUS_PR == ''
+  use_compute_credits: ($CIRRUS_BRANCH == 'master' && $CIRRUS_PR == '') || $CIRRUS_TAG != ''
   auto_cancellation: true
   Python_modules_cache:
     folder: /usr/local/lib/python3.7/site-packages
@@ -23,10 +23,6 @@ task:
           path: ./*.xml
           format: junit
     - env:
-        TARGET: description
-      script: python3 setup.py sdist bdist_wheel && python3 -m twine check dist/*
-      name: Description Validation
-    - env:
         TARGET: deploy
         TWINE_USERNAME: ENCRYPTED[174042b48782072dfd0c112ac176d000b1f4753424d0781a7d5a9fb8a50f14cdf54b2fa9b340ba1c5c4cb017a979d956]
         TWINE_PASSWORD: ENCRYPTED[00e22066a3e9d3cfde8533ab01441d876b42ec46e80a1c673c46b94f771728d6aac8382d0f1b8366fb3261fd3145ed58]
@@ -34,7 +30,6 @@ task:
       only_if: $CIRRUS_TAG != ''
       depends_on:
         - Unit Tests
-        - Documentation Tests
       script: python3 -m twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
   on_failure:
     on_failure_script:
@@ -46,13 +41,6 @@ task:
   before_cache_script: |
     rm -rf /tmp/cirrus-ci-build/area4.dist-info
     python3 -m pip uninstall --yes area4
-
-task:
-  name: Markdown Link Checking
-  container:
-    image: jumbocakeyumyum/mdlink:latest
-  script: find . -name \*.md -exec markdown-link-check {} \;
-  auto_cancellation: true
 
 task:
   name: Documentation Tests
