@@ -3,7 +3,7 @@
 #  You should have received a copy of the
 #  MIT License with this program/distribution.
 # ---------------------------------------------------
-# ~ area4 Package ~
+# ~ area4 ~
 # ---------------------------------------------------
 
 from . import util as utils
@@ -11,13 +11,9 @@ import rdillib
 
 # Info variables:
 name = "area4"
-author = "RDIL"
+__author__ = "RDIL"
 author_email = rdillib.get_email()
-support_email = "support@rdil.rocks"
 description = "Dividers in Python, the easy way!"
-
-# Utilities module:
-util_module = utils
 
 
 def divider(number):
@@ -37,7 +33,7 @@ def divider(number):
         try:
             return utils.get_raw_file()[number].replace("\n", "")
         except IndexError:
-            raise ValueError('That divider does not exist!')
+            raise ValueError('That divider doesn\'t exist!')
 
 
 def splitter(div, *args):
@@ -70,7 +66,7 @@ def area4info():
     """
     return "Name: {0}\nAuthor: {1}\nAuthor Email: {2}\nDescription: {3}".format(
         name,
-        author,
+        __author__,
         author_email,
         description
     )
@@ -80,7 +76,7 @@ def make_div(unit, length=24,
              start='', end='',
              literal_unit=False):
     """
-    Generate and return a custom divider.
+    Generate a custom divider.
 
     :param unit: str containing a repeating unit
     :param length: The maximum length (won't be exceeded) (default: 24)
