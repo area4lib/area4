@@ -40,11 +40,7 @@ class Tests(unittest.TestCase):
             self.raw_dividers = fh.readlines()
 
     def test_dividers(self):
-        """
-        Test dividers.
-
-        :return: nothing
-        """
+        """Test dividers."""
         try:
             for i in range(len(self.raw_dividers)):
                 # Try to match the raw divider with the result
@@ -60,19 +56,11 @@ class Tests(unittest.TestCase):
             pass
 
     def test_splitter(self):
-        """
-        Test splitter function.
-
-        :return: nothing
-        """
+        """Test splitter function."""
         self.assertEqual(area4.splitter("---", "Hello"), "Hello")
 
     def test_utilities(self):
-        """
-        Test util module.
-
-        :return: nothing
-        """
+        """Test util module."""
         module = area4.util
         self.assertEqual(module.get_divider_character(1), "-")
         self.assertEqual(module.get_divider_character(2), "_")
@@ -93,11 +81,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(module.reddit_horizontal(), "*****")
 
     def test_info(self):
-        """
-        Test info.
-
-        :return: nothing
-        """
+        """Test info."""
         right_data = [
             "area4",
             "RDIL",
@@ -114,6 +98,14 @@ class Tests(unittest.TestCase):
         ]
         for i, e in enumerate(right_data):
             self.assertEqual(right_data[i], from_class[i])
+        self.assertEqual(
+            area4.area4info(), "Name: {0} Author: {1} Author Email: {2} Description: {3}".format(
+                right_data[0],
+                right_data[1],
+                right_data[2],
+                right_data[4],
+            )
+        )
 
     def test_restructuredtext(self):
         """
