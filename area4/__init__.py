@@ -79,11 +79,6 @@ def area4info():
     :return: Package info
     :rtype: str
     """
-    # Info variables:
-    name = "area4"
-    author = "RDIL"
-    author_email = rdillib.get_email()
-    description = "Dividers in Python, the easy way!"
     return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
         "Name:", name,
         "Author:", author,
