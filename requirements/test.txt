@@ -2,5 +2,4 @@ setuptools==41.0.1
 wheel==0.33.1
 twine==1.13.0
 restructuredtext_lint==1.3.0
-safety==1.8.5
 unittest-xml-reporting==2.5.1
