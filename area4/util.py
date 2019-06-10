@@ -9,19 +9,20 @@ import os
 import random
 
 
-class C:
-    def __init__(self):
-        self.cache = []
-
-    def ca(self):
-        return self.cache
-
-    def refresh(self):
-        with open("{0}/dividers.txt".format(
-            os.path.abspath(os.path.dirname(__file__))
-        ), mode="r") as file_handler:
-            self.cache = file_handler.readlines()
-            self.cache[35] = str(random.randint(0, 999999999999))
+def get_raw_file():
+    """
+    Get the raw divider file in a string array.
+    :return: the array
+    :rtype: str
+    """
+    with open("{0}/dividers.txt".format(
+        os.path.abspath(os.path.dirname(__file__))
+    ), mode="r") as file_handler:
+        lines = file_handler.readlines()
+        lines[35] = str(
+            random.randint(0, 999999999999)
+        )
+        return lines
 
 
 def reduce_to_unit(divider):
