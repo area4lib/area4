@@ -5,6 +5,11 @@ Key:
 + means addition
 - means deletion
 
+Version 2.7.0:
+- Removed util.check function
+* Fixed dead links
++ Added integer check
+
 Version 2.6.0:
 + Added test for area4.area4info
 * Refactor and fix area4.area4info (formatting issue and wrong data fixed)
