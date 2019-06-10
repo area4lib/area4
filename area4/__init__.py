@@ -22,15 +22,6 @@ description = "Dividers in Python, the easy way!"
 util_module = utils
 
 
-def theArray():
-    """
-    Get array of divs.
-
-    :return: the array
-    """
-    return utils.get_raw_file()
-
-
 def divider(number):
     """
     Get the divider you requested.
@@ -46,7 +37,7 @@ def divider(number):
         raise ValueError('Please use a number bigger then 0!')
     else:
         try:
-            return theArray()[number].replace("\n", "")
+            return utils.get_raw_file()[number].replace("\n", "")
         except IndexError:
             raise ValueError('That divider does not exist!')
 
@@ -61,7 +52,7 @@ def splitter(div, *args):
     """
     retstr = ""
     if type(div) is int:
-        div = theArray()[div]
+        div = utils.get_raw_file()[div]
     if len(args) == 1:
         return args[0]
     for s in args:
