@@ -3,8 +3,7 @@
 #  You should have received a copy of the
 #  MIT License with this program/distribution.
 # ---------------------------------------------------
-# ~ area4 Package by RDIL ~
-# This package should be compatible with Python 3.4 and up!
+# ~ area4 ~
 # ---------------------------------------------------
 import os
 import random
@@ -58,9 +57,9 @@ def get_divider_character(divider_id):
     :return: the character
     :rtype: str
     :Example:
-    # Get what divider number 7 is made of:
+    # Get what divider 7 is made of
     get_divider_character(7)
-    will return '='
+    # will return '='
     """
     blacklisted = [18, 19, 22, 33, 34, 35]
     if divider_id in blacklisted:
