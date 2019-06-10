@@ -79,11 +79,11 @@ def area4info():
     :return: Package info
     :rtype: str
     """
-    return "{0}: {1}\n{2}: {3}\n{4}: {5}\n{6}: {7}".format(
-        "Name:", name,
-        "Author:", author,
-        "Author Email:", author_email,
-        "Description:", description
+    return "Name: {0}\nAuthor: {1}\nAuthor Email: {2}\nDescription: {3}".format(
+        name,
+        author,
+        author_email,
+        description
     )
 
 
