@@ -12,10 +12,6 @@ beta:
 	python3 -m pip install .
 .PHONY: beta
 
-safetyci:
-	find ./requirements/ -name \*.txt -exec python3 -m safety check --full-report -r {} \;
-.PHONY: safetyci
-
 zip:
 	python3 setup.py sdist --formats=zip
 .PHONY: zip
