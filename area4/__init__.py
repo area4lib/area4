@@ -42,7 +42,7 @@ def divider(number):
     area4.divider(3)
     will return ............
     """
-    if number == 0:
+    if number == 0 or type(number) != int:
         raise ValueError('Please use a number bigger then 0!')
     else:
         try:
