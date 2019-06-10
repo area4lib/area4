@@ -119,14 +119,6 @@ class Tests(unittest.TestCase):
             path = "{0}/docs/{1}".format(self.working_directory, name)
             restructuredtext_lint.lint_file(filepath=path)
 
-    def test_deps(self):
-        """
-        Use SafetyCI.
-
-        :return: nothing
-        """
-        self.assertEqual(os.system("make safetyci"), 0)
-
     def test_make_div(self):
         """
         Test make_div.
