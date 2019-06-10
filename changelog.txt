@@ -5,6 +5,10 @@ Key:
 + means addition
 - means deletion
 
+Version 2.6.0:
++ Added test for area4.area4info
+* Refactor and fix area4.area4info (formatting issue and wrong data fixed)
+
 Version 2.5.9:
 - Don't include changelogs in builds
 
