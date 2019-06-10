@@ -2,7 +2,7 @@
 
 pushd %~dp0
 
-REM PLEASE DO NOT RUN THIS
+REM DO NOT RUN
 
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
