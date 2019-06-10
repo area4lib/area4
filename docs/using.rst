@@ -9,7 +9,7 @@ You can do this by adding the following line to the top:
 
     import area4
 
-.. warning:: Legacy versions don't work with the new methods. For old documentation, select 'v: stable' and then click 'legacy'.
+.. warning:: Versions before 2.0 don't work with the new methods. For old documentation, select 'v: stable' and then click 'legacy'.
 
 And if you want to you can check to make sure the library is working:
 
@@ -23,6 +23,6 @@ Now, to get dividers, use this function:
 
     print(
         area4.divider(4)
-    )  # This example prints divider number 4 to the console
+    )  # This prints divider number 4 to the console
 
-For what all the dividers look like, see the next section!
+For what all the dividers look like, see the next section.
