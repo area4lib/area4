@@ -15,10 +15,6 @@ Welcome to Area4's documentation!
     customdivs
     other
 
-.. image:: https://badge.fury.io/py/area4.svg
-    :target: https://pypi.org/project/area4
-    :alt: PyPI Package Version
-
 By RDIL [#RDIL]_
 
 `View on GitHub`_
