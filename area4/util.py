@@ -18,25 +18,13 @@ def get_raw_file():
     :rtype: str
     """
     with open("{0}/dividers.txt".format(
-        os.path.abspath(
-            os.path.dirname(__file__)
-        )
+        os.path.abspath(os.path.dirname(__file__))
     ), mode="r") as file_handler:
         lines = file_handler.readlines()
         lines[35] = str(
             random.randint(0, 999999999999)
         )
         return lines
-
-
-def check(internal_name):
-    """
-    Get if the module is being run directly or being imported.
-
-    :return: If __name__ is '__main__'
-    :rtype: bool
-    """
-    return internal_name == "__main__"
 
 
 def reduce_to_unit(divider):
