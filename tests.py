@@ -99,7 +99,8 @@ class Tests(unittest.TestCase):
         for i, e in enumerate(right_data):
             self.assertEqual(right_data[i], from_class[i])
         self.assertEqual(
-            area4.area4info(), "Name: {0}\nAuthor: {1}\nAuthor Email: {2}\nDescription: {3}".format(
+            area4.area4info(),
+            "Name: {0}\nAuthor: {1}\nAuthor Email: {2}\nDescription: {3}".format(
                 right_data[0],
                 right_data[1],
                 right_data[2],
