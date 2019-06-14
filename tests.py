@@ -91,7 +91,7 @@ class Tests(unittest.TestCase):
         ]
         from_class = [
             area4.name,
-            area4.author,
+            area4.__author__,
             area4.author_email,
             area4.support_email,
             area4.description
