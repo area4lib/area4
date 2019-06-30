@@ -12,6 +12,7 @@ import random
 def get_raw_file():
     """
     Get the raw divider file in a string array.
+
     :return: the array
     :rtype: str
     """
