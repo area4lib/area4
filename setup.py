@@ -3,7 +3,7 @@
 import setuptools
 
 # Package version:
-VERSION = "2.7.0"
+VERSION = "2.8.0"
 
 # Read the long description:
 with open("README.md", mode="r") as FILE_HANDLER:
@@ -15,7 +15,8 @@ TAGS = [
     "dividers",
     "python",
     "utilities",
-    "enhancements"
+    "enhancements",
+    "text"
 ]
 
 # Classifiers:
