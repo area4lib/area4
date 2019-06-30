@@ -86,14 +86,12 @@ class Tests(unittest.TestCase):
             "area4",
             "RDIL",
             "me@rdil.rocks",
-            "support@rdil.rocks",
             "Dividers in Python, the easy way!"
         ]
         from_class = [
             area4.name,
             area4.__author__,
             area4.author_email,
-            area4.support_email,
             area4.description
         ]
         for i, e in enumerate(right_data):
