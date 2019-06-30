@@ -47,8 +47,8 @@ class Tests(unittest.TestCase):
                 # of the function:
                 if i != 35 and i != 0:
                     self.assertEqual(
-                       self.raw_dividers[i].replace("\n", ""),
-                       area4.divider(i)
+                        self.raw_dividers[i].replace("\n", ""),
+                        area4.divider(i)
                     )
                 elif i == 35 and i != 0:
                     self.assertNotEqual(self.raw_dividers[i], area4.divider(i))
