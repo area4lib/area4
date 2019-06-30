@@ -5,6 +5,16 @@ Key:
 + means addition
 - means deletion
 
+Version 2.8.0:
+* Updated documentation
+* Updated CI to use slim images
+- Removed SafetyCI checks, description validation, and old Markdown check
+* Updated EditorConfig
+- Removed area4.util_module and area4.theArray aliases
+* Renamed area4.author to area4.__author__
++ Added 'text' keyword
+- Removed pipenv dependency
+
 Version 2.7.0:
 - Removed util.check function
 * Fixed dead links
