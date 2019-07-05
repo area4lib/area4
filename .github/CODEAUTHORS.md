@@ -1,7 +1,7 @@
 # Maintainers
 
-- [RDIL](https://github.com/RDIL) *(Owner / Team Lead)*
-- [CoffeeGoddess](https://github.com/CoffeeGoddess) *(Head of Documentation)*
+- [RDIL](https://github.com/RDIL) *(Team Lead)*
+- [CoffeeGoddess](https://github.com/CoffeeGoddess)
 
 # Contributors
 
@@ -27,5 +27,3 @@
 - rocketpropelledpotato
 - theonetheonlydemon
 - N8python
-
-> (If anybody got missed or wants to be removed from the list open a PR please)
