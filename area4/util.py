@@ -78,3 +78,13 @@ def reddit_horizontal():
     :rtype: str
     """
     return "*****"
+
+
+def markdown_horizontal():
+    """
+    Get Markdown horizontal divider.
+
+    :return: the divider
+    :rtype: str
+    """
+    return "---"
