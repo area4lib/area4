@@ -7,12 +7,11 @@
 # ---------------------------------------------------
 
 from . import util as utils
-import rdillib
 
 # Info variables:
 name = "area4"
 __author__ = "RDIL"
-author_email = rdillib.get_email()
+author_email = "me@rdil.rocks"
 description = "Dividers in Python, the easy way!"
 
 
