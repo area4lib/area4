@@ -14,6 +14,7 @@ release = ''
 extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.githubpages',
+    'sphinx.ext.autodoc',
     'sphinx.ext.extlinks'
 ]
 
