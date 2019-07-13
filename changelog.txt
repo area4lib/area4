@@ -5,6 +5,11 @@ Key:
 + means addition
 - means deletion
 
+Version 2.9.0
++ Added markdown horizontal divider
+- Removed rdillib dependency
+* Updated docs
+
 Version 2.8.0:
 * Updated documentation
 * Updated CI to use slim images
