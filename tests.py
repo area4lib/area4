@@ -75,7 +75,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(module.get_divider_character(30), "9")
         self.assertEqual(module.get_divider_character(216), ";")
         self.assertEqual(module.reddit_horizontal(), "*****")
-        self.assertEqual(module.markdown_horizontal(), "-----")
+        self.assertEqual(module.markdown_horizontal(), "---")
 
     def test_info(self):
         """Test info."""
