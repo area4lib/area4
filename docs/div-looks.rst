@@ -224,11 +224,12 @@ Divider looks
 217. Eye emojis
 218. Ghost emojis
 219. At signs
-220. Telephone emoji
-221. Less and Greater than
-222. Curly brackets
-223. [-] emojis
-224. =_=+ emojis
+220. Telephone emojis
+221. Colons
+222. Less and Greater than
+223. Curly brackets
+224. [-] emojis
+225. =_=+ emojis
 
 And more coming soon!
 
