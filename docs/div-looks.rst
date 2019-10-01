@@ -226,6 +226,7 @@ Divider looks
 219. At signs
 220. Telephone emoji
 221. Colons
+222. Percent symbol
 
 And more coming soon!
 
