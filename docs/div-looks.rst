@@ -225,6 +225,7 @@ Divider looks
 218. Ghost emojis
 219. At signs
 220. Telephone emoji
+221. Less and Greater than
 
 And more coming soon!
 
