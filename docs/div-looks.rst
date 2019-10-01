@@ -230,6 +230,7 @@ Divider looks
 223. Curly brackets
 224. [-] emojis
 225. =_=+ emojis
+226. Percent symbols
 
 And more coming soon!
 
