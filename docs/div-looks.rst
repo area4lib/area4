@@ -231,6 +231,8 @@ Divider looks
 224. [-] emojis
 225. =_=+ emojis
 
+227. Persian/Arabic Stretch Character
+
 And more coming soon!
 
 Thanks to @amrutha3 on GitHub for making the majority of the emoji dividers!  
