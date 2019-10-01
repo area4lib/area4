@@ -223,6 +223,8 @@ Divider looks
 216. Semicolons
 217. Eye emojis
 218. Ghost emojis
+219. At signs
+220. Telephone emoji
 
 And more coming soon!
 
