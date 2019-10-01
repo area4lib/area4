@@ -7,8 +7,10 @@
 # ---------------------------------------------------
 import os
 import random
+from functools import lru_cache
 
 
+@lru_cache(maxsize=None)
 def get_raw_file():
     """
     Get the raw divider file in a string array.
