@@ -19,11 +19,7 @@ class Tests(unittest.TestCase):
     """The test class."""
 
     def setUp(self):
-        """
-        Prepare for a test.
-
-        :return: nothing
-        """
+        """Prepare for a test."""
         # Get working directory:
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
         # Fallback in case this is being run locally:
@@ -79,6 +75,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(module.get_divider_character(30), "9")
         self.assertEqual(module.get_divider_character(216), ";")
         self.assertEqual(module.reddit_horizontal(), "*****")
+        self.assertEqual(module.markdown_horizontal(), "-----")
 
     def test_info(self):
         """Test info."""
@@ -107,22 +104,14 @@ class Tests(unittest.TestCase):
         )
 
     def test_restructuredtext(self):
-        """
-        Test RST file.
-
-        :return: nothing
-        """
+        """Lint RST files."""
         files = os.listdir("{0}/docs".format(self.working_directory))
         for name in files:
             path = "{0}/docs/{1}".format(self.working_directory, name)
             restructuredtext_lint.lint_file(filepath=path)
 
     def test_make_div(self):
-        """
-        Test make_div.
-
-        :return: nothing
-        """
+        """Test make_div."""
         self.assertEqual(
             area4.make_div('=-', length=9, start='<', end='=>'),
             "<=-=-=-=>"
