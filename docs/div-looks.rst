@@ -226,6 +226,9 @@ Divider looks
 219. At signs
 220. Telephone emoji
 221. Less and Greater than
+222. Curly brackets
+223. [-] emojis
+224. =_=+ emojis
 
 And more coming soon!
 
