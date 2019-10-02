@@ -93,6 +93,19 @@ class Tests(unittest.TestCase):
         self.assertEqual(module.reddit_horizontal(), "*****")
         self.assertEqual(module.markdown_horizontal(), "---")
 
+    def test_for_divider_duplicates(self):
+        """Checks for any duplicate dividers."""
+        for x, z in enumerate(self.raw_dividers):
+            # foreach entry, check equality to the parent foreach's current index
+            for g, h in enumerate(self.raw_dividers):
+                if x == g:
+                    # during enumeration, the divider will find itself
+                    self.assertEqual(self.raw_dividers[x], self.raw_dividers[g])
+                else:
+                    # but all the other times it will be another divider
+                    # which can NOT be equal!
+                    self.assertNotEqual(self.raw_dividers[x], self.raw_dividers[g])
+
     def test_info(self):
         """Test info."""
         right_data = [
@@ -119,6 +132,7 @@ class Tests(unittest.TestCase):
             )
         )
 
+    @unittest.skipIf(sys.platform.startswith("win"), "better supported on Linux/macOS")
     def test_restructuredtext(self):
         """Lint RST files."""
         files = os.listdir("{0}/docs".format(self.working_directory))
