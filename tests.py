@@ -105,7 +105,11 @@ class Tests(unittest.TestCase):
                 else:
                     # but all the other times it will be another divider
                     # which can NOT be equal!
-                    self.assertNotEqual(self.raw_dividers[x], self.raw_dividers[g])
+                    self.assertNotEqual(
+                        self.raw_dividers[x],
+                        self.raw_dividers[g],
+                        f"Dividers {x} and {g} are the same! Duplicates are not allowed."
+                    )
 
     def test_info(self):
         """Test info."""
