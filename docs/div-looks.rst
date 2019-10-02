@@ -234,6 +234,7 @@ Divider looks
 227. *- dividers
 228. Flower emojis
 
+230. Persian/Arabic Words Stretching Character
 And more coming soon!
 
 Thanks to @amrutha3 on GitHub for making the majority of the emoji dividers!  
