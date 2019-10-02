@@ -67,7 +67,7 @@ def get_divider_character(divider_id):
     get_divider_character(7)
     # will return '='
     """
-    blacklisted = [18, 19, 22, 33, 34, 35, 222, 223, 224, 225, 227]
+    blacklisted = [18, 19, 22, 33, 34, 35, 222, 223, 224, 226]
     if divider_id in blacklisted:
         return None
     try:
