@@ -22,6 +22,10 @@ def get_raw_file():
         os.path.abspath(os.path.dirname(__file__))
     ), mode="r") as file_handler:
         lines = file_handler.readlines()
+        stringbuilder = ""
+        for i in range(6):
+            stringbuilder += "<>"
+        lines[32] = stringbuilder
         lines[35] = str(
             random.randint(0, 999999999999)
         )
