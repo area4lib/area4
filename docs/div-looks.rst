@@ -231,6 +231,7 @@ Divider looks
 224. [-] emojis
 225. =_=+ emojis
 226. Thinking Emoji
+227. *- Divider
 
 And more coming soon!
 
