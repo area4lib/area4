@@ -232,8 +232,8 @@ Divider looks
 225. Thinking emojis
 226. *- dividers
 227. Flower emojis
+228. Persian/Arabic Words Stretching Character
 
-230. Persian/Arabic Words Stretching Character
 And more coming soon!
 
 Thanks to @amrutha3 on GitHub for making the majority of the emoji dividers!  
