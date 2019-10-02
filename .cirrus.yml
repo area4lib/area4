@@ -17,7 +17,7 @@ task:
         TARGET: all
       name: Unit Tests
       skip: $CIRRUS_BRANCH == 'python-2-supported'
-      script: python3 -m xmlrunner tests -v
+      script: python3 -m xmlrunner tests
       always:
         unittest_results_artifacts:
           path: ./*.xml
