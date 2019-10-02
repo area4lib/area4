@@ -42,13 +42,16 @@ class Tests(unittest.TestCase):
             for i in range(len(self.raw_dividers)):
                 # Try to match the raw divider with the result
                 # of the function:
-                if i != 35 and i != 0:
+                if i != 35 and i != 0 and i != 32:
                     self.assertEqual(
                         self.raw_dividers[i].replace("\n", ""),
-                        area4.divider(i)
+                        area4.divider(i),
+                        f"Divider number {i} was not the same in the file and in the code. Please ask a maintainer for help."
                     )
-                elif i == 35 and i != 0:
-                    self.assertNotEqual(self.raw_dividers[i], area4.divider(i))
+                elif (i == 35 or i == 32) and i != 0:
+                    self.assertNotEqual(
+                        self.raw_dividers[i], area4.divider(i)
+                    )
         finally:
             pass
 
