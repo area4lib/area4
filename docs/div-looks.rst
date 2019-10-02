@@ -223,6 +223,15 @@ Divider looks
 216. Semicolons
 217. Eye emojis
 218. Ghost emojis
+219. At signs
+220. Telephone emojis
+221. Colons
+222. Less and Greater than
+223. Curly brackets
+224. [-] emojis
+225. =_=+ emojis
+226. Thinking Emoji
+227. *- Divider
 
 And more coming soon!
 

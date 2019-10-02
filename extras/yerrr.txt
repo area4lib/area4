@@ -1,0 +1,1 @@
+Hey guys, I am currently learning how to use Git as well as javascript and I just learned how to make a python flask app and dockerized it. Thought it would be okay if I dropped this in here. Thanks!
