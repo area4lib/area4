@@ -226,13 +226,12 @@ Divider looks
 219. At signs
 220. Telephone emojis
 221. Colons
-222. Less and greater than
-223. Curly brackets
-224. [-] emojis
-225. =_=+ emojis
-226. Thinking emojis
-227. *- dividers
-228. Flower emojis
+222. Curly brackets
+223. [-] emojis
+224. =_=+ emojis
+225. Thinking emojis
+226. *- dividers
+227. Flower emojis
 
 And more coming soon!
 
