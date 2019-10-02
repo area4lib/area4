@@ -230,6 +230,8 @@ Divider looks
 223. Curly brackets
 224. [-] emojis
 225. =_=+ emojis
+226. Thinking Emoji
+227. *- Divider
 
 227. Persian/Arabic Stretch Character
 
