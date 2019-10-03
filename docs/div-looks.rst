@@ -234,6 +234,7 @@ Divider looks
 227. Flower emojis
 228. Persian/Arabic words stretching character
 229. Percent symbols
+230. Hearts (alternative to #200)
 
 And more coming soon!
 
