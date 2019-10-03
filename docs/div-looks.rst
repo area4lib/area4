@@ -235,6 +235,7 @@ Divider looks
 228. Persian/Arabic words stretching character
 229. Percent symbols
 230. Hearts (alternative to #200)
+231. Negation (¬)
 
 And more coming soon!
 
