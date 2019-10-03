@@ -232,7 +232,8 @@ Divider looks
 225. Thinking emojis
 226. *- dividers
 227. Flower emojis
-228. Persian/Arabic Words Stretching Character
+228. Persian/Arabic words stretching character
+229. Percent symbols
 
 And more coming soon!
 
