@@ -236,6 +236,7 @@ Divider looks
 229. Percent symbols
 230. Hearts (alternative to #200)
 231. Negation (¬)
+232. Apple logo emoji (macOS only)
 
 And more coming soon!
 
