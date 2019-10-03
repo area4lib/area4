@@ -226,12 +226,17 @@ Divider looks
 219. At signs
 220. Telephone emojis
 221. Colons
-222. Less and Greater than
-223. Curly brackets
-224. [-] emojis
-225. =_=+ emojis
-226. Thinking Emoji
-227. *- Divider
+222. Curly brackets
+223. [-] emojis
+224. =_=+ emojis
+225. Thinking emojis
+226. *- dividers
+227. Flower emojis
+228. Persian/Arabic words stretching character
+229. Percent symbols
+230. Hearts (alternative to #200)
+231. Negation (¬)
+232. Apple logo emoji (macOS only)
 
 And more coming soon!
 
