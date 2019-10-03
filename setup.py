@@ -3,7 +3,7 @@
 import setuptools
 
 # Package version:
-VERSION = "2.9.0"
+VERSION = "2.10.0"
 
 # Read the long description:
 with open("README.md", mode="r") as FILE_HANDLER:
@@ -29,7 +29,6 @@ CLASSIFIERS = [
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: Implementation :: PyPy",
     "License :: OSI Approved :: MIT License",
     "Operating System :: Microsoft",
     "Operating System :: Microsoft :: Windows :: Windows 10",
