@@ -4,6 +4,7 @@
 import unittest
 import os
 import restructuredtext_lint
+from sys import platform
 
 # Try to import area4.
 # This will fail if it could not be installed or if faulty code is present.
@@ -41,13 +42,16 @@ class Tests(unittest.TestCase):
             for i in range(len(self.raw_dividers)):
                 # Try to match the raw divider with the result
                 # of the function:
-                if i != 35 and i != 0:
+                if i != 35 and i != 0 and i != 32:
                     self.assertEqual(
                         self.raw_dividers[i].replace("\n", ""),
-                        area4.divider(i)
+                        area4.divider(i),
+                        f"Divider number {i} was not the same in the file and in the code. Please ask a maintainer for help."
                     )
-                elif i == 35 and i != 0:
-                    self.assertNotEqual(self.raw_dividers[i], area4.divider(i))
+                elif (i == 35 or i == 32) and i != 0:
+                    self.assertNotEqual(
+                        self.raw_dividers[i], area4.divider(i)
+                    )
         finally:
             pass
 
@@ -93,6 +97,24 @@ class Tests(unittest.TestCase):
         self.assertEqual(module.reddit_horizontal(), "*****")
         self.assertEqual(module.markdown_horizontal(), "---")
 
+    @unittest.skip("Todo: remove found duplicate lines (breaking change!)")
+    def test_for_divider_duplicates(self):
+        """Checks for any duplicate dividers."""
+        for x, z in enumerate(self.raw_dividers):
+            # foreach entry, check equality to the parent foreach's current index
+            for g, h in enumerate(self.raw_dividers):
+                if x == g:
+                    # during enumeration, the divider will find itself
+                    self.assertEqual(self.raw_dividers[x], self.raw_dividers[g])
+                else:
+                    # but all the other times it will be another divider
+                    # which can NOT be equal!
+                    self.assertNotEqual(
+                        self.raw_dividers[x],
+                        self.raw_dividers[g],
+                        f"Dividers {x} and {g} are the same! Duplicates are not allowed."
+                    )
+
     def test_info(self):
         """Test info."""
         right_data = [
@@ -119,6 +141,7 @@ class Tests(unittest.TestCase):
             )
         )
 
+    @unittest.skipIf(platform.startswith("win"), "better supported on Linux/macOS")
     def test_restructuredtext(self):
         """Lint RST files."""
         files = os.listdir("{0}/docs".format(self.working_directory))
