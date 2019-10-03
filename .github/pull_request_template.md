@@ -1,3 +1,8 @@
+<!--
+    NOTE TO HACKTOBERFEST CONTRIBUTORS:
+    RIGHT NOW THERE IS A BIG PR QUEUE, SO PLEASE KEEP YOUR PR REBASED
+-->
+
 ## Description
 
 <!--A description of the change you are making. Keep it quick.-->
