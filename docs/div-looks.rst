@@ -2,7 +2,7 @@ Divider looks
 =============
 
 *The number before it is the number you pass to the divider function.*
-*So if you want divider 1 you would do area4.divider(1)*
+*So if you want divider 1 you would use :code:`area4.divider(1)`*
 *If you don't understand, see the examples part of the documentation.*
 
 1. Dashed
@@ -232,8 +232,15 @@ Divider looks
 225. Thinking emojis
 226. *- dividers
 227. Flower emojis
-228. Persian/Arabic Words Stretching Character
-229. Left brackets
+228. Persian/Arabic words stretching character
+229. Percent symbols
+230. Hearts (alternative to #200)
+231. Negation (¬)
+232. Apple logo emoji (macOS only)
+233. Mountain ASCII characters
+234. Upside-down mountain ASCII characters
+235. Tomato emojis
+236. Left brackets
 
 And more coming soon!
 
