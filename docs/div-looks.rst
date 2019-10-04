@@ -239,6 +239,7 @@ Divider looks
 232. Apple logo emoji (macOS only)
 233. Mountain ASCII characters
 234. Upside-down mountain ASCII characters
+235. Tomato emojis
 
 And more coming soon!
 
