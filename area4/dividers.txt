@@ -1,4 +1,4 @@
-# area4 dividers list (make sure to only put 12 characters per divider)
+﻿# area4 dividers list (make sure to only put 12 characters per divider)
 ------------
 ____________
 ............
@@ -235,3 +235,4 @@ ZZZZZZZZZZZZ
 \|/-\|/-\|/
 🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅
 [[[[[[[[[[[[
+{][}{][}{][}
