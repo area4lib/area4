@@ -22,6 +22,12 @@ def get_raw_file():
         os.path.abspath(os.path.dirname(__file__))
     ), mode="r") as file_handler:
         lines = file_handler.readlines()
+        stringbuilder = ""
+        for i in range(6):
+            stringbuilder += "<>"
+        # we need to manually inject this, GitHub thinks its
+        # a conflict marker
+        lines[32] = stringbuilder
         lines[35] = str(
             random.randint(0, 999999999999)
         )
@@ -63,7 +69,7 @@ def get_divider_character(divider_id):
     get_divider_character(7)
     # will return '='
     """
-    blacklisted = [18, 19, 22, 33, 34, 35]
+    blacklisted = [18, 19, 22, 33, 34, 35, 222, 223, 224, 226, 233, 234]
     if divider_id in blacklisted:
         return None
     try:
