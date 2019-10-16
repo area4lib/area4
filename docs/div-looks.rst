@@ -241,7 +241,7 @@ Divider looks
 234. Upside-down mountain ASCII characters
 235. Tomato emojis
 236. Left brackets
-
+237. Red dot
 And more coming soon!
 
 Thanks to @amrutha3 on GitHub for making the majority of the emoji dividers!  
