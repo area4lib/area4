@@ -242,6 +242,7 @@ Divider looks
 235. Tomato emojis
 236. Left brackets
 237. Chili Peppers
+238. ⊷ emojis
 
 And more coming soon!
 
