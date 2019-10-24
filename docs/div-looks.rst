@@ -241,7 +241,8 @@ Divider looks
 234. Upside-down mountain ASCII characters
 235. Tomato emojis
 236. Left brackets
-237. ⊷ emojis
+237. Chili Peppers
+238. ⊷ emojis
 
 And more coming soon!
 
