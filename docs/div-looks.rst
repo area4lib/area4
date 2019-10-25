@@ -244,6 +244,7 @@ Divider looks
 237. Chili Peppers
 238. ⊷ emojis
 239. Akitas (Dogs)
+240. Dollar signs
 
 And more coming soon!
 
