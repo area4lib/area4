@@ -247,6 +247,7 @@ Divider looks
 240. Dollar signs
 241. Red dots
 242. Chain links
+243. Scooter emojis
 
 And more coming soon!
 
