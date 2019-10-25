@@ -241,7 +241,12 @@ Divider looks
 234. Upside-down mountain ASCII characters
 235. Tomato emojis
 236. Left brackets
-237. Red dot
+237. Chili peppers
+238. ⊷ emojis
+239. Akitas (Dogs)
+240. Dollar signs
+241. Red dots
+
 And more coming soon!
 
 Thanks to @amrutha3 on GitHub for making the majority of the emoji dividers!  
