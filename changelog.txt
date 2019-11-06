@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.11.0:
++ Added 14 new dividers
+
 Version 2.10.0:
 + Added 9 new dividers
 + Made area4.utils.get_raw_file() cache the file contents
