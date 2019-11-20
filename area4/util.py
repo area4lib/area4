@@ -1,8 +1,8 @@
 """
 Utilities module.
 
-:copyright: (c) 2018-present Reece Dunham.
-:license: MIT, see LICENSE for more details.
+:Copyright: 2018-present Reece Dunham.
+:License: MIT, see LICENSE for more details.
 """
 
 import os
