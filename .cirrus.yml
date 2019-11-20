@@ -6,16 +6,14 @@ task:
   Python_modules_cache:
     folder: /usr/local/lib/python3.8/site-packages
     fingerprint_script:
-      - echo $CI $OS $CIRRUS_CLONE_DEPTH $PYTHON_VERSION $CIRRUS_SHELL
+      - echo $CI $OS $PYTHON_VERSION
       - find ./requirements/ -name \*.txt -exec cat {} \;
     populate_script: find ./requirements/ -name \*.txt -exec python3 -m pip install --upgrade -r {} \;
   Install_Beta_Build_script:
     - python3 -m pip install .
   Build_script: make dist
   matrix:
-    - env:
-        TARGET: all
-      name: Unit Tests
+    - name: Unit Tests
       skip: $CIRRUS_BRANCH == 'python-2-supported'
       script: python3 -m xmlrunner tests
       always:
@@ -23,7 +21,6 @@ task:
           path: ./*.xml
           format: junit
     - env:
-        TARGET: deploy
         TWINE_USERNAME: ENCRYPTED[174042b48782072dfd0c112ac176d000b1f4753424d0781a7d5a9fb8a50f14cdf54b2fa9b340ba1c5c4cb017a979d956]
         TWINE_PASSWORD: ENCRYPTED[00e22066a3e9d3cfde8533ab01441d876b42ec46e80a1c673c46b94f771728d6aac8382d0f1b8366fb3261fd3145ed58]
       name: Deploy
@@ -40,7 +37,7 @@ task:
       - python3 -m pip check
   before_cache_script: |
     rm -rf /tmp/cirrus-ci-build/area4.dist-info
-    python3 -m pip uninstall --yes area4
+    python3 -m pip uninstall --yes .
 
 task:
   name: Documentation Tests

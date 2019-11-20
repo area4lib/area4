@@ -1,10 +1,10 @@
-"""Utilities module."""
-#  Copyright (c) 2018-present RDIL.
-#  You should have received a copy of the
-#  MIT License with this program/distribution.
-# ---------------------------------------------------
-# ~ area4 ~
-# ---------------------------------------------------
+"""
+Utilities module.
+
+:copyright: (c) 2018-present Reece Dunham.
+:license: MIT, see LICENSE for more details.
+"""
+
 import os
 import random
 from functools import lru_cache

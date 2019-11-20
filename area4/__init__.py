@@ -1,10 +1,9 @@
-"""Main module."""
-#  Copyright (c) 2018-present RDIL.
-#  You should have received a copy of the
-#  MIT License with this program/distribution.
-# ---------------------------------------------------
-# ~ area4 ~
-# ---------------------------------------------------
+"""
+Main module.
+
+:copyright: (c) 2018-present Reece Dunham.
+:license: MIT, see LICENSE for more details.
+"""
 
 from . import util as utils
 
