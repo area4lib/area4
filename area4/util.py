@@ -44,8 +44,7 @@ def reduce_to_unit(divider):
     :return: Smallest repeating unit possible.
     :rtype: str
 
-    :Example:
-    'XxXxXxX' -> 'Xx'
+    :Example: 'XxXxXxX' -> 'Xx'
     """
     for unit_size in range(1, len(divider) // 2 + 1):
         length = len(divider)
@@ -66,6 +65,7 @@ def get_divider_character(divider_id):
     :type divider_id: int
     :return: The character.
     :rtype: str
+    :raises ValueError: If you request an invalid divider.
     :Example:
         Get what divider 7 is made of:
         :code:`get_divider_character(7)`

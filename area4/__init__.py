@@ -1,4 +1,4 @@
-"""Main class."""
+"""Main module."""
 #  Copyright (c) 2018-present RDIL.
 #  You should have received a copy of the
 #  MIT License with this program/distribution.
@@ -90,7 +90,8 @@ def make_div(unit, length=24,
     :param literal_unit:
         if True will not try to break
         unit down into smaller repeating subunits
-    :return: a new, custom divider
+    :type literal_unit: bool
+    :return: A new, custom divider.
     :rtype: str
 
     :Example:

@@ -122,3 +122,4 @@ ehthumbs_vista.db
 *.rpm
 *.vcs
 *.bak
+docs/_build
