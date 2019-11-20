@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 project = 'Area4'
-project_lc = project.lower()
 copyright = '2018-present, Reece Dunham.'
 author = 'Reece Dunham'
 
@@ -53,7 +52,7 @@ latex_documents = [
         master_doc,
         'Area4.tex',
         'Area4 Documentation',
-        'Reece Dunham',
+        author,
         'manual'
     )
 ]
