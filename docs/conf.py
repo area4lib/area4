@@ -3,8 +3,8 @@
 
 project = 'Area4'
 project_lc = project.lower()
-copyright = '2019, RDIL'
-author = 'RDIL'
+copyright = '2018-present, Reece Dunham.'
+author = 'Reece Dunham'
 
 # Do NOT change:
 version = ''
@@ -48,6 +48,8 @@ html_static_path = ['_static']
 
 # If true, copyright is shown in the HTML footer
 html_show_copyright = True
+
+html_show_sphinx = False
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'Area4doc'
