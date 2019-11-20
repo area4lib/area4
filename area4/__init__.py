@@ -9,10 +9,10 @@
 from . import util as utils
 
 # Info variables:
-name = "area4"
-__author__ = "RDIL"
-author_email = "me@rdil.rocks"
-description = "Dividers in Python, the easy way!"
+name = "area4"  #: Package name.
+__author__ = "RDIL"  #: Package author.
+author_email = "me@rdil.rocks"  #: Package author's email.
+description = "Dividers in Python, the easy way!"  #: Package description
 
 
 def divider(number):

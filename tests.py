@@ -141,7 +141,6 @@ class Tests(unittest.TestCase):
             )
         )
 
-    @unittest.skipIf(platform.startswith("win"), "better supported on Linux/macOS")
     def test_restructuredtext(self):
         """Lint RST files."""
         files = os.listdir("{0}/docs".format(self.working_directory))

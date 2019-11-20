@@ -15,6 +15,10 @@ def get_raw_file():
     """
     Get the raw divider file in a string array.
 
+    Note: This function is decorated with
+    :code:`functools.lru_cache`, so calling
+    it a second time should be faster!
+
     :return: The array.
     :rtype: list
     """
@@ -23,8 +27,12 @@ def get_raw_file():
     ), mode="r") as file_handler:
         lines = file_handler.readlines()
         stringbuilder = ""
-        for i in range(6):
+        i = 0
+        while i < 6:
             stringbuilder += "<>"
+            i += 1
+        # no longer needed
+        del i
         # we need to manually inject this, GitHub thinks its
         # a conflict marker
         lines[32] = stringbuilder
@@ -37,6 +45,7 @@ def get_raw_file():
 def reduce_to_unit(divider):
     """
     Reduce a repeating divider to the smallest repeating unit possible.
+
     This function is used by :code:`make-div`.
 
     :param divider: The divider.
