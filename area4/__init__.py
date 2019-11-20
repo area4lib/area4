@@ -23,8 +23,8 @@ def divider(number):
     :return: requested divider
     :rtype: str
     :Example:
-    area4.divider(3)
-    will return ............
+    :code:`area4.divider(3)`
+    will return :code:`............`
     """
     if number == 0 or type(number) != int:
         raise ValueError('Please use a number bigger then 0!')
@@ -87,8 +87,9 @@ def make_div(unit, length=24,
     :rtype: str
 
     :Example:
-    custom_div = make_div(unit='=-', length=40, start='<', end='=>')
-    note:: The generated string will be terminated
+    :code:`custom_div = make_div(unit='=-', length=40, start='<', end='=>')`
+
+    .. note:: The generated string will be terminated
     at the specified length regardless
     of if all the input strings have been fully replicated.
     A unit > 1 length may
