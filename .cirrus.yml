@@ -4,7 +4,7 @@ task:
   use_compute_credits: ($CIRRUS_BRANCH == 'master' && $CIRRUS_PR == '') || $CIRRUS_TAG != ''
   auto_cancellation: true
   Python_modules_cache:
-    folder: /usr/local/lib/python3.7/site-packages
+    folder: /usr/local/lib/python3.8/site-packages
     fingerprint_script:
       - echo $CI $OS $CIRRUS_CLONE_DEPTH $PYTHON_VERSION $CIRRUS_SHELL
       - find ./requirements/ -name \*.txt -exec cat {} \;
@@ -31,13 +31,13 @@ task:
       depends_on:
         - Unit Tests
       script: python3 -m twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
+  build_artifacts:
+    path: dist/*.*
   on_failure:
     on_failure_script:
       - echo $PYTHON_VERSION
       - python3 -m pip list
       - python3 -m pip check
-  build_artifacts:
-    path: dist/*.*
   before_cache_script: |
     rm -rf /tmp/cirrus-ci-build/area4.dist-info
     python3 -m pip uninstall --yes area4
@@ -52,6 +52,6 @@ task:
     - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/docs.txt
   script:
     - cd ./docs/
-    - make html
+    - make dirhtml
   build_artifacts:
-    path: _build/**/**
+    path: docs/_build/**/**
