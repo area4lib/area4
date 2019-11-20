@@ -14,6 +14,7 @@ Welcome to Area4's documentation!
     div-looks
     customdivs
     other
+    api
 
 By RDIL [#RDIL]_
 
