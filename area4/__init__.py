@@ -1,17 +1,17 @@
 """
 Main module.
 
-:copyright: (c) 2018-present Reece Dunham.
-:license: MIT, see LICENSE for more details.
+:Copyright: 2018-present Reece Dunham.
+:License: MIT, see LICENSE for more details.
 """
 
 from . import util as utils
 
 # Info variables:
-name = "area4"  #: Package name.
-__author__ = "RDIL"  #: Package author.
-author_email = "me@rdil.rocks"  #: Package author's email.
-description = "Dividers in Python, the easy way!"  #: Package description
+name = "area4"
+__author__ = "RDIL"
+author_email = "me@rdil.rocks"
+description = "Dividers in Python, the easy way!"
 
 
 def divider(number):
@@ -82,14 +82,15 @@ def make_div(unit, length=24,
     :type unit: str
     :param length: The maximum length (won't be exceeded) (default: 24).
     :type length: int
-    :param start: Optional starting string.
+    :param start: Starting string.
     :type start: Optional[str]
-    :param end: Optional ending string.
+    :param end: Ending string.
     :type end: Optional[str]
     :param literal_unit:
-        if True will not try to break
-        unit down into smaller repeating subunits
-    :type literal_unit: bool
+        If :code:`True`, it will not try to break
+        unit down into smaller repeating subunits.
+        Defaults to :code:`False`.
+    :type literal_unit: Optional[bool]
     :return: A new, custom divider.
     :rtype: str
 
