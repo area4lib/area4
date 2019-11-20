@@ -84,7 +84,7 @@ def reddit_horizontal():
     """
     Get Reddit horizontal divider.
 
-    :return: the divider
+    :return: The divider.
     :rtype: str
     """
     return "*****"
@@ -94,7 +94,7 @@ def markdown_horizontal():
     """
     Get Markdown horizontal divider.
 
-    :return: the divider
+    :return: The divider.
     :rtype: str
     """
     return "---"
