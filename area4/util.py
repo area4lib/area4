@@ -15,8 +15,8 @@ def get_raw_file():
     """
     Get the raw divider file in a string array.
 
-    :return: the array
-    :rtype: str
+    :return: The array.
+    :rtype: list
     """
     with open("{0}/dividers.txt".format(
         os.path.abspath(os.path.dirname(__file__))
@@ -37,10 +37,11 @@ def get_raw_file():
 def reduce_to_unit(divider):
     """
     Reduce a repeating divider to the smallest repeating unit possible.
+    This function is used by :code:`make-div`.
 
-    Note: this function is used by make-div
-    :param divider: the divider
-    :return: smallest repeating unit possible
+    :param divider: The divider.
+    :type divider: str
+    :return: Smallest repeating unit possible.
     :rtype: str
 
     :Example:
@@ -61,13 +62,14 @@ def get_divider_character(divider_id):
     """
     Get the character the divider is made of.
 
-    :param divider_id: the divider's number
-    :return: the character
+    :param divider_id: The divider's number.
+    :type divider_id: int
+    :return: The character.
     :rtype: str
     :Example:
-    # Get what divider 7 is made of
-    get_divider_character(7)
-    # will return '='
+        Get what divider 7 is made of:
+        :code:`get_divider_character(7)`
+        will return '='.
     """
     blacklisted = [18, 19, 22, 33, 34, 35, 222, 223, 224, 226, 233, 234, 242]
     if divider_id in blacklisted:
