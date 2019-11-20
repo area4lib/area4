@@ -5,6 +5,12 @@ Key:
 + means addition
 - means deletion
 
+Version 2.11.1:
++ Added API Refrence documentation page
+* Updated tests to work with new Python version
+* Changed copyright header
+* Updated Sphinx version
+
 Version 2.11.0:
 + Added 14 new dividers
 
