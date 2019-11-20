@@ -3,7 +3,7 @@
 import setuptools
 
 # Package version:
-VERSION = "2.11.0"
+VERSION = "2.11.1"
 
 # Read the long description:
 with open("README.md", mode="r") as FILE_HANDLER:
