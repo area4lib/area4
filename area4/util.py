@@ -16,7 +16,7 @@ def get_raw_file():
     Get the raw divider file in a string array.
 
     Note: This function is decorated with
-    :code:`functools.lru_cache`, so calling
+    :meth:`functools.lru_cache`, so calling
     it a second time should be faster!
 
     :return: The array.
@@ -46,7 +46,7 @@ def reduce_to_unit(divider):
     """
     Reduce a repeating divider to the smallest repeating unit possible.
 
-    This function is used by :code:`make-div`.
+    This function is used by :meth:`make-div`.
 
     :param divider: The divider.
     :type divider: str

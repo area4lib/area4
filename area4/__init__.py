@@ -5,7 +5,7 @@ Main module.
 :License: MIT, see LICENSE for more details.
 """
 
-from . import util as utils
+from . import util as utils  #: Alias of the utilities module.
 
 # Info variables:
 name = "area4"
@@ -23,8 +23,7 @@ def divider(number):
     :return: The requested divider
     :rtype: str
     :raises ValueError: If you request an invalid divider.
-    :Example:
-    :code:`area4.divider(3)` will return :code:`............`
+    :Example: :code:`area4.divider(3)` will return '............'
     """
     if number == 0 or type(number) != int:
         raise ValueError('Please use a number bigger then 0!')

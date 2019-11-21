@@ -3,6 +3,9 @@
 API Reference
 =============
 
+Main Module
+-----------
+
 .. automodule:: area4
     :members:
     :inherited-members:

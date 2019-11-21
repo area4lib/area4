@@ -84,7 +84,7 @@ epub_title = project
 epub_exclude_files = ['search.html']
 
 intersphinx_mapping = {
-    'https://docs.python.org/': None
+    'https://docs.python.org/3/': None
 }
 
 html_theme_options = {
