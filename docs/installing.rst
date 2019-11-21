@@ -29,4 +29,6 @@ To use area4 as a dependency for your project, you can add the following line:
 
     area4
 
-.. warning:: You must have prior knowledge with using a requirements file to take this path. If not, search how to use a requirements file for Python dependencies.
+.. note::
+    You must know how to use a requirements file to take this path.
+    If you don't, search how to use a requirements file for Python dependencies.
