@@ -9,6 +9,7 @@ Welcome to Area4's documentation!
     :maxdepth: 4
     :caption: Contents:
 
+    concept
     installing
     using
     div-looks
