@@ -5,6 +5,7 @@ Main module.
 :License: MIT, see LICENSE for more details.
 """
 
+from typing import Optional  # noqa
 from . import util as utils  #: Alias of the utilities module.
 
 # Info variables:
@@ -80,7 +81,7 @@ def make_div(unit, length=24,
     :param unit: A repeating unit.
     :type unit: str
     :param length: The maximum length (won't be exceeded) (default: 24).
-    :type length: int
+    :type length: Optional[int]
     :param start: Starting string.
     :type start: Optional[str]
     :param end: Ending string.

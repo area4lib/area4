@@ -131,7 +131,7 @@ Divider looks
 124. Hand
 125. Hand v2
 126. 5 fingers on hand
-127. 🖖
+127. Vulcan solute emojis
 128. Bye wave
 129. Call me wave
 130. Strong arm emoji
@@ -242,13 +242,14 @@ Divider looks
 235. Tomato emojis
 236. Left brackets
 237. Chili peppers
-238. ⊷ emojis
-239. Akitas (Dogs)
+238. `Image Of symbols <https://www.compart.com/en/unicode/U+22B7>`
+239. Akitas (dogs)
 240. Dollar signs
 241. Red dots
 242. Chain links
 243. Scooter emojis
 
-And more coming soon!
+With more coming soon!
 
-Thanks to @amrutha3 on GitHub for making the majority of the emoji dividers!  
+Thanks to `@amrutha3 <https://github.com/amrutha3>` on GitHub for making the majority of the emoji dividers,
+and everybody who has added a divider.

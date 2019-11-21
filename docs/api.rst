@@ -9,6 +9,7 @@ Main Module
 .. automodule:: area4
     :members:
     :inherited-members:
+    :undoc-members:
 
 Utilities
 ---------
