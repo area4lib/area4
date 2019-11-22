@@ -77,7 +77,7 @@ def get_divider_character(divider_id):
     :raises ValueError: If you request an invalid divider.
     :Example:
         Get what divider 7 is made of:
-        
+
         .. code-block:: python
 
             get_divider_character(7)
