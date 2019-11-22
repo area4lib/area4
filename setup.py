@@ -80,5 +80,6 @@ setuptools.setup(
     project_urls=URLs,
     keywords=TAGS,
     include_package_data=True,
-    zip_safe=False
+    zip_safe=False,
+    python_requires=">3.3"
 )
