@@ -5,14 +5,14 @@ This is a list of other functions you may want to use, and what the do in basic 
 
 See the API Refrence page for more information.
 
-* :code:`area4.splitter`
+* :meth:`area4.splitter`
 
 The splitter function takes a string or number as a divider, and a series of strings to return, divided.
 If the first parameter is a number, it looks it up in the divider list.
 Otherwise, it uses the string provided as a divider.
 If only one additional string is provided, nothing is returned.
 
-* :code:`area4.utils.get_divider_character`
+* :meth:`area4.utils.get_divider_character`
 
 Gets you the material, or character the divider is made of.
 You need to pass an integer of the divider you want to get
@@ -29,12 +29,12 @@ For example:
     # This example prints a single equal sign to the console
     # because that divider is '============'
 
-* :code:`area4.utils.reddit_horizontal`
+* :meth:`area4.utils.reddit_horizontal`
 
 This function returns the Reddit markdown divider (for Reddit bots).
 This function takes no parameters.
 
-* :code:`area4.utils.markdown_horizontal`
+* :meth:`area4.utils.markdown_horizontal`
 
 This function returns the Markdown divider (rendered as HTML 'hr' tag by sites like GitHub).
 This function takes no parameters.
