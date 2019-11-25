@@ -10,20 +10,42 @@ import random
 from functools import lru_cache
 
 
+def non_single_character_dividers():
+    """
+    Get a list of all the "blacklisted" dividers.
+
+    These dividers are not made of a single character.
+    Some examples of this include:
+    * Divider 18 - :code:`( ͡° ͜ʖ ͡°)`
+    * Divider 33 - :code:`^,^,^,^,^,^,`
+    * Divider 34 - :code:`&*&*&*&*&*&*`
+
+    :return: A list of divider IDs.
+    :rtype: list
+    """
+    return [
+        18, 19, 22, 33, 34, 35, 222,
+        223, 224, 226, 233, 234, 242
+    ]
+
+
 @lru_cache(maxsize=None)
 def get_raw_file():
     """
     Get the raw divider file in a string array.
 
-    Note: This function is decorated with
-    :meth:`functools.lru_cache`, so calling
-    it a second time should be faster!
+    .. note:
+        This function is decorated with
+        :meth:`functools.lru_cache`, so calling
+        it a second time should be faster!
 
     :return: The array.
     :rtype: list
     """
     with open("{0}/dividers.txt".format(
-        os.path.abspath(os.path.dirname(__file__))
+        os.path.abspath(
+            os.path.dirname(__file__)
+        )
     ), mode="r") as file_handler:
         lines = file_handler.readlines()
         stringbuilder = ""
@@ -83,8 +105,7 @@ def get_divider_character(divider_id):
             get_divider_character(7)
             # returns '='.
     """
-    blacklisted = [18, 19, 22, 33, 34, 35, 222, 223, 224, 226, 233, 234, 242]
-    if divider_id in blacklisted:
+    if divider_id in non_single_character_dividers():
         return None
     try:
         return get_raw_file()[divider_id][0]
