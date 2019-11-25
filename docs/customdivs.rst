@@ -32,4 +32,6 @@ You can generate a custom divider with the make_div function
     The output will always be less than or equal to the specified length.
     Test the output to ensure the divider looks as you would like it.
 
-BIG thank you to `@ninexball <https://github.com/ninexball>`_ on GitHub for making this function and maintaining it!!
+BIG thank you to ninexball_ on GitHub for making this function and maintaining it!
+
+.. _ninexball_: https://github.com/ninexball

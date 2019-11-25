@@ -252,9 +252,11 @@ Divider Looks
 
 With more coming soon!
 
-Thanks to `@amrutha3 <https://github.com/amrutha3>` on GitHub for making the majority of the emoji dividers,
+Thanks to amrutha3_ on GitHub for making the majority of the emoji dividers,
 and everybody who has added a divider.
 
 .. warning::
     Depending on what platform the user
     is on, some dividers may look different.
+
+.. _amrutha3_: https://github.com/amrutha3
