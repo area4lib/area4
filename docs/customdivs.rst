@@ -34,4 +34,4 @@ You can generate a custom divider with the make_div function
 
 BIG thank you to ninexball_ on GitHub for making this function and maintaining it!
 
-.. _ninexball_: https://github.com/ninexball
+.. _ninexball: https://github.com/ninexball

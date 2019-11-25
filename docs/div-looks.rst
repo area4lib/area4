@@ -259,4 +259,4 @@ and everybody who has added a divider.
     Depending on what platform the user
     is on, some dividers may look different.
 
-.. _amrutha3_: https://github.com/amrutha3
+.. _amrutha3: https://github.com/amrutha3
