@@ -68,7 +68,7 @@ def reduce_to_unit(divider):
     """
     Reduce a repeating divider to the smallest repeating unit possible.
 
-    This function is used by :meth:`make-div`.
+    This function is used by :meth:`make_div`.
 
     :param divider: The divider.
     :type divider: str
