@@ -243,7 +243,7 @@ Divider Looks
 235. Tomato emojis
 236. Left brackets
 237. Chili peppers
-238. `Image Of symbols <https://www.compart.com/en/unicode/U+22B7>`
+238. ⊷ (Image Of symbols - see https://www.compart.com/en/unicode/U+22B7)
 239. Akitas (dogs)
 240. Dollar signs
 241. Red dots
