@@ -3,7 +3,7 @@
 import setuptools
 
 # Package version:
-VERSION = "2.11.1"
+VERSION = "2.11.2"
 
 # Read the long description:
 with open("README.md", mode="r") as FILE_HANDLER:
@@ -68,8 +68,10 @@ URLs = \
 setuptools.setup(
     name="area4",
     version=VERSION,
-    author="area4 Team",
+    author="Reece Dunham",
     author_email="me@rdil.rocks",
+    maintainer="area4 Team",
+    maintainer_email="me@rdil.rocks",
     description="Dividers in Python, the easy way!",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",

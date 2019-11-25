@@ -5,6 +5,13 @@ Key:
 + means addition
 - means deletion
 
+Version 2.11.2:
+* Improved documentation a lot more
++ Exposed the "blacklisted" dividers list
++ Added maintainer field to setup.py
++ Added Python version constraints to setup.py to prevent
+  unsupported Python version installs
+
 Version 2.11.1:
 + Added API Refrence documentation page
 * Updated tests to work with new Python version
