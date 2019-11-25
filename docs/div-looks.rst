@@ -1,4 +1,4 @@
-Divider looks
+Divider Looks
 =============
 
 *The number before it is the number you pass to the divider function.*
