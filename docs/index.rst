@@ -9,30 +9,26 @@ Welcome to Area4's documentation!
     :maxdepth: 4
     :caption: Contents:
 
+    concept
     installing
     using
     div-looks
     customdivs
     other
+    api
 
-By RDIL [#RDIL]_
+By Reece Dunham [#RDIL]_
 
 `View on GitHub`_
 
-Examples
---------
 
-.. warning:: If you don't understand what we mean by dividers, fear not.
 
-We mean dividers that divide text in the Python console, or anything you use the library for.
-An example can be found here_.
-(That example uses a legacy version of the library but still demonstrates what the library does.)
+Welcome to area4, the flexible divider library.
 
-Make sure to view our other documentation pages for more info!
+From here, you may want to proceed to the Concept page.
 
-.. important:: Please read all pages before creating issues as the question may be answered here.
+Want to skip right to the action? Select the Installing page.
 
 
 .. _`View on GitHub`: https://github.com/area4lib/area4
-.. _here: https://repl.it/@jumbocakeyumyum/area4tests
 .. [#RDIL] <me@rdil.rocks>

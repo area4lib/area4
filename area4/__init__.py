@@ -1,12 +1,12 @@
-"""Main class."""
-#  Copyright (c) 2018-present RDIL.
-#  You should have received a copy of the
-#  MIT License with this program/distribution.
-# ---------------------------------------------------
-# ~ area4 ~
-# ---------------------------------------------------
+"""
+Main module.
 
-from . import util as utils
+:Copyright: 2018-present Reece Dunham.
+:License: MIT, see LICENSE for more details.
+"""
+
+from typing import Optional  # noqa
+from . import util as utils  #: Alias of the utilities module.
 
 # Info variables:
 name = "area4"
@@ -19,12 +19,12 @@ def divider(number):
     """
     Get the divider you requested.
 
-    :param number: the divider number (NOT 0)
-    :return: requested divider
+    :param number: The divider number (can't be 0).
+    :type number: int
+    :return: The requested divider
     :rtype: str
-    :Example:
-    area4.divider(3)
-    will return ............
+    :raises ValueError: If you request an invalid divider.
+    :Example: :code:`area4.divider(3)` will return '............'
     """
     if number == 0 or type(number) != int:
         raise ValueError('Please use a number bigger then 0!')
@@ -39,9 +39,10 @@ def splitter(div, *args):
     """
     Split text with dividers easily.
 
-    :return: newly made value
+    :return: The newly made value.
     :rtype: str
-    :param div: the divider
+    :param div: The divider.
+    :type div: str
     """
     retstr = ""
     if type(div) is int:
@@ -60,7 +61,7 @@ def area4info():
     """
     Get some info about the package.
 
-    :return: Package info
+    :return: Package info.
     :rtype: str
     """
     return "Name: {0}\nAuthor: {1}\nAuthor Email: {2}\nDescription: {3}".format(
@@ -77,27 +78,36 @@ def make_div(unit, length=24,
     """
     Generate a custom divider.
 
-    :param unit: str containing a repeating unit
-    :param length: The maximum length (won't be exceeded) (default: 24)
-    :param start: optional starting string
-    :param end: optional ending string
-    :param literal_unit: if True will not try to break
-    unit down into smaller repeating subunits
-    :return: a new, custom divider
+    :param unit: A repeating unit.
+    :type unit: str
+    :param length: The maximum length (won't be exceeded) (default: 24).
+    :type length: Optional[int]
+    :param start: Starting string.
+    :type start: Optional[str]
+    :param end: Ending string.
+    :type end: Optional[str]
+    :param literal_unit:
+        If :code:`True`, it will not try to break
+        unit down into smaller repeating subunits.
+        Defaults to :code:`False`.
+    :type literal_unit: Optional[bool]
+    :return: A new, custom divider.
     :rtype: str
 
     :Example:
-    custom_div = make_div(unit='=-', length=40, start='<', end='=>')
-    note:: The generated string will be terminated
-    at the specified length regardless
-    of if all the input strings have been fully replicated.
-    A unit > 1 length may
-    not be able to be replicated to extend to the full length.
-    In this situation, the
-    string will be shorter than the specified length.
-    Example: unit of 10 characters and a specified length of
-    25 will contain 2 units for
-    a total length of 20 characters.
+    :code:`custom_div = make_div(unit='=-', length=40, start='<', end='=>')`
+
+    .. note::
+        The generated string will be terminated
+        at the specified length regardless
+        of if all the input strings have been fully replicated.
+        A unit > 1 length may
+        not be able to be replicated to extend to the full length.
+        In this situation, the
+        string will be shorter than the specified length.
+        Example: unit of 10 characters and a specified length of
+        25 will contain 2 units for
+        a total length of 20 characters.
     """
     # Reduce the size if possible to extend closer to full length:
     if not literal_unit:

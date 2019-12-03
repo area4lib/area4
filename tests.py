@@ -4,13 +4,12 @@
 import unittest
 import os
 import restructuredtext_lint
-from sys import platform
 
 # Try to import area4.
 # This will fail if it could not be installed or if faulty code is present.
 try:
     import area4
-except ImportError:
+except Exception:
     # At this point, area4 either isn't in site-packages,
     # or not on the system at all.
     raise OSError("Failed to import the library.")
@@ -141,7 +140,6 @@ class Tests(unittest.TestCase):
             )
         )
 
-    @unittest.skipIf(platform.startswith("win"), "better supported on Linux/macOS")
     def test_restructuredtext(self):
         """Lint RST files."""
         files = os.listdir("{0}/docs".format(self.working_directory))

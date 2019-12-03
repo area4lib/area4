@@ -5,6 +5,22 @@ Key:
 + means addition
 - means deletion
 
+Version 2.11.2:
+* Improved documentation a lot more
++ Exposed the "blacklisted" dividers list
++ Added maintainer field to setup.py
++ Added Python version constraints to setup.py to prevent
+  unsupported Python version installs
+
+Version 2.11.1:
++ Added API Refrence documentation page
+* Updated tests to work with new Python version
+* Changed copyright header
+* Updated Sphinx version
+
+Version 2.11.0:
++ Added 14 new dividers
+
 Version 2.10.0:
 + Added 9 new dividers
 + Made area4.utils.get_raw_file() cache the file contents

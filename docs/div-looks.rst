@@ -1,8 +1,9 @@
-Divider looks
+Divider Looks
 =============
 
 *The number before it is the number you pass to the divider function.*
-*So if you want divider 1 you would use :code:`area4.divider(1)`*
+*So if you want divider 1 you would use:*
+:code:`area4.divider(1)`.
 *If you don't understand, see the examples part of the documentation.*
 
 1. Dashed
@@ -131,20 +132,20 @@ Divider looks
 124. Hand
 125. Hand v2
 126. 5 fingers on hand
-127. 🖖
+127. Vulcan solute emojis
 128. Bye wave
 129. Call me wave
 130. Strong arm emoji
-131. Dogs
-132. Cats
-133. Mice
-134. Hamsters
-135. Bunnies
-136. Foxes
-137. Bears
-138. Pandas
+131. Dog emojis
+132. Cat emojis
+133. Mice emojis
+134. Hamster emojis
+135. Bunny emojis
+136. Fox emojis
+137. Bear emojis
+138. Panda emojis
 139. Koalas
-140. Tiger
+140. Tigers
 141. Lions
 142. Cows
 143. Pigs
@@ -165,8 +166,8 @@ Divider looks
 158. Pink flowers
 159. Roses
 160. Dead flowers
-161. Pink flowers v2
-162. Pink flowers v3
+161. Pink flowers 2
+162. Pink flowers 3
 163. White flower
 164. Yellow flower
 165. Small sun
@@ -193,7 +194,7 @@ Divider looks
 186. Ice creams in cones
 187. Pies
 188. Cakes
-189. Cakes v2
+189. Cakes 2
 190. Beers
 191. Two touching beers
 192. Two touching wine glasses
@@ -242,13 +243,21 @@ Divider looks
 235. Tomato emojis
 236. Left brackets
 237. Chili peppers
-238. ⊷ emojis
-239. Akitas (Dogs)
+238. ⊷ (Image Of symbols - see https://www.compart.com/en/unicode/U+22B7)
+239. Akitas (dogs)
 240. Dollar signs
 241. Red dots
 242. Chain links
-243. Avacado emojis
+243. Scooter emojis
+244. Avacado emojis
 
-And more coming soon!
+With more coming soon!
 
-Thanks to @amrutha3 on GitHub for making the majority of the emoji dividers!  
+Thanks to amrutha3_ on GitHub for making the majority of the emoji dividers,
+and everybody who has added a divider.
+
+.. warning::
+    Depending on what platform the user
+    is on, some dividers may look different.
+
+.. _amrutha3: https://github.com/amrutha3

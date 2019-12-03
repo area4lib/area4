@@ -4,26 +4,24 @@ task:
   use_compute_credits: ($CIRRUS_BRANCH == 'master' && $CIRRUS_PR == '') || $CIRRUS_TAG != ''
   auto_cancellation: true
   Python_modules_cache:
-    folder: /usr/local/lib/python3.7/site-packages
+    folder: /usr/local/lib/python3.8/site-packages
     fingerprint_script:
-      - echo $CI $OS $CIRRUS_CLONE_DEPTH $PYTHON_VERSION $CIRRUS_SHELL
+      - echo $OS $PYTHON_VERSION
       - find ./requirements/ -name \*.txt -exec cat {} \;
     populate_script: find ./requirements/ -name \*.txt -exec python3 -m pip install --upgrade -r {} \;
   Install_Beta_Build_script:
     - python3 -m pip install .
   Build_script: make dist
   matrix:
-    - env:
-        TARGET: all
-      name: Unit Tests
+    - name: Unit Tests
       skip: $CIRRUS_BRANCH == 'python-2-supported'
       script: python3 -m xmlrunner tests
       always:
         unittest_results_artifacts:
           path: ./*.xml
           format: junit
+          type: text/xml
     - env:
-        TARGET: deploy
         TWINE_USERNAME: ENCRYPTED[174042b48782072dfd0c112ac176d000b1f4753424d0781a7d5a9fb8a50f14cdf54b2fa9b340ba1c5c4cb017a979d956]
         TWINE_PASSWORD: ENCRYPTED[00e22066a3e9d3cfde8533ab01441d876b42ec46e80a1c673c46b94f771728d6aac8382d0f1b8366fb3261fd3145ed58]
       name: Deploy
@@ -31,13 +29,13 @@ task:
       depends_on:
         - Unit Tests
       script: python3 -m twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
+  build_artifacts:
+    path: dist/*.*
   on_failure:
     on_failure_script:
       - echo $PYTHON_VERSION
       - python3 -m pip list
       - python3 -m pip check
-  build_artifacts:
-    path: dist/*.*
   before_cache_script: |
     rm -rf /tmp/cirrus-ci-build/area4.dist-info
     python3 -m pip uninstall --yes area4
@@ -52,6 +50,6 @@ task:
     - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/docs.txt
   script:
     - cd ./docs/
-    - make html
+    - make dirhtml
   build_artifacts:
-    path: _build/**/**
+    path: docs/_build/**/**
