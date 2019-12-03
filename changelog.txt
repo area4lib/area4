@@ -5,6 +5,9 @@ Key:
 + means addition
 - means deletion
 
+Version 2.11.3:
++ Add avocado emoji divider
+
 Version 2.11.2:
 * Improved documentation a lot more
 + Exposed the "blacklisted" dividers list
