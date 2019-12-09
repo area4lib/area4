@@ -2,8 +2,6 @@
 
 pushd %~dp0
 
-REM DO NOT RUN
-
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )

@@ -16,6 +16,7 @@ Welcome to Area4's documentation!
     customdivs
     other
     api
+    migrating
 
 By Reece Dunham [#RDIL]_
 
