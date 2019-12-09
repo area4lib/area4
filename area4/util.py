@@ -103,7 +103,7 @@ def get_divider_character(divider_id):
             # returns '='.
     """
     if divider_id in non_single_character_dividers():
-        return None
+        return ""
     try:
         return get_raw_file()[divider_id][0]
     except IndexError:
