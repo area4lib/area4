@@ -123,3 +123,4 @@ ehthumbs_vista.db
 *.vcs
 *.bak
 docs/_build
+TEST-tests.*.xml

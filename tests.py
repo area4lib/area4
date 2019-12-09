@@ -92,11 +92,10 @@ class Tests(unittest.TestCase):
         self.assertEqual(module.get_divider_character(28), "7")
         self.assertEqual(module.get_divider_character(29), "8")
         self.assertEqual(module.get_divider_character(30), "9")
-        self.assertEqual(module.get_divider_character(216), ";")
+        self.assertEqual(module.get_divider_character(215), ";")
         self.assertEqual(module.reddit_horizontal(), "*****")
         self.assertEqual(module.markdown_horizontal(), "---")
 
-    @unittest.skip("Todo: remove found duplicate lines (breaking change!)")
     def test_for_divider_duplicates(self):
         """Checks for any duplicate dividers."""
         for x, z in enumerate(self.raw_dividers):

@@ -23,4 +23,14 @@ Where :code:`X` is the divider number, to:
 2.x -> 3.x
 ----------
 
-This version is WIP.
+This version removed the duplicate divider (was #201), so all the dividers with
+numbers/IDs BIGGER than 201 need to be shifted down by 1, so if you are using any
+of those dividers, you will need to change the number. For example:
+
+.. code-block:: python
+
+    area4.divider(208)
+    # needs to be changed to:
+    area4.divider(207)
+
+    # however, anything BELOW 201 does NOT need to be changed!

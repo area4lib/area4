@@ -206,50 +206,49 @@ Divider Looks
 198. Money bags
 199. Balloons
 200. Hearts
-201. Surprised faces v2
-202. Pins
-203. A person
-204. Dice
-205. Bowling ball and pins
-206. Cookies
-207. Snowmen
-208. Potatoes
-209. Shrimp
-210. Hot people
-211. Cold people
-212. Robot emojis
-213. Person having party
-214. Mind blown emojis
-215. Be quiet emojis
-216. Semicolons
-217. Eye emojis
-218. Ghost emojis
-219. At signs
-220. Telephone emojis
-221. Colons
-222. Curly brackets
-223. [-] emojis
-224. =_=+ emojis
-225. Thinking emojis
-226. *- dividers
-227. Flower emojis
-228. Persian/Arabic words stretching character
-229. Percent symbols
-230. Hearts (alternative to #200)
-231. Negation (¬)
-232. Apple logo emoji (macOS only)
-233. Mountain ASCII characters
-234. Upside-down mountain ASCII characters
-235. Tomato emojis
-236. Left brackets
-237. Chili peppers
-238. ⊷ (Image Of symbols - see https://www.compart.com/en/unicode/U+22B7)
-239. Akitas (dogs)
-240. Dollar signs
-241. Red dots
-242. Chain links
-243. Scooter emojis
-244. Avacado emojis
+201. Pins
+202. A person
+203. Dice
+204. Bowling ball and pins
+205. Cookies
+206. Snowmen
+207. Potatoes
+208. Shrimp
+209. Hot people
+210. Cold people
+211. Robot emojis
+212. Person having party
+213. Mind blown emojis
+214. Be quiet emojis
+215. Semicolons
+216. Eye emojis
+217. Ghost emojis
+218. At signs
+219. Telephone emojis
+220. Colons
+221. Curly brackets
+222. [-] emojis
+223. =_=+ emojis
+224. Thinking emojis
+225. *- dividers
+226. Flower emojis
+227. Persian/Arabic words stretching character
+228. Percent symbols
+229. Hearts (alternative to #200)
+230. Negation (¬)
+231. Apple logo emoji (macOS only)
+232. Mountain ASCII characters
+233. Upside-down mountain ASCII characters
+234. Tomato emojis
+235. Left brackets
+236. Chili peppers
+237. ⊷ (Image Of symbols - see https://www.compart.com/en/unicode/U+22B7)
+238. Akitas (dogs)
+239. Dollar signs
+240. Red dots
+241. Chain links
+242. Scooter emojis
+243. Avacado emojis
 
 With more coming soon!
 
