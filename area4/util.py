@@ -42,26 +42,23 @@ def get_raw_file():
     :return: The array.
     :rtype: list
     """
-    with open("{0}/dividers.txt".format(
+    lines = open("{0}/dividers.txt".format(
         os.path.abspath(
             os.path.dirname(__file__)
         )
-    ), mode="r") as file_handler:
-        lines = file_handler.readlines()
-        stringbuilder = ""
-        i = 0
-        while i < 6:
-            stringbuilder += "<>"
-            i += 1
-        # no longer needed
-        del i
-        # we need to manually inject this, GitHub thinks its
-        # a conflict marker
-        lines[32] = stringbuilder
-        lines[35] = str(
-            random.randint(0, 999999999999)
-        )
-        return lines
+    ), mode="r").readlines()
+    stringbuilder = ""
+    i = 0
+    while i < 6:
+        stringbuilder += "<>"
+        i += 1
+    # no longer needed
+    del i
+    # we need to manually inject this, GitHub thinks its
+    # a conflict marker
+    lines[32] = stringbuilder
+    lines[35] = str(random.randint(0, 999999999999))
+    return lines
 
 
 def reduce_to_unit(divider):

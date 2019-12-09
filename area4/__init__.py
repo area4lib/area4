@@ -11,6 +11,7 @@ from . import util as utils  #: Alias of the utilities module.
 # Info variables:
 name = "area4"
 __author__ = "RDIL"
+__license__ = "MIT"
 author_email = "me@rdil.rocks"
 description = "Dividers in Python, the easy way!"
 
