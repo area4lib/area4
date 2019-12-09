@@ -258,5 +258,8 @@ and everybody who has added a divider.
 .. warning::
     Depending on what platform the user
     is on, some dividers may look different.
+    This includes some CI systems,
+    in which emojis are not rendered
+    in build logs.
 
 .. _amrutha3: https://github.com/amrutha3

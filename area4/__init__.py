@@ -45,16 +45,13 @@ def splitter(div, *args):
     :param div: The divider.
     :type div: str
     """
-    retstr = ""
     if type(div) is int:
         div = utils.get_raw_file()[div]
     if len(args) == 1:
         return args[0]
+    retstr = ""
     for s in args:
-        retstr += s
-        retstr += "\n"
-        retstr += div
-        retstr += "\n"
+        retstr += "\n".join([s, div])
     return retstr
 
 

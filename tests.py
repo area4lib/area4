@@ -60,19 +60,19 @@ class Tests(unittest.TestCase):
 
     def test_splitter_2(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter("---", "Hello", "world"), "Hello\n---\nworld\n---\n")
+        self.assertEqual(area4.splitter("---", "Hello", "world"), "Hello\n---world\n---")
 
     def test_splitter_3(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter(3, "Hello", "world"), "Hello\n............\n\nworld\n............\n\n")
+        self.assertEqual(area4.splitter(3, "Hello", "world"), "Hello\n............\nworld\n............\n")
 
     def test_splitter_4(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter(45, "Hello", "world", "fine"), "Hello\neeeeeeeeeeee\n\nworld\neeeeeeeeeeee\n\nfine\neeeeeeeeeeee\n\n")
+        self.assertEqual(area4.splitter(45, "Hello", "world", "fine"), "Hello\neeeeeeeeeeee\nworld\neeeeeeeeeeee\nfine\neeeeeeeeeeee\n")
 
     def test_splitter_5(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter("xyz", "Hello", "world"), "Hello\nxyz\nworld\nxyz\n")
+        self.assertEqual(area4.splitter("xyz", "Hello", "world"), "Hello\nxyzworld\nxyz")
 
     def test_utilities(self):
         """Test util module."""

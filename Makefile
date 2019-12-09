@@ -5,7 +5,7 @@ dist: clean
 .PHONY: dist
 
 clean:
-	rm -rf build dist area4.egg-info MANIFEST
+	rm -rf build dist area4.egg-info MANIFEST __pycache__ area4/__pycache__ .mypy_cache
 .PHONY: clean
 
 beta:

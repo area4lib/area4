@@ -42,11 +42,13 @@ def get_raw_file():
     :return: The array.
     :rtype: list
     """
-    lines = open("{0}/dividers.txt".format(
+    tmp = open("{}/dividers.txt".format(
         os.path.abspath(
             os.path.dirname(__file__)
         )
-    ), mode="r").readlines()
+    ), mode="r")
+    lines = tmp.readlines()
+    tmp.close()
     stringbuilder = ""
     i = 0
     while i < 6:

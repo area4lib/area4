@@ -3,10 +3,7 @@ Installing
 
 *You may install in one of the following ways:*
 
-- Through pip
-- Through a requirements file
-
-With pip
+With Pip
 --------
 To install via pip, open a terminal, and type one the following command:
 
@@ -32,3 +29,12 @@ To use area4 as a dependency for your project, you can add the following line:
 .. note::
     You must know how to use a requirements file to take this path.
     If you don't, search how to use a requirements file for Python dependencies.
+
+With pipenv
+-----------
+
+To install with pipenv, run:
+
+.. code-block:: console
+
+    pipenv install area4
