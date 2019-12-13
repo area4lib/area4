@@ -1,7 +1,7 @@
 Migrating
 =========
 
-Welcome to the area4 migration guide.
+Here are steps required to migrate to certain versions:
 
 1.x -> 2.x
 ----------

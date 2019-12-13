@@ -5,6 +5,9 @@ This is a list of other functions you may want to use, and what the do in basic 
 
 See the API Refrence page for more information.
 
+Splitter
+--------
+
 * :meth:`area4.splitter`
 
 The splitter function takes a string or number as a divider,
@@ -26,6 +29,9 @@ For example:
     # My **app**
 
 
+Get Divider Character
+---------------------
+
 * :meth:`area4.utils.get_divider_character`
 
 Gets you the material, or character the divider is made of.
@@ -43,10 +49,16 @@ For example:
     # This example prints a single equal sign to the console,
     # because that divider is '============'
 
+Reddit Horizontal
+-----------------
+
 * :meth:`area4.utils.reddit_horizontal`
 
 This function returns the Reddit Markdown divider (for Reddit bots).
 This function takes no parameters.
+
+Markdown Horizontal
+-------------------
 
 * :meth:`area4.utils.markdown_horizontal`
 

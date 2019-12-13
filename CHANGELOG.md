@@ -1,30 +1,44 @@
-- Changelog -
+# Changelog
 
 Key:
-* means modification
-+ means addition
-- means deletion
 
-Version 2.11.3:
+* `*` means modification
+* `+` means addition
+* `-` means deletion
+
+## v2.11.3
+
+```diff
 + Add avocado emoji divider
+```
 
-Version 2.11.2:
+## v2.11.2
+
+```diff
 * Improved documentation a lot more
 + Exposed the "blacklisted" dividers list
 + Added maintainer field to setup.py
-+ Added Python version constraints to setup.py to prevent
-  unsupported Python version installs
++ Added Python version constraints to setup.py to prevent unsupported Python version installs
+```
 
-Version 2.11.1:
+## v2.11.1
+
+```diff
 + Added API Refrence documentation page
-* Updated tests to work with new Python version
++ Updated tests to work with new Python version
 * Changed copyright header
-* Updated Sphinx version
++ Updated Sphinx version
+```
 
-Version 2.11.0:
+## v2.11.0
+
+```diff
 + Added 14 new dividers
+```
 
-Version 2.10.0:
+## v2.10.0
+
+```diff
 + Added 9 new dividers
 + Made area4.utils.get_raw_file() cache the file contents
 * Fixed certain dividers confusing GitHub
@@ -32,13 +46,19 @@ Version 2.10.0:
 + Added test for area4.utils.markdown_horizontal() function
 + Added partially working duplicate divider checking
   (disabled due to failures that would be breaking changes)
+```
 
-Version 2.9.0
+## v2.9.0
+
+```diff
 + Added markdown horizontal divider
 - Removed rdillib dependency
 * Updated docs
+```
 
-Version 2.8.0:
+## v2.8.0
+
+```diff
 * Updated documentation
 * Updated CI to use slim images
 - Removed SafetyCI checks, description validation, and old Markdown check
@@ -47,45 +67,79 @@ Version 2.8.0:
 * Renamed area4.author to area4.__author__
 + Added 'text' keyword
 - Removed pipenv dependency
+```
 
-Version 2.7.0:
+## v2.7.0
+
+```diff
 - Removed util.check function
 * Fixed dead links
 + Added integer check
+```
 
-Version 2.6.0:
+## v2.6.0
+
+```diff
 + Added test for area4.area4info
 * Refactor and fix area4.area4info (formatting issue and wrong data fixed)
+```
 
-Version 2.5.9:
+## v2.5.9
+
+```diff
 - Don't include changelogs in builds
+```
 
-Version 2.5.8:
+## v2.5.8
+
+```diff
 * Updated documentation
+```
 
-Version 2.5.7:
+## v2.5.7:
+
+```diff
 * Shortened author value
+```
 
-Version 2.5.6:
+## v2.5.6
+
+```diff
 - Remove stepped down maintainers
+```
 
-Version 2.5.5:
-* Improved docs
+## v2.5.5
 
-Version 2.5.4:
+```diff
++ Improved docs
+```
+
+## v2.5.4
+
+```diff
 * Built with newer version of setuptools
+```
 
-Version 2.5.3:
+## v2.5.3
+
+```diff
 + Added our first ever runtime dependency - RDILLib (for dynamic emails)
 - Removed pycodestyle config from setup.cfg
+```
 
-Version 2.5.2:
+## v2.5.2
+
+```diff
 - Removed all dist-info related code
 * Updated docs
+```
 
-Version 2.5.1:
+## v2.5.1:
+
+```diff
 * Changed Reddit divider function name to match style guide
 * Updated tests
+```
 
 Version 2.5.0:
 • Shoutout to N8python for helping get this release out!
@@ -225,12 +279,11 @@ Version 2.0.1:
 * Updated MarkdownLint rules
 * Added dependency bumping bot
 
-Version 2.0.0 (contains VERY BREAKING changes):
+Version 2.0.0:
 * Completely changed the divider addition system
 * Removed most of the GitHub apps, added new ones
 * Redid docs
 + Gave the util module its own package so the import system isn't really odd
-* Updated GitIgnore
 * Made the main module class based ( /!\ VERY BREAKING CHANGES ALERT /!\ )
 * Made sure the wheel is not built universally
 * Added actual code testing with Travis CI
@@ -383,7 +436,6 @@ Version 1.0.4:
 Version 1.0.3:
 + Added Travis CI (and .travis.yml file)
 + Added custom dividers!!
-* Updated the GitIgnore to ignore the /build/ directory
 
 Version 1.0.2:
 * Updated project description
