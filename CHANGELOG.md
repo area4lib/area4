@@ -141,132 +141,220 @@ Key:
 * Updated tests
 ```
 
-Version 2.5.0:
-• Shoutout to N8python for helping get this release out!
+## v2.5.0
+
+Shoutout to N8python for helping get this release out!
+
+```diff
 * Made divider function strip newlines from output
 * Made all dividers 12 characters (except for a select few)
+```
 
-Version 2.4.0:
-+ Added new divider
+## v2.4.0
 
-Version 2.3.9:
+```diff
++ Added a new divider
+```
+
+## v2.3.9
+
+```diff
 * Updated copyright years in documentation
 * Updated Makefile
+```
 
-Version 2.3.8:
+## v2.3.8
+
+```diff
 - Removed clone tool as it had no use
 * Updated extras
+```
 
-Version 2.3.7:
+## v2.3.7
+
+```diff
 - virtualenv is no longer required
+```
 
 Version 2.3.6:
+
+```diff
 * Updated Sphinx
 * Updated contributing guidelines
+```
 
-Version 2.3.5:
+## v2.3.5
+
+```diff
 * Packaged with newer version of setuptools
+```
 
-Version 2.3.4:
+## v2.3.4
+
+```diff
 + Added more unit tests
 * Updated package info function
+```
 
-Version 2.3.3:
-* Built on newer version of setuptools
+## v2.3.3
 
-Version 2.3.2:
+```diff
+* Updated setuptools
+```
+
+## v2.3.2
+
+```diff
 * Moved tests to unittest module
 * Fixed bug
+```
 
-Version 2.3.1:
-+ Added reddit horizontal divider to utilities module
+## v2.3.1
 
-Version 2.3.0:
+```diff
++ Added Reddit horizontal divider to utilities module
+```
+
+## v2.3.0
+
+```diff
 - Removed class based system
+```
 
-Version 2.2.0:
+## v2.2.0
+
+```diff
 * Code cleanup
+```
 
-Version 2.1.9:
+## v2.1.9
+
+```diff
 * Fixed a compatibility issue
-* Fixed CI caching
-* Updated CodeOwners
-* Updated virtualenv and pyflakes
+```
 
-Version 2.1.8:
+## v2.1.8
+
+```diff
 - Removed BrewMake tool due to lack of use
 + Blacklisted certain dividers from the get_divider_character utility function
+```
 
-Version 2.1.7:
+## v2.1.7
+
+```diff
 + Added get_divider_character utility function
+```
 
-Version 2.1.6:
+## v2.1.6
+
+```diff
 + Added releasing guidelines for maintainers
 + Added tests for utility module
 + Added markdown spellchecking
+```
 
-Version 2.1.5:
+## v2.1.5
+
+```diff
 * Made tests way faster
 + Added documentation tests
 * Cleaned up documentation
 + Added documentation requirements
+```
 
-Version 2.1.4:
+## v2.1.4
+
+```diff
 + Added BrewMake tool
 * Fixed broken links
 * Updated contributing guidelines
+```
 
-Version 2.1.2 AND 2.1.3:
+## v2.1.3
+
+This minor release was a continuation of the work done in `v2.1.2`.
+
+## v2.1.2
+
+```diff
 * Moved library to area4lib organization!!
+```
 
-Version 2.1.1:
+## v2.1.1
+
+```diff
 * Fixed an issue in the code with the splitter function
+```
 
-Version 2.1.0:
+## v2.1.0
+
+```diff
 + Added eye emoji dividers
 + Added splitter function (finally!)
 * Moved reduce_to_unit function to utility module
+```
 
-Version 2.0.9:
+## v2.0.9
+
+```diff
 + Added CI auto-deploying
-* Updated GitIgnore
 + Added release schedule
+```
 
-Version 2.0.8:
+## v2.0.8
+
+```diff
 + Added clone tool
 * Fixed linting issues
 * Updated badges
 * Migrated CI tests to macOS
+```
 
-Version 2.0.7:
+## 2.0.7
+
+```diff
 * Fixed linting issues
 * Moved the utilities module to the main package
 * Moved linting tests to Cirrus CI
 * Made package info function work on all Python3 versions
+```
 
-Version 2.0.4 AND 2.0.5 AND 2.0.6:
+## v2.0.6
+
+See the changelogs for `v2.0.4`.
+
+## v2.0.5
+
+See the changelogs for `v2.0.4`.
+
+## v2.0.4
+
+```diff
 * Fixed Python 3.4 and 3.5 compatibility issues
 * Lots of code cleanup
 * Moved tests onto GNU make
 + Added semicolon dividers
-* Updated EditorConfig
+```
 
-Version 2.0.3:
+## v2.0.3
+
+```diff
 * Updated flake8 to the latest version
 * Updated documentation config
 + Added suggested extensions in VSCode
-- Deactivated wikis
+```
 
-Version 2.0.2:
+## v2.0.2
+
+```diff
 * Updated package build tools
-* Updated EditorConfig
-* Updated GitIgnore
 * Updated support information
 * Updated issue templates
 * Updated Probot config
-* VSCode now suggests you install markdown lint
 * Updated contributing guidelines
 * Updated twine to latest version
+```
 
 Version 2.0.1:
 + Added new 6 dividers
@@ -427,25 +515,38 @@ Version 1.0.5:
 + Added GitHub pages config (site down now)
 + Added more project links to setup.py file
 
-Version 1.0.4:
+## v1.0.4
+
+```diff
 + Added up arrow emoji dividers
 + Added down arrow emoji dividers
 + Added CodeFactor badge to the readme file
 + Added new classifiers to setup.py file
+```
 
-Version 1.0.3:
-+ Added Travis CI (and .travis.yml file)
+## v1.0.3
+
+```diff
++ Added Travis CI
 + Added custom dividers!!
+```
 
-Version 1.0.2:
+## v1.0.2
+
+```diff
 * Updated project description
 + Added example section to readme
 + Added divider looks section to readme
 * Updated the info command because of an annoying text issue
+```
 
-Version 1.0.1:
+## v1.0.1
+
+```diff
 * Readme fixes & badges
 + Added changelog
+```
 
-Version 1.0.0:
-* First release!
+## v1.0.0
+
+First release!
