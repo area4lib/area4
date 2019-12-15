@@ -14,7 +14,7 @@ You can do this by adding the following line to the top:
     1.x has reached its end-of-life, and you should migrate.
     See the migrating guide for how to do so.
 
-If you want to you can check to make sure the library is working, you can run:
+If you want to, you can check to make sure the library is working by running:
 
 .. code-block:: python
 
