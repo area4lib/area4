@@ -62,7 +62,6 @@ Key:
 * Updated documentation
 * Updated CI to use slim images
 - Removed SafetyCI checks, description validation, and old Markdown check
-* Updated EditorConfig
 - Removed area4.util_module and area4.theArray aliases
 * Renamed area4.author to area4.__author__
 + Added 'text' keyword
@@ -356,18 +355,21 @@ See the changelogs for `v2.0.4`.
 * Updated twine to latest version
 ```
 
-Version 2.0.1:
+## v2.0.1
+
+```diff
 + Added new 6 dividers
 * Cleaned up docs
 - Removed egg building tool
 * Updated CodeOwners
 * Made code follow PyDocStyle
 * Removed Travis CI, moved on to Cirrus CI
-* Updated GitIgnore
-* Updated MarkdownLint rules
 * Added dependency bumping bot
+```
 
-Version 2.0.0:
+## v2.0.0
+
+```diff
 * Completely changed the divider addition system
 * Removed most of the GitHub apps, added new ones
 * Redid docs
@@ -379,174 +381,4 @@ Version 2.0.0:
 - Removed VCS lists
 * Updated the contributing guidelines
 + Added markdown linting
-
-Version 1.3.0:
-* Fixed issues with package info function
-* Moved check function to util module
-* Documented check function
-* Updated Stale bot config
-* Reformatted changelog
-+ Added some VCS stuff
-
-Version 1.2.9:
-* EditorConfig file now included in sdists
-* Updated author Email
-
-Version 1.2.8:
-* Re-did all the docs
-+ Added link check task for markdown files
-* Made almost all code fit PEP8
-
-Version 1.2.7:
-+ Added potato dividers
-+ Added shrimp dividers
-+ Added an EditorConfig
-+ Added Other OS classifier
-* Updated all ReadTheDocs links to go to the stable version
-
-Version 1.2.6:
-- Dropped Python2 support fully
-+ Added project-wide settings for sublime text
-
-Version 1.2.5:
-+ Added dice divider
-+ Added bowling ball and pins divider
-+ Added cookie dividers!
-+ Added snowman dividers
-
-Version 1.2.4:
-+ Re-activated GitHub pages for the readme
-* Cleaned up some code
-* Updated issue templates
-* Updated the git ignore
-+ Added workspace settings for VSCode
-* Now forcing CIs to use older pip version
-+ Added🕴dividers
-+ Added PyPy3.5 support classifiers
-* Made some changes to the docs
-
-Version 1.2.3:
-+ Added pin emoji dividers
-* Fixed some stuff in the docs
-+ Added another PR check
-
-Version 1.2.2:
-* Big bug fix
-
-Version 1.2.1 (lots of random stuff):
-* Now distributing .tar.gz and.zip formats for source code
-* Did some small manifest changes
-* Fixed some stuff with CIs
-* Updated issue templates
-+ Added new badge to README file
-* Updated stale tags
-+ Added new tag
-* Fixed some compatibility issues
-* Made the git ignore longer
-
-Version 1.1.9:
-+ Added keywords to package
-
-Version 1.1.8:
-+ Added lots more emojis
-+ Added issue templates
-+ Added check to see if the libraries latest version installs without error
-+ Added PyCharm IDE files
-* Fixed some things with the docs
-
-Version 1.1.7:
-+ Added some emoji dividers
-* Fixed bug with manifest.in and setup.py (PR #42)
-* Manifest now includes the CodeAuthors file
-
-Version 1.1.6:
-+ Added alphabet dividers
-
-Version 1.1.5:
-+ Added MANIFEST.in
-+ Added config for new apps
-+ New divider (`s)
-
-Version 1.1.4:
-* Code cleanup
-+ Added random number dividers
-* Updated contributing guidelines
-+ Added Cirrus CI along with Travis CI
-
-Version 1.1.3:
-+ Added a lot of dividers (https://github.com/area4lib/area4/pull/27/files)
-- Removed un-used import to speed up code a tiny bit
-
-Version 1.1.2:
-+ Added shrug emoji dividers
-* The make_div function received an upgrade
-* Fixed a few typos in the docs
-
-Version 1.1.1:
-+ Added contributing guidelines
-+ Added lenny dividers
-+ Added cthulhu dividers
-+ Added backslash dividers
-+ Added make_div framework (see docs, thanks @ninexball!)
-* Configured Discord webhook (not important)
-+ Added coffee cup dividers
-+ Added and-sign dividers
-+ Added up arrow dividers
-
-Version 1.1.0 (Contains Breaking Changes):
-+ Added tilde (~) dividers
-+ Added broken bar dividers
-+ Added slash dividers
-* Functions now return the variable rather then print it
-+ Added repo status badge
-
-Version 1.0.7:
-+ Added star / asterisk (*) dividers
-+ Added comma (,) dividers
-
-Version 1.0.6:
-- Disabled GitHub pages (not needed)
-+ Added docs!
-+ Added hashtag (#) dividers
-* Updated badges in readme
-
-Version 1.0.5:
-+ Added equal sign dividers
-+ Added GitHub pages config (site down now)
-+ Added more project links to setup.py file
-
-## v1.0.4
-
-```diff
-+ Added up arrow emoji dividers
-+ Added down arrow emoji dividers
-+ Added CodeFactor badge to the readme file
-+ Added new classifiers to setup.py file
 ```
-
-## v1.0.3
-
-```diff
-+ Added Travis CI
-+ Added custom dividers!!
-```
-
-## v1.0.2
-
-```diff
-* Updated project description
-+ Added example section to readme
-+ Added divider looks section to readme
-* Updated the info command because of an annoying text issue
-```
-
-## v1.0.1
-
-```diff
-* Readme fixes & badges
-+ Added changelog
-```
-
-## v1.0.0
-
-First release!
