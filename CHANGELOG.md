@@ -6,6 +6,20 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.0.0
+
+```diff
++ Update setuptools (41.0.1 -> 42.0.2)
++ Update wheel (0.33.1 -> 0.33.6)
++ Update twine (1.13.0 -> 3.1.1)
++ Update unittest-xml-reporting (2.5.1 -> 2.5.2)
+* Converted this changelog to Markdown
+* Breaking: changed the output of the splitter function
+* Rewrote major parts of the docs
+- Removed a divider, see migration guide
++ Optimized some internal code
+```
+
 ## v2.11.3
 
 ```diff
