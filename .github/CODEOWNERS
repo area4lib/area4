@@ -4,9 +4,6 @@
 .editorconfig         @RDIL
 .sublime-project      @RDIL
 
-# Area: Tools
-tools/                @RDIL
-
 # Area: Main code
 area4/                @N8python
 *.py                  @N8python
