@@ -31,18 +31,18 @@ will be here to help you should you need any!
 
 ## Coding
 
-This project code is intended to be...
+This project is intended to be...
 
 - Clean. Keep it well formatted and follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) conventions please, so all can understand it.
-- Documented. Keep it well documented, so one can learn from it.
+- Documented. Keep it well documented, so all can learn from it.
 - Reusable. Keep it clean and modular, with as little responsibility per programming unit (function, method, class, module, project) as possible, so one can reuse it.
 - Testable. Keep it easy to debug and test, so one can be confident that it works properly.  Please keep the [Cirrus CI Build](https://cirrus-ci.com/github/area4lib/area4) at passing if possible.
-- Python 3 compatible.  area4 aims to support Python 3 versions (including PyPy3.5), and does not support versions below Python3.  The one thing that does not follow this rule is the package info function, which requires F-strings (which are only supported in Python 3.6 and above).
+- Python 3 compatible. area4 aims to support Python 3 versions, and does not support versions below Python3.
 
 ## Timing
 
 Timing is important, all project maintainers have lives and don't stay on GitHub 24/7.
-They all are in United States eastern time.
+Please be patient.
 
 ## Work-in-progress pull requests
 
@@ -54,7 +54,7 @@ This helps us out a ton as we know that a PR is NOT ready for merge.
 ## Code quality
 
 Please keep your code as readable as possible.
-We have apps to help out with this such as [Fussy Fox](https://lambdalint.github.io) to lint code.
+We have apps to help out with this such as [Fussy Fox](https://fussyfox.github.io) to lint code.
 Where possible please abide by their feedback.
 
 ## Divider style
@@ -73,7 +73,5 @@ When adding dividers, it must be added to the list of dividers in the docs (`doc
 
 -------------------
 
-If your pull request is merged your name will be added to the author list (`.github/CODEAUTHORS.md`).
-
-If you have any questions please contact [a maintainer](mailto:support@rdil.rocks),
-but before you do please please review our [documentation](https://area4.readthedocs.io).
+If you have any questions please contact [a maintainer](mailto:me@rdil.rocks),
+but before you do, please please review our [documentation](https://area4.readthedocs.io/en/stable).
