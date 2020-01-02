@@ -4,13 +4,12 @@
 import unittest
 import os
 import restructuredtext_lint
-from sys import platform
 
 # Try to import area4.
 # This will fail if it could not be installed or if faulty code is present.
 try:
     import area4
-except ImportError:
+except Exception:
     # At this point, area4 either isn't in site-packages,
     # or not on the system at all.
     raise OSError("Failed to import the library.")
@@ -61,19 +60,19 @@ class Tests(unittest.TestCase):
 
     def test_splitter_2(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter("---", "Hello", "world"), "Hello\n---\nworld\n---\n")
+        self.assertEqual(area4.splitter("---", "Hello", "world"), "Hello\n---world\n---")
 
     def test_splitter_3(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter(3, "Hello", "world"), "Hello\n............\n\nworld\n............\n\n")
+        self.assertEqual(area4.splitter(3, "Hello", "world"), "Hello\n............\nworld\n............\n")
 
     def test_splitter_4(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter(45, "Hello", "world", "fine"), "Hello\neeeeeeeeeeee\n\nworld\neeeeeeeeeeee\n\nfine\neeeeeeeeeeee\n\n")
+        self.assertEqual(area4.splitter(45, "Hello", "world", "fine"), "Hello\neeeeeeeeeeee\nworld\neeeeeeeeeeee\nfine\neeeeeeeeeeee\n")
 
     def test_splitter_5(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter("xyz", "Hello", "world"), "Hello\nxyz\nworld\nxyz\n")
+        self.assertEqual(area4.splitter("xyz", "Hello", "world"), "Hello\nxyzworld\nxyz")
 
     def test_utilities(self):
         """Test util module."""
@@ -93,11 +92,10 @@ class Tests(unittest.TestCase):
         self.assertEqual(module.get_divider_character(28), "7")
         self.assertEqual(module.get_divider_character(29), "8")
         self.assertEqual(module.get_divider_character(30), "9")
-        self.assertEqual(module.get_divider_character(216), ";")
+        self.assertEqual(module.get_divider_character(215), ";")
         self.assertEqual(module.reddit_horizontal(), "*****")
         self.assertEqual(module.markdown_horizontal(), "---")
 
-    @unittest.skip("Todo: remove found duplicate lines (breaking change!)")
     def test_for_divider_duplicates(self):
         """Checks for any duplicate dividers."""
         for x, z in enumerate(self.raw_dividers):
@@ -141,7 +139,6 @@ class Tests(unittest.TestCase):
             )
         )
 
-    @unittest.skipIf(platform.startswith("win"), "better supported on Linux/macOS")
     def test_restructuredtext(self):
         """Lint RST files."""
         files = os.listdir("{0}/docs".format(self.working_directory))
