@@ -17,3 +17,4 @@ Utilities
 .. automodule:: area4.util
     :members:
     :inherited-members:
+    :undoc-members:

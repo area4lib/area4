@@ -93,7 +93,7 @@ def make_div(unit, length=24,
     :rtype: str
 
     :Example:
-    :code:`custom_div = make_div(unit='=-', length=40, start='<', end='=>')`
+        :code:`custom_div = make_div(unit='=-', length=40, start='<', end='=>')`
 
     .. note::
         The generated string will be terminated

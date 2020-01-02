@@ -7,6 +7,7 @@ Utilities module.
 
 import os
 import random
+from typing import Optional, List  # noqa
 from functools import lru_cache
 
 
@@ -21,7 +22,7 @@ def non_single_character_dividers():
     * Divider 34 - :code:`&*&*&*&*&*&*`
 
     :return: A list of divider IDs.
-    :rtype: list
+    :rtype: List[int]
     """
     return [
         18, 19, 22, 33, 34, 35, 222,
@@ -130,3 +131,19 @@ def markdown_horizontal():
     :rtype: str
     """
     return "---"
+
+
+def html_horizontal(closing_tag=True):
+    """
+    Get HTML horizontal divider.
+
+    :param closing_tag: If a closing tag should be added.
+    :type closing_tag: Optional[bool]
+    :return: The HTML tag (the divider).
+    :rtype: str
+
+    .. versionadded:: 3.1.0
+    """
+    if closing_tag:
+        return "<hr></hr>"
+    return "<hr>"

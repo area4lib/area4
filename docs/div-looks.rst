@@ -230,7 +230,7 @@ Divider Looks
 222. [-] emojis
 223. =_=+ emojis
 224. Thinking emojis
-225. *- dividers
+225. :code:`*-` dividers
 226. Flower emojis
 227. Persian/Arabic words stretching character
 228. Percent symbols

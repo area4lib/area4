@@ -9,7 +9,8 @@ in the Python console, or use cases like that.
 
 For example:
 
-.. code-block:: Python
+.. code-block:: raw
+    :emphasize-lines: 2
 
         Hello World!
     ---------------------
