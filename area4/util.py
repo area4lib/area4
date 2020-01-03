@@ -7,7 +7,7 @@ Utilities module.
 
 import os
 import random
-from typing import Optional, List  # noqa
+from typing import List, Optional  # noqa
 from functools import lru_cache
 
 
@@ -17,6 +17,7 @@ def non_single_character_dividers():
 
     These dividers are not made of a single character.
     Some examples of this include:
+
     * Divider 18 - :code:`( ͡° ͜ʖ ͡°)`
     * Divider 33 - :code:`^,^,^,^,^,^,`
     * Divider 34 - :code:`&*&*&*&*&*&*`
@@ -41,7 +42,7 @@ def get_raw_file():
         it a second time should be faster!
 
     :return: The array.
-    :rtype: list
+    :rtype: List[str]
     """
     tmp = open("{}/dividers.txt".format(
         os.path.abspath(
@@ -141,8 +142,6 @@ def html_horizontal(closing_tag=True):
     :type closing_tag: Optional[bool]
     :return: The HTML tag (the divider).
     :rtype: str
-
-    .. versionadded:: 3.1.0
     """
     if closing_tag:
         return "<hr></hr>"

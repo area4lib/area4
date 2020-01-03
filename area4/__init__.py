@@ -22,10 +22,11 @@ def divider(number):
 
     :param number: The divider number (can't be 0).
     :type number: int
-    :return: The requested divider
+    :return: The requested divider.
     :rtype: str
     :raises ValueError: If you request an invalid divider.
-    :Example: :code:`area4.divider(3)` will return '............'
+    :Example:
+        :code:`area4.divider(3)` will return '............'
     """
     if number == 0 or type(number) != int:
         raise ValueError('Please use a number bigger then 0!')

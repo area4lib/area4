@@ -37,8 +37,6 @@ html_theme = 'sphinx_rtd_theme'
 
 html_static_path = ['_static']
 
-html_show_copyright = True
-
 html_show_sphinx = False
 
 htmlhelp_basename = 'Area4doc'
