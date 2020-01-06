@@ -6,11 +6,20 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.1.0
+
+```diff
++ Update setuptools (42.0.2 -> 44.0.0)
++ Update Sphinx (2.3.0 -> 2.3.1)
++ Added area4.util.html_horizontal
++ Added 1337 divider
++ Enhanced documentation
+```
+
 ## v3.0.0
 
 ```diff
-+ Update setuptools (41.0.1 -> 42.0.2)
-+ Update wheel (0.33.1 -> 0.33.6)
+
 + Update twine (1.13.0 -> 3.1.1)
 + Update unittest-xml-reporting (2.5.1 -> 2.5.2)
 * Converted this changelog to Markdown
