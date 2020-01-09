@@ -153,6 +153,17 @@ class Tests(unittest.TestCase):
             "<=-=-=-=>"
         )
 
+    def test_html_horizontal(self):
+        """Test html_horizontal divider."""
+        self.assertEqual(
+            area4.util.html_horizontal(),
+            "<hr></hr>"
+        )
+        self.assertEqual(
+            area4.util.html_horizontal(closing_tag=False),
+            "<hr>"
+        )
+
 
 if __name__ == '__main__':
     unittest.main()
