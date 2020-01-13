@@ -27,7 +27,8 @@ def non_single_character_dividers():
     """
     return [
         18, 19, 22, 33, 34, 35, 222,
-        223, 224, 226, 233, 234, 242
+        223, 224, 226, 233, 234, 242,
+        244
     ]
 
 
@@ -51,16 +52,9 @@ def get_raw_file():
     ), mode="r")
     lines = tmp.readlines()
     tmp.close()
-    stringbuilder = ""
-    i = 0
-    while i < 6:
-        stringbuilder += "<>"
-        i += 1
-    # no longer needed
-    del i
     # we need to manually inject this, GitHub thinks its
     # a conflict marker
-    lines[32] = stringbuilder
+    lines[32] = "<><><><><><>"
     lines[35] = str(random.randint(0, 999999999999))
     return lines
 

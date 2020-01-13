@@ -24,3 +24,5 @@ We have all kinds of dividers, from simple text strings similar to the one from 
 to long emoji strings, to dividers in Markdown for programs such as GitHub bots!
 
 Make sure to view our other documentation pages for more information!
+
+Tip: Because area4 has a lot of emoji dividers, it can also double as an emoji database!
