@@ -6,6 +6,16 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.2.0
+
+```diff
++ Added dividers 245 through 254
+* Optimized divider loading
++ Updated setuptools from 44.0.0 to 45.0.0
++ Added tests for HTML horizontal divider
+* Combined test and dev requirements
+```
+
 ## v3.1.0
 
 ```diff
