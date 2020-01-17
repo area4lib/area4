@@ -6,6 +6,12 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.3.0
+
+```diff
++ Added dividers 255-261
+```
+
 ## v3.2.0
 
 ```diff
