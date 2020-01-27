@@ -6,6 +6,13 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.4.0
+
+```diff
+* Bumped setuptools from 45.0.0 to 45.1.0
+* Bumped wheel from 0.33.6 to 0.34.0
+```
+
 ## v3.3.0
 
 ```diff
