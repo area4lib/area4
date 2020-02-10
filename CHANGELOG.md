@@ -6,6 +6,15 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.4.1
+
+```diff
+* Bumped setuptools from 45.1.0 to 45.2.0
+* Bumped unittest-xml-reporting from 2.5.2 to 3.0.0
+* Bumped wheel from 0.34.0 to 0.34.2
+* Bumped Sphinx from 2.3.1 to 2.4.0
+```
+
 ## v3.4.0
 
 ```diff
