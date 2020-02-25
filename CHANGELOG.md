@@ -6,6 +6,14 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.5.0
+
+```diff
++ Added 7 new dividers
+* Bumped Sphinx from 2.4.0 to 2.4.3
+* Bumped unittest-xml-reporting from 3.0.0 to 3.0.2
+```
+
 ## v3.4.1
 
 ```diff
