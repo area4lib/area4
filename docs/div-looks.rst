@@ -6,10 +6,10 @@ Divider Looks
 :code:`area4.divider(1)`.
 *If you don't understand, see the examples part of the documentation.*
 
-1. Dashed
-2. Solid
-3. Dotted
-4. Black Squares
+1. Dashes
+2. Underscores
+3. Periods
+4. Black squares
 5. Up arrow emojis
 6. Down arrow emojis
 7. Equal signs
@@ -267,6 +267,13 @@ Divider Looks
 259. Papers with pencils
 260. Crossed hammers and wrenches
 261. Download item icons
+262. Yarn balls
+263. Flags
+264. Flags alternative
+265. Flags alternative 2
+266. Cars alternative
+267. Cars alternative 2
+268. Question marks
 
 With more coming soon!
 
