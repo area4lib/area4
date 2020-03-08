@@ -29,12 +29,12 @@ def divider(number):
         :code:`area4.divider(3)` will return '............'
     """
     if number == 0 or type(number) != int:
-        raise ValueError('Please use a number bigger then 0!')
+        raise ValueError("Please use a number bigger then 0!")
     else:
         try:
             return utils.get_raw_file()[number].replace("\n", "")
         except IndexError:
-            raise ValueError('That divider doesn\'t exist!')
+            raise ValueError("That divider doesn't exist!")
 
 
 def splitter(div, *args):
@@ -64,16 +64,11 @@ def area4info():
     :rtype: str
     """
     return "Name: {0}\nAuthor: {1}\nAuthor Email: {2}\nDescription: {3}".format(
-        name,
-        __author__,
-        author_email,
-        description
+        name, __author__, author_email, description
     )
 
 
-def make_div(unit, length=24,
-             start='', end='',
-             literal_unit=False):
+def make_div(unit, length=24, start="", end="", literal_unit=False):
     """
     Generate a custom divider.
 

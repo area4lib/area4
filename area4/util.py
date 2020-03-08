@@ -25,11 +25,7 @@ def non_single_character_dividers():
     :return: A list of divider IDs.
     :rtype: List[int]
     """
-    return [
-        18, 19, 22, 33, 34, 35, 222,
-        223, 224, 226, 233, 234, 242,
-        244
-    ]
+    return [18, 19, 22, 33, 34, 35, 222, 223, 224, 226, 233, 234, 242, 244]
 
 
 @lru_cache(maxsize=None)
@@ -45,11 +41,12 @@ def get_raw_file():
     :return: The array.
     :rtype: List[str]
     """
-    tmp = open("{}/dividers.txt".format(
-        os.path.abspath(
-            os.path.dirname(__file__)
-        )
-    ), mode="r")
+    tmp = open(
+        "{}/dividers.txt".format(
+            os.path.abspath(os.path.dirname(__file__))
+        ),
+        mode="r",
+    )
     lines = tmp.readlines()
     tmp.close()
     # we need to manually inject this, GitHub thinks its
