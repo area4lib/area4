@@ -48,6 +48,7 @@ task:
   auto_cancellation: true
   Download_Sphinx_script:
     - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/docs.txt
+  Install_Library_script: python3 -m pip install --upgrade .
   script:
     - cd ./docs/
     - make dirhtml
