@@ -24,13 +24,10 @@ class Tests(unittest.TestCase):
         self.working_directory = os.getenv("CIRRUS_WORKING_DIR")
         # Fallback in case this is being run locally:
         if self.working_directory is None:
-            self.working_directory = os.path.abspath(
-                os.path.dirname(__file__)
-            )
+            self.working_directory = os.path.abspath(os.path.dirname(__file__))
         # Get divider text file:
         self.dividers_file = "{0}/{1}".format(
-            self.working_directory,
-            "area4/dividers.txt"
+            self.working_directory, "area4/dividers.txt"
         )
         with open(file=self.dividers_file, mode="r") as fh:
             self.raw_dividers = fh.readlines()
@@ -45,12 +42,10 @@ class Tests(unittest.TestCase):
                     self.assertEqual(
                         self.raw_dividers[i].replace("\n", ""),
                         area4.divider(i),
-                        f"Divider number {i} was not the same in the file and in the code. Please ask a maintainer for help."
+                        f"Divider number {i} was not the same in the file and in the code. Please ask a maintainer for help.",
                     )
                 elif (i == 35 or i == 32) and i != 0:
-                    self.assertNotEqual(
-                        self.raw_dividers[i], area4.divider(i)
-                    )
+                    self.assertNotEqual(self.raw_dividers[i], area4.divider(i))
         finally:
             pass
 
@@ -60,19 +55,29 @@ class Tests(unittest.TestCase):
 
     def test_splitter_2(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter("---", "Hello", "world"), "Hello\n---world\n---")
+        self.assertEqual(
+            area4.splitter("---", "Hello", "world"), "Hello\n---world\n---"
+        )
 
     def test_splitter_3(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter(3, "Hello", "world"), "Hello\n............\nworld\n............\n")
+        self.assertEqual(
+            area4.splitter(3, "Hello", "world"),
+            "Hello\n............\nworld\n............\n",
+        )
 
     def test_splitter_4(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter(45, "Hello", "world", "fine"), "Hello\neeeeeeeeeeee\nworld\neeeeeeeeeeee\nfine\neeeeeeeeeeee\n")
+        self.assertEqual(
+            area4.splitter(45, "Hello", "world", "fine"),
+            "Hello\neeeeeeeeeeee\nworld\neeeeeeeeeeee\nfine\neeeeeeeeeeee\n",
+        )
 
     def test_splitter_5(self):
         """Test splitter function."""
-        self.assertEqual(area4.splitter("xyz", "Hello", "world"), "Hello\nxyzworld\nxyz")
+        self.assertEqual(
+            area4.splitter("xyz", "Hello", "world"), "Hello\nxyzworld\nxyz"
+        )
 
     def test_utilities(self):
         """Test util module."""
@@ -110,7 +115,7 @@ class Tests(unittest.TestCase):
                     self.assertNotEqual(
                         self.raw_dividers[x],
                         self.raw_dividers[g],
-                        f"Dividers {x} and {g} are the same! Duplicates are not allowed."
+                        f"Dividers {x} and {g} are the same! Duplicates are not allowed.",
                     )
 
     def test_info(self):
@@ -119,24 +124,21 @@ class Tests(unittest.TestCase):
             "area4",
             "RDIL",
             "me@rdil.rocks",
-            "Dividers in Python, the easy way!"
+            "Dividers in Python, the easy way!",
         ]
         from_class = [
             area4.name,
             area4.__author__,
             area4.author_email,
-            area4.description
+            area4.description,
         ]
         for i, e in enumerate(right_data):
             self.assertEqual(right_data[i], from_class[i])
         self.assertEqual(
             area4.area4info(),
             "Name: {0}\nAuthor: {1}\nAuthor Email: {2}\nDescription: {3}".format(
-                right_data[0],
-                right_data[1],
-                right_data[2],
-                right_data[3],
-            )
+                right_data[0], right_data[1], right_data[2], right_data[3],
+            ),
         )
 
     def test_restructuredtext(self):
@@ -149,21 +151,14 @@ class Tests(unittest.TestCase):
     def test_make_div(self):
         """Test make_div."""
         self.assertEqual(
-            area4.make_div('=-', length=9, start='<', end='=>'),
-            "<=-=-=-=>"
+            area4.make_div("=-", length=9, start="<", end="=>"), "<=-=-=-=>"
         )
 
     def test_html_horizontal(self):
         """Test html_horizontal divider."""
-        self.assertEqual(
-            area4.util.html_horizontal(),
-            "<hr></hr>"
-        )
-        self.assertEqual(
-            area4.util.html_horizontal(closing_tag=False),
-            "<hr>"
-        )
+        self.assertEqual(area4.util.html_horizontal(), "<hr></hr>")
+        self.assertEqual(area4.util.html_horizontal(closing_tag=False), "<hr>")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
