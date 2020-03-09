@@ -3,21 +3,14 @@
 import setuptools
 
 # Package version:
-VERSION = "3.5.0"
+VERSION = "3.6.0"
 
 # Read the long description:
 with open("README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
 
 # Keywords:
-TAGS = [
-    "area4",
-    "dividers",
-    "python",
-    "utilities",
-    "enhancements",
-    "text"
-]
+TAGS = ["area4", "dividers", "python", "utilities", "enhancements", "text"]
 
 # Classifiers:
 CLASSIFIERS = [
@@ -56,13 +49,12 @@ CLASSIFIERS = [
 MainURL = "https://github.com/area4lib/area4"
 
 # Other Project URLs:
-URLs = \
-    {
-        "Bug Tracker": "https://github.com/area4lib/area4/issues",
-        "Documentation": "https://area4.readthedocs.io/en/stable/",
-        "Source Code": "https://github.com/area4lib/area4",
-        "License": "https://github.com/area4lib/area4/blob/master/LICENSE",
-    }
+URLs = {
+    "Bug Tracker": "https://github.com/area4lib/area4/issues",
+    "Documentation": "https://area4.readthedocs.io/en/stable/",
+    "Source Code": "https://github.com/area4lib/area4",
+    "License": "https://github.com/area4lib/area4/blob/master/LICENSE",
+}
 
 
 setuptools.setup(
@@ -83,5 +75,5 @@ setuptools.setup(
     keywords=TAGS,
     include_package_data=True,
     zip_safe=False,
-    python_requires=">3.3"
+    python_requires=">3.3",
 )

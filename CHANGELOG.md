@@ -6,6 +6,14 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.6.0
+
+```diff
+* Bumped Sphinx from 2.4.3 to 2.4.4
+* Bumped setuptools from 45.2.0 to 46.0.0
++ Reformatted the code with Black
+```
+
 ## v3.5.0
 
 ```diff
