@@ -5,7 +5,7 @@ Concept
     If you don't understand what we mean by dividers, fear not.
 
 We mean dividers that divide text or sections of text
-in the Python console, or use cases like that.
+in a console, or use cases like that.
 
 For example:
 
