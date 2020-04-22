@@ -1,5 +1,4 @@
 """Sphinx configuration."""
-# -*- coding: utf-8 -*-
 
 project = "Area4"
 copyright = "2018-present, Reece Dunham."
@@ -18,8 +17,6 @@ extensions = [
     "sphinx.ext.autosectionlabel",
 ]
 
-templates_path = ["_templates"]
-
 # The suffix of doc file names.
 source_suffix = ".rst"
 
@@ -33,8 +30,6 @@ exclude_patterns = ["_build"]
 pygments_style = "sphinx"
 
 html_theme = "sphinx_rtd_theme"
-
-html_static_path = ["_static"]
 
 html_show_sphinx = False
 

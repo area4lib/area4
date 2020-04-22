@@ -9,12 +9,7 @@
 /wheels/
 
 # JetBrains IDE
-/.idea/workspace.xml
-/.idea/vcs.xml
-/.idea/area4.iml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/dictionaries/
+.idea
 
 # Byte-compiled / optimized / DLL files
 /__pycache__/
