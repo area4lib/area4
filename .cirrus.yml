@@ -7,14 +7,13 @@ task:
     folder: /usr/local/lib/python3.8/site-packages
     fingerprint_script:
       - echo $OS $PYTHON_VERSION
-      - find ./requirements/ -name \*.txt -exec cat {} \;
-    populate_script: find ./requirements/ -name \*.txt -exec python3 -m pip install --upgrade -r {} \;
+      - cat requirements-dev.txt
+    populate_script: python3 -m pip install --upgrade -r requirements-dev.txt
   Install_Beta_Build_script:
     - python3 -m pip install .
   Build_script: make dist
   matrix:
     - name: Unit Tests
-      skip: $CIRRUS_BRANCH == 'python-2-supported'
       script: python3 -m xmlrunner tests
       always:
         unittest_results_artifacts:
@@ -29,6 +28,12 @@ task:
       depends_on:
         - Unit Tests
       script: python3 -m twine upload --username $TWINE_USERNAME --password $TWINE_PASSWORD dist/*
+    - name: Build Documentation
+      script:
+        - cd ./docs/
+        - make dirhtml
+      docs_build_artifacts:
+        path: docs/_build/**/**
   build_artifacts:
     path: dist/*.*
   on_failure:
@@ -39,18 +44,3 @@ task:
   before_cache_script: |
     rm -rf /tmp/cirrus-ci-build/area4.dist-info
     python3 -m pip uninstall --yes area4
-
-task:
-  name: Documentation Tests
-  container:
-    image: python:latest
-  use_compute_credits: true
-  auto_cancellation: true
-  Download_Sphinx_script:
-    - python3 -m pip install --upgrade -r $CIRRUS_WORKING_DIR/requirements/docs.txt
-  Install_Library_script: python3 -m pip install --upgrade .
-  script:
-    - cd ./docs/
-    - make dirhtml
-  build_artifacts:
-    path: docs/_build/**/**
