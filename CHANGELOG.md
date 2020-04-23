@@ -14,6 +14,8 @@ Key:
 * Fixed some docs build warnings
 * Fixed some CI build issues
 - Marked the extras folder as no longer accepting content
+* Bumped Sphinx to v3
+* Bumped setuptools from 46.0.0 to 46.1.3
 ```
 
 ## v3.6.0
