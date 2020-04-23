@@ -6,6 +6,16 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.7.0
+
+```diff
+* Merge docs and development requirements into a single file
+- Removed the remaining PyCharm files since they were useless
+* Fixed some docs build warnings
+* Fixed some CI build issues
+- Marked the extras folder as no longer accepting content
+```
+
 ## v3.6.0
 
 ```diff
