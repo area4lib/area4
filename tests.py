@@ -3,7 +3,6 @@
 # Import needed modules
 import unittest
 import os
-import restructuredtext_lint
 
 # Try to import area4.
 # This will fail if it could not be installed or if faulty code is present.
@@ -140,13 +139,6 @@ class Tests(unittest.TestCase):
                 right_data[0], right_data[1], right_data[2], right_data[3],
             ),
         )
-
-    def test_restructuredtext(self):
-        """Lint RST files."""
-        files = os.listdir("{0}/docs".format(self.working_directory))
-        for name in files:
-            path = "{0}/docs/{1}".format(self.working_directory, name)
-            restructuredtext_lint.lint_file(filepath=path)
 
     def test_make_div(self):
         """Test make_div."""
