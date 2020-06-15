@@ -6,6 +6,15 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.8.0
+
+```diff
++ Add dependabot configuration
+* Bump setuptools from 46.1.3 to 47.1.1
+* Bump sphinx from 3.0.2 to 3.1.1
+- Removed restructuredtext_lint because sphinx does it internally
+```
+
 ## v3.7.0
 
 ```diff
