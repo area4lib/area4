@@ -2,5 +2,5 @@ setuptools==49.1.0
 wheel==0.34.2
 twine==3.2.0
 unittest-xml-reporting==3.0.2
-sphinx==3.1.1
+sphinx==3.1.2
 sphinx-rtd-theme==0.5.0
