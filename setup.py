@@ -3,17 +3,15 @@
 import setuptools
 
 # Package version:
-VERSION = "3.8.0"
+VERSION = "3.9.0"
 
 # Read the long description:
 with open("README.md", mode="r") as FILE_HANDLER:
     LONG_DESCRIPTION = FILE_HANDLER.read()
 
-# Keywords:
-TAGS = ["area4", "dividers", "python", "utilities", "enhancements", "text"]
+keywords = ["area4", "dividers", "python", "utilities", "enhancements", "text"]
 
-# Classifiers:
-CLASSIFIERS = [
+classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
@@ -46,16 +44,15 @@ CLASSIFIERS = [
 ]
 
 # GitHub URL:
-MainURL = "https://github.com/area4lib/area4"
+homepage = "https://github.com/area4lib/area4"
 
 # Other Project URLs:
-URLs = {
+urls = {
     "Bug Tracker": "https://github.com/area4lib/area4/issues",
     "Documentation": "https://area4.readthedocs.io/en/stable/",
     "Source Code": "https://github.com/area4lib/area4",
     "License": "https://github.com/area4lib/area4/blob/master/LICENSE",
 }
-
 
 setuptools.setup(
     name="area4",
@@ -67,12 +64,12 @@ setuptools.setup(
     description="Dividers in Python, the easy way!",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url=MainURL,
+    url=homepage,
     license="MIT",
     packages=setuptools.find_packages(),
-    classifiers=CLASSIFIERS,
-    project_urls=URLs,
-    keywords=TAGS,
+    classifiers=classifiers,
+    project_urls=urls,
+    keywords=keywords,
     include_package_data=True,
     zip_safe=False,
     python_requires=">3.3",

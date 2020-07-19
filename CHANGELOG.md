@@ -6,6 +6,16 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.9.0
+
+```diff
+* Bump setuptools from 47.1.1 to 49.2.0
+* Bump twine from 3.1.1 to 3.2.0
+* Bump sphinx from 3.1.1 to 3.1.2
+* Bump sphinx-rtd-theme from 0.4.3 to 0.5.0
++ Add dividers 269 through 280
+```
+
 ## v3.8.0
 
 ```diff
