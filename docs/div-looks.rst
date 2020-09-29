@@ -287,6 +287,8 @@ Divider Looks
 279. Crossed out bells
 280. Gears
 281. Right brackets
+282. Lowercase ø
+283. Uppercase Ø
 
 With more coming soon!
 
