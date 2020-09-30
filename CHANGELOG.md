@@ -6,6 +6,16 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.10.0
+
+```diff
++ Add dividers 281-283
+* Bump setuptools from 49.2.0 to 50.3.0
+* Bump wheel from 0.34.2 to 0.35.1
+* Bump unittest-xml-reporting from 3.0.2 to 3.0.4
+* Bump sphinx from 3.1.2 to 3.2.1
+```
+
 ## v3.9.0
 
 ```diff
@@ -13,7 +23,7 @@ Key:
 * Bump twine from 3.1.1 to 3.2.0
 * Bump sphinx from 3.1.1 to 3.1.2
 * Bump sphinx-rtd-theme from 0.4.3 to 0.5.0
-+ Add dividers 269 through 280
++ Add dividers 269-280
 ```
 
 ## v3.8.0

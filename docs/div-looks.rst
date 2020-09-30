@@ -286,7 +286,10 @@ Divider Looks
 278. Bells
 279. Crossed out bells
 280. Gears
-281. Telescope
+281. Right brackets
+282. Lowercase ø
+283. Uppercase Ø
+284. Telescopes
 
 With more coming soon!
 
