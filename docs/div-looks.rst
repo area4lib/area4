@@ -289,8 +289,10 @@ Divider Looks
 281. Right brackets
 282. Lowercase ø
 283. Uppercase Ø
-284. Flashing light
-285. Sirens, Police Officers, Police Cars
+284. Telescopes
+285. Greater than sign
+286. Flashing light
+287. Sirens, Police Officers, Police Cars
 
 With more coming soon!
 
