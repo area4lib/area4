@@ -290,6 +290,7 @@ Divider Looks
 282. Lowercase ø
 283. Uppercase Ø
 284. Telescopes
+285. Greater than sign
 
 With more coming soon!
 
