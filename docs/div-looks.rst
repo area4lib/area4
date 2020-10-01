@@ -290,6 +290,8 @@ Divider Looks
 282. Lowercase ø
 283. Uppercase Ø
 284. Telescopes
+285. Check mark
+286. Check mark button
 
 With more coming soon!
 
