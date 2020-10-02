@@ -13,9 +13,8 @@ from functools import lru_cache
 
 def non_single_character_dividers():
     """
-    Get a list of all the "blacklisted" dividers.
+    Get a list of all the dividers that are multiple unique characters.
 
-    These dividers are not made of a single character.
     Some examples of this include:
 
     * Divider 18 - :code:`( ͡° ͜ʖ ͡°)`
@@ -25,7 +24,7 @@ def non_single_character_dividers():
     :return: A list of divider IDs.
     :rtype: List[int]
     """
-    return [18, 19, 22, 33, 34, 35, 222, 223, 224, 226, 233, 234, 242, 244]
+    return [18, 19, 22, 33, 34, 35, 222, 223, 224, 226, 233, 234, 242, 244, 286]
 
 
 @lru_cache(maxsize=None)
@@ -53,6 +52,8 @@ def get_raw_file():
     # a conflict marker
     lines[32] = "<><><><><><>"
     lines[35] = str(random.randint(0, 999999999999))
+    # same as 32
+    lines[286] = ">>>>>>>>>>>>"
     return lines
 
 

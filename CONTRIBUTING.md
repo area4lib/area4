@@ -37,7 +37,7 @@ This project is intended to be...
 - Documented. Keep it well documented, so all can learn from it.
 - Reusable. Keep it clean and modular, with as little responsibility per programming unit (function, method, class, module, project) as possible, so one can reuse it.
 - Testable. Keep it easy to debug and test, so one can be confident that it works properly.  Please keep the [Cirrus CI Build](https://cirrus-ci.com/github/area4lib/area4) at passing if possible.
-- Python 3 compatible. area4 aims to support Python 3 versions, and does not support versions below Python3.
+- Python 3 compatible. area4 aims to support Python 3 versions, and does not support versions below Python 3.
 
 ## Timing
 
