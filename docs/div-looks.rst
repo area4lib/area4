@@ -290,8 +290,11 @@ Divider Looks
 282. Lowercase ø
 283. Uppercase Ø
 284. Telescopes
-285. Check mark
-286. Check mark button
+285. Greater than sign
+286. Flashing light
+287. Police officer
+288. Check mark
+289. Check mark button
 
 With more coming soon!
 
