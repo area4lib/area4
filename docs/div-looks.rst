@@ -295,6 +295,7 @@ Divider Looks
 287. Police officer
 288. Check mark
 289. Check mark button
+290. Cross mark button
 
 With more coming soon!
 
