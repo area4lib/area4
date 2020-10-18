@@ -28,7 +28,7 @@ def divider(number):
     :Example:
         :code:`area4.divider(3)` will return '............'
     """
-    if number == 0 or type(number) != int:
+    if number == 0 or not isinstance(number, int):
         raise ValueError("Please use a number bigger then 0!")
     else:
         try:
@@ -46,7 +46,7 @@ def splitter(div, *args):
     :param div: The divider.
     :type div: str
     """
-    if type(div) is int:
+    if isinstance(div, int):
         div = utils.get_raw_file()[div]
     if len(args) == 1:
         return args[0]
