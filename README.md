@@ -8,8 +8,12 @@ Dividers in Python, the easy way! Many different types. [(As seen on PyPI!)](htt
 [![Project Status: Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Build Status](https://api.cirrus-ci.com/github/area4lib/area4.svg)](https://cirrus-ci.com/github/area4lib/area4)  
 
-area4 is a flexible Python divider library which doubles as a working emoji database. It makes dividers in console output easy. Don't want to type out `---------` every time you need to use it? We've got you covered.  
+<hr>
 
-## **Documentation** [can be found here](https://area4.readthedocs.io/en/stable/) <-------  
+area4 is a flexible Python divider library which doubles as a working emoji database. It makes dividers in console output easy. Don't want to type out `---------` every time you need to use it? We've got you covered.
+
+<hr>
+
+## **Documentation** [can be found here](https://area4.readthedocs.io/en/stable/)
 
 For help/troubleshooting see our [support information](https://github.com/area4lib/area4/blob/master/.github/SUPPORT.md).
