@@ -1,6 +1,6 @@
 # area4
 
-Dividers in Python, the easy way! Many different types. [(As seen on PyPI!)](https://pypi.org/project/area4)  
+Dividers in Python, the easy way! Many different types. [[PyPI]](https://pypi.org/project/area4)  
 
 [![MIT License Badge](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/area4lib/area4/blob/master/LICENSE)
 [![PyPI Project Version](https://badge.fury.io/py/area4.svg)](https://pypi.org/project/area4)
