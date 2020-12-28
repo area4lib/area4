@@ -6,6 +6,14 @@ Key:
 * `+` means addition
 * `-` means deletion
 
+## v3.11.0
+
+```diff
++ Add dividers 284-301
+* Bump versions of setuptools, wheel, twine and sphinx
+* Change to isinstance in code
+```
+
 ## v3.10.0
 
 ```diff
