@@ -168,10 +168,10 @@ Divider Looks
 160. Dead flowers
 161. Pink flowers 2
 162. Pink flowers 3
-163. White flower
-164. Yellow flower
-165. Small sun
-166. Big sun
+163. White flowers
+164. Yellow flowers
+165. Small suns
+166. Big suns
 167. Half moons facing left
 168. Half moons facing right
 169. Full moons
@@ -194,7 +194,7 @@ Divider Looks
 186. Ice creams in cones
 187. Pies
 188. Cakes
-189. Cakes 2
+189. Cakes (other variant)
 190. Beers
 191. Two touching beers
 192. Two touching wine glasses
@@ -207,7 +207,7 @@ Divider Looks
 199. Balloons
 200. Hearts
 201. Pins
-202. A person
+202. People
 203. Dice
 204. Bowling ball and pins
 205. Cookies
@@ -297,16 +297,16 @@ Divider Looks
 289. Check mark button
 290. Cross mark button
 291. Card Index
-292. Baseball
-293. Softball
-294. Basketball
-295. Volleyball
-296. American Football
-297. Rugby Football
-298. Tennis
-299. Flying Disc
-300. Copyright
-301. Joystick
+292. Baseballs
+293. Softballs
+294. Basketballs
+295. Volleyballs
+296. American footballs
+297. Rugby footballs
+298. Tennis rackets
+299. Flying discs
+300. Copyright symbols
+301. Joysticks
 
 With more coming soon!
 
